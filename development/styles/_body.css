@@ -1,0 +1,14 @@
+body {
+    min-width: 1000px;
+    margin: 0;
+    background-color: #F5F2ED;
+    background-image: url("../images/background.jpg");
+    background-position: center top;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--font_family_default);
+    font-weight: var(--font_weight_default);
+    font-size: var(--font_size_default-text);
+    line-height: var(--font_line_default-text);
+    color: var(--color_text_primary);
+}
