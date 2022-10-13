@@ -7,6 +7,9 @@
     --extra-bold: 800;
     --high-emphasis: #0C0908;
     --red: #FC5E38;
+    --red-light: #FFDDD1;
+    --green-light: #E4E9C9;
+    --blue-light: #DBEDFE;
     --primary-black: #1D1D1F;
     --white: rgba(255, 255, 255, 0.97);
 }

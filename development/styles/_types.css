@@ -1,0 +1,50 @@
+.types {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    grid-template-areas:
+        "m o"
+        "m r";
+}
+    .types__item {
+        border-radius: 16px;
+        padding: 40px 60px 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .types__item--moscow {
+        grid-area: m;
+        background-color: var(--red-light);
+    }
+
+    .types__item--online {
+        grid-area: o;
+        background-color: var(--green-light);
+    }
+
+    .types__item--records {
+        grid-area: r;
+        background-color: var(--blue-light);
+    }
+        .types__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-bottom: 16px;
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+        .types__description {
+            padding-bottom: 32px;
+        }
+
+        .types__acton {
+            margin-top: auto;
+        }
+            .types__acton.button,
+            .types__acton .button {
+                font-size: 17px;
+            }

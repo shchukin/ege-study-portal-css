@@ -1,4 +1,6 @@
 .jumbotron {
+    padding-top: 100px;
+    padding-bottom: 60px;
     display: grid;
     grid-template-columns: 48.9247fr 40.8602fr;
     align-items: center;
