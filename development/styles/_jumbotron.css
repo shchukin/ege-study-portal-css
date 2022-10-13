@@ -1,0 +1,22 @@
+.jumbotron {
+
+}
+    .jumbotron__content {
+        max-width: 728px;
+    }
+        .jumbotron__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 58px;
+            line-height: 64px;
+        }
+
+        .jumbotron__description {
+            margin-top: 24px;
+            font-size: 20px;
+            line-height: 32px;
+        }
+
+    .jumbotron__preview {
+
+    }

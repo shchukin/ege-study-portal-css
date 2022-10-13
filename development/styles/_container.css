@@ -1,0 +1,8 @@
+.container {
+    width: 100%;
+    max-width: 1488px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: var(--container-desktop-padding);
+    border-right: var(--container-desktop-padding);
+}
