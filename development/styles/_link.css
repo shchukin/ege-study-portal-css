@@ -1,0 +1,64 @@
+.link,
+.wysiwyg a {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    display: inline;
+    vertical-align: baseline;
+    padding: 4px 0 0; /* 4px solves two problems:
+                         a) expands clickable area
+                         b) solves multi-link case problem when hovering between lines changes from pointer to arrow */
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid transparent;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: inherit;
+    line-height: inherit;
+    color: var(--red);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link:hover,
+.wysiwyg a:hover {
+    border-bottom-color: currentColor;
+}
+
+.link:active,
+.wysiwyg a:active {
+
+}
+
+
+.link--classic,
+.wysiwyg .link--classic {
+    border-bottom-color: currentColor;
+}
+
+.link--classic:hover,
+.wysiwyg .link--classic:hover {
+    border-bottom-color: transparent;
+}
+
+
+
+.link--fake,
+.link--fake:hover,
+.wysiwyg .link--fake,
+.wysiwyg .link--fake:hover {
+    border-bottom-color: transparent;
+    color: inherit;
+    cursor: inherit;
+}
+
+
+.link--inherit,
+.wysiwyg .link--inherit {
+    color: inherit;
+}
+
+.link--inherit:hover,
+.wysiwyg .link--inherit:hover {
+    color: var(--red);
+}

@@ -1,0 +1,147 @@
+.teachers-preview {
+    padding-top: 60px;
+    padding-bottom: 55px;
+}
+    .teachers-preview__intro {
+
+    }
+        .teachers-preview__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 42px;
+            line-height: 46px;
+        }
+
+        .teachers-preview__intro {
+            max-width: 880px;
+            margin-top: 24px;
+            border-bottom: 1px solid #DEDFDF;
+            font-size: 17px;
+            line-height: 27px;
+        }
+
+        .teachers-preview__list {
+            margin-top: 60px;
+            padding-top: 60px;
+        }
+            .teachers-preview__ribbon {
+                display: inline-grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 0 72px;
+            }
+                .teachers-preview__item {
+
+                }
+                    .teachers-preview__preview {
+
+                    }
+
+                    .teachers-preview__name {
+                        margin-top: 20px;
+                        margin-bottom: 0;
+                        font-size: 26px;
+                        line-height: 34px;
+                    }
+
+                    .teachers-preview__bio {
+                        margin-top: 16px;
+                        font-size: 15px;
+                        line-height: 23px;
+                    }
+
+                    .teachers-preview__menu {
+                        margin-top: 18px;
+                    }
+                        .teachers-preview__action {
+
+                        }
+                            .teachers-preview__action.dash,
+                            .teachers-preview__action .dash {
+                                padding-top: 3px;
+                                padding-bottom: 3px;
+                            }
+
+        .teachers-preview__footer {
+            margin-top: 52px;
+            text-align: center;
+        }
+
+
+
+@media (max-width: 639px) {
+
+    .teachers-preview {
+        padding-top: 40px;
+        padding-bottom: 35px;
+    }
+        .teachers-preview__intro {
+
+        }
+            .teachers-preview__heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                border-bottom: 1px solid #DEDFDF;
+                padding-bottom: 40px;
+                font-size: 32px;
+                line-height: 38px;
+            }
+
+            .teachers-preview__intro {
+                /*max-width: 880px;*/
+                /*margin-top: 24px;*/
+                /*font-size: 17px;*/
+                /*line-height: 27px;*/
+                display: none;
+            }
+
+            .teachers-preview__list {
+                margin-top: 0;
+                position: relative;
+                border-top: none;
+                padding-top: 40px;
+                overflow-x: auto;
+                margin-left: calc(-1 * var(--container-mobile-padding));
+                margin-right: calc(-1 * var(--container-mobile-padding));
+            }
+                .teachers-preview__ribbon {
+                    padding-left: var(--container-mobile-padding);
+                    padding-right: var(--container-mobile-padding);
+                    gap: 0 24px;
+                }
+                    .teachers-preview__item {
+
+                    }
+                        .teachers-preview__preview {
+
+                        }
+
+                        .teachers-preview__name {
+                            /*margin-top: 20px;*/
+                            /*margin-bottom: 0;*/
+                            /*font-size: 26px;*/
+                            /*line-height: 34px;*/
+                        }
+
+                        .teachers-preview__bio {
+                            /*margin-top: 16px;*/
+                            /*font-size: 15px;*/
+                            /*line-height: 23px;*/
+                        }
+
+                        .teachers-preview__menu {
+                            margin-top: 14px;
+                        }
+                            .teachers-preview__action {
+
+                            }
+                                .teachers-preview__action.dash,
+                                .teachers-preview__action .dash {
+                                    /*padding-top: 3px;*/
+                                    /*padding-bottom: 3px;*/
+                                }
+
+            .teachers-preview__footer {
+                margin-top: 30px;
+                text-align: left;
+            }
+}

@@ -1,0 +1,57 @@
+.dash {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0; /* ноль по краям на случай тега <button> */
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--red);
+    white-space: nowrap;
+    text-decoration: none;
+    text-transform: none;
+    cursor: pointer;
+}
+    .dash__label {
+        padding-top: 2px;
+        padding-bottom: 1px;
+        border-bottom: 1px solid transparent;
+    }
+
+    .dash__icon {
+        flex-shrink: 0;
+        margin-top: 2px;
+        fill: currentColor;
+    }
+
+    .dash__icon--left {
+        margin-right: 10px;
+    }
+
+    .dash__icon--right {
+        margin-left: 10px;
+    }
+
+    .dash__icon--double-size {
+
+    }
+
+
+
+
+.dash:hover {
+
+}
+    .dash:hover .dash__label {
+        border-bottom-color: currentColor;
+    }
+
+.dash:active {
+    color: var(--brand);
+}
+    .dash:active .dash__label {
+        border-bottom-color: currentColor;
+    }

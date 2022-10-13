@@ -5,12 +5,13 @@
     --body-font: "Manrope", sans-serif;
     --medium: 500;
     --extra-bold: 800;
-    --high-emphasis: #0C0908;
+    --high-emphasis: rgba(15, 16, 21, 0.98);
     --red: #FC5E38;
     --red-light: #FFDDD1;
     --green-light: #E4E9C9;
     --blue-light: #DBEDFE;
     --primary-black: #1D1D1F;
     --white: rgba(255, 255, 255, 0.97);
+    --image-fallback: #C4C4C4;
 }
 /* stylelint-enable declaration-colon-space-after */
