@@ -1,5 +1,8 @@
 .jumbotron {
-
+    display: grid;
+    grid-template-columns: 48.9247fr 40.8602fr;
+    align-items: center;
+    gap: 0 32px;
 }
     .jumbotron__content {
         max-width: 728px;
@@ -15,6 +18,10 @@
             margin-top: 24px;
             font-size: 20px;
             line-height: 32px;
+        }
+
+        .jumbotron__submit {
+            margin-top: 40px;
         }
 
     .jumbotron__preview {

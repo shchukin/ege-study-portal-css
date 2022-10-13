@@ -1,8 +1,16 @@
 .container {
     width: 100%;
-    max-width: 1488px;
+    max-width: calc(1488px + 2 * var(--container-desktop-padding));
     margin-left: auto;
     margin-right: auto;
-    border-left: var(--container-desktop-padding);
-    border-right: var(--container-desktop-padding);
+    border-left: var(--container-desktop-padding) solid transparent;
+    border-right: var(--container-desktop-padding) solid transparent;
+}
+
+
+@media (max-width: 639px) {
+    .container {
+        border-left: var(--container-mobile-padding) solid transparent;
+        border-right: var(--container-mobile-padding) solid transparent;
+    }
 }
