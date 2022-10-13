@@ -35,14 +35,16 @@
 
     .jumbotron {
         display: block;
+        padding-top: 40px;
+        padding-bottom: 40px;
         /*grid-template-columns: 48.9247fr 40.8602fr;*/
         /*align-items: center;*/
         /*gap: 0 32px;*/
     }
         .jumbotron__content {
             /*max-width: 728px;*/
-            padding-top: 40px;
-            padding-bottom: 40px;
+            padding-top: 0;
+            padding-bottom: 0;
         }
             .jumbotron__heading {
                 /*margin-top: 0;*/
