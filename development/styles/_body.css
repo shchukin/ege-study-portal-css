@@ -7,3 +7,9 @@ body {
     font-family: var(--body-font);
     font-weight: var(--medium);
 }
+
+@media (max-width: 639px) {
+    body {
+        min-width: 0;
+    }
+}
