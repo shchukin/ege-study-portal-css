@@ -1,0 +1,62 @@
+.contacts-preview {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--neutral);
+}
+    .contacts-preview__wrap {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+    }
+        .contacts-preview__callback {
+            width: 53.7634%;
+            padding: 48px 54px;
+            background-color: #FFFFFF;
+            box-shadow: 4px 4px 20px rgba(89, 23, 0, 0.06);
+            border-radius: 16px;
+        }
+            .contacts-preview__heading {
+                max-width: 330px;
+                margin: 0 auto;
+                text-align: center;
+                font-size: 32px;
+                line-height: 38px;
+            }
+
+            .contacts-preview__form {
+                max-width: 492px;
+                margin: 32px auto 0;
+            }
+                .contacts-preview__submit {
+
+                }
+                    .contacts-preview__submit.button,
+                    .contacts-preview__submit .button {
+                        width: 100%;
+                    }
+
+        .contacts-preview__to-call {
+            width: 38.5753%;
+        }
+            .contacts-preview__channel {
+                margin-top: 16px;
+            }
+
+            .contacts-preview__channel:first-child {
+                margin-top: 0;
+            }
+                .contacts-preview__label {
+                    font-size: 17px;
+                    line-height: 27px;
+                }
+
+                .contacts-preview__number {
+                    margin-top: 4px;
+                    font-weight: var(--extra-bold);
+                    font-size: 32px;
+                    line-height: 38px;
+                }
+
+            .contacts-preview__body {
+                margin-top: 24px;
+            }

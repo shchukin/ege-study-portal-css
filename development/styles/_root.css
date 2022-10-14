@@ -15,5 +15,7 @@
     --image-fallback: #C4C4C4;
     --neutral: #FAF6F2;
     --yellow: #FFD046;
+    --medium-emphasis: #BFBFBF;
+    --low-emphasis: rgba(15, 16, 21, 0.16);
 }
 /* stylelint-enable declaration-colon-space-after */
