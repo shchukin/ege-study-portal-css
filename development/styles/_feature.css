@@ -94,6 +94,15 @@
                     .feature__action .button {
                         font-size: 17px;
                     }
+                        .feature__line-break {
+
+                        }
+
+                        @media (min-width: 640px) {
+                            .feature__line-break {
+                                display: block;
+                            }
+                        }
 
 
 .feature--top {
@@ -332,7 +341,7 @@
                     }
                         .feature__action.button,
                         .feature__action .button {
-                            /*font-size: 17px;*/
+                            width: 100%;
                         }
 
     .feature--top {
