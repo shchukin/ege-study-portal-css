@@ -235,3 +235,151 @@
                         }
 }
 
+
+@media (max-width: 639px) {
+
+    .feature {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .feature--highlight {
+        /*background-color: var(--neutral);*/
+    }
+        .feature__wrap {
+            display: block;
+            /*align-items: center;*/
+            /*gap: 80px;*/
+        }
+            .feature__preview {
+                width: auto;
+            }
+                .feature__pic {
+                    /*position: relative;*/
+                    /*padding-left: 30px;*/
+                    /*padding-bottom: 30px;*/
+                }
+                    .feature__image {
+                        /*vertical-align: top;*/
+                        /*width: 100%;*/
+                        /*height: auto;*/
+                        /*border-top-left-radius: 12px;*/
+                        /*border-top-right-radius: 12px;*/
+                        /*border-bottom-right-radius: 12px;*/
+                    }
+
+                    .feature__pic::before {
+                        /*content: "";*/
+                        /*position: absolute;*/
+                        /*left: 0;*/
+                        /*bottom: 0;*/
+                        /*width: 18px;*/
+                        /*height: 90%;*/
+                        /*background-color: var(--yellow);*/
+                        /*border-top-left-radius: 6px;*/
+                        /*border-bottom-left-radius: 6px;*/
+                    }
+
+                    .feature__pic::after {
+                        /*content: "";*/
+                        /*position: absolute;*/
+                        /*left: 0;*/
+                        /*bottom: 0;*/
+                        /*width: 90%;*/
+                        /*height: 18px;*/
+                        /*background-color: var(--yellow);*/
+                        /*border-bottom-right-radius: 6px;*/
+                        /*border-bottom-left-radius: 6px;*/
+                    }
+
+            .feature__content {
+                margin-top: 32px;
+                width: auto;
+            }
+                .feature__prefix {
+                    /*position: relative;*/
+                    /*padding-left: 55px;*/
+                    /*font-size: 12px;*/
+                    /*line-height: 17px;*/
+                    /*text-transform: uppercase;*/
+                    /*letter-spacing: 2.2px;*/
+                }
+                    .feature__prefix::before {
+                        /*content: "";*/
+                        /*position: absolute;*/
+                        /*left: 0;*/
+                        /*top: 7px;*/
+                        /*width: 31px;*/
+                        /*height: 3px;*/
+                        /*background-color: var(--red);*/
+                        /*border-radius: 2px;*/
+                    }
+
+                .feature__heading {
+                    /*margin-top: 24px;*/
+                    /*margin-bottom: 0;*/
+                    /*font-size: 32px;*/
+                    /*line-height: 38px;*/
+                }
+
+                .feature__description {
+                    /*margin-top: 21px;*/
+                    /*font-size: 17px;*/
+                    /*line-height: 27px;*/
+                }
+
+                .feature__menu {
+                    /*margin-top: 32px;*/
+                }
+                    .feature__action {
+                        /*margin-top: 16px;*/
+                    }
+
+                    .feature__action:first-child {
+                        /*margin-top: 0;*/
+                    }
+                        .feature__action.button,
+                        .feature__action .button {
+                            /*font-size: 17px;*/
+                        }
+
+    .feature--top {
+
+    }
+
+        .feature__wrap,
+        .feature--top .feature__wrap {
+            /*flex-direction: row-reverse;*/
+        }
+
+            .feature__pic,
+            .feature--top .feature__pic {
+                padding: 17px 17px 0 0;
+            }
+                .feature__pic::before,
+                .feature--top .feature__pic::before {
+                    bottom: auto;
+                    left: auto;
+                    right: 0;
+                    top: 0;
+                    border-radius: 0 6px 6px 0;
+                    width: 11px;
+                }
+
+                .feature__pic::after,
+                .feature--top .feature__pic::after {
+                    left: auto;
+                    bottom: auto;
+                    top: 0;
+                    right: 0;
+                    border-radius: 6px 6px 0 0;
+                    height: 11px;
+                }
+
+                .feature__image,
+                .feature--top .feature__image {
+                    border-radius: 12px 0 12px 12px;
+                }
+
+}
+
