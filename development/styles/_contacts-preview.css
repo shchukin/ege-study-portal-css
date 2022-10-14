@@ -5,7 +5,8 @@
 }
     .contacts-preview__wrap {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: space-between;
         flex-direction: row-reverse;
     }
         .contacts-preview__callback {
@@ -27,8 +28,24 @@
                 max-width: 492px;
                 margin: 32px auto 0;
             }
-                .contacts-preview__submit {
+                .contacts-preview__field {
+                    margin-top: 12px;
+                }
 
+                .contacts-preview__field:first-child {
+                    margin-top: 0;
+                }
+
+                .contacts-preview__interest {
+                    margin-top: 16px;
+                }
+
+                .contacts-preview__agreement {
+                    margin-top: 26px;
+                }
+
+                .contacts-preview__submit {
+                    margin-top: 16px;
                 }
                     .contacts-preview__submit.button,
                     .contacts-preview__submit .button {
@@ -49,6 +66,33 @@
                     font-size: 17px;
                     line-height: 27px;
                 }
+
+                .contacts-preview__interest {
+                    display: flex;
+                    align-items: flex-start;
+                }
+                    .contacts-preview__interest-label {
+                        margin-right: 24px;
+                        font-size: 17px;
+                        line-height: 27px;
+                    }
+
+                    .contacts-preview__interest-courses {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                        .contacts-preview__interest-courses .choice {
+                            min-height: 27px;
+                        }
+                            .contacts-preview__interest-courses .choice__icon {
+                                top: 5px;
+                            }
+
+                            .contacts-preview__interest-courses .choice__label {
+                                padding-top: 0;
+                                padding-bottom: 0;
+                            }
 
                 .contacts-preview__number {
                     margin-top: 4px;

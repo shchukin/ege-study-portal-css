@@ -298,14 +298,42 @@
                         мы вам перезвоним!
                     </h2>
                     <form class="contacts-preview__form">
-
-                        <label class="choice choice--checkbox">
+                        <div class="contacts-preview__field input">
+                            <input class="input__widget" type="text" placeholder="Фамилия и имя *">
+                        </div>
+                        <div class="contacts-preview__field input">
+                            <input class="input__widget" type="text" placeholder="Телефон">
+                        </div>
+                        <div class="contacts-preview__interest">
+                            <div class="contacts-preview__interest-label">
+                                Меня интересуют:
+                            </div>
+                            <div class="contacts-preview__interest-courses">
+                                <label class="choice choice--checkbox">
+                                    <input class="choice__widget" type="checkbox">
+                                    <i class="choice__icon" role="presentation"></i>
+                                    <span class="choice__label">Очные курсы</span>
+                                </label>
+                                <label class="choice choice--checkbox">
+                                    <input class="choice__widget" type="checkbox">
+                                    <i class="choice__icon" role="presentation"></i>
+                                    <span class="choice__label">Онлайн-курсы</span>
+                                </label>
+                                <label class="choice choice--checkbox">
+                                    <input class="choice__widget" type="checkbox">
+                                    <i class="choice__icon" role="presentation"></i>
+                                    <span class="choice__label">Другое</span>
+                                </label>
+                            </div>
+                        </div>
+                        <label class="contacts-preview__agreement choice choice--checkbox">
                             <input class="choice__widget" type="checkbox">
                             <i class="choice__icon" role="presentation"></i>
                             <span class="choice__label">Даю согласие на обработку персональных данных</span>
                         </label>
-
-                        <button class="contacts-preview__submit button" type="submit">Отправить заявку</button>
+                        <button class="contacts-preview__submit button" type="submit">
+                            Отправить заявку
+                        </button>
                     </form>
                 </div>
                 <div class="contacts-preview__to-call">
@@ -342,6 +370,7 @@
         <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
         <script src="../vendors/outline/outline.js"></script>
         <script src="../scripts/temp.js"></script>
+        <script src="../scripts/_input.js"></script>
 
     </body>
 </html>

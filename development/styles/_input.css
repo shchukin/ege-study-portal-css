@@ -1,0 +1,137 @@
+.input {
+    position: relative;
+    text-align: left;
+}
+    .input__widget {
+        width: 100%;
+        height: 56px;
+        min-height: 56px; /* when textarea is being resized */
+        padding: 14px 15px;
+        background-color: #FFFFFF;
+        border: 1px solid var(--low-emphasis);
+        box-shadow: none;
+        outline: none;
+        background-clip: padding-box; /* reset iOS default shadow */
+        border-radius: 8px; /* reset iOS default border-radius */
+        font-family: inherit;
+        font-size: 17px;
+        line-height: 26px;
+        text-align: left;
+        color: #000000;
+    }
+
+    .input__widget:hover {
+
+    }
+
+    .input__widget:focus,
+    .input--focus .input__widget,
+    .input--expanded .input__widget { /* даже если фокус где-то в выпадайке календаря, например */
+        border-color: var(--high-emphasis);
+    }
+
+    /* stylelint-disable block-opening-brace-space-before */
+    .input__widget::-webkit-input-placeholder { font-style: normal; color: #87878A; }
+    .input__widget::-moz-placeholder          { font-style: normal; color: #87878A; opacity: 1; }
+    .input__widget:-ms-input-placeholder      { font-style: normal; color: #87878A; }
+    /* stylelint-enable */
+
+
+.input--area {
+
+}
+    .input--area .input__widget {
+        vertical-align: top;
+        height: auto; /* user rows="" attribute */
+        resize: vertical;
+    }
+
+
+/* для .input--select */
+.input--placeholder-is-chosen .input__widget {
+    color: var(--medium-emphasis);
+}
+    .input--placeholder-is-chosen option {
+        color: #000000 !important; /* FF тупит и наследует серый цвет */
+    }
+
+
+.input--select {
+
+}
+    .input--select .input__widget {
+        padding-right: 56px !important;
+        background-image: url("../vectors/input-select.svg");
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: right 15px center;
+        opacity: 1; /* because select:disabled { opacity: 0.7; } in user agent stylesheet */
+        cursor: pointer;
+    }
+
+    .input--select .input__icon {
+        display: none; /* по дефолту скрываем, оставляем браузерную */
+    }
+
+
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) or (appearance: none) {
+
+    .input--select {
+
+    }
+
+    .input--select .input__widget {
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+    }
+}
+
+
+
+.input--disabled {
+
+}
+    .input--disabled .input__widget,
+    .input--disabled .input__widget:hover,
+    .input--disabled .input__widget:active {
+        background-color: var(--low-emphasis);
+        border-color: var(--medium-emphasis);
+        -webkit-text-fill-color: var(--medium-emphasis); /* safari зачем-то засветляет текст */
+        opacity: 1; /* ios safari зачем-то засветляет текст */
+        color: var(--medium-emphasis);
+        box-shadow: none;
+        cursor: default;
+    }
+
+    @supports (-webkit-appearance: none) or (-moz-appearance: none) or (appearance: none) {
+        .input--disabled.input--select .input__widget {
+            background-image: url("../vectors/input-select-disabled.svg");
+        }
+    }
+
+
+.input--error {
+
+}
+    .input--error .input__label {
+        color: var(--red) !important;
+    }
+
+    .input--error .input__widget {
+        border-color: var(--red);
+        color: var(--red);
+    }
+
+    .input--error .input__icon,
+    .input--error .input__describe-action {
+        fill: var(--red);
+    }
+
+
+    @supports (-webkit-appearance: none) or (-moz-appearance: none) or (appearance: none) {
+        .input--disabled.input--error .input__widget {
+            background-image: url("../vectors/input-select-error.svg");
+        }
+    }
