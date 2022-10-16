@@ -99,13 +99,21 @@
             text-indent: 500%;
             white-space: nowrap;
             overflow: hidden;
-            cursor: pointer;
         }
+            /* hover */
+            .slideshow--stats .slideshow__dot::before {
+                content: "";
+                position: absolute;
+                left: 1px;
+                top: 1px;
+                right: 1px;
+                bottom: 1px;
+                background-color: #FFFFFF;
+                border-radius: 50%;
+                opacity: 0;
+            }
 
-        .slideshow--stats .slideshow__dot:hover {
-            background-color: rgba(255, 255, 255, 0.7);
-        }
-
+            /* dot */
             .slideshow--stats .slideshow__dot::after {
                 content: "";
                 position: absolute;
@@ -124,4 +132,107 @@
             .slideshow--stats .slideshow__dot--current::after {
                 opacity: 1;
             }
+
+        .slideshow--stats .slideshow__dot:hover {
+
+        }
+            .slideshow--stats .slideshow__dot:hover::before {
+                opacity: 0.6;
+            }
+
+            .slideshow--stats .slideshow__dot:hover::after {
+                opacity: 1;
+            }
+
+
+
+@media (max-width: 639px) {
+
+    .slideshow--stats {
+        /*padding-top: 101px;*/
+        /*padding-bottom: 127px;*/
+        /*background-color: var(--red-light);*/
+        /*border-radius: 12px;*/
+    }
+        .slideshow--stats .slideshow__content {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+            .slideshow--stats .slideshow__item {
+                /*font-weight: var(--extra-bold);*/
+                /*font-size: 26px;*/
+                /*line-height: 34px;*/
+                /*text-align: center;*/
+            }
+
+            .slideshow--stats .slideshow__item--current {
+
+            }
+
+        .slideshow--stats .slideshow__navigation {
+            /*position: absolute;*/
+            /*left: 0;*/
+            /*right: 0;*/
+            /*bottom: 70px;*/
+            /*display: flex;*/
+            /*align-items: center;*/
+            /*justify-content: center;*/
+        }
+            .slideshow--stats .slideshow__dot {
+                /*position: relative;*/
+                /*width: 27px;*/
+                /*height: 27px;*/
+                /*padding: 10px;*/
+                /*border: none;*/
+                /*background-color: transparent;*/
+                /*border-radius: 50%;*/
+                /*text-indent: 500%;*/
+                /*white-space: nowrap;*/
+                /*overflow: hidden;*/
+                /*cursor: pointer;*/
+            }
+                /* hover */
+                .slideshow--stats .slideshow__dot::before {
+                    /*content: "";*/
+                    /*position: absolute;*/
+                    /*left: 1px;*/
+                    /*top: 1px;*/
+                    /*right: 1px;*/
+                    /*bottom: 1px;*/
+                    /*background-color: #FFFFFF;*/
+                    /*border-radius: 50%;*/
+                    /*opacity: 0;*/
+                }
+
+                /* dot */
+                .slideshow--stats .slideshow__dot::after {
+                    /*content: "";*/
+                    /*position: absolute;*/
+                    /*left: 10px;*/
+                    /*top: 10px;*/
+                    /*width: 7px;*/
+                    /*height: 7px;*/
+                    /*background-color: var(--red);*/
+                    /*border-radius: 50%;*/
+                    /*opacity: 0.4;*/
+                }
+
+            .slideshow--stats .slideshow__dot--current {
+
+            }
+                .slideshow--stats .slideshow__dot--current::after {
+                    /*opacity: 1;*/
+                }
+
+            .slideshow--stats .slideshow__dot:hover {
+
+            }
+                .slideshow--stats .slideshow__dot:hover::before {
+                    /*opacity: 0.6;*/
+                }
+
+                .slideshow--stats .slideshow__dot:hover::after {
+                    /*opacity: 1;*/
+                }
+}
 
