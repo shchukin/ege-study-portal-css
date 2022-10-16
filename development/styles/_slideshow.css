@@ -1,5 +1,5 @@
 .slideshow {
-
+    position: relative;
 }
     .slideshow__content {
         position: relative;

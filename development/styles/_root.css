@@ -23,5 +23,7 @@
     --footnote-font: 12px;
     --footnote-line: 17px;
     --footnote-spacing: 2.1px;
+    --panel-hover: #F2F2F2;
+    --panel-active: #EAEAEA;
 }
 /* stylelint-enable declaration-colon-space-after */

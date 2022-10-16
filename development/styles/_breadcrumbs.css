@@ -1,0 +1,15 @@
+.breadcrumbs {
+    padding-top: 34px;
+    padding-bottom: 34px;
+    display: flex;
+    align-items: flex-start;
+}
+    .breadcrumbs__item {
+        position: relative;
+        margin-right: 8px;
+    }
+        .breadcrumbs__item::after {
+            content: "/";
+            margin-left: 4px;
+            color: var(--low-emphasis-black);
+        }
