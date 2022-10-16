@@ -1,0 +1,88 @@
+.teacher-card {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+    .teacher-card__data {
+        width: 59.1397%;
+        flex-shrink: 0;
+    }
+        .teacher-card__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 42px;
+            line-height: 46px;
+        }
+
+        .teacher-card__description {
+            margin-top: 24px;
+        }
+
+    .teacher-card__summary {
+        width: 28.4946%;
+        flex-shrink: 0;
+        margin-top: -5px;
+    }
+        .teacher-card__preview {
+            margin-left: -5px;
+        }
+
+        .teacher-card__name {
+            margin-top: 28px;
+            font-weight: var(--extra-bold);
+            font-size: 20px;
+            line-height: 32px;
+        }
+
+        .teacher-card__more {
+
+        }
+
+
+@media (max-width: 639px) {
+
+    .teacher-card {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: block;
+        /*align-items: flex-start;*/
+        /*justify-content: space-between;*/
+    }
+        .teacher-card__data {
+            width: auto;
+            /*flex-shrink: 0;*/
+        }
+            .teacher-card__heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                font-size: 32px;
+                line-height: 38px;
+            }
+
+            .teacher-card__description {
+                /*margin-top: 24px;*/
+                display: none;
+            }
+
+        .teacher-card__summary {
+            width: auto;
+            margin-top: 19px;
+            /*flex-shrink: 0;*/
+        }
+            .teacher-card__preview {
+                /*margin-left: -5px;*/
+            }
+
+            .teacher-card__name {
+                /*margin-top: 28px;*/
+                /*font-weight: var(--extra-bold);*/
+                /*font-size: 20px;*/
+                /*line-height: 32px;*/
+            }
+
+            .teacher-card__more {
+
+            }
+}

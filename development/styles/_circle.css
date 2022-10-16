@@ -10,3 +10,8 @@
         border-radius: 50%;
         background-color: var(--image-fallback);
     }
+
+
+.circle--larger {
+    padding: 5px;
+}
