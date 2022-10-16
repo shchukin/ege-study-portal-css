@@ -52,6 +52,17 @@
 }
 
 
+.link--text,
+.wysiwyg .link--text {
+    color: inherit;
+}
+
+.link--text:hover,
+.wysiwyg .link--text:hover {
+
+}
+
+
 .link--inherit,
 .wysiwyg .link--inherit {
     color: inherit;

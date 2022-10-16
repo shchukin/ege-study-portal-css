@@ -1,0 +1,21 @@
+.media {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+    .media__item {
+        padding: 8px;
+        border-radius: 50%;
+        line-height: 10px;
+    }
+
+    .media__item:hover {
+        background-color: var(--low-emphasis-white)
+    }
+        .media__icon {
+            vertical-align: top;
+            width: 24px;
+            height: 24px;
+            fill: #FFFFFF;
+        }
+

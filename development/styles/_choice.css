@@ -22,7 +22,7 @@
         top: 10px;
         width: 18px;
         height: 18px;
-        border: 1px solid var(--low-emphasis);
+        border: 1px solid var(--low-emphasis-black);
         background-color: #FFFFFF;
         background-size: 16px 16px;
         background-repeat: no-repeat;
@@ -44,7 +44,7 @@
     }
 
     .choice:hover .choice__icon {
-        background-color: var(--low-emphasis);
+        background-color: var(--low-emphasis-black);
         border-color: transparent;
     }
 
@@ -125,14 +125,14 @@
 
     .choice--disabled .choice__icon,
     .choice--disabled:hover .choice__icon {
-        background-color: var(--low-emphasis);
+        background-color: var(--low-emphasis-black);
         border-color: transparent;
         cursor: default;
     }
 
     .choice--disabled .choice__widget:checked ~ .choice__icon,
     .choice--disabled:hover .choice__widget:checked ~ .choice__icon {
-        background-color: var(--low-emphasis);
+        background-color: var(--low-emphasis-black);
         border-color: transparent;
         cursor: default;
     }
