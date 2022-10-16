@@ -18,7 +18,15 @@
                 Вам необходимо <a href="http://browsehappy.com/?locale=ru_RU">обновить ваш браузер</a>.
             </div>
         <![endif]-->
+        <div class="menu">
 
+        </div>
+        <header class="header">
+
+        </header>
+        <div class="banner">
+
+        </div>
         <div class="breadcrumbs container">
             <div class="breadcrumbs__item">
                 <a class="link" href="#">Главная</a>
@@ -31,6 +39,10 @@
             <div class="courses__found">
                 Найдено 8 курсов
             </div>
+            <button class="courses__handler button button--border">
+                <img class="button__icon button__icon--left" src="../symbols/filters.svg" width="24" height="24" alt="">
+                Фильтровать
+            </button>
             <div class="courses__body">
                 <div class="courses__list">
                     <article class="courses__item course-card">
@@ -236,6 +248,14 @@
                 </div>
                 <section class="courses__filters">
                     <h2 class="visuallyhidden">Фильтры</h2>
+                    <div class="courses__operations">
+                        <button class="courses__action" type="button">
+                            Сбросить
+                        </button>
+                        <button class="courses__action courses__action--close" type="button">
+                            Закрыть
+                        </button>
+                    </div>
                     <div class="courses__option">
                         <h3 class="courses__sub-heading">
                             Предмет
@@ -408,6 +428,9 @@
                     </div>
                     <div class="courses__more">
                         <a class="link" href="#">Показать больше</a>
+                    </div>
+                    <div class="courses__submit">
+                        <button class="courses__apply-filter button button--larger" type="button">Показать курсы (25)</button>
                     </div>
                 </section>
             </div>
@@ -672,6 +695,7 @@
         <script src="../scripts/_footer.js"></script>
         <script src="../scripts/_input.js"></script>
         <script src="../scripts/_slideshow.js"></script>
+        <script src="../scripts/_courses.js"></script>
 
     </body>
 </html>

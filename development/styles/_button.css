@@ -1,6 +1,8 @@
 .button {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     vertical-align: top;
+    justify-content: center;
     border: none;
     padding: 18px 32px 20px;
     background-color: var(--red);
@@ -20,6 +22,15 @@
     background-color: var(--primary-black);
     color: #EEEEEE;
 }
+    .button__icon {
+        vertical-align: top;
+        fill: currentColor;
+    }
+
+    .button__icon--left {
+        vertical-align: top;
+        margin-right: 4px;
+    }
 
 
 .button--border {
@@ -51,4 +62,5 @@
 .button--larger {
     padding: 25px 50px 27px;
 }
+
 
