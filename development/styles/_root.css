@@ -19,5 +19,9 @@
     --medium-emphasis: #BFBFBF;
     --low-emphasis-black: rgba(15, 16, 21, 0.16);
     --low-emphasis-white: rgba(255, 250, 245, 0.32);
+    --transition-slide: 0.5s ease;
+    --footnote-font: 12px;
+    --footnote-line: 17px;
+    --footnote-spacing: 2.1px;
 }
 /* stylelint-enable declaration-colon-space-after */
