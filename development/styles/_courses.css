@@ -81,3 +81,93 @@
     .courses__footer {
         margin-top: 32px;
     }
+
+
+
+@media (max-width: 639px) {
+
+    .courses {
+        /*padding-bottom: 80px;*/
+    }
+        .courses__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            /*margin-left: -1px;*/
+            /*font-weight: var(--extra-bold);*/
+            /*font-size: 32px;*/
+            /*line-height: 38px;*/
+        }
+            .courses__applied-filter {
+                /*font-weight: var(--medium);*/
+            }
+
+        .courses__found {
+            /*margin-top: 8px;*/
+            /*font-size: 17px;*/
+            /*line-height: 27px;*/
+        }
+
+        .courses__body {
+            /*margin-top: 32px;*/
+            display: block;
+            /*grid-template-columns: 1fr 304px;*/
+            /*gap: 32px;*/
+        }
+            .courses__list {
+                /*border-radius: 8px;*/
+            }
+                .courses__item {
+                    /*margin-top: 12px;*/
+                    /*background-color: var(--neutral);*/
+                    /*border-radius: 8px;*/
+                }
+
+                .courses__item:first-child {
+                    /*margin-top: 0;*/
+                }
+
+            .courses__filters {
+                display: none;
+                /*padding: 32px 24px;*/
+                /*background-color: var(--neutral);*/
+                /*border-radius: 8px;*/
+            }
+                .courses__option {
+                    /*margin-top: 32px;*/
+                    /*display: flex;*/
+                    /*flex-direction: column;*/
+                    /*align-items: flex-start;*/
+                }
+
+                .courses__option:first-child {
+                    /*margin-top: 0;*/
+                }
+                    .courses__sub-heading {
+                        /*margin-top: 0;*/
+                        /*margin-bottom: 0;*/
+                        /*padding-bottom: 12px;*/
+                        /*font-weight: var(--extra-bold);*/
+                        /*font-size: 17px;*/
+                        /*line-height: 27px;*/
+                    }
+
+                    .courses__checkbox {
+
+                    }
+                        .courses__checkbox.choice,
+                        .courses__checkbox .choice {
+                            /*border-top-width: 1px;*/
+                            /*border-bottom-width: 1px;*/
+                        }
+
+
+                .courses__more {
+                    /*margin-top: 14px;*/
+                    /*font-size: 17px;*/
+                    /*line-height: 27px;*/
+                }
+
+        .courses__footer {
+            /*margin-top: 32px;*/
+        }
+}

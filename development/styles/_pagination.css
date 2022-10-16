@@ -1,4 +1,5 @@
 .pagination {
+    position: relative;
     padding-top: 24px;
     padding-bottom: 32px;
     display: flex;
@@ -31,6 +32,7 @@
     .pagination__link--disabled:hover {
         background-color: transparent;
         color: var(--low-emphasis-black);
+        cursor: default;
     }
 
 
@@ -43,3 +45,69 @@
     .pagination__separator {
 
     }
+
+    .pagination__link--next {
+
+    }
+
+
+@media (max-width: 639px) {
+
+    .pagination {
+        /*position: relative;*/
+        /*padding-top: 24px;*/
+        padding-bottom: 79px;
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*justify-content: center;*/
+        /*gap: 16px;*/
+    }
+        .pagination__link {
+            /*display: inline-flex;*/
+            /*align-items: center;*/
+            /*justify-content: center;*/
+            /*vertical-align: top;*/
+            /*min-width: 48px;*/
+            /*height: 48px;*/
+            /*padding: 12px 18px;*/
+            /*border-radius: 24px;*/
+            /*font-size: 17px;*/
+            /*line-height: 24px;*/
+            /*color: var(--high-emphasis);*/
+            /*white-space: nowrap;*/
+            /*text-decoration: none;*/
+        }
+
+        .pagination__link:hover {
+            /*background-color: var(--panel-hover);*/
+        }
+
+
+        .pagination__link--disabled,
+        .pagination__link--disabled:hover {
+            /*background-color: transparent;*/
+            /*color: var(--low-emphasis-black);*/
+        }
+
+
+        .pagination__link--current,
+        .pagination__link--current:hover {
+            /*background-color: var(--red);*/
+            /*color: #FFFFFF;*/
+        }
+
+        .pagination__separator {
+
+        }
+
+        .pagination__link--next {
+
+        }
+
+        .pagination__link--next {
+            position: absolute;
+            left: 50%;
+            top: 102px;
+            transform: translateX(-50%);
+        }
+}

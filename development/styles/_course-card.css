@@ -64,3 +64,85 @@
                 width: 100%;
                 font-size: 17px;
             }
+
+
+
+@media (max-width: 639px) {
+
+    .course-card {
+        display: block;
+        /*align-items: flex-start;*/
+        /*grid-template-columns: 100px 615fr 260fr;*/
+        /*gap: 32px;*/
+        padding: 32px 24px;
+    }
+        .course-card__preview {
+            /*margin: -3px;*/
+        }
+            .course-card__preview .circle__photo {
+                width: 80px;
+                height: 80px;
+            }
+
+        .course-card__body {
+            margin-top: 32px;
+            padding-right: 0;
+        }
+            .course-card__summary {
+                /*display: flex;*/
+                /*align-items: baseline;*/
+                /*gap: 8px;*/
+                /*font-size: 15px;*/
+                /*line-height: 23px;*/
+            }
+                .course-card__tag {
+
+                }
+
+            .course-card__heading {
+                /*margin-top: 16px;*/
+                /*margin-bottom: 0;*/
+                /*font-weight: var(--extra-bold);*/
+                /*font-size: 26px;*/
+                /*line-height: 34px;*/
+            }
+
+            .course-card__description {
+                /*margin-top: 8px;*/
+            }
+                .course-card__description.wysiwyg,
+                .course-card__description .wysiwyg {
+                    line-height: 24px;
+                }
+
+            .course-card__more {
+                /*margin-top: 8px;*/
+                /*font-size: 17px;*/
+                /*line-height: 27px;*/
+            }
+
+        .course-card__side {
+            margin-top: 32px;
+        }
+            .course-card__price {
+                /*font-weight: var(--extra-bold);*/
+                font-size: 20px;
+                line-height: 32px;
+                letter-spacing: 1px;
+            }
+
+            .course-card__note {
+                /*margin-top: 1px;*/
+                /*font-size: 17px;*/
+                /*line-height: 27px;*/
+            }
+
+            .course-card__join {
+                /*margin-top: 24px;*/
+            }
+                .course-card__join.button,
+                .course-card__join .button {
+                    /*width: 100%;*/
+                    /*font-size: 17px;*/
+                }
+}
