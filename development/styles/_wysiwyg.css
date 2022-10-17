@@ -3,6 +3,10 @@
     line-height: 27px;
 }
 
+.wysiwyg--smaller-on-smartphone {
+    line-height: 24px;
+}
+
 /* stylelint-disable function-parentheses-space-inside */
 .wysiwyg p,
 .wysiwyg ul,
