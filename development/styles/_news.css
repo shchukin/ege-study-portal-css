@@ -1,0 +1,16 @@
+.news {
+
+}
+    .news__heading {
+
+    }
+
+    .news__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+    }
+
+    .news__details {
+
+    }

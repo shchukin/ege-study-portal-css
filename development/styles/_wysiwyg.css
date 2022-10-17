@@ -3,8 +3,17 @@
     line-height: 27px;
 }
 
-.wysiwyg--smaller-on-smartphone {
-    line-height: 24px;
+
+@media (max-width: 639px) {
+
+    .wysiwyg--smaller-on-smartphone {
+        line-height: 24px;
+    }
+
+    .wysiwyg--larger-on-smartphone {
+        font-size: 20px;
+        line-height: 32px;
+    }
 }
 
 /* stylelint-disable function-parentheses-space-inside */

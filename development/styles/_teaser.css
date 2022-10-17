@@ -1,0 +1,18 @@
+.teaser {
+
+}
+    .teaser__preview {
+
+    }
+        .teaser__image {
+            vertical-align: top;
+            background-color: var(--image-fallback);
+        }
+
+    .teaser__heading {
+
+    }
+
+    .teaser__text {
+
+    }
