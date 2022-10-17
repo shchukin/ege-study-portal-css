@@ -55,5 +55,80 @@
 
     }
         .single-course__detachable-area {
+            position: sticky;
+            top: 91px;
+        }
+
+
+
+@media (max-width: 639px) {
+
+    .single-course {
+        display: block;
+        /*grid-template-columns: 1fr 424px;*/
+        /*gap: 32px;*/
+    }
+        .single-course__body {
 
         }
+            .single-course__summary {
+                /*padding-bottom: 60px;*/
+                /*border-bottom: 1px solid var(--neutral);*/
+            }
+                .single-course__pre-heading {
+                    /*font-size: 14px;*/
+                    /*line-height: 23px;*/
+                }
+
+                .single-course__heading {
+                    /*margin-top: 6px;*/
+                    /*margin-bottom: 0;*/
+                    /*font-weight: var(--extra-bold);*/
+                    font-size: 32px;
+                    line-height: 38px;
+                }
+
+                .single-course__tag {
+                    /*margin-top: 32px;*/
+                }
+
+                .single-course__info {
+                    /*margin-top: 14px;*/
+                }
+
+                .single-course__nav {
+                    /*margin-top: 60px;*/
+                }
+
+            .single-course__section {
+                padding-top: 32px;
+                padding-bottom: 32px;
+                /*border-bottom: 1px solid var(--neutral);*/
+            }
+                .single-course__sub-heading {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                    /*font-size: 32px;*/
+                    /*line-height: 38px;*/
+                }
+
+                .single-course__widget {
+                    margin-top: 24px;
+                }
+
+        .single-course__sidebar {
+            height: 210px; /* высота .single-course__detachable-area */
+        }
+            .single-course__detachable-area {
+                position: static;
+            }
+
+            .single-course__detachable-area--sticked {
+                position: fixed;
+                z-index: 100;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: auto;
+            }
+}

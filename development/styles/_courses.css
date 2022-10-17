@@ -286,11 +286,11 @@
             display: none;
         }
 
-        .courses-expanded .menu {
+        .courses-expanded .header__menu {
             display: none;
         }
 
-        .courses-expanded .header {
+        .courses-expanded .header__bar {
             display: none;
         }
 

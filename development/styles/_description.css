@@ -16,3 +16,27 @@
     .description__expand {
         margin-top: 28px;
     }
+
+
+@media (max-width: 639px) {
+
+    .description {
+
+    }
+        .description__featured-image {
+            /*vertical-align: top;*/
+            /*max-width: 728px;*/
+            /*height: auto;*/
+            /*background-color: var(--image-fallback);*/
+            /*border-radius: 4px;*/
+            width: 100%;
+        }
+
+        .description__body {
+            /*margin-top: 32px;*/
+        }
+
+        .description__expand {
+            /*margin-top: 28px;*/
+        }
+}

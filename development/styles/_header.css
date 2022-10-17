@@ -1,3 +1,17 @@
 .header {
-    height: 80px;
+
 }
+    .header__menu {
+        height: 60px;
+        background-color: var(--primary-black);
+    }
+
+    .header__bar {
+        height: 80px;
+    }
+
+    .header__info {
+        height: 80px;
+        background-color: var(--red-light);
+    }
+

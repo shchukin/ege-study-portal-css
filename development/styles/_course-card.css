@@ -17,6 +17,7 @@
         .course-card__summary {
             display: flex;
             align-items: baseline;
+            flex-wrap: wrap;
             gap: 8px;
             font-size: 15px;
             line-height: 23px;

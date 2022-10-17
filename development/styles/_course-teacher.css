@@ -29,3 +29,41 @@
     .course-teacher__description {
         margin-top: 30px;
     }
+
+
+
+@media (max-width: 639px) {
+
+    .course-teacher {
+        padding-top: 12px;
+    }
+        .course-teacher__head {
+            /*display: grid;*/
+            /*align-items: flex-start;*/
+            /*gap: 32px;*/
+            /*grid-auto-flow: column;*/
+            /*grid-template-columns: auto 1fr;*/
+        }
+            .course-teacher__preview {
+
+            }
+
+            .course-teacher__info {
+                /*margin-top: 4px;*/
+            }
+                .course-teacher__name {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                    font-weight: var(--medium);
+                    font-size: 17px;
+                    line-height: 27px;
+                }
+
+                .course-teacher__rating {
+                    /*margin-top: 10px;*/
+                }
+
+        .course-teacher__description {
+            margin-top: 18px;
+        }
+}

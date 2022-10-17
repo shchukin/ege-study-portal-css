@@ -47,3 +47,62 @@
         border-top: 1px solid var(--border-neutral);
         padding-top: 32px;
     }
+
+
+
+@media (max-width: 639px) {
+
+    .join {
+        padding: 24px;
+        /*background-color: var(--neutral);*/
+        border-radius: 0;
+    }
+        .join__price {
+            /*font-weight: var(--extra-bold);*/
+            font-size: 17px;
+            line-height: 24px;
+            /*color: var(--red);*/
+        }
+
+        .join__discount {
+            /*font-weight: var(--extra-bold);*/
+            /*color: var(--red);*/
+        }
+            .join__old-price {
+                /*margin-left: 5px;*/
+                /*text-decoration: line-through;*/
+                /*color: var(--high-emphasis);*/
+            }
+
+        .join__submit {
+            margin-top: 14px;
+        }
+            .join__submit.button,
+            .join__submit .button {
+                /*width: 100%;*/
+            }
+
+        .join__timing {
+            /*margin-top: 8px;*/
+            /*font-weight: var(--extra-bold);*/
+            /*color: var(--red);*/
+        }
+
+        .join__tag {
+            display: none;
+            /*margin-top: 32px;*/
+        }
+
+        .join__info {
+            display: none;
+            /*margin-top: 16px;*/
+        }
+
+        .join__teacher,
+        .join__teacher.teacher-bar {
+            display: none;
+            /*margin-top: 32px;*/
+            /*border-top: 1px solid var(--border-neutral);*/
+            /*padding-top: 32px;*/
+        }
+}
