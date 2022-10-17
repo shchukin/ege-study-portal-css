@@ -1,0 +1,33 @@
+.program {
+
+}
+    .program__intro {
+
+    }
+
+    .program__data {
+        margin-top: 32px;
+    }
+        .program__entry {
+            margin-top: 2px;
+            padding: 11px 32px;
+            background-color: var(--neutral);
+            border-radius: 8px;
+            min-height: 76px;
+            display: flex;
+            align-items: center;
+        }
+
+        .program__entry:first-child {
+            margin-top: 0;
+        }
+            .program__index {
+                width: 120px;
+                flex-shrink: 0;
+                font-weight: var(--extra-bold);
+                white-space: nowrap;
+            }
+
+            .program__title {
+
+            }

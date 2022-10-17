@@ -1,0 +1,9 @@
+.rating {
+    display: flex;
+    gap: 10px;
+}
+    .rating__star {
+        vertical-align: top;
+        width: 32px;
+        height: 32px;
+    }

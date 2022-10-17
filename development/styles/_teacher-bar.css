@@ -1,0 +1,25 @@
+.teacher-bar {
+    display: flex;
+    align-items: flex-start;
+}
+    .teacher-bar__preview {
+        flex-shrink: 0;
+        margin-left: -3px;
+        margin-right: 21px;
+        margin-top: 7px;
+    }
+
+    .teacher-bar__info {
+
+    }
+        .teacher-bar__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: var(--extra-bold);
+            font-size: var(--body-17-font);
+            line-height: var(--body-17-line);
+        }
+
+        .teacher-bar__name {
+
+        }
