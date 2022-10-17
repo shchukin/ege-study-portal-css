@@ -1,0 +1,60 @@
+.history {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+    .history__section {
+        margin-top: 32px;
+        display: flex;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    .history__section:first-child {
+        margin-top: 0;
+    }
+        .history__year {
+            width: 272px;
+            margin-top: 0;
+            margin-bottom: 0;
+            flex-shrink: 0;
+            font-size: 26px;
+            line-height: 34px;
+        }
+
+        .history__text {
+            max-width: 878px;
+            margin-top: 2px;
+        }
+
+
+@media (max-width: 639px) {
+
+    .history {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+        .history__section {
+            /*margin-top: 32px;*/
+            display: block;
+            /*align-items: flex-start;*/
+            /*gap: 32px;*/
+        }
+
+        .history__section:first-child {
+            /*margin-top: 0;*/
+        }
+            .history__year {
+                width: auto;
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                /*flex-shrink: 0;*/
+                /*font-size: 26px;*/
+                /*line-height: 34px;*/
+            }
+
+            .history__text {
+                margin-top: 32px;
+                /*max-width: 878px;*/
+                /*margin-top: 2px;*/
+            }
+}
