@@ -4,6 +4,8 @@
     grid-template-columns: 100px 615fr 260fr;
     gap: 32px;
     padding: 48px 40px;
+    background-color: var(--neutral);
+    border-radius: 8px;
 }
     .course-card__preview {
         margin: -3px;

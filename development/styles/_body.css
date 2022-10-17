@@ -6,6 +6,8 @@ body {
     -webkit-font-smoothing: antialiased;
     font-family: var(--body-font);
     font-weight: var(--medium);
+    font-size: var(--body-17-font);
+    line-height: var(--body-17-line);
     color: var(--high-emphasis);
 }
 

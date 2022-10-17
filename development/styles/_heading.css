@@ -1,0 +1,8 @@
+.heading {
+    font-weight: var(--extra-bold);
+}
+
+.heading--h3 {
+    font-size: 32px;
+    line-height: 38px;
+}

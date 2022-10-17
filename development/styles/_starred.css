@@ -1,0 +1,17 @@
+.starred {
+
+}
+    .starred__item {
+        position: relative;
+        padding-left: 32px;
+        font-size: 17px;
+        line-height: 27px;
+        color: #1E232D;
+    }
+        .starred__icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            vertical-align: top;
+            fill: currentColor;
+        }

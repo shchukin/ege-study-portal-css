@@ -1,0 +1,24 @@
+.related-courses {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+    .related-courses__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .related-courses__list {
+        margin-top: 32px;
+    }
+        .related-courses__item {
+            margin-top: 12px;
+        }
+
+        .related-courses__item:first-child {
+            margin-top: 0;
+        }
+
+    .related-courses__footer {
+        margin-top: 32px;
+        text-align: center;
+    }
