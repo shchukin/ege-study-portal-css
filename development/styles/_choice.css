@@ -68,8 +68,7 @@
 
     .choice__label {
         position: relative;
-        display: flex;
-        vertical-align: top;
+        display: block;
         padding: 1px 0 2px 30px;
         font-size: 17px;
         line-height: 27px;

@@ -36,6 +36,16 @@
     .input__widget:-ms-input-placeholder      { font-style: normal; color: #87878A; }
     /* stylelint-enable */
 
+    .input__hint {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        margin-top: 8px;
+        font-size: 15px;
+        line-height: 23px;
+        color: #87878A;
+    }
+
 
 .input--area {
 

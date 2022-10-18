@@ -1,0 +1,92 @@
+.charity {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+    .charity__inner {
+        max-width: 880px;
+    }
+        .charity__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: var(--extra-bold);
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+        .charity__description {
+            margin-top: 24px;
+        }
+
+        .charity__form {
+            margin-top: 32px;
+        }
+            .charity__field {
+                margin-top: 12px;
+            }
+
+            .charity__field:first-child {
+                margin-top: 0;
+            }
+
+
+        .charity__agreement {
+            margin-top: 48px;
+        }
+
+        .charity__submit {
+            margin-top: 17px;
+        }
+            .charity__submit.button,
+            .charity__submit .button {
+                width: 100%;
+                max-width: 576px;
+            }
+
+
+
+@media (max-width: 639px) {
+
+    .charity {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+        .charity__inner {
+            /*max-width: 880px;*/
+        }
+            .charity__heading {
+        /*        margin-top: 0;*/
+        /*        margin-bottom: 0;*/
+        /*        font-weight: var(--extra-bold);*/
+                font-size: 26px;
+                line-height: 34px;
+            }
+
+            .charity__description {
+                margin-top: 20px;
+            }
+
+            .charity__form {
+        /*        margin-top: 32px;*/
+            }
+                .charity__field {
+        /*            margin-top: 12px;*/
+                }
+
+                .charity__field:first-child {
+        /*            margin-top: 0;*/
+                }
+
+
+            .charity__agreement {
+                margin-top: 58px;
+            }
+
+            .charity__submit {
+        /*        margin-top: 17px;*/
+            }
+                .charity__submit.button,
+                .charity__submit .button {
+        /*            width: 100%;*/
+        /*            max-width: 576px;*/
+                }
+}

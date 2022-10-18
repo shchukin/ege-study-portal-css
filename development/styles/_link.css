@@ -63,6 +63,18 @@
 }
 
 
+.link--classic-text,
+.wysiwyg .link--classic-text {
+    color: inherit;
+    border-bottom-color: currentColor;
+}
+
+.link--classic-text:hover,
+.wysiwyg .link--classic-text:hover {
+    border-bottom-color: transparent;
+}
+
+
 .link--inherit,
 .wysiwyg .link--inherit {
     color: inherit;

@@ -37,20 +37,17 @@
     .intro {
         padding-top: 40px;
         padding-bottom: 40px;
-        /*background-color: var(--neutral);*/
     }
         .intro__wrap {
 
         }
             .intro__inner {
-                /*max-width: 1184px;*/
+
             }
                 .intro__heading {
-                    /*margin-top: 0;*/
-                    /*margin-bottom: 0;*/
-                    /*font-weight: var(--extra-bold);*/
                     font-size: 36px;
                     line-height: 40px;
+                    word-wrap: break-word;
                 }
 
                 .intro__description {
