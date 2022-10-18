@@ -2,17 +2,28 @@
 
 }
     .teaser__preview {
-
+        display: block;
     }
+
+    .teaser__preview:hover {
+        filter: brightness(1.1) contrast(1.1);
+    }
+
         .teaser__image {
+            width: 100%;
+            height: auto;
             vertical-align: top;
             background-color: var(--image-fallback);
+            border-radius: 12px 12px 12px 0;
         }
 
     .teaser__heading {
-
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-size: 26px;
+        line-height: 34px;
     }
 
     .teaser__text {
-
+        margin-top: 20px;
     }
