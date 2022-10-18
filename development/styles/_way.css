@@ -1,0 +1,94 @@
+.way {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--neutral);
+}
+    .way__wrap {
+
+    }
+        .way__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: var(--extra-bold);
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+        .way__list {
+            margin-top: 32px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .way__step {
+
+        }
+            .way__preview {
+
+            }
+
+            .way__preview:hover {
+                filter: var(--image-hover);
+            }
+                .way__image {
+                    width: 100%;
+                    height: auto;
+                    vertical-align: top;
+                    background-color: var(--image-fallback);
+                }
+
+            .way__description {
+                margin-top: 24px;
+            }
+
+
+
+@media (max-width: 639px) {
+
+    .way {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        /*background-color: var(--neutral);*/
+    }
+        .way__wrap {
+
+        }
+            .way__heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                /*font-weight: var(--extra-bold);*/
+                /*font-size: 32px;*/
+                /*line-height: 38px;*/
+            }
+
+            .way__list {
+                /*margin-top: 32px;*/
+                display: block;
+                /*grid-template-columns: repeat(3, 1fr);*/
+                /*gap: 32px;*/
+            }
+
+            .way__step {
+                margin-top: 32px;
+            }
+
+            .way__step:first-child {
+                margin-top: 0;
+            }
+                .way__preview {
+
+                }
+
+                .way__preview:hover {
+                    /*filter: var(--image-hover);*/
+                }
+                    .way__image {
+                        /*vertical-align: top;*/
+                        /*background-color: var(--image-fallback);*/
+                    }
+
+                .way__description {
+                    /*margin-top: 24px;*/
+                }
+}

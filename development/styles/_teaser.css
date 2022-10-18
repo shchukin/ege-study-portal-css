@@ -6,7 +6,7 @@
     }
 
     .teaser__preview:hover {
-        filter: brightness(1.1) contrast(1.1);
+        filter: var(--image-hover);
     }
 
         .teaser__image {

@@ -28,5 +28,6 @@
     --panel-hover: #F2F2F2;
     --panel-active: #EAEAEA;
     --image-fallback: #C4C4C4;
+    --image-hover: brightness(1.1) contrast(1.1);
 }
 /* stylelint-enable declaration-colon-space-after */

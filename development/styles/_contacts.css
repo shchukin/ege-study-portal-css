@@ -1,0 +1,162 @@
+.contacts {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+    .contacts__nav {
+
+    }
+        .contacts__ribbon {
+            display: inline-flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+            .contacts__link {
+                border: 1px solid var(--low-emphasis-black);
+                padding: 11px 16px 12px;
+                border-radius: 8px;
+                font-family: inherit;
+                font-size: 15px;
+                line-height: 21px;
+                color: var(--high-emphasis);
+                white-space: nowrap;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .contacts__link:hover {
+                border-color: var(--red);
+                color: var(--red);
+            }
+
+            .contacts__link--current {
+                border-color: var(--red);
+                color: var(--red);
+                cursor: default;
+            }
+
+    .contacts__body {
+        margin-top: 32px;
+        border-top: 1px solid var(--low-emphasis-black);
+        padding-top: 32px;
+        display: grid;
+        grid-template-columns: 1fr 576px;
+        gap: 32px;
+    }
+        .contacts__data {
+
+        }
+            .contacts__section {
+                margin-top: 32px;
+            }
+
+            .contacts__section:first-child {
+                margin-top: 0;
+            }
+                .contacts__sub-heading {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-weight: var(--extra-bold);
+                    font-size: 26px;
+                    line-height: 34px;
+                }
+
+                .contacts__widget {
+                    margin-top: 16px;
+                }
+                    .contacts__channel {
+                        margin-top: 16px;
+                    }
+
+                    .contacts__channel:first-child {
+                        margin-top: 0;
+                    }
+
+        .contacts__map {
+            height: 588px;
+        }
+
+
+
+@media (max-width: 639px) {
+
+    .contacts {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+        .contacts__nav {
+            margin-left: calc(-1 * var(--container-mobile-padding));
+            margin-right: calc(-1 * var(--container-mobile-padding));
+            overflow-x: auto;
+        }
+            .contacts__ribbon {
+                padding-left: var(--container-mobile-padding);
+                padding-right: var(--container-mobile-padding);
+                /*display: inline-flex;*/
+                /*align-items: flex-start;*/
+                /*gap: 8px;*/
+            }
+                .contacts__link {
+                    /*border: 1px solid var(--low-emphasis-black);*/
+                    /*padding: 11px 16px 12px;*/
+                    /*border-radius: 8px;*/
+                    /*font-family: inherit;*/
+                    /*font-size: 15px;*/
+                    /*line-height: 21px;*/
+                    /*color: var(--high-emphasis);*/
+                    /*text-decoration: none;*/
+                    /*cursor: pointer;*/
+                }
+
+                .contacts__link:hover {
+                    /*border-color: var(--red);*/
+                    /*color: var(--red);*/
+                }
+
+                .contacts__link--current {
+                    /*border-color: var(--red);*/
+                    /*color: var(--red);*/
+                    /*cursor: default;*/
+                }
+
+        .contacts__body {
+            /*margin-top: 32px;*/
+            /*border-top: 1px solid var(--low-emphasis-black);*/
+            /*padding-top: 32px;*/
+            display: block;
+            /*grid-template-columns: 1fr 576px;*/
+            /*gap: 32px;*/
+        }
+            .contacts__data {
+
+            }
+                .contacts__section {
+                    /*margin-top: 32px;*/
+                }
+
+                .contacts__section:first-child {
+                    /*margin-top: 0;*/
+                }
+                    .contacts__sub-heading {
+                        /*margin-top: 0;*/
+                        /*margin-bottom: 0;*/
+                        /*font-weight: var(--extra-bold);*/
+                        /*font-size: 26px;*/
+                        /*line-height: 34px;*/
+                    }
+
+                    .contacts__widget {
+                        /*margin-top: 16px;*/
+                    }
+                        .contacts__channel {
+                            /*margin-top: 16px;*/
+                        }
+
+                        .contacts__channel:first-child {
+                            /*margin-top: 0;*/
+                        }
+
+            .contacts__map {
+                margin-top: 40px;
+                height: 334px;
+            }
+}
