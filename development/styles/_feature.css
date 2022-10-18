@@ -94,6 +94,14 @@
                     .feature__action .button {
 
                     }
+
+                    @media (min-width: 640px) {
+
+                        .feature__action.button,
+                        .feature__action .button {
+                            text-align: left;
+                        }
+                    }
                         .feature__line-break {
 
                         }

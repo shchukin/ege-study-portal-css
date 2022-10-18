@@ -23,7 +23,8 @@
 .wysiwyg hr,
 .wysiwyg figure,
 .wysiwyg blockquote {
-
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 /* stylelint-enable */
 
@@ -119,10 +120,10 @@
 
 .wysiwyg h3 {
     font-weight: var(--extra-bold);
-    font-size: 26px;
-    line-height: 34px;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 32px;
+    margin-bottom: -8px;
 }
 
 /*.wysiwyg h4 {*/
