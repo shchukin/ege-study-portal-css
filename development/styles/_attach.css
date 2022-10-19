@@ -20,11 +20,17 @@
         .attach__delete {
             flex-shrink: 0;
             padding: 4px;
-            margin: -4px;
+            margin: -4px -4px -4px 0;
             background-color: transparent;
             border: none;
             cursor: pointer;
+            border-radius: 2px;
+        }
+
+        .attach__delete:hover {
+            background-color: var(--panel-hover);
         }
             .attach__cross {
                 vertical-align: top;
+                fill: currentColor;
             }
