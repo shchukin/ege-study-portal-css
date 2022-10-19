@@ -96,7 +96,7 @@
                             Заполните форму. Лучше всего, если вмете с резюме пришлете видеоролик, где вы рассказываете какую-нибудь интересную тему по вашему предмету. Видео можно снять дома на айфон.
                         </p>
                     </div>
-                    <a class="jobs__submit button" href="#">
+                    <a class="jobs__submit button mfp-handler" href="#apply-for-work">
                         Откликнуться на вакансию
                     </a>
                 </div>
@@ -155,7 +155,7 @@
                             Заполните форму. Лучше всего, если вмете с резюме пришлете видеоролик, где вы рассказываете какую-нибудь интересную тему по вашему предмету. Видео можно снять дома на айфон.
                         </p>
                     </div>
-                    <a class="jobs__submit button" href="#">
+                    <a class="jobs__submit button mfp-handler" href="#apply-for-work">
                         Откликнуться на вакансию
                     </a>
                 </div>
@@ -214,7 +214,7 @@
                             Заполните форму. Лучше всего, если вмете с резюме пришлете видеоролик, где вы рассказываете какую-нибудь интересную тему по вашему предмету. Видео можно снять дома на айфон.
                         </p>
                     </div>
-                    <a class="jobs__submit button" href="#">
+                    <a class="jobs__submit button mfp-handler" href="#apply-for-work">
                         Откликнуться на вакансию
                     </a>
                 </div>
@@ -273,7 +273,7 @@
                             Заполните форму. Лучше всего, если вмете с резюме пришлете видеоролик, где вы рассказываете какую-нибудь интересную тему по вашему предмету. Видео можно снять дома на айфон.
                         </p>
                     </div>
-                    <a class="jobs__submit button" href="#">
+                    <a class="jobs__submit button mfp-handler" href="#apply-for-work">
                         Откликнуться на вакансию
                     </a>
                 </div>
@@ -439,9 +439,66 @@
             </div>
         </footer>
 
+        <!-- Modal -->
+        <div class="window mfp-hide" id="apply-for-work">
+            <button class="window__close mfp-close" type="button">
+                Закрыть
+            </button>
+            <div class="window__body response">
+                <h2 class="response__heading">
+
+                </h2>
+                <div class="response__description">
+
+                </div>
+                <div class="response__fieldset">
+                    <div class="response__field input">
+                        <input class="input__widget" type="text" placeholder="Ваше имя и фамилия *">
+                    </div>
+                    <div class="response__field input">
+                        <input class="input__widget" type="tel" placeholder="Телефон">
+                    </div>
+                    <div class="response__field input">
+                        <input class="input__widget" type="email" placeholder="Электронная почта *">
+                    </div>
+                    <div class="response__field input input--area">
+                        <textarea class="input__widget" rows="5" placeholder="Расскажите о себе и почему вы хотите работать у нас *"></textarea>
+                        <div class="input__hint">Осталось 2 000 знаков</div>
+                    </div>
+                </div>
+                <div class="response__file attach">
+                    <button class="attach__handler" type="button">resume_rus.pdf</button>
+                    или:
+                    <div class="attach__item">
+                        <div class="attach__name">
+                            234823442593475283475872345823457234857234.PNG
+                        </div>
+                        <button class="attach__delete" type="button">
+                            <img class="attach__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
+                        </button>
+                    </div>
+
+                    <div class="attach__item">
+                        <div class="attach__name">
+                            resume_rus.pdf
+                        </div>
+                        <button class="attach__delete" type="button">
+                            <img class="attach__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
+                        </button>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
         <!-- Scripts -->
         <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
         <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
         <script src="../scripts/_footer.js"></script>
         <script src="../scripts/_input.js"></script>
         <script src="../scripts/_slideshow.js"></script>
@@ -449,6 +506,7 @@
         <script src="../scripts/_program.js"></script>
         <script src="../scripts/_single-course.js"></script>
         <script src="../scripts/_jobs.js"></script>
+        <script src="../scripts/_mfp.js"></script>
 
     </body>
 </html>

@@ -1,0 +1,30 @@
+.attach {
+
+}
+    .attach__handler {
+
+    }
+
+    .attach__item {
+        display: flex;
+        align-items: flex-start;
+    }
+        .attach__name {
+            font-size: 15px;
+            line-height: 20px;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .attach__delete {
+            flex-shrink: 0;
+            padding: 4px;
+            margin: -4px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+            .attach__cross {
+                vertical-align: top;
+            }
