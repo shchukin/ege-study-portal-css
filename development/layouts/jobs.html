@@ -97,7 +97,7 @@
                         </p>
                     </div>
                     <a class="jobs__submit button mfp-handler" href="#apply-for-work">
-                        Откликнуться на вакансию
+                        Откликнуться <span class="jobs__for-word">на вакансию</span>
                     </a>
                 </div>
             </div>
@@ -156,7 +156,7 @@
                         </p>
                     </div>
                     <a class="jobs__submit button mfp-handler" href="#apply-for-work">
-                        Откликнуться на вакансию
+                        Откликнуться <span class="jobs__for-word">на вакансию</span>
                     </a>
                 </div>
             </div>
@@ -215,7 +215,7 @@
                         </p>
                     </div>
                     <a class="jobs__submit button mfp-handler" href="#apply-for-work">
-                        Откликнуться на вакансию
+                        Откликнуться <span class="jobs__for-word">на вакансию</span>
                     </a>
                 </div>
             </div>
@@ -274,7 +274,7 @@
                         </p>
                     </div>
                     <a class="jobs__submit button mfp-handler" href="#apply-for-work">
-                        Откликнуться на вакансию
+                        Откликнуться <span class="jobs__for-word">на вакансию</span>
                     </a>
                 </div>
             </div>
@@ -444,12 +444,12 @@
             <button class="window__close mfp-close" type="button">
                 Закрыть
             </button>
-            <div class="window__body response">
+            <form class="window__body response">
                 <h2 class="response__heading">
-
+                    Отклик на вакансию
                 </h2>
                 <div class="response__description">
-
+                    Ведущий онлайн-курсов по обществознанию, химии, биологии
                 </div>
                 <div class="response__fieldset">
                     <div class="response__field input">
@@ -462,12 +462,14 @@
                         <input class="input__widget" type="email" placeholder="Электронная почта *">
                     </div>
                     <div class="response__field input input--area">
-                        <textarea class="input__widget" rows="5" placeholder="Расскажите о себе и почему вы хотите работать у нас *"></textarea>
+                        <textarea class="input__widget" rows="4" placeholder="Расскажите о себе и почему вы хотите работать у нас *"></textarea>
                         <div class="input__hint">Осталось 2 000 знаков</div>
                     </div>
                 </div>
                 <div class="response__file attach">
-                    <button class="attach__handler" type="button">resume_rus.pdf</button>
+                    <button class="attach__handler button button--border" type="button">
+                        Прикрепить файл
+                    </button>
                     или:
                     <div class="attach__item">
                         <div class="attach__name">
@@ -477,7 +479,6 @@
                             <img class="attach__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
                         </button>
                     </div>
-
                     <div class="attach__item">
                         <div class="attach__name">
                             resume_rus.pdf
@@ -486,12 +487,20 @@
                             <img class="attach__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
                         </button>
                     </div>
-
                 </div>
-
-
-
-            </div>
+                <label class="response__agreement choice choice--checkbox">
+                    <input class="choice__widget" type="checkbox">
+                    <i class="choice__icon" role="presentation"></i>
+                    <span class="choice__label">
+                        Даю согласие на <a class="link link--inherit" href="#">обработку персональных данных</a>
+                    </span>
+                </label>
+                <div class="response__footer">
+                    <button class="response__submit button" type="submit">
+                        Отравить
+                    </button>
+                </div>
+            </form>
         </div>
 
 

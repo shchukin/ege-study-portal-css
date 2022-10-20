@@ -2,8 +2,12 @@
 
 }
     .attach__handler {
-
+        margin-top: 8px;
     }
+        .attach__handler.button,
+        .attach__handler .button {
+            width: 100%;
+        }
 
     .attach__item {
         display: flex;

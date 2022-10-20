@@ -84,7 +84,9 @@
                 .jobs__submit {
                     margin-top: 32px;
                 }
+                    .jobs__for-word {
 
+                    }
 
 @media (max-width: 639px) {
 
@@ -174,4 +176,18 @@
                     .jobs__submit {
                         /*margin-top: 32px;*/
                     }
+                        .jobs__submit.button,
+                        .jobs__submit .button {
+                            width: 100%;
+                        }
+
+                        .jobs__for-word {
+
+                        }
+
+                        @media (max-width: 374px) {
+                            .jobs__for-word {
+                                display: none;
+                            }
+                        }
 }

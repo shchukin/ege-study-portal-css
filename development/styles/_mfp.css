@@ -7,7 +7,7 @@
 }
 
 .mfp-container {
-    display: inline-block;
+    display: block;
     padding-left: 8px;      /* horizontal */
     padding-right: 8px;     /* space around */
     vertical-align: top;

@@ -1,18 +1,98 @@
 .response {
-
+    padding: 80px 104px;
 }
     .response__heading {
         margin-top: 0;
         margin-bottom: 0;
+        font-weight: var(--extra-bold);
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
     }
 
     .response__description {
-
+        margin-top: 8px;
+        margin-left: -20px;
+        margin-right: -20px;
+        text-align: center;
     }
 
     .response__fieldset {
-
+        margin-top: 32px;
     }
         .response__field {
+            margin-top: 12px;
+        }
+
+        .response__field:first-child {
+            margin-top: 0;
+        }
+
+    .response__file {
+        margin-top: 30px;
+    }
+
+    .response__agreement {
+        margin-top: 8px;
+    }
+
+    .response__footer {
+        margin-top: 16px;
+    }
+        .response__submit {
 
         }
+            .response__submit.button,
+            .response__submit .button {
+                width: 100%;
+            }
+
+
+
+@media (max-width: 639px) {
+
+    .response {
+        padding: 60px 24px 24px;
+    }
+        .response__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            /*font-weight: var(--extra-bold);*/
+            /*font-size: 32px;*/
+            /*line-height: 46px;*/
+            /*text-align: center;*/
+        }
+
+        .response__description {
+            /*margin-top: 4px;*/
+            margin-left: 0;
+            margin-right: 0;
+            /*text-align: center;*/
+        }
+
+        .response__fieldset {
+            /*margin-top: 32px;*/
+        }
+            .response__field {
+                /*margin-top: 12px;*/
+            }
+
+            .response__field:first-child {
+                /*margin-top: 0;*/
+            }
+
+        .response__file {
+            /*margin-top: 30px;*/
+        }
+
+        .response__agreement {
+            /*margin-top: 8px;*/
+        }
+
+        .response__footer {
+            /*margin-top: 16px;*/
+        }
+            .response__submit {
+
+            }
+}
