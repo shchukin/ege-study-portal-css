@@ -49,9 +49,12 @@
         border-bottom-color: currentColor;
     }
 
-.dash:active {
-    color: var(--brand);
+
+
+
+.dash--inverted-color {
+    color: inherit;
 }
-    .dash:active .dash__label {
-        border-bottom-color: currentColor;
-    }
+.dash--inverted-color:hover {
+    color: var(--red);
+}
