@@ -98,7 +98,7 @@
                 }
             }
 
-    .courses__footer {
+    .courses__page {
         margin-top: 32px;
     }
 
@@ -232,7 +232,7 @@
                         width: 100%;
                     }
 
-        .courses__footer {
+        .courses__page {
             /*margin-top: 32px;*/
         }
 
@@ -274,7 +274,7 @@
             display: none;
         }
 
-        .courses-expanded .courses__footer {
+        .courses-expanded .courses__page {
             display: none;
         }
 

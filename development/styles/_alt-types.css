@@ -58,21 +58,6 @@
         .alt-types__item:first-child {
             margin-top: 0;
         }
-
-        .alt-types__item--moscow {
-            /*grid-area: m;*/
-            /*background-color: var(--red-light);*/
-        }
-
-        .alt-types__item--online {
-            /*grid-area: o;*/
-            /*background-color: var(--green-light);*/
-        }
-
-        .alt-types__item--records {
-            /*grid-area: r;*/
-            /*background-color: var(--blue-light);*/
-        }
             .alt-types__heading {
                 /*margin-top: 0;*/
                 /*margin-bottom: 0;*/
