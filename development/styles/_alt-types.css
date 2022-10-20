@@ -1,0 +1,95 @@
+.alt-types {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+    .alt-types__item {
+        border-radius: 16px;
+        padding: 40px 60px 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .alt-types__item--online-for-teachers {
+        background-color: var(--blue-light);
+    }
+
+    .alt-types__item--materials-for-teachers {
+        background-color: var(--red-light);
+    }
+        .alt-types__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-bottom: 16px;
+            font-size: 26px;
+            line-height: 34px;
+        }
+
+        .alt-types__description {
+            padding-bottom: 32px;
+        }
+
+        .alt-types__acton {
+            margin-top: auto;
+        }
+            .alt-types__acton.button,
+            .alt-types__acton .button {
+
+            }
+
+
+@media (max-width: 639px) {
+
+    .alt-types {
+        padding-top: 40px;
+        display: block;
+    }
+        .alt-types__item {
+            margin-top: 8px;
+            margin-left: calc(-1 * var(--container-mobile-padding));
+            margin-right: calc(-1 * var(--container-mobile-padding));
+            border-radius: 0;
+            padding: 40px 20px 32px;
+            /*display: flex;*/
+            /*flex-direction: column;*/
+        }
+
+        .alt-types__item:first-child {
+            margin-top: 0;
+        }
+
+        .alt-types__item--moscow {
+            /*grid-area: m;*/
+            /*background-color: var(--red-light);*/
+        }
+
+        .alt-types__item--online {
+            /*grid-area: o;*/
+            /*background-color: var(--green-light);*/
+        }
+
+        .alt-types__item--records {
+            /*grid-area: r;*/
+            /*background-color: var(--blue-light);*/
+        }
+            .alt-types__heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                /*padding-bottom: 16px;*/
+                font-size: 26px;
+                line-height: 34px;
+            }
+
+            .alt-types__description {
+                padding-bottom: 16px;
+            }
+
+            .alt-types__acton {
+                /*margin-top: auto;*/
+            }
+                .alt-types__acton.button,
+                .alt-types__acton .button {
+                    /*font-size: 17px;*/
+                }
+}

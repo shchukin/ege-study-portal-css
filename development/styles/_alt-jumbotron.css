@@ -1,0 +1,107 @@
+.alt-jumbotron {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background-color: var(--neutral);
+}
+    .alt-jumbotron__wrap {
+        display: grid;
+        grid-template-columns: 879fr 577fr;
+        align-items: flex-start;
+        gap: 0 32px;
+    }
+
+        .alt-jumbotron__preview {
+            margin-top: 48px;
+            order: 2;
+        }
+
+        .alt-jumbotron__content {
+            order: 1;
+        }
+            .alt-jumbotron__heading {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 58px;
+                line-height: 64px;
+            }
+
+            .alt-jumbotron__description {
+                margin-top: 24px;
+                font-size: 20px;
+                line-height: 32px;
+            }
+
+            .alt-jumbotron__tag {
+                margin-top: 24px;
+            }
+
+            .alt-jumbotron__text {
+                margin-top: 16px;
+            }
+
+            .alt-jumbotron__operations {
+                margin-top: 40px;
+                display: flex;
+                gap: 24px;
+            }
+                .alt-jumbotron__action {
+
+                }
+
+                .alt-jumbotron__action--wide {
+                    width: 100%;
+                    max-width: 422px;
+                }
+
+
+@media (max-width: 639px) {
+
+    .alt-jumbotron {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+        .alt-jumbotron__wrap {
+            display: block;
+            /*grid-template-columns: 48.9247fr 40.8602fr;*/
+            /*align-items: center;*/
+            /*gap: 0 32px;*/
+        }
+
+            .alt-jumbotron__preview {
+                margin-top: 0;
+            }
+
+            .alt-jumbotron__content {
+                margin-top: 20px;
+                /*max-width: 728px;*/
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+                .alt-jumbotron__heading {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                    font-size: 36px;
+                    line-height: 40px;
+                }
+
+                .alt-jumbotron__description {
+                    margin-top: 20px;
+                    font-size: 17px;
+                    line-height: 24px;
+                }
+
+                .alt-jumbotron__tag {
+                    margin-top: 20px;
+                }
+
+                .alt-jumbotron__text {
+                    margin-top: 12px;
+                }
+
+                .alt-jumbotron__operations {
+                    flex-direction: column;
+                }
+                    .alt-jumbotron__action {
+
+                    }
+}
