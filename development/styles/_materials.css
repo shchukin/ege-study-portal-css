@@ -8,69 +8,7 @@
     }
         .materials__preview {
             position: relative;
-            padding: 32px 24px 32px 128px;
-            border-radius: 12px;
         }
-            .materials__folder {
-                position: absolute;
-                left: 36px;
-                top: 32px;
-                width: 66px;
-                height: 90px;
-                border-radius: 4px;
-            }
-                .materials__folder::before {
-                    content: "";
-                    position: absolute;
-                    z-index: 10;
-                    right: 12px;
-                    top: 0;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 4px;
-                }
-
-                .materials__folder::after {
-                    content: "";
-                    position: absolute;
-                    right: 6px;
-                    top: 0;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 4px;
-                }
-
-            .materials__sub-heading {
-                margin-top: 0;
-                margin-bottom: 0;
-                font-weight: var(--extra-bold);
-                font-size: 20px;
-                line-height: 32px;
-            }
-
-            .materials__description {
-                margin-top: 8px;
-                font-size: var(--caption-font);
-                line-height: var(--caption-line);
-            }
-
-        /* right to left */
-        .materials__preview--books { background-color: var(--blue-light); }
-        .materials__preview--books .materials__folder { background-color: #D1DDF2; }
-        .materials__preview--books .materials__folder::after { background-color: #B9C9E6; }
-        .materials__preview--books .materials__folder::before { background-color: #A6B9DC; }
-
-        /* right to left */
-        .materials__preview--supplements { background-color: var(--green-light); }
-        .materials__preview--supplements .materials__folder { background-color: #D8E0A4; }
-        .materials__preview--supplements .materials__folder::after { background-color: #C4CF7D; }
-        .materials__preview--supplements .materials__folder::before { background-color: #B2BE65; }
-
-        /* right to left */
-        .materials__preview--samples { background-color: var(--yellow-light); }
-        .materials__preview--samples .materials__folder { background-color: #FFF2CC; }
-        .materials__preview--samples .materials__folder::after { background-color: #FFE189; }
-        .materials__preview--samples .materials__folder::before { background-color: #FFD046; }
 
 
 
@@ -105,49 +43,6 @@
                 /*padding: 32px 24px 32px 128px;*/
                 /*border-radius: 12px;*/
             }
-                .materials__folder {
-                    /*position: absolute;*/
-                    /*left: 36px;*/
-                    /*top: 32px;*/
-                    /*width: 66px;*/
-                    /*height: 90px;*/
-                    /*border-radius: 4px;*/
-                }
-                    .materials__folder::before {
-                        /*content: "";*/
-                        /*position: absolute;*/
-                        /*z-index: 10;*/
-                        /*right: 12px;*/
-                        /*top: 0;*/
-                        /*width: 100%;*/
-                        /*height: 100%;*/
-                        /*border-radius: 4px;*/
-                    }
-
-                    .materials__folder::after {
-                        /*content: "";*/
-                        /*position: absolute;*/
-                        /*right: 6px;*/
-                        /*top: 0;*/
-                        /*width: 100%;*/
-                        /*height: 100%;*/
-                        /*border-radius: 4px;*/
-                    }
-
-                .materials__sub-heading {
-                    /*margin-top: 0;*/
-                    /*margin-bottom: 0;*/
-                    /*font-weight: var(--extra-bold);*/
-                    /*font-size: 20px;*/
-                    /*line-height: 32px;*/
-                }
-
-                .materials__description {
-                    /*margin-top: 8px;*/
-                    /*font-size: var(--caption-font);*/
-                    /*line-height: var(--caption-line);*/
-                }
-
 
         .materials__heading {
             margin-top: 0;
