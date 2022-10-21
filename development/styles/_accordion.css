@@ -1,0 +1,140 @@
+.accordion {
+
+}
+    .accordion__handler {
+
+    }
+
+    .accordion__list {
+
+    }
+        .accordion__link {
+
+        }
+
+
+@media (min-width: 640px) {
+
+    .accordion {
+
+    }
+        .accordion__handler {
+            display: none;
+        }
+
+        .accordion__list {
+            display: inline-flex;
+            flex-direction: column;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+            .accordion__link {
+                position: relative;
+                padding: 6px 0;
+                border: none;
+                background-color: transparent;
+                font-size: 17px;
+                line-height: 24px;
+                text-align: left;
+                text-decoration: none;
+                color: var(--high-emphasis);
+                cursor: pointer;
+            }
+
+            .accordion__link:hover {
+                color: var(--red);
+            }
+
+            .accordion__link--current {
+                color: var(--red);
+            }
+}
+
+
+@media (max-width: 639px) {
+
+    .accordion {
+        border: 1px solid var(--high-emphasis);
+        border-radius: 8px;
+    }
+        .accordion__handler {
+            position: relative;
+            display: block;
+            width: 100%;
+            background-color: transparent;
+            padding: 14px 56px 16px 24px;
+            border: none;
+            font-weight: var(--extra-bold);
+            font-size: 17px;
+            line-height: 24px;
+            color: inherit;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+        }
+            .accordion__handler::after {
+                content: "";
+                position: absolute;
+                right: 16px;
+                top: 50%;
+                margin-top: -16px;
+                display: block;
+                width: 32px;
+                height: 32px;
+                background-image: url("../vectors/dropdown.svg");
+                background-size: 24px 24px;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+        .accordion__list {
+            position: relative;
+            padding-top: 14px;
+            padding-bottom: 20px;
+            display: none;
+        }
+            .accordion__list::before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 24px;
+                right: 24px;
+                top: 0;
+                height: 1px;
+                background-color: var(--low-emphasis-black);
+            }
+
+            .accordion__link {
+                display: block;
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                font-weight: normal;
+                padding: 6px 24px;
+                font-size: 17px;
+                line-height: 24px;
+                text-align: left;
+                text-decoration: none;
+                color: inherit;
+                cursor: pointer;
+            }
+
+            .accordion__link--current {
+                color: var(--red);
+            }
+
+    .accordion--expanded {
+
+    }
+        .accordion--expanded .accordion__handler::after {
+            transform: scaleY(-1);
+        }
+
+    .accordion--expanded .accordion__list {
+        display: block;
+    }
+}
+
+
+
+

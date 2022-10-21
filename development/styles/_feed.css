@@ -11,28 +11,8 @@
         .feed__detachable-area {
             position: sticky;
             top: 32px;
-            display: inline-flex;
-            flex-direction: column;
-            padding-top: 4px;
-            padding-bottom: 4px;
         }
-            .feed__filter {
-                padding: 6px 0;
-                border: none;
-                background-color: transparent;
-                font-size: 17px;
-                line-height: 24px;
-                text-align: left;
-                cursor: pointer;
-            }
 
-            .feed__filter:hover {
-                color: var(--red);
-            }
-
-            .feed__filter--current {
-                color: var(--red);
-            }
 
     .feed__content {
 
@@ -138,26 +118,10 @@
                 /*padding-top: 4px;*/
                 /*padding-bottom: 4px;*/
             }
-                .feed__filter {
-                    /*padding: 6px 0;*/
-                    /*border: none;*/
-                    /*background-color: transparent;*/
-                    /*font-size: 17px;*/
-                    /*line-height: 24px;*/
-                    /*text-align: left;*/
-                    /*cursor: pointer;*/
-                }
 
-                .feed__filter:hover {
-                    /*color: var(--red);*/
-                }
-
-                .feed__filter--current {
-                    /*color: var(--red);*/
-                }
 
         .feed__content {
-
+            margin-top: 32px;
         }
             .feed__list {
                 border-top: 1px solid var(--low-emphasis-black);

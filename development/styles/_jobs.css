@@ -41,7 +41,7 @@
                     width: 32px;
                     height: 32px;
                     margin-top: -16px;
-                    background-image: url("../vectors/collapse.svg");
+                    background-image: url("../vectors/dropdown.svg");
                     background-size: contain;
                     background-repeat: no-repeat;
                     background-position: center center;
@@ -133,7 +133,7 @@
                         /*width: 32px;*/
                         /*height: 32px;*/
                         /*margin-top: -16px;*/
-                        /*background-image: url("../vectors/collapse.svg");*/
+                        /*background-image: url("../vectors/dropdown.svg");*/
                         /*background-size: contain;*/
                         /*background-repeat: no-repeat;*/
                         /*background-position: center center;*/

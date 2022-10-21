@@ -41,10 +41,18 @@
         <div class="feed container">
             <div class="feed__sidebar">
                 <div class="feed__detachable-area">
-                    <button class="feed__filter feed__filter--current" type="button">Все новости</button>
-                    <button class="feed__filter" type="button">Новости центра</button>
-                    <button class="feed__filter" type="button">Акции</button>
-                    <button class="feed__filter" type="button">СМИ о нас</button>
+
+                    <div class="accordion accordion--vertical">
+                        <button class="accordion__handler" type="button">
+                            Все новости
+                        </button>
+                        <nav class="accordion__list">
+                            <a class="accordion__link accordion__link--current" href="#">Все новости</a>
+                            <a class="accordion__link" href="#">Новости центра</a>
+                            <a class="accordion__link" href="#">Акции</a>
+                            <a class="accordion__link" href="#">СМИ о нас</a>
+                        </nav>
+                    </div>
                 </div>
             </div>
             <div class="feed__content">
@@ -400,6 +408,7 @@
         <script src="../scripts/_single-course.js"></script>
         <script src="../scripts/_jobs.js"></script>
         <script src="../scripts/_mfp.js"></script>
+        <script src="../scripts/_accordion.js"></script>
 
     </body>
 </html>
