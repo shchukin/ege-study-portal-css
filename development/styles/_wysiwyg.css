@@ -95,9 +95,10 @@
 /*    border-top: 1px solid;*/
 /*}*/
 
-/*.wysiwyg img {*/
-/*    vertical-align: top;*/
-/*}*/
+.wysiwyg img {
+    vertical-align: top;
+    background-color: var(--image-fallback);
+}
 
 /*.wysiwyg figure {*/
 /*    margin-left: 40px;*/
@@ -110,13 +111,16 @@
 
 
 
-/*.wysiwyg h2 {*/
-/*    font-weight: var(--font_weight_strong);*/
-/*    font-size: var(--font_size_default-title);*/
-/*    line-height: var(--font_line_default-title);*/
-/*    margin-top: var(--font_line_default-title);*/
-/*    margin-bottom: var(--font_line_default-title);*/
-/*}*/
+
+
+.wysiwyg h2 {
+    font-weight: var(--extra-bold);
+    font-size: 26px;
+    line-height: 34px;
+    margin-top: 32px;
+    margin-bottom: -8px;
+}
+
 
 .wysiwyg h3 {
     font-weight: var(--extra-bold);

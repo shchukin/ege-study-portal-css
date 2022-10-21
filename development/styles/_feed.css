@@ -64,12 +64,20 @@
                 }
                     .feed__preview {
                         position: absolute;
-                        right: 24px;
+                        right: 32px;
                         top: 50%;
                         transform: translateY(-50%);
                         width: 228px;
                         flex-shrink: 0;
+                        text-align: right;
                     }
+                        .feed__image {
+                            vertical-align: top;
+                            max-width: 100%;
+                            max-height: 100%;
+                            object-fit: cover;
+                            background-color: var(--image-fallback);
+                        }
 
                     .feed__summary {
                         display: block;
