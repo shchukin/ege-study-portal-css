@@ -1,15 +1,44 @@
 .accordion {
 
 }
+
+.accordion + .accordion {
+    margin-top: 32px;
+}
     .accordion__handler {
 
     }
 
     .accordion__list {
-
+        display: inline-flex;
+        flex-direction: column;
     }
-        .accordion__link {
+        .accordion__heading {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 32px;
+        }
 
+        .accordion__link {
+            position: relative;
+            padding: 6px 0;
+            border: none;
+            background-color: transparent;
+            font-size: 17px;
+            line-height: 24px;
+            text-align: left;
+            text-decoration: none;
+            color: var(--high-emphasis);
+            cursor: pointer;
+        }
+
+        .accordion__link:hover {
+            color: var(--red);
+        }
+
+        .accordion__link--current {
+            color: var(--red);
         }
 
 
@@ -23,30 +52,23 @@
         }
 
         .accordion__list {
-            display: inline-flex;
-            flex-direction: column;
             padding-top: 4px;
             padding-bottom: 4px;
         }
+            .accordion__heading {
+
+            }
+
             .accordion__link {
-                position: relative;
-                padding: 6px 0;
-                border: none;
-                background-color: transparent;
-                font-size: 17px;
-                line-height: 24px;
-                text-align: left;
-                text-decoration: none;
-                color: var(--high-emphasis);
-                cursor: pointer;
+
             }
 
             .accordion__link:hover {
-                color: var(--red);
+
             }
 
             .accordion__link--current {
-                color: var(--red);
+
             }
 }
 
@@ -56,6 +78,10 @@
     .accordion {
         border: 1px solid var(--high-emphasis);
         border-radius: 8px;
+    }
+
+    .accordion + .accordion {
+        margin-top: 24px;
     }
         .accordion__handler {
             position: relative;
@@ -104,24 +130,16 @@
                 background-color: var(--low-emphasis-black);
             }
 
+            .accordion__heading {
+                display: none;
+            }
+
             .accordion__link {
                 display: block;
                 width: 100%;
-                background-color: transparent;
-                border: none;
-                font-weight: normal;
                 padding: 6px 24px;
-                font-size: 17px;
-                line-height: 24px;
-                text-align: left;
-                text-decoration: none;
-                color: inherit;
-                cursor: pointer;
             }
 
-            .accordion__link--current {
-                color: var(--red);
-            }
 
     .accordion--expanded {
 

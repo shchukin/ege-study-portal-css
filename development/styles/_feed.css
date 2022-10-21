@@ -17,6 +17,36 @@
     .feed__content {
 
     }
+        .feed__filtering-tags {
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--low-emphasis-black);
+            overflow-x: auto;
+        }
+            .feed__ribbon {
+                display: inline-flex;
+                vertical-align: top;
+                gap: 8px;
+            }
+                .feed__tag {
+                    border: 1px solid var(--low-emphasis-black);
+                    background-color: transparent;
+                    display: inline-block;
+                    vertical-align: top;
+                    border-radius: 8px;
+                    padding: 13px 15px;
+                    font-size: 15px;
+                    line-height: 20px;
+                    white-space: nowrap;
+                    color: var(--high-emphasis);
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+
+                .feed__tag--current {
+                    border-color: var(--red);
+                    color: var(--red);
+                }
+
         .feed__list {
 
         }
@@ -123,7 +153,42 @@
         .feed__content {
             margin-top: 32px;
         }
-            .feed__list {
+            .feed__filtering-tags {
+                /*padding-bottom: 24px;*/
+                border-bottom: none;
+                margin-left: calc(-1 * var(--container-mobile-padding));
+                margin-right: calc(-1 * var(--container-mobile-padding));
+                /*overflow-x: auto;*/
+            }
+                .feed__ribbon {
+                    /*display: inline-flex;*/
+                    /*vertical-align: top;*/
+                    padding-left: var(--container-mobile-padding);
+                    padding-right: var(--container-mobile-padding);
+                    /*gap: 8px;*/
+                }
+                    .feed__tag {
+                        /*border: 1px solid var(--low-emphasis-black);*/
+                        /*background-color: transparent;*/
+                        /*display: inline-block;*/
+                        /*vertical-align: top;*/
+                        /*border-radius: 8px;*/
+                        /*padding: 13px 15px;*/
+                        /*font-size: 15px;*/
+                        /*line-height: 20px;*/
+                        /*white-space: nowrap;*/
+                        /*color: var(--high-emphasis);*/
+                        /*text-decoration: none;*/
+                        /*cursor: pointer;*/
+                    }
+
+                    .feed__tag--current {
+                        /*border-color: var(--red);*/
+                        /*color: var(--red);*/
+                    }
+
+
+    .feed__list {
                 border-top: 1px solid var(--low-emphasis-black);
             }
                 .feed__item {
