@@ -1,3 +1,85 @@
 .materials {
 
 }
+    .materials__summary {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+        .materials__preview {
+            position: relative;
+            padding: 32px 24px 32px 128px;
+            border-radius: 12px;
+        }
+            .materials__folder {
+                position: absolute;
+                left: 36px;
+                top: 32px;
+                width: 66px;
+                height: 90px;
+                border-radius: 4px;
+            }
+                .materials__folder::before {
+                    content: "";
+                    position: absolute;
+                    right: 12px;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 4px;
+                }
+
+                .materials__folder::after {
+                    content: "";
+                    position: absolute;
+                    right: 6px;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 4px;
+                }
+
+            .materials__sub-heading {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-weight: var(--extra-bold);
+                font-size: 20px;
+                line-height: 32px;
+            }
+
+            .materials__description {
+                margin-top: 8px;
+                font-size: var(--caption-font);
+                line-height: var(--caption-line);
+            }
+
+        .materials__preview--books {
+            background-color: var(--blue-light);
+        }
+            .materials__preview--books .materials__folder {
+                background-color: #D1DDF2;
+            }
+                .materials__preview--books .materials__folder::before {
+                    background-color: #A6B9DC;
+                }
+                .materials__preview--books .materials__folder::after {
+                    background-color: #B9C9E6;
+                }
+
+        .materials__preview--supplements {
+            background-color: var(--green-light);
+        }
+
+        .materials__preview--samples {
+            background-color: var(--yellow-light);
+        }
+
+    .materials__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        border-bottom: 1px solid;
+    }
+
+    .materials__listing {
+
+    }
