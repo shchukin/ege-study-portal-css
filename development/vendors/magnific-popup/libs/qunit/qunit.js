@@ -270,7 +270,7 @@ Test.prototype = {
 			}
 
 			if ( bad === 0 ) {
-				addClass( ol, "qunit-collapsed" );
+				addClass( ol, "qunit-accordiond" );
 			}
 
 			// `b` initialized at top of scope
@@ -279,8 +279,8 @@ Test.prototype = {
 
 			addEvent(b, "click", function() {
 				var next = b.parentNode.lastChild,
-					collapsed = hasClass( next, "qunit-collapsed" );
-				( collapsed ? removeClass : addClass )( next, "qunit-collapsed" );
+					accordiond = hasClass( next, "qunit-accordiond" );
+				( accordiond ? removeClass : addClass )( next, "qunit-accordiond" );
 			});
 
 			addEvent(b, "dblclick", function( e ) {

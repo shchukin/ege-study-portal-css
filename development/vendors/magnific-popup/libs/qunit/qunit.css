@@ -127,12 +127,12 @@
 	-webkit-border-radius: 5px;
 }
 
-.qunit-collapsed {
+.qunit-accordiond {
 	display: none;
 }
 
 #qunit-tests table {
-	border-collapse: collapse;
+	border-accordion: accordion;
 	margin-top: .2em;
 }
 
