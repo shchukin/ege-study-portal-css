@@ -1,0 +1,271 @@
+.teachers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr 304px;
+    gap: 32px;
+}
+    .teachers__sidebar {
+        order: 2;
+    }
+        .teachers__detachable-area {
+            position: sticky;
+            top: 32px;
+        }
+            .teachers__filter {
+
+            }
+
+
+    .teachers__content {
+        order: 1;
+    }
+        .teachers__filtering-tags {
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--low-emphasis-black);
+            overflow-x: auto;
+        }
+            .teachers__ribbon {
+                display: inline-flex;
+                vertical-align: top;
+                gap: 8px;
+            }
+                .teachers__tag {
+                    border: 1px solid var(--low-emphasis-black);
+                    background-color: transparent;
+                    display: inline-block;
+                    vertical-align: top;
+                    border-radius: 8px;
+                    padding: 13px 15px;
+                    font-size: 15px;
+                    line-height: 20px;
+                    white-space: nowrap;
+                    color: var(--high-emphasis);
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+
+                .teachers__tag--current {
+                    border-color: var(--red);
+                    color: var(--red);
+                }
+
+        .teachers__list {
+
+        }
+            .teachers__item {
+                position: relative;
+                padding-left: 152px;
+                padding-top: 32px;
+                padding-bottom: 32px;
+                border-bottom: 1px solid var(--low-emphasis-black);
+                min-height: 120px;
+            }
+                .teachers__preview {
+                    position: absolute;
+                    left: -3px;
+                    top: 29px;
+                    flex-shrink: 0;
+                    text-align: right;
+                }
+
+                .teachers__position {
+                    font-size: var(--caption-font);
+                    line-height: var(--caption-line);
+                }
+
+                .teachers__name {
+                    margin-top: 6px;
+                    margin-bottom: 0;
+                    font-weight: var(--extra-bold);
+                    font-size: 26px;
+                    line-height: 34px;
+                }
+
+                .teachers__bio {
+                    margin-top: 12px;
+                    font-size: var(--caption-font);
+                    line-height: var(--caption-line);
+                }
+
+                .teachers__menu {
+                    margin-top: 12px;
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 24px;
+                }
+                    .teachers__action {
+
+                    }
+
+        .teachers__pages {
+
+        }
+
+        .teachers__nav {
+            margin-top: 24px;
+        }
+
+        .teachers__entry {
+            margin-top: 26px;
+        }
+            .teachers__article-heading {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-weight: 600;
+                font-size: 26px;
+                line-height: 34px;
+            }
+
+            .teachers__text {
+                margin-top: 32px;
+            }
+
+            .teachers__tags {
+                margin-top: 48px;
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+
+
+@media (max-width: 639px) {
+
+    .teachers {
+        padding-top: 24px;
+        /*padding-bottom: 60px;*/
+        display: block;
+        /*grid-template-columns: 1fr 304px;*/
+        /*gap: 32px;*/
+    }
+        .teachers__sidebar {
+            /*order: 2;*/
+        }
+            .teachers__detachable-area {
+                /*position: sticky;*/
+                /*top: 32px;*/
+            }
+                .teachers__filter {
+
+                }
+
+
+        .teachers__content {
+            /*order: 1;*/
+            margin-top: 32px;
+        }
+            .teachers__filtering-tags {
+                /*padding-bottom: 24px;*/
+                /*border-bottom: 1px solid var(--low-emphasis-black);*/
+                /*overflow-x: auto;*/
+            }
+                .teachers__ribbon {
+                    /*display: inline-flex;*/
+                    /*vertical-align: top;*/
+                    /*gap: 8px;*/
+                }
+                    .teachers__tag {
+                        /*border: 1px solid var(--low-emphasis-black);*/
+                        /*background-color: transparent;*/
+                        /*display: inline-block;*/
+                        /*vertical-align: top;*/
+                        /*border-radius: 8px;*/
+                        /*padding: 13px 15px;*/
+                        /*font-size: 15px;*/
+                        /*line-height: 20px;*/
+                        /*white-space: nowrap;*/
+                        /*color: var(--high-emphasis);*/
+                        /*text-decoration: none;*/
+                        /*cursor: pointer;*/
+                    }
+
+                    .teachers__tag--current {
+                        /*border-color: var(--red);*/
+                        /*color: var(--red);*/
+                    }
+
+            .teachers__list {
+                border-top: 1px solid var(--low-emphasis-black);
+            }
+                .teachers__item {
+                    /*position: relative;*/
+                    padding-left: 0;
+                    /*padding-top: 32px;*/
+                    /*padding-bottom: 32px;*/
+                    /*border-bottom: 1px solid var(--low-emphasis-black);*/
+                }
+                    .teachers__preview {
+                        position: static;
+                        margin-bottom: 20px;
+                        /*left: -3px;*/
+                        /*top: 29px;*/
+                        /*flex-shrink: 0;*/
+                        /*text-align: right;*/
+                    }
+                        .teachers__preview .circle__photo {
+                            width: 80px;
+                            height: 80px;
+                        }
+
+                    .teachers__position {
+                        /*font-size: var(--caption-font);*/
+                        /*line-height: var(--caption-line);*/
+                    }
+
+                    .teachers__name {
+                        /*margin-top: 6px;*/
+                        /*margin-bottom: 0;*/
+                        /*font-weight: var(--extra-bold);*/
+                        /*font-size: 26px;*/
+                        /*line-height: 34px;*/
+                    }
+
+                    .teachers__bio {
+                        /*margin-top: 12px;*/
+                        /*font-size: var(--caption-font);*/
+                        /*line-height: var(--caption-line);*/
+                    }
+
+                    .teachers__menu {
+                        /*margin-top: 12px;*/
+                        /*display: flex;*/
+                        /*align-items: flex-start;*/
+                        /*gap: 24px;*/
+                    }
+                        .teachers__action {
+
+                        }
+
+            .teachers__pages {
+
+            }
+
+            .teachers__nav {
+                /*margin-top: 24px;*/
+            }
+
+            .teachers__entry {
+                /*margin-top: 26px;*/
+            }
+                .teachers__article-heading {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                    /*font-weight: 600;*/
+                    /*font-size: 26px;*/
+                    /*line-height: 34px;*/
+                }
+
+                .teachers__text {
+                    /*margin-top: 32px;*/
+                }
+
+                .teachers__tags {
+                    /*margin-top: 48px;*/
+                    /*display: flex;*/
+                    /*align-items: flex-start;*/
+                    /*flex-wrap: wrap;*/
+                    /*gap: 8px;*/
+                }
+}

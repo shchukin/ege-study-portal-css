@@ -33,115 +33,283 @@
             <div class="intro__wrap container">
                 <div class="intro__inner">
                     <h1 class="intro__heading">
-                        Новости
+                        Наши преподаватели
                     </h1>
-                </div>
-            </div>
-        </div>
-        <div class="feed container">
-            <div class="feed__sidebar">
-                <div class="feed__detachable-area">
-                    <div class="collapse">
-                        <button class="collapse__handler" type="button">
-                            Все новости
-                        </button>
-                        <nav class="collapse__dropdown">
-                            <div class="collapse__list">
-                                <a class="collapse__link collapse__link--current" href="#">Все новости</a>
-                                <a class="collapse__link" href="#">Новости центра</a>
-                                <a class="collapse__link" href="#">Акции</a>
-                                <a class="collapse__link" href="#">СМИ о нас</a>
-                            </div>
-                        </nav>
+                    <div class="intro__description">
+                        Занятия в наших мини-группах подготовки к ЕГЭ ведут лучшие репетиторы Москвы. Мы гордимся нашей командой профессионалов. Мы знаем о ЕГЭ всё! Большинство наших преподавателей окончили с отличием МГУ, МФТИ, МГПУ и другие ВУЗы. Более 50% из них - кандидаты наук. Опыт репетиторской работы наших преподавателей – от 10 до 40 лет. Главный результат работы - сотни учеников, поступивших в ведущие ВУЗы.
                     </div>
                 </div>
             </div>
-            <div class="feed__content">
-                <div class="feed__list">
-                    <article class="feed__item">
-                        <div class="feed__inner">
-                            <a class="feed__summary" href="#">
-                                <div class="feed__date">01.05.2022</div>
-                                <h2 class="feed__heading">Интенсивы для подготовки к ЕГЭ по супер-ценам!</h2>
-                                <div class="feed__note">Едем в Москву на праздники! Лучшие интенсивы для подготовки к ЕГЭ по супер-ценам!</div>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="feed__item">
-                        <div class="feed__inner">
-                            <div class="feed__preview"><!-- Опционально -->
-                                <div class="video video--16x9">
-                                    <iframe class="video__widget" width="560" height="315" src="https://www.youtube.com/embed/EqLyNGrBUDs" allowfullscreen></iframe>
+        </div>
+        <div class="teachers container">
+            <div class="teachers__sidebar">
+                <div class="teachers__detachable-area">
+                    <div class="teachers__filter">
+                        <div class="collapse">
+                            <button class="collapse__handler" type="button">
+                                Предмет
+                            </button>
+                            <nav class="collapse__dropdown">
+                                <div class="subject-filter">
+                                    <b class="subject-filter__heading">
+                                        Предмет
+                                    </b>
+                                    <div class="subject-filter__list">
+                                        <label class="choice choice--checkbox">
+                                            <input class="choice__widget" type="checkbox">
+                                            <i class="choice__icon" role="presentation"></i>
+                                            <span class="choice__label">Математика</span>
+                                        </label>
+                                        <label class="choice choice--checkbox">
+                                            <input class="choice__widget" type="checkbox">
+                                            <i class="choice__icon" role="presentation"></i>
+                                            <span class="choice__label">Русский язык</span>
+                                        </label>
+                                        <label class="choice choice--checkbox">
+                                            <input class="choice__widget" type="checkbox">
+                                            <i class="choice__icon" role="presentation"></i>
+                                            <span class="choice__label">Физика</span>
+                                        </label>
+                                        <label class="choice choice--checkbox">
+                                            <input class="choice__widget" type="checkbox">
+                                            <i class="choice__icon" role="presentation"></i>
+                                            <span class="choice__label">Информатика</span>
+                                        </label>
+                                    </div>
                                 </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="teachers__content">
+                <div class="teachers__list">
+                    <article class="teachers__item">
+                        <a class="teachers__preview circle" href="#">
+                            <img class="circle__photo"
+                                 srcset="../temp/circle-120@2x.jpg 2x"
+                                 src="../temp/circle-120.jpg"
+                                 width="120"
+                                 height="120"
+                                 alt=""
+                            >
+                        </a>
+                        <div class="teachers__position">
+                            Математика
+                        </div>
+                        <h3 class="teachers__name">
+                            <a class="link link--inherit" href="#">Анна Георгиевна Малкова</a>
+                        </h3>
+                        <div class="teachers__bio">
+                            Преподаватель математики со стажем более 25 лет. Учредитель и директор компании ЕГЭ-Студия. Автор видеокурса по математике для подготовки к ЕГЭ. Автор книг «ЕГЭ по математике.
+                        </div>
+                        <div class="teachers__menu">
+                            <div class="teachers__action">
+                                <a class="link" href="#">Отзывы</a>
                             </div>
-                            <a class="feed__summary" href="#">
-                                <div class="feed__date">30.04.2022</div>
-                                <h2 class="feed__heading">Разбор Тренировочных и Мастер-классы в выходные</h2>
-                                <div class="feed__note">Разбор Тренировочных Статграда и Мастер-классы в выходные. Математика, русский язык, информатика</div>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="feed__item">
-                        <div class="feed__inner">
-                            <a class="feed__summary" href="#">
-                                <div class="feed__date">28.04.2022</div>
-                                <h2 class="feed__heading">Разбираем Тренировочную Статград по математике</h2>
-                                <div class="feed__note">Сегодня стрим бесплатно! Что было на Тренировочной Статград?</div>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="feed__item">
-                        <div class="feed__inner">
-                            <a class="feed__summary" href="#">
-                                <div class="feed__date">27.04.2022</div>
-                                <h2 class="feed__heading">Задача 18: +10 баллов на ЕГЭ!</h2>
-                                <div class="feed__note">Всё о задаче 18. Бесплатные материалы и распродажа видеокурса!</div>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="feed__item">
-                        <div class="feed__inner">
-                            <a class="feed__summary" href="#">
-                                <div class="feed__date">01.05.2022</div>
-                                <h2 class="feed__heading">Интенсивы для подготовки к ЕГЭ по супер-ценам!</h2>
-                                <div class="feed__note">Едем в Москву на праздники! Лучшие интенсивы для подготовки к ЕГЭ по супер-ценам!</div>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="feed__item">
-                        <div class="feed__inner">
-                            <div class="feed__preview"><!-- Опционально -->
-                                <div class="video video--16x9">
-                                    <iframe class="video__widget" width="560" height="315" src="https://www.youtube.com/embed/EqLyNGrBUDs" allowfullscreen></iframe>
-                                </div>
+                            <div class="teachers__action">
+                                <a class="link" href="#">Курсы преподавателя</a>
                             </div>
-                            <a class="feed__summary" href="#">
-                                <div class="feed__date">30.04.2022</div>
-                                <h2 class="feed__heading">Разбор Тренировочных и Мастер-классы в выходные</h2>
-                                <div class="feed__note">Разбор Тренировочных Статграда и Мастер-классы в выходные. Математика, русский язык, информатика</div>
-                            </a>
                         </div>
                     </article>
-                    <article class="feed__item">
-                        <div class="feed__inner">
-                            <a class="feed__summary" href="#">
-                                <div class="feed__date">28.04.2022</div>
-                                <h2 class="feed__heading">Разбираем Тренировочную Статград по математике</h2>
-                                <div class="feed__note">Сегодня стрим бесплатно! Что было на Тренировочной Статград?</div>
-                            </a>
+                    <article class="teachers__item">
+                        <a class="teachers__preview circle" href="#">
+                            <img class="circle__photo"
+                                 srcset="../temp/circle-120@2x.jpg 2x"
+                                 src="../temp/circle-120.jpg"
+                                 width="120"
+                                 height="120"
+                                 alt=""
+                            >
+                        </a>
+                        <div class="teachers__position">
+                            Математика
+                        </div>
+                        <h3 class="teachers__name">
+                            <a class="link link--inherit" href="#">Ирина Михайловна Храпова</a>
+                        </h3>
+                        <div class="teachers__bio">
+                            Преподаватель математики со стажем более 25 лет. Учредитель и директор компании ЕГЭ-Студия. Автор видеокурса по математике для подготовки к ЕГЭ. Автор книг «ЕГЭ по математике.
+                        </div>
+                        <div class="teachers__menu">
+                            <div class="teachers__action">
+                                <a class="link" href="#">Отзывы</a>
+                            </div>
+                            <div class="teachers__action">
+                                <a class="link" href="#">Курсы преподавателя</a>
+                            </div>
                         </div>
                     </article>
-                    <article class="feed__item">
-                        <div class="feed__inner">
-                            <a class="feed__summary" href="#">
-                                <div class="feed__date">27.04.2022</div>
-                                <h2 class="feed__heading">Задача 18: +10 баллов на ЕГЭ!</h2>
-                                <div class="feed__note">Всё о задаче 18. Бесплатные материалы и распродажа видеокурса!</div>
-                            </a>
+                    <article class="teachers__item">
+                        <a class="teachers__preview circle" href="#">
+                            <img class="circle__photo"
+                                 srcset="../temp/circle-120@2x.jpg 2x"
+                                 src="../temp/circle-120.jpg"
+                                 width="120"
+                                 height="120"
+                                 alt=""
+                            >
+                        </a>
+                        <div class="teachers__position">
+                            Математика
+                        </div>
+                        <h3 class="teachers__name">
+                            <a class="link link--inherit" href="#">Ольга Владимировна Гущина</a>
+                        </h3>
+                        <div class="teachers__bio">
+                            Преподаватель математики со стажем более 25 лет. Учредитель и директор компании ЕГЭ-Студия. Автор видеокурса по математике для подготовки к ЕГЭ. Автор книг «ЕГЭ по математике.
+                        </div>
+                        <div class="teachers__menu">
+                            <div class="teachers__action">
+                                <a class="link" href="#">Отзывы</a>
+                            </div>
+                            <div class="teachers__action">
+                                <a class="link" href="#">Курсы преподавателя</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="teachers__item">
+                        <a class="teachers__preview circle" href="#">
+                            <img class="circle__photo"
+                                 srcset="../temp/circle-120@2x.jpg 2x"
+                                 src="../temp/circle-120.jpg"
+                                 width="120"
+                                 height="120"
+                                 alt=""
+                            >
+                        </a>
+                        <div class="teachers__position">
+                            Математика
+                        </div>
+                        <h3 class="teachers__name">
+                            <a class="link link--inherit" href="#">Ирина Александровна Кривенкова</a>
+                        </h3>
+                        <div class="teachers__bio">
+                            Преподаватель математики со стажем более 25 лет. Учредитель и директор компании ЕГЭ-Студия. Автор видеокурса по математике для подготовки к ЕГЭ. Автор книг «ЕГЭ по математике.
+                        </div>
+                        <div class="teachers__menu">
+                            <div class="teachers__action">
+                                <a class="link" href="#">Отзывы</a>
+                            </div>
+                            <div class="teachers__action">
+                                <a class="link" href="#">Курсы преподавателя</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="teachers__item">
+                        <a class="teachers__preview circle" href="#">
+                            <img class="circle__photo"
+                                 srcset="../temp/circle-120@2x.jpg 2x"
+                                 src="../temp/circle-120.jpg"
+                                 width="120"
+                                 height="120"
+                                 alt=""
+                            >
+                        </a>
+                        <div class="teachers__position">
+                            Математика
+                        </div>
+                        <h3 class="teachers__name">
+                            <a class="link link--inherit" href="#">Александр Владимирович Морозов</a>
+                        </h3>
+                        <div class="teachers__bio">
+                            Преподаватель математики со стажем более 25 лет. Учредитель и директор компании ЕГЭ-Студия. Автор видеокурса по математике для подготовки к ЕГЭ. Автор книг «ЕГЭ по математике.
+                        </div>
+                        <div class="teachers__menu">
+                            <div class="teachers__action">
+                                <a class="link" href="#">Отзывы</a>
+                            </div>
+                            <div class="teachers__action">
+                                <a class="link" href="#">Курсы преподавателя</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="teachers__item">
+                        <a class="teachers__preview circle" href="#">
+                            <img class="circle__photo"
+                                 srcset="../temp/circle-120@2x.jpg 2x"
+                                 src="../temp/circle-120.jpg"
+                                 width="120"
+                                 height="120"
+                                 alt=""
+                            >
+                        </a>
+                        <div class="teachers__position">
+                            Математика
+                        </div>
+                        <h3 class="teachers__name">
+                            <a class="link link--inherit" href="#">Лада Борисовна Есакова</a>
+                        </h3>
+                        <div class="teachers__bio">
+                            Преподаватель математики со стажем более 25 лет. Учредитель и директор компании ЕГЭ-Студия. Автор видеокурса по математике для подготовки к ЕГЭ. Автор книг «ЕГЭ по математике.
+                        </div>
+                        <div class="teachers__menu">
+                            <div class="teachers__action">
+                                <a class="link" href="#">Отзывы</a>
+                            </div>
+                            <div class="teachers__action">
+                                <a class="link" href="#">Курсы преподавателя</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="teachers__item">
+                        <a class="teachers__preview circle" href="#">
+                            <img class="circle__photo"
+                                 srcset="../temp/circle-120@2x.jpg 2x"
+                                 src="../temp/circle-120.jpg"
+                                 width="120"
+                                 height="120"
+                                 alt=""
+                            >
+                        </a>
+                        <div class="teachers__position">
+                            Математика
+                        </div>
+                        <h3 class="teachers__name">
+                            <a class="link link--inherit" href="#">Канов Степан Викторович</a>
+                        </h3>
+                        <div class="teachers__bio">
+                            Преподаватель математики со стажем более 25 лет. Учредитель и директор компании ЕГЭ-Студия. Автор видеокурса по математике для подготовки к ЕГЭ. Автор книг «ЕГЭ по математике.
+                        </div>
+                        <div class="teachers__menu">
+                            <div class="teachers__action">
+                                <a class="link" href="#">Отзывы</a>
+                            </div>
+                            <div class="teachers__action">
+                                <a class="link" href="#">Курсы преподавателя</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="teachers__item">
+                        <a class="teachers__preview circle" href="#">
+                            <img class="circle__photo"
+                                 srcset="../temp/circle-120@2x.jpg 2x"
+                                 src="../temp/circle-120.jpg"
+                                 width="120"
+                                 height="120"
+                                 alt=""
+                            >
+                        </a>
+                        <div class="teachers__position">
+                            Математика
+                        </div>
+                        <h3 class="teachers__name">
+                            <a class="link link--inherit" href="#">Белкина Наталья Сергеевна</a>
+                        </h3>
+                        <div class="teachers__bio">
+                            Преподаватель математики со стажем более 25 лет. Учредитель и директор компании ЕГЭ-Студия. Автор видеокурса по математике для подготовки к ЕГЭ. Автор книг «ЕГЭ по математике.
+                        </div>
+                        <div class="teachers__menu">
+                            <div class="teachers__action">
+                                <a class="link" href="#">Отзывы</a>
+                            </div>
+                            <div class="teachers__action">
+                                <a class="link" href="#">Курсы преподавателя</a>
+                            </div>
                         </div>
                     </article>
                 </div>
-                <div class="feed__pages">
+                <div class="teachers__pages">
                     <div class="pagination">
                         <a class="pagination__link pagination__link--disabled" href="#">1</a>
                         <a class="pagination__link pagination__link--current" href="#">2</a>
