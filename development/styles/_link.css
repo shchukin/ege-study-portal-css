@@ -71,7 +71,7 @@
 
 .link--classic-text:hover,
 .wysiwyg .link--classic-text:hover {
-    border-bottom-color: transparent;
+    color: var(--red);
 }
 
 
@@ -84,3 +84,16 @@
 .wysiwyg .link--inherit:hover {
     color: var(--red);
 }
+
+
+.link--faded,
+.wysiwyg .link--faded {
+    color: var(--medium-emphasis);
+}
+
+.link--faded:hover,
+.wysiwyg .link--faded:hover {
+    color: var(--red);
+}
+
+

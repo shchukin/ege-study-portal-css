@@ -3,12 +3,20 @@
     padding-bottom: 34px;
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs--inner {
+    padding-top: 0;
+    padding-bottom: 0;
 }
     .breadcrumbs__item {
         position: relative;
         margin-right: 8px;
         font-size: 15px;
         line-height: 23px;
+        white-space: nowrap;
+        word-wrap: break-word;
     }
         .breadcrumbs__item::after {
             content: "/";

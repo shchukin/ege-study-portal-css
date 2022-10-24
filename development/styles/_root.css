@@ -23,11 +23,13 @@
     --transition-slide: 0.5s ease;
     --body-17-font: 17px;
     --body-17-line: 27px;
+    --body-20-font: 20px;
+    --body-20-line: 32px;
+    --caption-font: 15px;
+    --caption-line: 23px;
     --footnote-font: 12px;
     --footnote-line: 17px;
     --footnote-spacing: 2.1px;
-    --caption-font: 15px;
-    --caption-line: 23px;
     --panel-hover: #F2F2F2;
     --panel-active: #EAEAEA;
     --image-fallback: #C4C4C4;
