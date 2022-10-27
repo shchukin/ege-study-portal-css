@@ -88,7 +88,7 @@
 
 .link--faded,
 .wysiwyg .link--faded {
-    color: var(--medium-emphasis);
+    color: var(--medium-emphasis-white);
 }
 
 .link--faded:hover,

@@ -59,7 +59,7 @@
 
 /* для .input--select */
 .input--placeholder-is-chosen .input__widget {
-    color: var(--medium-emphasis);
+    color: var(--medium-emphasis-white);
 }
     .input--placeholder-is-chosen option {
         color: #000000 !important; /* FF тупит и наследует серый цвет */
@@ -107,10 +107,10 @@
     .input--disabled .input__widget:hover,
     .input--disabled .input__widget:active {
         background-color: var(--low-emphasis-black);
-        border-color: var(--medium-emphasis);
-        -webkit-text-fill-color: var(--medium-emphasis); /* safari зачем-то засветляет текст */
+        border-color: var(--medium-emphasis-white);
+        -webkit-text-fill-color: var(--medium-emphasis-white); /* safari зачем-то засветляет текст */
         opacity: 1; /* ios safari зачем-то засветляет текст */
-        color: var(--medium-emphasis);
+        color: var(--medium-emphasis-white);
         box-shadow: none;
         cursor: default;
     }

@@ -17,7 +17,8 @@
     --border-neutral: #EFE8E1;
     --yellow: #FFD046;
     --yellow-light: #FFF5E7;
-    --medium-emphasis: #BFBFBF;
+    --medium-emphasis-black: #87878A;
+    --medium-emphasis-white: #BFBFBF;
     --low-emphasis-black: rgba(15, 16, 21, 0.16);
     --low-emphasis-white: rgba(255, 250, 245, 0.32);
     --transition-slide: 0.5s ease;

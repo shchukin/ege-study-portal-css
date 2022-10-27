@@ -1,0 +1,19 @@
+.panel {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--neutral);
+    border-radius: 16px;
+}
+    .panel__heading {
+        flex-grow: 1;
+        padding: 12px 24px;
+        font-weight: var(--extra-bold);
+        font-size: var(--body-17-font);
+        line-height: var(--body-17-line);
+        text-align: center;
+    }
+
+    .panel__submit {
+
+    }

@@ -97,9 +97,13 @@
 
 .wysiwyg img {
     vertical-align: top;
-    max-width: 100%;
+    max-width: 704px;
     height: auto;
     background-color: var(--image-fallback);
+}
+
+.wysiwyg .video {
+    max-width: 704px;
 }
 
 /*.wysiwyg figure {*/

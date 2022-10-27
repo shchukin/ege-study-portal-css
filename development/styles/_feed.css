@@ -17,6 +17,10 @@
     .feed__content {
 
     }
+        .feed__bar {
+            margin-bottom: 24px;
+        }
+
         .feed__filtering-tags {
             padding-bottom: 24px;
             border-bottom: 1px solid var(--low-emphasis-black);
@@ -103,6 +107,21 @@
 
                         .feed__note {
                             margin-top: 12px;
+                        }
+
+                        .feed__listing {
+                            margin-top: 16px;
+                            display: flex;
+                            align-items: flex-start;
+                            flex-wrap: wrap;
+                            gap: 8px;
+                        }
+
+                        .feed__date {
+                            margin-top: 8px;
+                            font-size: var(--caption-font);
+                            line-height: var(--caption-line);
+                            color: var(--medium-emphasis-black);
                         }
 
         .feed__pages {
