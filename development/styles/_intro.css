@@ -9,6 +9,15 @@
         .intro__inner {
             max-width: 1184px;
         }
+            .intro__nav {
+
+            }
+                .intro__nav.breadcrumbs,
+                .intro__nav .breadcrumbs {
+                    padding-top: 0;
+                    padding-bottom: 24px;
+                }
+
             .intro__heading {
                 margin-top: 0;
                 margin-bottom: 0;
@@ -44,6 +53,10 @@
             .intro__inner {
 
             }
+                .intro__nav {
+
+                }
+
                 .intro__heading {
                     font-size: 36px;
                     line-height: 40px;
