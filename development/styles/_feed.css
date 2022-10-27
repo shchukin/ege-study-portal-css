@@ -53,7 +53,10 @@
             }
 
             .feed__date {
-
+                margin-top: 8px;
+                font-size: var(--caption-font);
+                line-height: var(--caption-line);
+                color: var(--medium-emphasis-black);
             }
 
 @media (max-width: 639px) {
@@ -113,9 +116,6 @@
                 }
 
                 .feed__date {
-                    margin-top: 8px;
-                    font-size: var(--caption-font);
-                    line-height: var(--caption-line);
-                    color: var(--medium-emphasis-black);
+
                 }
 }

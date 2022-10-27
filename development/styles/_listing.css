@@ -93,6 +93,8 @@
 
                     .listing__tags {
                         margin-top: 16px;
+                        margin-left: -2px;
+                        margin-right: -2px;
                         display: flex;
                         align-items: flex-start;
                         flex-wrap: wrap;
@@ -101,8 +103,6 @@
 
                     .listing__foot-date {
                         margin-top: 8px;
-                        margin-left: -2px;
-                        margin-right: -2px;
                         font-size: var(--caption-font);
                         line-height: var(--caption-line);
                         color: var(--medium-emphasis-black);
