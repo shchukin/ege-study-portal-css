@@ -1,9 +1,9 @@
 .teacher-item {
     padding-top: 60px;
-    padding-bottom: 80px;
 }
     .teacher-item__summary {
         max-width: 1032px;
+        padding-bottom: 60px;
         border-bottom: 1px solid var(--border-neutral);
     }
         .teacher-item__heading {
@@ -28,3 +28,7 @@
             .teacher-item__widget {
 
             }
+
+    .teacher-item__feedback {
+        margin-top: 60px;
+    }

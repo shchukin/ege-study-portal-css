@@ -4,11 +4,23 @@
     background-color: var(--neutral);
 }
     .intro__wrap {
-
+        position: relative;
     }
+        .intro__teacher {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -100px;
+        }
+
         .intro__inner {
             max-width: 1184px;
         }
+
+        .intro__teacher ~ .intro__inner {
+            margin-right: 224px;
+        }
+
             .intro__nav {
 
             }
@@ -50,8 +62,16 @@
         .intro__wrap {
 
         }
+            .intro__teacher {
+                display: none;
+            }
+
             .intro__inner {
 
+            }
+
+            .intro__teacher ~ .intro__inner {
+                margin-right: 0;
             }
                 .intro__nav {
 

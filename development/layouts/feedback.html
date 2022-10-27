@@ -109,203 +109,205 @@
                         Оставить отзыв
                     </a>
                 </div>
-                <div class="feed__filtering-tags hide-scrollbar">
-                    <div class="feed__ribbon">
-                        <button class="feed__tag feed__tag--current" type="button">Недавние</button>
-                        <button class="feed__tag" type="button">Только видео</button>
-                        <button class="feed__tag" type="button">Только статьи</button>
-                    </div>
-                </div>
                 <div class="feed__list listing">
-                    <article class="listing__item">
-                        <div class="listing__inner">
-                            <a class="listing__summary" href="#">
-                                <h2 class="listing__heading">Даниил</h2>
-                                <div class="listing__note">Меня зовут Даниил. Я сдал ЕГЭ в 2022 году по физике на 97 баллов и обучался на онлайн-курсе ЕГЭ-студии у Вадима Александровича Муранова. Еженедельные воскресные мастер-классы очень помогли мне в подготовке к этому экзамену. Задания были непростые, но решаемые.</div>
-                                <div class="listing__tags">
-                                    <div class="badge badge--yellow">Очно</div>
-                                    <div class="badge badge--yellow">Физика</div>
-                                    <div class="badge badge--yellow">Информатика</div>
-                                    <div class="badge badge--yellow">История</div>
-                                    <div class="badge badge--yellow">Муранов В.А.</div>
-                                    <div class="badge badge--yellow">Кривенкова И.А.</div>
-                                </div>
-                                <div class="listing__foot-date">09.09.2022</div>
-                            </a>
+                    <div class="listing__filter hide-scrollbar">
+                        <div class="listing__ribbon">
+                            <button class="listing__tag listing__tag--current" type="button">Недавние</button>
+                            <button class="listing__tag" type="button">Только видео</button>
+                            <button class="listing__tag" type="button">Только статьи</button>
                         </div>
-                    </article>
-                    <article class="listing__item">
-                        <div class="listing__inner">
-                            <div class="listing__preview"><!-- Опционально -->
-                                <div class="video video--16x9">
-                                    <div class="video__cell">
-                                        <iframe class="video__widget" width="560" height="315" src="https://www.youtube.com/embed/EqLyNGrBUDs" allowfullscreen></iframe>
+                    </div>
+                    <div class="listing__body">
+                        <article class="listing__item">
+                            <div class="listing__inner">
+                                <a class="listing__summary" href="#">
+                                    <h2 class="listing__heading">Даниил</h2>
+                                    <div class="listing__note">Меня зовут Даниил. Я сдал ЕГЭ в 2022 году по физике на 97 баллов и обучался на онлайн-курсе ЕГЭ-студии у Вадима Александровича Муранова. Еженедельные воскресные мастер-классы очень помогли мне в подготовке к этому экзамену. Задания были непростые, но решаемые.</div>
+                                    <div class="listing__tags">
+                                        <div class="badge badge--yellow">Очно</div>
+                                        <div class="badge badge--yellow">Физика</div>
+                                        <div class="badge badge--yellow">Информатика</div>
+                                        <div class="badge badge--yellow">История</div>
+                                        <div class="badge badge--yellow">Муранов В.А.</div>
+                                        <div class="badge badge--yellow">Кривенкова И.А.</div>
+                                    </div>
+                                    <div class="listing__foot-date">09.09.2022</div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="listing__item">
+                            <div class="listing__inner">
+                                <div class="listing__preview"><!-- Опционально -->
+                                    <div class="video video--16x9">
+                                        <div class="video__cell">
+                                            <iframe class="video__widget" width="560" height="315" src="https://www.youtube.com/embed/EqLyNGrBUDs" allowfullscreen></iframe>
+                                        </div>
                                     </div>
                                 </div>
+                                <a class="listing__summary" href="#">
+                                    <h2 class="listing__heading">Георгий</h2>
+                                    <div class="listing__tags">
+                                        <div class="badge badge--yellow">Очно</div>
+                                        <div class="badge badge--yellow">Физика</div>
+                                        <div class="badge badge--yellow">Информатика</div>
+                                        <div class="badge badge--yellow">История</div>
+                                        <div class="badge badge--yellow">Муранов В.А.</div>
+                                        <div class="badge badge--yellow">Кривенкова И.А.</div>
+                                    </div>
+                                    <div class="listing__foot-date">09.09.2022</div>
+                                </a>
                             </div>
-                            <a class="listing__summary" href="#">
-                                <h2 class="listing__heading">Георгий</h2>
-                                <div class="listing__tags">
-                                    <div class="badge badge--yellow">Очно</div>
-                                    <div class="badge badge--yellow">Физика</div>
-                                    <div class="badge badge--yellow">Информатика</div>
-                                    <div class="badge badge--yellow">История</div>
-                                    <div class="badge badge--yellow">Муранов В.А.</div>
-                                    <div class="badge badge--yellow">Кривенкова И.А.</div>
-                                </div>
-                                <div class="listing__foot-date">09.09.2022</div>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="listing__item">
-                        <div class="listing__inner">
-                            <a class="listing__preview" href="#"><!-- Опционально -->
-                                <img class="feed__image"
-                                     srcset="../temp/feed-supplimentary@2x.jpg 2x"
-                                     src="../temp/feed-supplimentary.jpg"
-                                     width="91"
-                                     height="128"
-                                     alt=""
-                                >
-                            </a>
-                            <a class="listing__summary" href="#">
-                                <h2 class="listing__heading">Татьяна Орлова</h2>
-                                <div class="listing__note">С чистым сердцем хочу поблагодарить весь педагогический состав и Анну Малкову за творческий и продуктивный подход в образовательном процессе для наших детей! Сожалею, что инновационный метод преподавания школьных предметов ограничивается стенами ЕГЭ Студии. Всем детям и родителям, которые имеют</div>
-                                <div class="listing__tags">
-                                    <div class="badge badge--yellow">Очно</div>
-                                    <div class="badge badge--yellow">Физика</div>
-                                    <div class="badge badge--yellow">Информатика</div>
-                                    <div class="badge badge--yellow">История</div>
-                                    <div class="badge badge--yellow">Муранов В.А.</div>
-                                    <div class="badge badge--yellow">Кривенкова И.А.</div>
-                                </div>
-                                <div class="listing__foot-date">09.09.2022</div>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="listing__item">
-                        <div class="listing__inner">
-                            <a class="listing__preview" href="#"><!-- Опционально -->
-                                <img class="feed__image"
-                                     srcset="../temp/feed-image@2x.jpg 2x"
-                                     src="../temp/feed-image.jpg"
-                                     width="228"
-                                     height="128"
-                                     alt=""
-                                >
-                            </a>
-                            <a class="listing__summary" href="#">
-                                <h2 class="listing__heading">Тихон</h2>
-                                <div class="listing__tags">
-                                    <div class="badge badge--yellow">Очно</div>
-                                    <div class="badge badge--yellow">Физика</div>
-                                    <div class="badge badge--yellow">Информатика</div>
-                                    <div class="badge badge--yellow">История</div>
-                                    <div class="badge badge--yellow">Муранов В.А.</div>
-                                    <div class="badge badge--yellow">Кривенкова И.А.</div>
-                                </div>
-                                <div class="listing__foot-date">09.09.2022</div>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="listing__item">
-                        <div class="listing__inner">
-                            <a class="listing__summary" href="#">
-                                <h2 class="listing__heading">Тихон</h2>
-                                <div class="listing__tags">
-                                    <div class="badge badge--yellow">Очно</div>
-                                    <div class="badge badge--yellow">Физика</div>
-                                    <div class="badge badge--yellow">Информатика</div>
-                                    <div class="badge badge--yellow">История</div>
-                                    <div class="badge badge--yellow">Муранов В.А.</div>
-                                    <div class="badge badge--yellow">Кривенкова И.А.</div>
-                                </div>
-                                <div class="listing__foot-date">09.09.2022</div>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="listing__item">
-                        <div class="listing__inner">
-                            <div class="listing__preview"><!-- Опционально -->
-                                <div class="video video--16x9">
-                                    <div class="video__cell">
-                                        <iframe class="video__widget" width="560" height="315" src="https://www.youtube.com/embed/EqLyNGrBUDs" allowfullscreen></iframe>
+                        </article>
+                        <article class="listing__item">
+                            <div class="listing__inner">
+                                <a class="listing__preview" href="#"><!-- Опционально -->
+                                    <img class="feed__image"
+                                         srcset="../temp/feed-supplimentary@2x.jpg 2x"
+                                         src="../temp/feed-supplimentary.jpg"
+                                         width="91"
+                                         height="128"
+                                         alt=""
+                                    >
+                                </a>
+                                <a class="listing__summary" href="#">
+                                    <h2 class="listing__heading">Татьяна Орлова</h2>
+                                    <div class="listing__note">С чистым сердцем хочу поблагодарить весь педагогический состав и Анну Малкову за творческий и продуктивный подход в образовательном процессе для наших детей! Сожалею, что инновационный метод преподавания школьных предметов ограничивается стенами ЕГЭ Студии. Всем детям и родителям, которые имеют</div>
+                                    <div class="listing__tags">
+                                        <div class="badge badge--yellow">Очно</div>
+                                        <div class="badge badge--yellow">Физика</div>
+                                        <div class="badge badge--yellow">Информатика</div>
+                                        <div class="badge badge--yellow">История</div>
+                                        <div class="badge badge--yellow">Муранов В.А.</div>
+                                        <div class="badge badge--yellow">Кривенкова И.А.</div>
+                                    </div>
+                                    <div class="listing__foot-date">09.09.2022</div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="listing__item">
+                            <div class="listing__inner">
+                                <a class="listing__preview" href="#"><!-- Опционально -->
+                                    <img class="feed__image"
+                                         srcset="../temp/feed-image@2x.jpg 2x"
+                                         src="../temp/feed-image.jpg"
+                                         width="228"
+                                         height="128"
+                                         alt=""
+                                    >
+                                </a>
+                                <a class="listing__summary" href="#">
+                                    <h2 class="listing__heading">Тихон</h2>
+                                    <div class="listing__tags">
+                                        <div class="badge badge--yellow">Очно</div>
+                                        <div class="badge badge--yellow">Физика</div>
+                                        <div class="badge badge--yellow">Информатика</div>
+                                        <div class="badge badge--yellow">История</div>
+                                        <div class="badge badge--yellow">Муранов В.А.</div>
+                                        <div class="badge badge--yellow">Кривенкова И.А.</div>
+                                    </div>
+                                    <div class="listing__foot-date">09.09.2022</div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="listing__item">
+                            <div class="listing__inner">
+                                <a class="listing__summary" href="#">
+                                    <h2 class="listing__heading">Тихон</h2>
+                                    <div class="listing__tags">
+                                        <div class="badge badge--yellow">Очно</div>
+                                        <div class="badge badge--yellow">Физика</div>
+                                        <div class="badge badge--yellow">Информатика</div>
+                                        <div class="badge badge--yellow">История</div>
+                                        <div class="badge badge--yellow">Муранов В.А.</div>
+                                        <div class="badge badge--yellow">Кривенкова И.А.</div>
+                                    </div>
+                                    <div class="listing__foot-date">09.09.2022</div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="listing__item">
+                            <div class="listing__inner">
+                                <div class="listing__preview"><!-- Опционально -->
+                                    <div class="video video--16x9">
+                                        <div class="video__cell">
+                                            <iframe class="video__widget" width="560" height="315" src="https://www.youtube.com/embed/EqLyNGrBUDs" allowfullscreen></iframe>
+                                        </div>
                                     </div>
                                 </div>
+                                <a class="listing__summary" href="#">
+                                    <h2 class="listing__heading">Анна С.</h2>
+                                    <div class="listing__note">Если Вы готовитесь к ЕГЭ или ОГЭ, то это место для Вас! Почему же стоит выбрать именно ЕГЭ Студию? Я здесь обучалась в 2021-2022 уч.году: готовилась к ЕГЭ по обществознанию (в группе О.М.Алиевой) и русскому (И.М.Храпова), сдала их на 90</div>
+                                    <div class="listing__tags">
+                                        <div class="badge badge--yellow">Очно</div>
+                                        <div class="badge badge--yellow">Физика</div>
+                                        <div class="badge badge--yellow">Информатика</div>
+                                        <div class="badge badge--yellow">История</div>
+                                        <div class="badge badge--yellow">Муранов В.А.</div>
+                                        <div class="badge badge--yellow">Кривенкова И.А.</div>
+                                    </div>
+                                    <div class="listing__foot-date">09.09.2022</div>
+                                </a>
                             </div>
-                            <a class="listing__summary" href="#">
-                                <h2 class="listing__heading">Анна С.</h2>
-                                <div class="listing__note">Если Вы готовитесь к ЕГЭ или ОГЭ, то это место для Вас! Почему же стоит выбрать именно ЕГЭ Студию? Я здесь обучалась в 2021-2022 уч.году: готовилась к ЕГЭ по обществознанию (в группе О.М.Алиевой) и русскому (И.М.Храпова), сдала их на 90</div>
-                                <div class="listing__tags">
-                                    <div class="badge badge--yellow">Очно</div>
-                                    <div class="badge badge--yellow">Физика</div>
-                                    <div class="badge badge--yellow">Информатика</div>
-                                    <div class="badge badge--yellow">История</div>
-                                    <div class="badge badge--yellow">Муранов В.А.</div>
-                                    <div class="badge badge--yellow">Кривенкова И.А.</div>
-                                </div>
-                                <div class="listing__foot-date">09.09.2022</div>
-                            </a>
+                        </article>
+                        <article class="listing__item">
+                            <div class="listing__inner">
+                                <a class="listing__summary" href="#">
+                                    <h2 class="listing__heading">Наталья Григорьевна</h2>
+                                    <div class="listing__note">Ознакомилась с методикой решения и примерами решения заданий 35 ЕГЭ по химии. Понравилась чёткость изложения., прослеживаемость и взаимосвязь отдельных шагов в решении, простота изложения, соблюдение принципа "от простого к сложному". Полезны задания для самостоятельной работы. Большое спасибо автору! такой</div>
+                                    <div class="listing__tags">
+                                        <div class="badge badge--yellow">Очно</div>
+                                        <div class="badge badge--yellow">Физика</div>
+                                        <div class="badge badge--yellow">Информатика</div>
+                                        <div class="badge badge--yellow">История</div>
+                                        <div class="badge badge--yellow">Муранов В.А.</div>
+                                        <div class="badge badge--yellow">Кривенкова И.А.</div>
+                                    </div>
+                                    <div class="listing__foot-date">09.09.2022</div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="listing__item">
+                            <div class="listing__inner">
+                                <a class="listing__summary" href="#">
+                                    <h2 class="listing__heading">Тихон</h2>
+                                    <div class="listing__tags">
+                                        <div class="badge badge--yellow">Очно</div>
+                                        <div class="badge badge--yellow">Физика</div>
+                                        <div class="badge badge--yellow">Информатика</div>
+                                        <div class="badge badge--yellow">История</div>
+                                        <div class="badge badge--yellow">Муранов В.А.</div>
+                                        <div class="badge badge--yellow">Кривенкова И.А.</div>
+                                    </div>
+                                    <div class="listing__foot-date">09.09.2022</div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="listing__item">
+                            <div class="listing__inner">
+                                <a class="listing__summary" href="#">
+                                    <h2 class="listing__heading">Георгий</h2>
+                                    <div class="listing__tags">
+                                        <div class="badge badge--yellow">Очно</div>
+                                        <div class="badge badge--yellow">Физика</div>
+                                        <div class="badge badge--yellow">Информатика</div>
+                                        <div class="badge badge--yellow">История</div>
+                                        <div class="badge badge--yellow">Муранов В.А.</div>
+                                        <div class="badge badge--yellow">Кривенкова И.А.</div>
+                                    </div>
+                                    <div class="listing__foot-date">09.09.2022</div>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="listing__pages">
+                        <div class="pagination">
+                            <a class="pagination__link pagination__link--disabled" href="#">1</a>
+                            <a class="pagination__link pagination__link--current" href="#">2</a>
+                            <a class="pagination__link" href="#">3</a>
+                            <div class="pagination__separator">...</div>
+                            <a class="pagination__link" href="#">10</a>
+                            <a class="pagination__link pagination__link--next" href="#">Далее →</a>
                         </div>
-                    </article>
-                    <article class="listing__item">
-                        <div class="listing__inner">
-                            <a class="listing__summary" href="#">
-                                <h2 class="listing__heading">Наталья Григорьевна</h2>
-                                <div class="listing__note">Ознакомилась с методикой решения и примерами решения заданий 35 ЕГЭ по химии. Понравилась чёткость изложения., прослеживаемость и взаимосвязь отдельных шагов в решении, простота изложения, соблюдение принципа "от простого к сложному". Полезны задания для самостоятельной работы. Большое спасибо автору! такой</div>
-                                <div class="listing__tags">
-                                    <div class="badge badge--yellow">Очно</div>
-                                    <div class="badge badge--yellow">Физика</div>
-                                    <div class="badge badge--yellow">Информатика</div>
-                                    <div class="badge badge--yellow">История</div>
-                                    <div class="badge badge--yellow">Муранов В.А.</div>
-                                    <div class="badge badge--yellow">Кривенкова И.А.</div>
-                                </div>
-                                <div class="listing__foot-date">09.09.2022</div>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="listing__item">
-                        <div class="listing__inner">
-                            <a class="listing__summary" href="#">
-                                <h2 class="listing__heading">Тихон</h2>
-                                <div class="listing__tags">
-                                    <div class="badge badge--yellow">Очно</div>
-                                    <div class="badge badge--yellow">Физика</div>
-                                    <div class="badge badge--yellow">Информатика</div>
-                                    <div class="badge badge--yellow">История</div>
-                                    <div class="badge badge--yellow">Муранов В.А.</div>
-                                    <div class="badge badge--yellow">Кривенкова И.А.</div>
-                                </div>
-                                <div class="listing__foot-date">09.09.2022</div>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="listing__item">
-                        <div class="listing__inner">
-                            <a class="listing__summary" href="#">
-                                <h2 class="listing__heading">Георгий</h2>
-                                <div class="listing__tags">
-                                    <div class="badge badge--yellow">Очно</div>
-                                    <div class="badge badge--yellow">Физика</div>
-                                    <div class="badge badge--yellow">Информатика</div>
-                                    <div class="badge badge--yellow">История</div>
-                                    <div class="badge badge--yellow">Муранов В.А.</div>
-                                    <div class="badge badge--yellow">Кривенкова И.А.</div>
-                                </div>
-                                <div class="listing__foot-date">09.09.2022</div>
-                            </a>
-                        </div>
-                    </article>
-                </div>
-                <div class="feed__pages">
-                    <div class="pagination">
-                        <a class="pagination__link pagination__link--disabled" href="#">1</a>
-                        <a class="pagination__link pagination__link--current" href="#">2</a>
-                        <a class="pagination__link" href="#">3</a>
-                        <div class="pagination__separator">...</div>
-                        <a class="pagination__link" href="#">10</a>
-                        <a class="pagination__link pagination__link--next" href="#">Далее →</a>
                     </div>
                 </div>
             </div>
