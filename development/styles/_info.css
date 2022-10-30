@@ -3,3 +3,8 @@
     background-color: var(--red-light);
 }
 
+@media (max-width: 639px) {
+    .info {
+        display: none;
+    }
+}

@@ -17,11 +17,11 @@
         .nav__link {
             display: flex;
             align-items: flex-start;
-            padding: 10px 16px 11px;
+            padding: 10px 16px;
             border-radius: 4px;
-            font-size: var(--caption-font);
-            line-height: var(--caption-line);
-            letter-spacing: var(--caption-spacing);
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: 0.3px;
             color: var(--high-emphasis-white);
             white-space: nowrap;
             text-decoration: none;

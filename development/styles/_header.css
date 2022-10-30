@@ -1,45 +1,76 @@
-.header {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    height: 80px;
-    padding: 10px 65px;
-}
-    .header__togglers {
-        display: none;
+@media (min-width: 640px) {
+
+    .header {
+        position: relative;
+        display: flex;
         align-items: flex-start;
+        height: 80px;
+        padding: 10px 65px;
     }
-        .header__handler {
-            width: 78px;
-            height: 78px;
-            background-color: transparent;
-            border: none;
-            padding: 0;
-            vertical-align: top;
+        .header__togglers {
+            position: absolute;
+            right: 53px;
+            bottom: 100%;
+            margin-bottom: 8px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-weight: var(--extra-bold);
-            font-size: 17px;
-            line-height: 24px;
+            align-items: flex-start;
         }
-            .header__icon {
-                fill: currentColor;
+            .header__search {
+                position: relative;
+                vertical-align: top;
+                margin-right: 10px;
+                width: 44px;
+                height: 44px;
+                padding: 0;
+                background-color: transparent;
+                border-radius: 4px;
+                border: none;
+                text-indent: 200%;
+                white-space: nowrap;
+                overflow: hidden;
+                cursor: pointer;
             }
 
+            .header__search:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+                .header__magnifier {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    width: 20px;
+                    height: 20px;
+                    vertical-align: top;
+                    fill: var(--high-emphasis-white);
+                }
 
-    .header__logo {
-        display: block;
-        width: 128px;
-        height: 60px;
-        background-image: url("../images/logo.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center center;
-        text-indent: 200%;
-        white-space: nowrap;
-        overflow: hidden;
+            .header__login {
+                vertical-align: top;
+                padding: 10px 12px;
+                background-color: transparent;
+                border-radius: 4px;
+                border: none;
+                font-size: 15px;
+                line-height: 24px;
+                letter-spacing: 0.3px;
+                color: var(--high-emphasis-white);
+                white-space: nowrap;
+                cursor: pointer;
+            }
+
+            .header__login:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+                .header__door {
+                    vertical-align: top;
+                    display: none;
+                }
+
+    .header__emblem {
+
     }
 
     .header__courses {
@@ -102,3 +133,77 @@
                 margin-top: 3px;
                 margin-right: 4px;
             }
+}
+
+@media (max-width: 639px) {
+
+    .header {
+        position: relative;
+        padding: 20px 24px;
+    }
+        .header__togglers {
+            position: absolute;
+            right: 19px;
+            top: 11px;
+            display: flex;
+            align-items: flex-start;
+        }
+            .header__search,
+            .header__login {
+                width: 78px;
+                height: 78px;
+                background-color: transparent;
+                border: none;
+                padding: 0;
+                vertical-align: top;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-weight: var(--extra-bold);
+                font-size: 17px;
+                line-height: 24px;
+                cursor: pointer;
+            }
+                .header__magnifier,
+                .header__door {
+                    fill: currentColor;
+                }
+
+    .header__emblem {
+
+    }
+
+    .header__courses {
+        margin-top: 24px;
+    }
+        .header__courses.button,
+        .header__courses .button {
+            width: 100%;
+        }
+
+    .header__link {
+        display: none;
+    }
+
+    .header__link--has-dropdown {
+
+    }
+        .header__link--has-dropdown::after {
+
+        }
+
+    .header__contacts {
+        display: none;
+    }
+        .header__phone {
+
+        }
+
+        .header__address {
+
+        }
+            .header__pin {
+
+            }
+}
