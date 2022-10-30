@@ -5,7 +5,6 @@
     --body-font: "Manrope", sans-serif;
     --medium: 500;
     --extra-bold: 800;
-    --high-emphasis: rgba(15, 16, 21, 0.98);
     --red: #FC5E38;
     --red-light: #FFDDD1;
     --green-light: #E4E9C9;
@@ -17,6 +16,8 @@
     --border-neutral: #EFE8E1;
     --yellow: #FFD046;
     --yellow-light: #FFF5E7;
+    --high-emphasis-black: rgba(15, 16, 21, 0.98);
+    --high-emphasis-white: rgba(255, 255, 255, 0.98);
     --medium-emphasis-black: #87878A;
     --medium-emphasis-white: #BFBFBF;
     --low-emphasis-black: rgba(15, 16, 21, 0.16);
@@ -28,6 +29,7 @@
     --body-20-line: 32px;
     --caption-font: 15px;
     --caption-line: 23px;
+    --caption-spacing: 0.3px;
     --footnote-font: 12px;
     --footnote-line: 17px;
     --footnote-spacing: 2.1px;

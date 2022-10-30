@@ -27,7 +27,7 @@
     .input__widget:focus,
     .input--focus .input__widget,
     .input--expanded .input__widget { /* даже если фокус где-то в выпадайке календаря, например */
-        border-color: var(--high-emphasis);
+        border-color: var(--high-emphasis-black);
     }
 
     /* stylelint-disable block-opening-brace-space-before */

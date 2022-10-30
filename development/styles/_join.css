@@ -17,7 +17,7 @@
         .join__old-price {
             margin-left: 5px;
             text-decoration: line-through;
-            color: var(--high-emphasis);
+            color: var(--high-emphasis-black);
         }
 
     .join__submit {

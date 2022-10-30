@@ -8,7 +8,7 @@ body {
     font-weight: var(--medium);
     font-size: var(--body-17-font);
     line-height: var(--body-17-line);
-    color: var(--high-emphasis);
+    color: var(--high-emphasis-black);
 }
 
 @media (max-width: 639px) {

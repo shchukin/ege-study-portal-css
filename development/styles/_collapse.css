@@ -32,7 +32,7 @@
                 line-height: 24px;
                 text-align: left;
                 text-decoration: none;
-                color: var(--high-emphasis);
+                color: var(--high-emphasis-black);
                 cursor: pointer;
             }
 
@@ -82,7 +82,7 @@
 @media (max-width: 639px) {
 
     .collapse {
-        border: 1px solid var(--high-emphasis);
+        border: 1px solid var(--high-emphasis-black);
         border-radius: 8px;
     }
 
