@@ -36,9 +36,10 @@
             display: block;
             margin-top: 4px;
             margin-left: 7px;
+            margin-right: -4px;
             width: 16px;
             height: 16px;
-            background-image: url("../vectors/header-top-item.svg");
+            background-image: url("../vectors/menu-item.svg");
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center center;
@@ -75,7 +76,7 @@
             }
 
             .nav__sub-link:hover {
-                background-color: var(--panel-hover);
+                background-color: var(--blue-light);
             }
 
 
