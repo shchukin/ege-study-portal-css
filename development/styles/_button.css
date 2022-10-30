@@ -59,6 +59,17 @@
 }
 
 
+.button--yellow {
+    background-color: var(--yellow);
+    color: var(--high-emphasis-black);
+}
+
+.button--yellow:hover {
+    background-color: var(--yellow);
+    color: var(--high-emphasis-black);
+    filter: brightness(1.025) contrast(1.025);
+}
+
 .button--larger {
     padding: 25px 50px 27px;
     font-size: 20px;

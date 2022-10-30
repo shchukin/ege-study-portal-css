@@ -1,0 +1,87 @@
+.nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-right: 182px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: var(--primary-black);
+}
+    .nav__item {
+        position: relative;
+    }
+
+    .nav__item--has-dropdown {
+
+    }
+        .nav__link {
+            display: flex;
+            align-items: flex-start;
+            padding: 10px 16px 11px;
+            border-radius: 4px;
+            font-size: var(--caption-font);
+            line-height: var(--caption-line);
+            letter-spacing: var(--caption-spacing);
+            color: var(--high-emphasis-white);
+            white-space: nowrap;
+            text-decoration: none;
+        }
+
+        .nav__link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .nav__item--has-dropdown .nav__link::after {
+            content: "";
+            display: block;
+            margin-top: 4px;
+            margin-left: 7px;
+            width: 16px;
+            height: 16px;
+            background-image: url("../vectors/header-top-item.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .nav__dropdown {
+            position: absolute;
+            z-index: 200;
+            right: 0;
+            top: 100%;
+            margin-top: -8px;
+            display: none;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .nav__item:hover .nav__dropdown {
+            display: block;
+        }
+
+        .nav__item:focus-within .nav__dropdown {
+            display: block;
+        }
+            .nav__sub-link {
+                display: block;
+                padding: 4px 32px 4px 24px;
+                font-size: var(--body-17-font);
+                line-height: var(--body-17-line);
+                color: var(--high-emphasis-black);
+                white-space: nowrap;
+                text-decoration: none;
+            }
+
+            .nav__sub-link:hover {
+                background-color: var(--panel-hover);
+            }
+
+
+
+@media (max-width: 639px) {
+    .nav {
+        display: none;
+    }
+}
