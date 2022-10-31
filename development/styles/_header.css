@@ -73,12 +73,12 @@
 
         }
 
-        .header__courses {
+        .header__handler--catalog {
             margin-left: 40px;
             margin-right: auto;
         }
 
-        .header__handler {
+        .header__handler--link {
             margin-left: 18px;
             margin-top: 6px;
             display: flex;
@@ -93,7 +93,7 @@
             text-decoration: none;
         }
 
-        .header__handler:hover {
+        .header__handler--link:hover {
             background-color: var(--blue-light);
         }
 
@@ -148,7 +148,7 @@
             display: none;
         }
 
-        .header__dropdown:hover {
+        .header__dropdown--visible {
             display: block;
         }
             .header__close {
