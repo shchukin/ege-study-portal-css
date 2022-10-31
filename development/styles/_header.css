@@ -73,29 +73,62 @@
 
         }
 
-        .header__handler--catalog {
-            margin-left: 40px;
-            margin-right: auto;
-        }
-
-        .header__handler--link {
+        .header__handler {
             margin-left: 18px;
             margin-top: 6px;
             display: flex;
             align-items: flex-start;
             padding: 12px 20px;
+            background-color: transparent;
+            border: none;
             border-radius: 6px;
+            font-family: inherit;
             font-weight: var(--extra-bold);
             font-size: 17px;
             line-height: 24px;
             white-space: nowrap;
             color: inherit;
             text-decoration: none;
+            cursor: pointer;
         }
 
-        .header__handler--link:hover {
+        .header__handler:hover {
             background-color: var(--blue-light);
         }
+
+        .header__handler--with-arrow {
+
+        }
+
+        .header__handler--catalog {
+            display: inline-flex;
+            vertical-align: top;
+            margin-left: 40px;
+            margin-right: auto;
+            margin-top: 0;
+            padding: 18px 32px 20px;
+            border-radius: 8px;
+            background-color: var(--yellow);
+            color: var(--high-emphasis-black);
+        }
+
+        .header__handler--catalog:hover {
+            background-color: var(--yellow);
+            color: var(--high-emphasis-black);
+            filter: brightness(1.025) contrast(1.025);
+        }
+            .header__handler--catalog::before {
+                content: "";
+                display: block;
+                width: 24px;
+                height: 24px;
+                margin-left: -4px;
+                margin-right: 4px;
+                background-image: url("../vectors/courses.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
 
         .header__handler--with-arrow {
 
