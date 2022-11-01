@@ -5,7 +5,7 @@
         display: flex;
         align-items: flex-start;
         height: 80px;
-        padding: 10px 65px;
+        padding: 10px var(--container-desktop-padding);
     }
         .header__gate {
             position: absolute;
@@ -254,6 +254,31 @@
             .header__social {
                 display: none;
             }
+
+
+    @media (max-width: 1499px) {
+        .header__contacts {
+            display: none;
+        }
+        .header__nav {
+            margin-right: -16px;
+        }
+        .header__gate {
+            right: 20px;
+        }
+    }
+
+    @media (max-width: 1299px) {
+
+        .header {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .header__nav {
+            gap: 0;
+        }
+    }
 }
 
 

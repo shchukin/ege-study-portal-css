@@ -80,6 +80,12 @@
             }
 
 
+@media (max-width: 1299px) {
+
+    .nav {
+        padding-right: 149px;
+    }
+}
 
 @media (max-width: 639px) {
     .nav {
