@@ -388,6 +388,11 @@
 
         .header__mobile-dropdown {
             margin-top: 24px;
+            display: none;
+        }
+
+        .header-expanded .header__mobile-dropdown {
+            display: block;
         }
             .header__nav {
 
@@ -528,7 +533,7 @@
                 }
 
                 .header__address {
-
+                    margin-top: 4px;
                 }
                     .header__pin {
 
