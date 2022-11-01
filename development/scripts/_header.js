@@ -18,6 +18,7 @@
         }
     });
 
+    /* Закрываем по крестику */
     $('.header__close').on('click', function () {
         $(this).parents('.header__item').removeClass('header__item--expanded');
     });
