@@ -197,6 +197,7 @@
                             float: right;
                             position: relative;
                             padding: 20px;
+                            margin-top: -20px;
                             border: none;
                             background-color: transparent;
                             cursor: pointer;
@@ -214,6 +215,14 @@
 
                             .header__close:hover::before {
                                 background-color: var(--blue-light);
+                            }
+
+                            .header__arrow {
+                                display: none;
+                            }
+
+                            .header__back {
+                                display: none;
                             }
 
                             .header__cross {
@@ -378,7 +387,7 @@
 
 
         .header__mobile-dropdown {
-
+            margin-top: 24px;
         }
             .header__nav {
 
@@ -396,7 +405,7 @@
                         display: inline-block;
                         width: 100%;
                         vertical-align: top;
-                        padding: 10px 0;
+                        padding: 18px 0;
                         background-color: transparent;
                         border: none;
                         font-family: inherit;
@@ -438,7 +447,7 @@
                     }
 
                 .header__item--catalog {
-                    margin-top: 24px;
+
                 }
                     .header__item--catalog .header__link {
                         width: 100%;
@@ -462,7 +471,7 @@
 
                 .header__item--expanded {
                     position: relative; /* здесь будет пояляться кнопка "назад" */
-                    padding-top: 30px;
+                    padding-top: 42px;
                 }
                     .header__item--expanded .header__link {
                         pointer-events: none; /* Делаем некликабельным, используем не как компонент меню, а как заголовок */
@@ -476,19 +485,27 @@
                     }
                         .header__close {
                             position: absolute;
-                            left: 0;
-                            top: 0;
+                            left: -10px;
+                            top: 10px;
+                            padding: 10px;
+                            background-color: transparent;
+                            border: none;
+                            cursor: pointer;
                         }
-                            .header__close::before {
-
+                            .header__arrow {
+                                vertical-align: top;
+                                margin-right: 3px;
+                                fill: var(--red);
                             }
 
-                            .header__close:hover::before {
-
+                            .header__back {
+                                font-size: 17px;
+                                line-height: 20px;
+                                color: var(--red);
                             }
 
                             .header__cross {
-
+                                display: none;
                             }
 
                .header__nav--spread .header__item:not(.header__item--expanded) {
