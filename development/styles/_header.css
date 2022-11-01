@@ -183,8 +183,30 @@
                     }
                         .header__close {
                             float: right;
+                            position: relative;
+                            padding: 20px;
+                            border: none;
+                            background-color: transparent;
+                            cursor: pointer;
                         }
+                            .header__close::before {
+                                content: "";
+                                position: absolute;
+                                left: 10px;
+                                top: 10px;
+                                right: 10px;
+                                bottom: 10px;
+                                display: block;
+                                border-radius: 4px;
+                            }
+
+                            .header__close:hover::before {
+                                background-color: var(--blue-light);
+                            }
+
                             .header__cross {
+                                position: relative;
+                                vertical-align: top;
                                 fill: var(--high-emphasis-black);
                             }
 

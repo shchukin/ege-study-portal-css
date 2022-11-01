@@ -18,6 +18,10 @@
         }
     });
 
+    $('.header__close').on('click', function () {
+        $(this).parents('.header__item').removeClass('header__item--expanded');
+    });
+
     /* закрываем по клику на Esc */
     $(document).on('keyup', function (event) {
         if (event.keyCode === 27) {
