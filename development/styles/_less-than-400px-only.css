@@ -1,0 +1,9 @@
+.less-than-400px-only {
+
+}
+
+@media (min-width: 400px) {
+    .less-than-400px-only {
+        display: none;
+    }
+}
