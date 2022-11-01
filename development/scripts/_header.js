@@ -1,35 +1,34 @@
 (function($) {
 
-    $('[data-dropdown]').on('click', function () {
-        if ( ! $(this).hasClass('header__handler--expanded') ) {
+    $('.header__item--has-dropdown .header__link').on('click', function () {
+
+        var $current = $(this).parents('.header__item');
+
+        /* Если не открыт уже */
+        if ( ! $current.hasClass('header__item--expanded') ) {
 
             /* Закрываем все остальные */
-            $('.header__handler--expanded').removeClass('header__handler--expanded');
-            $($('.header__dropdown')).removeClass('header__dropdown--visible');
+            $('.header__item--expanded').removeClass('header__item--expanded');
 
-            /* Открываем нужный */
-            $('#' + $(this).data('dropdown')).addClass('header__dropdown--visible');
-            $(this).addClass('header__handler--expanded');
+            /* Открываем текущий */
+            $current.addClass('header__item--expanded');
 
         } else {
-            $($('.header__dropdown')).removeClass('header__dropdown--visible');
-            $('.header__handler--expanded').removeClass('header__handler--expanded');
+            $('.header__item--expanded').removeClass('header__item--expanded');
         }
     });
 
     /* закрываем по клику на Esc */
     $(document).on('keyup', function (event) {
         if (event.keyCode === 27) {
-            $($('.header__dropdown')).removeClass('header__dropdown--visible');
-            $('.header__handler--expanded').removeClass('header__handler--expanded');
+            $('.header__item--expanded').removeClass('header__item--expanded');
         }
     });
 
     /* закрываем по клику вне дропдауна */
     $(document).on('click', function (event) {
-        if (!$(event.target).closest('.header__dropdown, [data-dropdown]').length) {
-            $($('.header__dropdown')).removeClass('header__dropdown--visible');
-            $('.header__handler--expanded').removeClass('header__handler--expanded');
+        if (!$(event.target).closest('.header__item--has-dropdown').length) {
+            $('.header__item--expanded').removeClass('header__item--expanded');
         }
     });
 

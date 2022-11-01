@@ -44,7 +44,7 @@
             </div>
         </div>
         <header class="header">
-            <div class="header__togglers">
+            <div class="header__gate">
                 <button class="header__search" type="button">
                     <img class="header__magnifier" src="../symbols/magnifier.svg" width="24" height="24" alt="">
                     Поиск
@@ -57,50 +57,86 @@
             <a class="header__emblem logo" href="#">
                 ЕГЭ-Студия: Готовим на 80 и выше
             </a>
-            <button class="header__handler header__handler--catalog" type="button" data-dropdown="courses">
-                Все курсы
-            </button>
-            <button class="header__handler header__handler--with-arrow" type="button" data-dropdown="for-teachers">
-                Преподавателям
-            </button>
-            <a class="header__handler" href="#">
-                Родителям
-            </a>
-            <button class="header__handler header__handler--with-arrow" type="button" data-dropdown="ege-next-year">
-                ЕГЭ-2023
-            </button>
-            <button class="header__handler header__handler--with-arrow" type="button" data-dropdown="free-material">
-                Бесплатные материалы
-            </button>
-            <div class="header__contacts">
-                <div class="header__phone">
-                    <a class="link link--fake" href="tel:+78007750682">8 (800) 775-06-82</a>
+            <div class="header__mobile-dropdown">
+                <div class="header__nav">
+                    <div class="header__item header__item--has-dropdown header__item--catalog">
+                        <button class="header__link" type="button">
+                            Все курсы
+                        </button>
+                        <div class="header__dropdown" id="courses">
+                            <button class="header__close" type="button">
+                                <img class="header__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
+                            </button>
+                            1coursesLorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet assumenda at atque blanditiis consectetur deserunt dolorem doloribus ducimus esse eveniet explicabo facilis id ipsum itaque magni minus necessitatibus neque odit omnis optio pariatur perspiciatis praesentium quam quas quod recusandae repellat repellendus reprehenderit, sapiente sit suscipit tenetur unde vel vero voluptatem voluptates! Ad aliquam aliquid aperiam consequuntur, dolor eligendi
+                            iusto magnam
+                            nemo nobis odio tempora tempore, voluptates voluptatum! Eligendi ex libero perferendis provident quia quidem vero! Atque explicabo facere modi nesciunt praesentium. Dolorem id impedit ipsam, molestiae odio quaerat quis tempora voluptatibus. Architecto blanditiis cum cupiditate eligendi libero minima officia.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet assumenda at atque blanditiis consectetur deserunt dolorem doloribus ducimus esse eveniet explicabo facilis id ipsum itaque magni minus necessitatibus neque odit omnis optio pariatur perspiciatis praesentium quam quas quod recusandae repellat repellendus reprehenderit, sapiente sit suscipit tenetur unde vel vero voluptatem voluptates! Ad aliquam aliquid aperiam consequuntur, dolor eligendi iusto
+                            magnam nemo
+                            nobis odio tempora tempore, voluptates voluptatum! Eligendi ex libero perferendis provident quia quidem vero! Atque explicabo facere modi nesciunt praesentium. Dolorem id impedit ipsam, molestiae odio quaerat quis tempora voluptatibus. Architecto blanditiis cum cupiditate eligendi libero minima officia.
+                        </div>
+                    </div>
+                    <div class="header__item header__item--has-dropdown">
+                        <button class="header__link" type="button">
+                            Преподавателям
+                        </button>
+                        <div class="header__dropdown" id="for-teachers">
+                            <button class="header__close" type="button">
+                                <img class="header__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
+                            </button>
+                            2for-teachersLorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet assumenda at atque blanditiis consectetur deserunt dolorem doloribus ducimus esse eveniet explicabo facilis id ipsum itaque magni minus necessitatibus neque odit omnis optio pariatur perspiciatis praesentium quam quas quod recusandae repellat repellendus reprehenderit, sapiente sit suscipit tenetur unde vel vero voluptatem voluptates! Ad aliquam aliquid aperiam consequuntur, dolor
+                            eligendi iusto magnam nemo nobis odio tempora tempore, voluptates voluptatum! Eligendi ex libero perferendis provident quia quidem vero! Atque explicabo facere modi nesciunt praesentium. Dolorem id impedit ipsam, molestiae odio quaerat quis tempora voluptatibus. Architecto blanditiis cum cupiditate eligendi libero minima officia.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet assumenda at atque blanditiis consectetur deserunt dolorem doloribus ducimus esse eveniet explicabo facilis id ipsum itaque magni minus necessitatibus neque odit omnis optio pariatur perspiciatis praesentium quam quas quod recusandae repellat repellendus reprehenderit, sapiente sit suscipit tenetur unde vel vero voluptatem voluptates! Ad aliquam aliquid aperiam consequuntur, dolor eligendi iusto
+                            magnam nemo nobis odio tempora tempore, voluptates voluptatum! Eligendi ex libero perferendis provident quia quidem vero! Atque explicabo facere modi nesciunt praesentium. Dolorem id impedit ipsam, molestiae odio quaerat quis tempora voluptatibus. Architecto blanditiis cum cupiditate eligendi libero minima officia.
+                        </div>
+                    </div>
+                    <div class="header__item header__item--has-dropdown">
+                        <button class="header__link" type="button">
+                            Родителям
+                        </button>
+                        <div class="header__dropdown" id="ege-next-year">
+                            <button class="header__close" type="button">
+                                <img class="header__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
+                            </button>
+                            3ege-next-yearLorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet assumenda at atque blanditiis consectetur deserunt dolorem doloribus ducimus esse eveniet explicabo facilis id ipsum itaque magni minus necessitatibus neque odit omnis optio pariatur perspiciatis praesentium quam quas quod recusandae repellat repellendus reprehenderit, sapiente sit suscipit tenetur unde vel vero voluptatem voluptates! Ad aliquam aliquid aperiam consequuntur, dolor
+                            eligendi iusto magnam nemo nobis odio tempora tempore, voluptates voluptatum! Eligendi ex libero perferendis provident quia quidem vero! Atque explicabo facere modi nesciunt praesentium. Dolorem id impedit ipsam, molestiae odio quaerat quis tempora voluptatibus. Architecto blanditiis cum cupiditate eligendi libero minima officia.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet assumenda at atque blanditiis consectetur deserunt dolorem doloribus ducimus esse eveniet explicabo facilis id ipsum itaque magni minus necessitatibus neque odit omnis optio pariatur perspiciatis praesentium quam quas quod recusandae repellat repellendus reprehenderit, sapiente sit suscipit tenetur unde vel vero voluptatem voluptates! Ad aliquam aliquid aperiam consequuntur, dolor eligendi iusto
+                            magnam nemo nobis odio tempora tempore, voluptates voluptatum! Eligendi ex libero perferendis provident quia quidem vero! Atque explicabo facere modi nesciunt praesentium. Dolorem id impedit ipsam, molestiae odio quaerat quis tempora voluptatibus. Architecto blanditiis cum cupiditate eligendi libero minima officia.
+                        </div>
+                    </div>
+                    <div class="header__item">
+                        <a class="header__link" href="#">
+                            ЕГЭ-2023
+                        </a>
+                    </div>
+                    <div class="header__item header__item--has-dropdown">
+                        <button class="header__link" type="button">
+                            Бесплатные материалы
+                        </button>
+                        <div class="header__dropdown" id="free-material">
+                            4free-materialLorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet assumenda at atque blanditiis consectetur deserunt dolorem doloribus ducimus esse eveniet explicabo facilis id ipsum itaque magni minus necessitatibus neque odit omnis optio pariatur perspiciatis praesentium quam quas quod recusandae repellat repellendus reprehenderit, sapiente sit suscipit tenetur unde vel vero voluptatem voluptates! Ad aliquam aliquid aperiam consequuntur, dolor
+                            eligendi iusto magnam nemo nobis odio tempora tempore, voluptates voluptatum! Eligendi ex libero perferendis provident quia quidem vero! Atque explicabo facere modi nesciunt praesentium. Dolorem id impedit ipsam, molestiae odio quaerat quis tempora voluptatibus. Architecto blanditiis cum cupiditate eligendi libero minima officia.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet assumenda at atque blanditiis consectetur deserunt dolorem doloribus ducimus esse eveniet explicabo facilis id ipsum itaque magni minus necessitatibus neque odit omnis optio pariatur perspiciatis praesentium quam quas quod recusandae repellat repellendus reprehenderit, sapiente sit suscipit tenetur unde vel vero voluptatem voluptates! Ad aliquam aliquid aperiam consequuntur, dolor eligendi iusto
+                            magnam nemo nobis odio tempora tempore, voluptates voluptatum! Eligendi ex libero perferendis provident quia quidem vero! Atque explicabo facere modi nesciunt praesentium. Dolorem id impedit ipsam, molestiae odio quaerat quis tempora voluptatibus. Architecto blanditiis cum cupiditate eligendi libero minima officia.
+                        </div>
+                    </div>
                 </div>
-                <div class="header__address">
-                    <img class="header__pin" src="../symbols/geo.svg" width="16" height="16" alt="">
-                    Москва
+                <div class="header__contacts">
+                    <div class="header__phone">
+                        <a class="link link--fake" href="tel:+78007750682">8 (800) 775-06-82</a>
+                    </div>
+                    <div class="header__address">
+                        <img class="header__pin" src="../symbols/geo.svg" width="16" height="16" alt="">
+                        Москва
+                    </div>
                 </div>
-            </div>
-            <div class="header__dropdown" id="courses">
-                <button class="header__close" type="button">
-                    <img class="header__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
-                </button>
-                1coursesLorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet assumenda at atque blanditiis consectetur deserunt dolorem doloribus ducimus esse eveniet explicabo facilis id ipsum itaque magni minus necessitatibus neque odit omnis optio pariatur perspiciatis praesentium quam quas quod recusandae repellat repellendus reprehenderit, sapiente sit suscipit tenetur unde vel vero voluptatem voluptates! Ad aliquam aliquid aperiam consequuntur, dolor eligendi iusto magnam
-                nemo nobis odio tempora tempore, voluptates voluptatum! Eligendi ex libero perferendis provident quia quidem vero! Atque explicabo facere modi nesciunt praesentium. Dolorem id impedit ipsam, molestiae odio quaerat quis tempora voluptatibus. Architecto blanditiis cum cupiditate eligendi libero minima officia.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet assumenda at atque blanditiis consectetur deserunt dolorem doloribus ducimus esse eveniet explicabo facilis id ipsum itaque magni minus necessitatibus neque odit omnis optio pariatur perspiciatis praesentium quam quas quod recusandae repellat repellendus reprehenderit, sapiente sit suscipit tenetur unde vel vero voluptatem voluptates! Ad aliquam aliquid aperiam consequuntur, dolor eligendi iusto magnam nemo
-                nobis odio tempora tempore, voluptates voluptatum! Eligendi ex libero perferendis provident quia quidem vero! Atque explicabo facere modi nesciunt praesentium. Dolorem id impedit ipsam, molestiae odio quaerat quis tempora voluptatibus. Architecto blanditiis cum cupiditate eligendi libero minima officia.
-            </div>
-            <div class="header__dropdown" id="for-teachers">
-                2for-teachersLorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet assumenda at atque blanditiis consectetur deserunt dolorem doloribus ducimus esse eveniet explicabo facilis id ipsum itaque magni minus necessitatibus neque odit omnis optio pariatur perspiciatis praesentium quam quas quod recusandae repellat repellendus reprehenderit, sapiente sit suscipit tenetur unde vel vero voluptatem voluptates! Ad aliquam aliquid aperiam consequuntur, dolor eligendi iusto magnam nemo nobis odio tempora tempore, voluptates voluptatum! Eligendi ex libero perferendis provident quia quidem vero! Atque explicabo facere modi nesciunt praesentium. Dolorem id impedit ipsam, molestiae odio quaerat quis tempora voluptatibus. Architecto blanditiis cum cupiditate eligendi libero minima officia.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet assumenda at atque blanditiis consectetur deserunt dolorem doloribus ducimus esse eveniet explicabo facilis id ipsum itaque magni minus necessitatibus neque odit omnis optio pariatur perspiciatis praesentium quam quas quod recusandae repellat repellendus reprehenderit, sapiente sit suscipit tenetur unde vel vero voluptatem voluptates! Ad aliquam aliquid aperiam consequuntur, dolor eligendi iusto magnam nemo nobis odio tempora tempore, voluptates voluptatum! Eligendi ex libero perferendis provident quia quidem vero! Atque explicabo facere modi nesciunt praesentium. Dolorem id impedit ipsam, molestiae odio quaerat quis tempora voluptatibus. Architecto blanditiis cum cupiditate eligendi libero minima officia.
-            </div>
-            <div class="header__dropdown" id="ege-next-year">
-                3ege-next-yearLorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet assumenda at atque blanditiis consectetur deserunt dolorem doloribus ducimus esse eveniet explicabo facilis id ipsum itaque magni minus necessitatibus neque odit omnis optio pariatur perspiciatis praesentium quam quas quod recusandae repellat repellendus reprehenderit, sapiente sit suscipit tenetur unde vel vero voluptatem voluptates! Ad aliquam aliquid aperiam consequuntur, dolor eligendi iusto magnam nemo nobis odio tempora tempore, voluptates voluptatum! Eligendi ex libero perferendis provident quia quidem vero! Atque explicabo facere modi nesciunt praesentium. Dolorem id impedit ipsam, molestiae odio quaerat quis tempora voluptatibus. Architecto blanditiis cum cupiditate eligendi libero minima officia.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet assumenda at atque blanditiis consectetur deserunt dolorem doloribus ducimus esse eveniet explicabo facilis id ipsum itaque magni minus necessitatibus neque odit omnis optio pariatur perspiciatis praesentium quam quas quod recusandae repellat repellendus reprehenderit, sapiente sit suscipit tenetur unde vel vero voluptatem voluptates! Ad aliquam aliquid aperiam consequuntur, dolor eligendi iusto magnam nemo nobis odio tempora tempore, voluptates voluptatum! Eligendi ex libero perferendis provident quia quidem vero! Atque explicabo facere modi nesciunt praesentium. Dolorem id impedit ipsam, molestiae odio quaerat quis tempora voluptatibus. Architecto blanditiis cum cupiditate eligendi libero minima officia.
-            </div>
-            <div class="header__dropdown" id="free-material">
-                4free-materialLorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet assumenda at atque blanditiis consectetur deserunt dolorem doloribus ducimus esse eveniet explicabo facilis id ipsum itaque magni minus necessitatibus neque odit omnis optio pariatur perspiciatis praesentium quam quas quod recusandae repellat repellendus reprehenderit, sapiente sit suscipit tenetur unde vel vero voluptatem voluptates! Ad aliquam aliquid aperiam consequuntur, dolor eligendi iusto magnam nemo nobis odio tempora tempore, voluptates voluptatum! Eligendi ex libero perferendis provident quia quidem vero! Atque explicabo facere modi nesciunt praesentium. Dolorem id impedit ipsam, molestiae odio quaerat quis tempora voluptatibus. Architecto blanditiis cum cupiditate eligendi libero minima officia.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet assumenda at atque blanditiis consectetur deserunt dolorem doloribus ducimus esse eveniet explicabo facilis id ipsum itaque magni minus necessitatibus neque odit omnis optio pariatur perspiciatis praesentium quam quas quod recusandae repellat repellendus reprehenderit, sapiente sit suscipit tenetur unde vel vero voluptatem voluptates! Ad aliquam aliquid aperiam consequuntur, dolor eligendi iusto magnam nemo nobis odio tempora tempore, voluptates voluptatum! Eligendi ex libero perferendis provident quia quidem vero! Atque explicabo facere modi nesciunt praesentium. Dolorem id impedit ipsam, molestiae odio quaerat quis tempora voluptatibus. Architecto blanditiis cum cupiditate eligendi libero minima officia.
+                <div class="header__social media">
+                    <a class="media__item" href="#">
+                        <img class="media__icon" src="../symbols/media-vk.svg" width="28" height="28" alt="">
+                    </a>
+                    <a class="media__item" href="#">
+                        <img class="media__icon" src="../symbols/media-instagram.svg" width="28" height="28" alt="">
+                    </a>
+                </div>
             </div>
         </header>
         <div class="info">
