@@ -20,7 +20,7 @@
     }
 
     .search__submit {
-        margin-left: 10px;
+        margin-left: 12px;
         flex-shrink: 0;
         width: 68px; /* Примерно по ширине кнопки "войти" выше */
         height: 48px;
