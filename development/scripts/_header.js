@@ -70,9 +70,7 @@
 
 
 
-
     /* РАСХЛОПЫВАНИЕ ШАПКИ */
-
 
     $('.header__burger').on('click', function () {
         $html.addClass('header-expanded');
@@ -86,10 +84,6 @@
         $('.header__item--expanded').removeClass('header__item--expanded');
         $nav.removeClass('header__nav--spread');
     });
-
-    // не забыть закрыть всё расхлопнутое внутри
-
-
 
 
 
