@@ -380,6 +380,28 @@
                     display: block;
                 }
 
+            /* Когда открыт поиск скрываем кнопку входа и покаываем только закрытие поиска в виде крестика */
+            .search-expanded .header__show-search {
+                text-indent: 200%;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+                .search-expanded .header__search-cross {
+                    position: absolute;
+                    left: 0;
+                    top: 4px;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    width: 28px;
+                    height: 28px;
+                }
+
+            .search-expanded .header__login {
+                display: none;
+            }
+
+
             .header__search-dropdown {
                 position: absolute;
                 right: 0;
