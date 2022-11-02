@@ -204,6 +204,16 @@ gulp.task('layouts', function() {
 });
 
 
+// Index: copy
+
+gulp.task('index', function() {
+  return gulp.src('development/index.html')
+      .pipe(plumber())
+      .pipe(gulp.dest('production/'))
+  ;
+});
+
+
 // Vendors: copy but exclude normalize
 
 gulp.task('vendors', function() {
@@ -301,7 +311,7 @@ gulp.task('lint', function() {
 
 
 gulp.task('default', function (fn) {
-  run('clean', 'temp', 'content', 'images', 'markups', 'layouts', 'vendors', 'scripts', 'symbols', 'styles', 'lint', fn);
+  run('clean', 'temp', 'content', 'images', 'markups', 'layouts', 'index', 'vendors', 'scripts', 'symbols', 'styles', 'lint', fn);
 });
 
 
