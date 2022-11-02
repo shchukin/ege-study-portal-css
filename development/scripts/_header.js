@@ -95,7 +95,7 @@
 
     /* РАСХЛОПЫВАНИЕ ПОИСКА */
 
-    $('.header__search-handler').on('click', function () {
+    $('.header__show-search').on('click', function () {
         if( ! $html.hasClass('search-expanded') ) {
             $html.addClass('search-expanded');
             $('.search__field').focus();
@@ -113,7 +113,7 @@
 
     /* закрываем по клику вне дропдауна */
     $(document).on('click', function (event) {
-        if (!$(event.target).closest('.header__search-handler, .header__search-dropdown').length) {
+        if (!$(event.target).closest('.header__show-search, .header__search-dropdown').length) {
             $html.removeClass('search-expanded');
         }
     });
