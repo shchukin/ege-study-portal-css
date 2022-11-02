@@ -58,11 +58,7 @@
             padding-bottom: 20px;
         }
 
-        .nav__item:hover .nav__dropdown {
-            display: block;
-        }
-
-        .nav__item:focus-within .nav__dropdown {
+        .nav__item--expanded .nav__dropdown {
             display: block;
         }
             .nav__sub-link {
