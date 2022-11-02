@@ -18,17 +18,430 @@
                 Вам необходимо <a href="http://browsehappy.com/?locale=ru_RU">обновить ваш браузер</a>.
             </div>
         <![endif]-->
+        <div class="nav">
+            <div class="nav__item nav__item--has-dropdown">
+                <a class="nav__link" href="#">О центре</a>
+                <div class="nav__dropdown">
+                    <a class="nav__sub-link" href="#">О центре</a>
+                    <a class="nav__sub-link" href="#">История центра</a>
+                    <a class="nav__sub-link" href="#">День открытых дверей</a>
+                    <a class="nav__sub-link" href="#">Благотворительность</a>
+                    <a class="nav__sub-link" href="#">Вакансии в центре</a>
+                    <a class="nav__sub-link" href="#">Контакты</a>
+                </div>
+            </div>
+            <div class="nav__item">
+                <a class="nav__link" href="#">Наши преподаватели</a>
+            </div>
+            <div class="nav__item">
+                <a class="nav__link" href="#">Отзывы</a>
+            </div>
+            <div class="nav__item">
+                <a class="nav__link" href="#">Новости</a>
+            </div>
+            <div class="nav__item">
+                <a class="nav__link" href="#">Контакты</a>
+            </div>
+        </div>
         <header class="header">
-            <div class="nav">
-
+            <div class="header__gate">
+                <button class="header__search" type="button">
+                    <img class="header__magnifier" src="../symbols/magnifier.svg" width="24" height="24" alt="">
+                    Поиск
+                </button>
+                <button class="header__login" type="button">
+                    <img class="header__door" src="../symbols/door.svg" width="24" height="24" alt="">
+                    Войти
+                </button>
             </div>
-            <div class="header__bar">
-
-            </div>
-            <div class="info">
-
+            <a class="header__emblem logo" href="#">
+                ЕГЭ-Студия: Готовим на 80 и выше
+            </a>
+            <button class="header__burger" type="button">
+                Меню
+            </button>
+            <button class="header__close-burger" type="button">
+                Закрыть
+            </button>
+            <div class="header__mobile-dropdown">
+                <div class="header__nav">
+                    <div class="header__item header__item--has-dropdown header__item--catalog">
+                        <button class="header__link" type="button">
+                            <span class="desktop-only">Все курсы</span>
+                            <span class="mobile-only">Каталог курсов</span>
+                        </button>
+                        <div class="header__dropdown">
+                            <button class="header__close" type="button">
+                                <img class="header__arrow" src="../symbols/arrow-left.svg" width="20" height="20" alt="">
+                                <span class="header__back">Назад</span>
+                                <img class="header__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
+                            </button>
+                            <div class="submenu">
+                                <div class="submenu__summary">
+                                    <b class="submenu__heading">
+                                        Курсы подготовки к ЕГЭ, ОГЭ&nbsp;и олимпиадам по всем школьным предметам
+                                    </b>
+                                    <div class="submenu__operations">
+                                        <a class="submenu__action button button--border-accent" href="#">Выбрать курс →</a>
+                                    </div>
+                                </div>
+                                <div class="submenu__column">
+                                    <b class="submenu__sub-heading">
+                                        Предметы
+                                    </b>
+                                    <ul class="submenu__list">
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Математика</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Русский язык</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Обществознание</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Литература</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Физика</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Информатика</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Химия</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">История</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Биология</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Английский язык</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="submenu__column">
+                                    <b class="submenu__sub-heading">
+                                        Формат занятий
+                                    </b>
+                                    <ul class="submenu__list">
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Очные курсы в Москве</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Онлайн-курсы в прямом эфире</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Курсы в записи</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Летние очные курсы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="submenu__column">
+                                    <b class="submenu__sub-heading">
+                                        Цели
+                                    </b>
+                                    <ul class="submenu__list">
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Подготовиться к ЕГЭ</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Подготовиться к ОГЭ</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Подготовиться к олимпиаде</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__item header__item--has-dropdown">
+                        <button class="header__link" type="button">
+                            Преподавателям
+                        </button>
+                        <div class="header__dropdown">
+                            <button class="header__close" type="button">
+                                <img class="header__arrow" src="../symbols/arrow-left.svg" width="20" height="20" alt="">
+                                <span class="header__back">Назад</span>
+                                <img class="header__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
+                            </button>
+                            <div class="submenu">
+                                <div class="submenu__summary">
+                                    <b class="submenu__heading">
+                                        Курсы для учителей по подготовке учеников к ЕГЭ&nbsp;и ОГЭ
+                                    </b>
+                                    <div class="submenu__operations">
+                                        <a class="submenu__action button button--border-accent" href="#">Выбрать курс для учителей →</a>
+                                    </div>
+                                </div>
+                                <div class="submenu__column">
+                                    <b class="submenu__sub-heading">
+                                        Предметы
+                                    </b>
+                                    <ul class="submenu__list">
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Математика</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Русский язык</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Физика</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Информатика</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="submenu__column">
+                                    <b class="submenu__sub-heading">
+                                        Повышение квалификации
+                                    </b>
+                                    <ul class="submenu__list">
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Школа мастерства по математике</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Курсы в записи</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="submenu__column">
+                                    <b class="submenu__sub-heading">
+                                        Бесплатные материалы
+                                    </b>
+                                    <ul class="submenu__list">
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Учебники</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Справочные материалы</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Пробные ЕГЭ</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Пробные ОГЭ</a>
+                                        </li>
+                                        <li class="submenu__item submenu__item--pushed">
+                                            <a class="submenu__link" href="#">Все бесплатные материалы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__item header__item--has-dropdown">
+                        <button class="header__link" type="button">
+                            Родителям
+                        </button>
+                        <div class="header__dropdown">
+                            <button class="header__close" type="button">
+                                <img class="header__arrow" src="../symbols/arrow-left.svg" width="20" height="20" alt="">
+                                <span class="header__back">Назад</span>
+                                <img class="header__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
+                            </button>
+                            <div class="submenu">
+                                <div class="submenu__summary">
+                                    <b class="submenu__heading">
+                                        Помочь ребенку подготовиться к ЕГЭ, ОГЭ&nbsp;и олимпиаде
+                                    </b>
+                                    <div class="submenu__operations">
+                                        <a class="submenu__action button button--border-accent" href="#">Подобрать курс<br class="less-than-400px-only"> для ребенка →</a>
+                                        <a class="submenu__action button button--border-accent" href="#">Найти материалы<br class="less-than-400px-only"> для подготовки →</a>
+                                    </div>
+                                </div>
+                                <div class="submenu__column">
+                                    <b class="submenu__sub-heading">
+                                        Учебники по предметам
+                                    </b>
+                                    <ul class="submenu__list">
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Математика</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Русский язык</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Обществознание</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Литература</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Физика</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Информатика</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Химия</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">История</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Биология</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Английский язык</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="submenu__column">
+                                    <b class="submenu__sub-heading">
+                                        Подобрать курс для ребенка
+                                    </b>
+                                    <ul class="submenu__list">
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Очные курсы в Москве</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Онлайн-курсы в прямом эфире</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Курсы в записи</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Летние очные курсы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="submenu__column">
+                                    <b class="submenu__sub-heading">
+                                        Бесплатные материалы
+                                    </b>
+                                    <ul class="submenu__list">
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Учебники</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Справочные материалы</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Пробные ЕГЭ</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Пробные ОГЭ</a>
+                                        </li>
+                                        <li class="submenu__item submenu__item--pushed">
+                                            <a class="submenu__link" href="#">Все бесплатные материалы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__item">
+                        <a class="header__link" href="#">
+                            ЕГЭ-2023
+                        </a>
+                    </div>
+                    <div class="header__item header__item--has-dropdown">
+                        <button class="header__link" type="button">
+                            Бесплатные материалы
+                        </button>
+                        <div class="header__dropdown">
+                            <button class="header__close" type="button">
+                                <img class="header__arrow" src="../symbols/arrow-left.svg" width="20" height="20" alt="">
+                                <span class="header__back">Назад</span>
+                                <img class="header__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
+                            </button>
+                            <div class="submenu">
+                                <div class="submenu__summary">
+                                    <b class="submenu__heading">
+                                        Бесплатные материалы для подготовкик ЕГЭ и ОГЭ по всем школьным предметам
+                                    </b>
+                                    <div class="submenu__operations">
+                                        <a class="submenu__action button button--border-accent" href="#">Перейти к материалам →</a>
+                                    </div>
+                                </div>
+                                <div class="submenu__column">
+                                    <b class="submenu__sub-heading">
+                                        Учебники по предметам
+                                    </b>
+                                    <ul class="submenu__list">
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Математика</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Русский язык</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Обществознание</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Литература</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Физика</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Информатика</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Химия</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">История</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Биология</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Английский язык</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="submenu__column">
+                                    <b class="submenu__sub-heading">
+                                        Самостоятельная подготовка
+                                    </b>
+                                    <ul class="submenu__list">
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Очные курсы в Москве</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Онлайн-курсы в прямом эфире</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Курсы в записи</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a class="submenu__link" href="#">Летние очные курсы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__contacts">
+                    <div class="header__phone">
+                        <a class="link link--fake" href="tel:+78007750682">8 (800) 775-06-82</a>
+                    </div>
+                    <div class="header__address">
+                        <img class="header__pin" src="../symbols/geo.svg" width="16" height="16" alt="">
+                        Москва
+                    </div>
+                </div>
+                <div class="header__social media media--enlarged">
+                    <a class="media__item media__item--vk" href="#">Вконтакте</a>
+                    <a class="media__item media__item--instagram" href="#">Instagram</a>
+                    <a class="media__item media__item--youtube" href="#">YouTube</a>
+                </div>
             </div>
         </header>
+        <div class="info">
+            <!-- temp -->
+            <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">Баннер</div>
+            <!--/temp -->
+        </div>
         <div class="page">
             <div class="alt-jumbotron">
                 <div class="alt-jumbotron__wrap container">
