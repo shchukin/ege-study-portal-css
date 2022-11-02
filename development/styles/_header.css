@@ -344,6 +344,7 @@
             display: flex;
             align-items: flex-start;
         }
+            /* Кнопки поиска и входа выглядят одинакогов */
             .header__show-search,
             .header__login {
                 width: 78px;
@@ -368,38 +369,15 @@
                     fill: currentColor;
                 }
 
-                .header__search-cross {
-                    display: none;
-                }
+                /* Поиск по умолчанию */
+                .header__search-cross { display: none; }
+                .header__close-label { display: none; }
 
-                .search-expanded .header__magnifier {
-                    display: none;
-                }
-
-                .search-expanded .header__search-cross {
-                    display: block;
-                }
-
-            /* Когда открыт поиск скрываем кнопку входа и покаываем только закрытие поиска в виде крестика */
-            .search-expanded .header__show-search {
-                text-indent: 200%;
-                white-space: nowrap;
-                overflow: hidden;
-            }
-                .search-expanded .header__search-cross {
-                    position: absolute;
-                    left: 0;
-                    top: 4px;
-                    right: 0;
-                    bottom: 0;
-                    margin: auto;
-                    width: 28px;
-                    height: 28px;
-                }
-
-            .search-expanded .header__login {
-                display: none;
-            }
+                /* Поиск Открыт */
+                .search-expanded .header__magnifier { display: none; }
+                .search-expanded .header__search-label { display: none; }
+                .search-expanded .header__search-cross { display: block; }
+                .search-expanded .header__close-label { display: inline; }
 
 
             .header__search-dropdown {
@@ -419,17 +397,17 @@
             }
 
 
-            @media (max-width: 359px) {
-                .header__gate {
-                    right: 9px;
-                }
-
-                .header__show-search,
-                .header__login {
-                    width: 68px;
-                    height: 78px;
-                }
+        @media (max-width: 359px) {
+            .header__gate {
+                right: 9px;
             }
+
+            .header__show-search,
+            .header__login {
+                width: 68px;
+                height: 78px;
+            }
+        }
 
 
         .header__emblem {
