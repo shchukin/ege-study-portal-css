@@ -47,6 +47,46 @@
                     fill: var(--high-emphasis-white);
                 }
 
+                .search-expanded .header__magnifier {
+                    display: none;
+                }
+
+                .header__search-cross {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    width: 20px;
+                    height: 20px;
+                    vertical-align: top;
+                    fill: var(--high-emphasis-white);
+                    display: none;
+                }
+
+                .search-expanded .header__search-cross {
+                    display: block;
+                }
+
+            .header__search-dropdown {
+                position: absolute;
+                right: 100%;
+                top: 100%;
+                margin-top: 0;
+                margin-right: -68px;
+                width: 400px;
+                padding: 20px;
+                background-color: #FFFFFF;
+                border-radius: 8px;
+                visibility: hidden;
+            }
+
+            .search-expanded .header__search-dropdown {
+                visibility: visible;
+            }
+
+
             .header__login {
                 vertical-align: top;
                 padding: 10px 12px;
@@ -68,23 +108,6 @@
                     vertical-align: top;
                     display: none;
                 }
-
-            .header__search-dropdown {
-                position: absolute;
-                right: 100%;
-                top: 100%;
-                margin-top: 0;
-                margin-right: -68px;
-                width: 400px;
-                padding: 20px;
-                background-color: #FFFFFF;
-                border-radius: 8px;
-                visibility: hidden;
-            }
-
-            .search-expanded .header__search-dropdown {
-                visibility: visible;
-            }
 
 
         .header__emblem {
