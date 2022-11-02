@@ -18,6 +18,7 @@
      * элементы страницы. Это что-то вроде динамики раскрытия модальных окон.
      */
 
+    var $html = $('html');
 
 
     /* РАСХЛОПЫВАНИЕ МЕНЮ */
@@ -71,7 +72,7 @@
 
 
     /* РАСХЛОПЫВАНИЕ ШАПКИ */
-    var $html = $('html');
+
 
     $('.header__burger').on('click', function () {
         $html.addClass('header-expanded');
@@ -88,5 +89,33 @@
 
     // не забыть закрыть всё расхлопнутое внутри
 
+
+
+
+
+    /* РАСХЛОПЫВАНИЕ ПОИСКА */
+
+    $('.header__search-handler').on('click', function () {
+        if( ! $html.hasClass('search-expanded') ) {
+            $html.addClass('search-expanded');
+            $('.search__field').focus();
+        } else {
+            $html.removeClass('search-expanded');
+        }
+    });
+
+    /* закрываем по клику на Esc */
+    $(document).on('keyup', function (event) {
+        if (event.keyCode === 27) {
+            $html.removeClass('search-expanded');
+        }
+    });
+
+    /* закрываем по клику вне дропдауна */
+    $(document).on('click', function (event) {
+        if (!$(event.target).closest('.header__search-handler, .header__search-dropdown').length) {
+            $html.removeClass('search-expanded');
+        }
+    });
 
 })(jQuery);

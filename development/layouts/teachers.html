@@ -45,7 +45,7 @@
         </div>
         <header class="header">
             <div class="header__gate">
-                <button class="header__search" type="button">
+                <button class="header__search-handler" type="button">
                     <img class="header__magnifier" src="../symbols/magnifier.svg" width="24" height="24" alt="">
                     Поиск
                 </button>
@@ -53,6 +53,12 @@
                     <img class="header__door" src="../symbols/door.svg" width="24" height="24" alt="">
                     Войти
                 </button>
+                <form class="header__search-dropdown search">
+                    <input class="search__field" type="text" placeholder="Поиск...">
+                    <button class="search__submit" type="submit">
+                        <img class="search__magnifier" src="../symbols/magnifier.svg" width="24" height="24" alt="">
+                    </button>
+                </form>
             </div>
             <a class="header__emblem logo" href="#">
                 ЕГЭ-Студия: Готовим на 80 и выше
