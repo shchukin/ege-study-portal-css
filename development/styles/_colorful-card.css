@@ -1,0 +1,54 @@
+.colorful-card {
+    position: relative;
+    display: block;
+    height: 280px;
+    padding: 24px 24px 116px;
+    border-radius: 16px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.colorful-card--math {
+    background-color: var(--math);
+    background-image: url("../vectors/colorful-card-math.svg");
+}
+
+.colorful-card--russian {
+    background-color: var(--russian);
+    background-image: url("../vectors/colorful-card-russian.svg");
+}
+
+.colorful-card--informatics {
+    background-color: var(--informatics);
+    background-image: url("../vectors/colorful-card-informatics.svg");
+}
+    .colorful-card__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .colorful-card__addition {
+        margin-top: 10px;
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+    }
+        .colorful-card__tag {
+            padding: 1px 7px 3px;
+            border: 1px solid var(--black-8pct);
+            border-radius: 4px;
+            font-size: var(--body1-font);
+            line-height: var(--body1-line);
+        }
+
+    .colorful-card__button {
+        position: absolute;
+        left: 24px;
+        bottom: 24px;
+    }
+
+    .colorful-card__progress {
+        position: absolute;
+        right: 24px;
+        bottom: 24px;
+    }

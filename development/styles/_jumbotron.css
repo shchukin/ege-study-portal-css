@@ -2,13 +2,20 @@
     padding-top: 100px;
     padding-bottom: 60px;
     display: grid;
-    grid-template-columns: 48.9247fr 40.8602fr;
+    grid-template-columns: 59.1397fr 44.8924fr;
     align-items: center;
     gap: 0 32px;
 }
     .jumbotron__content {
         max-width: 728px;
+
     }
+        .jumbotron__pre-heading {
+            margin-bottom: 16px;
+            font-size: var(--body-20-font);
+            line-height: var(--body-20-line);
+        }
+
         .jumbotron__heading {
             margin-top: 0;
             margin-bottom: 0;
@@ -31,15 +38,67 @@
 
             }
 
+        .jumbotron__note {
+            margin-top: 24px;
+            font-size: var(--caption-font);
+            line-height: var(--caption-line);
+            letter-spacing: var(--caption-spacing);
+            color: var(--medium-emphasis-black);
+        }
+
     .jumbotron__preview {
 
     }
+        .jumbotron__overflow {
+            /* В простом кейсе не используется */
+        }
+            .jumbotron__strut {
+                /* В простом кейсе не используется */
+            }
+                .jumbotron__image {
+                    vertical-align: top;
+                    width: 100%;
+                    height: auto;
+                }
 
+
+    .jumbotron__preview--illustration {
+
+    }
+        .jumbotron__preview--illustration .jumbotron__overflow {
+            overflow: hidden;
+            margin-right: calc(-1 * var(--container-desktop-padding)); /* Этот слой нужен чтобы добавить справа 60px (десктопный паддинг) */
+        }
+            .jumbotron__preview--illustration .jumbotron__strut {
+
+            }
+                .jumbotron__preview--illustration .jumbotron__image {
+
+                }
+
+
+    @media (max-width: 1599px) {
+
+        .jumbotron__preview--illustration {
+
+        }
+            .jumbotron__preview--illustration .jumbotron__overflow {
+                /* Этот слой уже вытянут до правого края (смотри чуть выше) */
+                /* На этом уровен происходит обрезание картинки */
+            }
+                .jumbotron__preview--illustration .jumbotron__strut {
+                    margin-right: -230px;
+                }
+                    .jumbotron__preview--illustration .jumbotron__image {
+
+                    }
+    }
 
 @media (max-width: 639px) {
 
     .jumbotron {
-        display: block;
+        display: flex;
+        flex-direction: column;
         padding-top: 40px;
         padding-bottom: 40px;
         /*grid-template-columns: 48.9247fr 40.8602fr;*/
@@ -51,6 +110,11 @@
             padding-top: 0;
             padding-bottom: 0;
         }
+            .jumbotron__pre-heading {
+                font-size: 17px;
+                line-height: 24px;
+            }
+
             .jumbotron__heading {
                 /*margin-top: 0;*/
                 /*margin-bottom: 0;*/
@@ -74,4 +138,30 @@
         .jumbotron__preview {
             display: none;
         }
+            .jumbotron__image {
+                width: 100%;
+                height: auto;
+            }
+
+        .jumbotron__preview--illustration {
+            display: block;
+            order: -1;
+        }
+            .jumbotron__preview--illustration .jumbotron__image {
+                margin-right: 0;
+            }
+
+
+    .jumbotron__preview--illustration {
+
+    }
+        .jumbotron__preview--illustration .jumbotron__overflow {
+            margin-right: 0;
+        }
+            .jumbotron__preview--illustration .jumbotron__strut {
+                margin-right: 0;
+            }
+                .jumbotron__preview--illustration .jumbotron__image {
+
+                }
 }
