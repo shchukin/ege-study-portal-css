@@ -1,0 +1,35 @@
+.get {
+    padding-top: 74px;
+    padding-bottom: 100px;
+}
+    .get__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 42px;
+        line-height: 46px;
+        text-align: center;
+    }
+
+    .get__list {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 24px;
+        grid-template-areas:
+                "a a a b b b c c c d d d"
+                "e e e e f f f f g g g g"
+                "h h h h h h h h h h h h";
+    }
+        .get__item {
+
+        }
+
+        .get__item--1-1 { grid-area: a; }
+        .get__item--1-2 { grid-area: b; }
+        .get__item--1-3 { grid-area: c; }
+        .get__item--1-4 { grid-area: d; }
+        .get__item--2-1 { grid-area: e; }
+        .get__item--2-2 { grid-area: f; }
+        .get__item--2-3 { grid-area: g; }
+        .get__item--3-1 { grid-area: h; }
+
