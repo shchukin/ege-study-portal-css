@@ -69,3 +69,72 @@
                     font-size: var(--body-17-font);
                     line-height: var(--body-17-line);
                 }
+
+
+
+@media (max-width: 639px) {
+
+    .gift-tile {
+        display: block;
+        /*grid-template-columns: 380px 1fr;*/
+        /*gap: 5%;*/
+        padding: 32px 40px 50px;
+        /*background-color: var(--yellow);*/
+        /*border-radius: 16px;*/
+        /*background-image: url("../images/gift-tile-left.svg"), url("../images/gift-tile-right.svg");*/
+        /*background-size: 92px 269px, 248px 276px;*/
+        /*background-repeat: no-repeat, no-repeat;*/
+        background-size: 92px 269px, 173px 193px;
+        background-position: left top, right 0 bottom -77px;
+    }
+        .gift-tile__primary {
+
+        }
+            .gift-tile__heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                /*font-weight: var(--extra-bold);*/
+                font-size: 26px;
+                line-height: 34px;
+            }
+
+            .gift-tile__dates {
+                /*margin-top: 24px;*/
+                /*margin-bottom: 0;*/
+                /*font-size: var(--body-17-font);*/
+                /*line-height: var(--body-17-line);*/
+            }
+
+        .gift-tile__secondary {
+            margin-top: 20px;
+        }
+            .gift-tile__description {
+                /*font-size: var(--body-17-font);*/
+                /*line-height: var(--body-17-line);*/
+            }
+
+            .gift-tile__summary {
+                /*margin-top: var(--body-17-line);*/
+            }
+                .gift-tile__sub-heading {
+                    /*display: block;*/
+                    /*font-weight: normal;*/
+                    /*font-size: var(--body-17-font);*/
+                    /*line-height: var(--body-17-line);*/
+                }
+
+                .gift-tile__purpose {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                    /*font-size: var(--body-17-font);*/
+                    /*line-height: var(--body-17-line);*/
+                }
+
+                .gift-tile__footer {
+                    margin-top: 17px;
+                }
+                    .gift-tile__expand {
+                        /*font-size: var(--body-17-font);*/
+                        /*line-height: var(--body-17-line);*/
+                    }
+}

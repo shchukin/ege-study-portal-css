@@ -7,6 +7,7 @@
     .basic-tile__sub-heading {
         margin-top: 0;
         margin-bottom: 0;
+        font-weight: var(--extra-bold);
         font-size: 26px;
         line-height: 34px;
     }
@@ -16,3 +17,27 @@
         font-size: var(--body-17-font);
         line-height: var(--body-17-line);
     }
+
+
+
+@media (max-width: 639px) {
+
+    .basic-tile {
+        /*height: 100%;*/
+        padding: 28px 28px 32px;
+        /*background-color: var(--green-light);*/
+        /*border-radius: 16px;*/
+    }
+        .basic-tile__sub-heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            font-size: var(--body-17-font);
+            line-height: var(--body-17-line);
+        }
+
+        .basic-tile__description {
+            /*margin-top: 16px;*/
+            font-size: var(--body-17-font);
+            line-height: var(--body-17-line);
+        }
+}

@@ -8,7 +8,6 @@
 }
     .jumbotron__content {
         max-width: 728px;
-
     }
         .jumbotron__pre-heading {
             margin-bottom: 16px;
@@ -99,8 +98,7 @@
 @media (max-width: 639px) {
 
     .jumbotron {
-        display: flex;
-        flex-direction: column;
+        display: block;
         padding-top: 40px;
         padding-bottom: 40px;
         /*grid-template-columns: 48.9247fr 40.8602fr;*/
@@ -135,6 +133,19 @@
             }
                 .jumbotron__action {
 
+                }
+                    .jumbotron__action.button,
+                    .jumbotron__action .button {
+                        padding-left: 40px;
+                        padding-right: 40px;
+                    }
+
+                @media (max-width: 374px) {
+                    .jumbotron__action.button,
+                    .jumbotron__action .button {
+                        padding-left: 20px;
+                        padding-right: 20px;
+                    }
                 }
 
         .jumbotron__preview {

@@ -33,3 +33,33 @@
         .get__item--2-3 { grid-area: g; }
         .get__item--3-1 { grid-area: h; }
 
+
+
+@media (max-width: 639px) {
+
+    .get {
+        padding-top: 24px;
+        padding-bottom: 32px;
+    }
+        .get__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            font-size: 32px;
+            line-height: 38px;
+            /*text-align: center;*/
+        }
+
+        .get__list {
+            margin-top: 40px;
+            display: block;
+            /*grid-template-columns: repeat(12, 1fr);*/
+            /*gap: 24px;*/
+        }
+            .get__item {
+                margin-top: 12px;
+            }
+
+            .get__item:first-child {
+                margin-top: 0;
+            }
+}
