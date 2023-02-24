@@ -23,3 +23,11 @@
             border-radius: 50%;
         }
 
+
+
+.list--no-spacing {
+
+}
+    .list--no-spacing .list__item {
+        margin-top: 0;
+    }

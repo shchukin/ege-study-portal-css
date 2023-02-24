@@ -62,6 +62,7 @@
                 }
 
 
+    /* Непростой кейс */
     .jumbotron__preview--illustration {
 
     }
@@ -70,14 +71,14 @@
             margin-right: calc(-1 * var(--container-desktop-padding)); /* Этот слой нужен чтобы добавить справа 60px (десктопный паддинг) */
         }
             .jumbotron__preview--illustration .jumbotron__strut {
-
+                margin-right: -230px;
             }
                 .jumbotron__preview--illustration .jumbotron__image {
 
                 }
 
 
-    @media (max-width: 1599px) {
+    @media (min-width: 1600px) {
 
         .jumbotron__preview--illustration {
 
@@ -87,12 +88,13 @@
                 /* На этом уровен происходит обрезание картинки */
             }
                 .jumbotron__preview--illustration .jumbotron__strut {
-                    margin-right: -230px;
+                    margin-right: 0;
                 }
                     .jumbotron__preview--illustration .jumbotron__image {
 
                     }
     }
+
 
 @media (max-width: 639px) {
 
