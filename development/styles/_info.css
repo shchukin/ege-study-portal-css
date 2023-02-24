@@ -3,6 +3,13 @@
     background-color: var(--red-light);
 }
 
+@media (min-width: 640px) {
+    .header + .info {
+        position: relative;
+        margin-top: -1px;
+    }
+}
+
 @media (max-width: 639px) {
     .info {
         display: none;
