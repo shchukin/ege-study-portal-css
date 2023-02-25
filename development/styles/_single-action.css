@@ -1,0 +1,9 @@
+.single-action {
+    display: flex;
+    align-items: center;
+    min-height: calc(2 * var(--body-20-line));
+}
+    .single-action__line {
+        font-size: var(--body-20-font);
+        line-height: var(--body-20-line);
+    }

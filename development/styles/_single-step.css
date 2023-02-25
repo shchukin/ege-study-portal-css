@@ -1,0 +1,16 @@
+.single-step {
+
+}
+    .single-step__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: var(--extra-bold);
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .single-step__description {
+        margin-top: 12px;
+        font-size: var(--body-17-font);
+        line-height: var(--body-17-line);
+    }
