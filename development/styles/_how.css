@@ -37,6 +37,7 @@
         .how__body {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             gap: 0 32px;
         }
             .how__preview {
@@ -47,12 +48,6 @@
                     width: 100%;
                     height: auto;
                 }
-
-            .how__content {
-                flex-shrink: 0;
-                width: calc(50% - 16px);
-            }
-
 
 
 @media (min-width: 1600px) {
@@ -70,6 +65,10 @@
             margin-right: auto;
             height: 1px;
             background-color: #DEDFDF;
+        }
+
+        .how--highlighted::before {
+            display: none;
         }
 
     .how--highlighted {
@@ -95,7 +94,7 @@
 
             .how__heading {
                 /*margin-top: 0;*/
-                /*margin-bottom: 80px;*/
+                margin-bottom: 0; /* taking spacing from empty parts of image */
                 /*font-size: 42px;*/
                 /*line-height: 46px;*/
                 /*text-align: center;*/
@@ -104,7 +103,7 @@
             .how__body {
                 /*display: flex;*/
                 /*align-items: center;*/
-                /*gap: 0 32px;*/
+                gap: 0 110px;
             }
                 .how__preview {
                     /*flex-shrink: 0;*/
@@ -114,10 +113,53 @@
                         /*width: 100%;*/
                         /*height: auto;*/
                     }
+}
 
-                .how__content {
+
+@media (max-width: 639px) {
+
+    .how {
+        /*border-top: 1px solid #DEDFDF;*/
+    }
+
+    .how--highlighted {
+        /*position: relative; !* ro overlap border in (1) *!*/
+        /*background-color: #FAF6F2;*/
+        /*border-top: none;*/
+    }
+
+    .how--highlighted + .how {
+        /*margin-top: -1px; !* (1) *!*/
+    }
+
+
+    .how--inverted {
+
+    }
+        .how__wrap {
+            padding-top: 64px;
+            padding-bottom: 64px;
+        }
+            .how__heading {
+                /*margin-top: 0;*/
+                margin-bottom: 0;
+                font-size: 32px;
+                line-height: 38px;
+                /*text-align: center;*/
+            }
+
+            .how__body {
+                display: block;
+            }
+                .how__preview {
                     /*flex-shrink: 0;*/
-                    /*width: calc(50% - 16px);*/
+                    width: auto;
+                    margin-left: calc(-1 * var(--container-mobile-padding));
+                    margin-right: calc(-1 * var(--container-mobile-padding));
                 }
+                    .how__image {
+                        /*width: 100%;*/
+                        /*height: auto;*/
+                    }
 }
 
