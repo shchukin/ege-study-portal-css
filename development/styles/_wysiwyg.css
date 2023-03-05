@@ -16,6 +16,19 @@
     }
 }
 
+
+.wysiwyg--article {
+    font-size: var(--body-20-font);
+    line-height: var(--body-20-line);
+}
+
+@media (max-width: 639px) {
+    .wysiwyg--article {
+        font-size: var(--body-17-font);
+        line-height: var(--body-17-line);
+    }
+}
+
 /* stylelint-disable function-parentheses-space-inside */
 .wysiwyg p,
 .wysiwyg ul,
