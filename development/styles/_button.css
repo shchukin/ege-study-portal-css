@@ -75,4 +75,11 @@
     font-size: 20px;
 }
 
+@media (min-width: 640px) {
+    .button--larger-on-desktop {
+        padding: 25px 50px 27px;
+        font-size: 20px;
+    }
+}
+
 

@@ -20,13 +20,17 @@
 .wysiwyg p,
 .wysiwyg ul,
 .wysiwyg ol,
-.wysiwyg hr,
 .wysiwyg figure,
 .wysiwyg blockquote {
     margin-top: 16px;
     margin-bottom: 16px;
 }
 /* stylelint-enable */
+
+.wysiwyg hr {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
 
 .wysiwyg p:first-child,
 .wysiwyg ul:first-child,
@@ -90,10 +94,12 @@
 /*    margin-right: 40px;*/
 /*}*/
 
-/*.wysiwyg hr {*/
-/*    height: 0;*/
-/*    border-top: 1px solid;*/
-/*}*/
+.wysiwyg hr {
+    height: 0;
+    border-top: 1px solid;
+    width: 85px;
+    margin-left: 0;
+}
 
 .wysiwyg img {
     vertical-align: top;

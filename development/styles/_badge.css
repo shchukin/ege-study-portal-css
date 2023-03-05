@@ -27,3 +27,7 @@
 .badge--yellow {
     background-color: var(--yellow-light);
 }
+
+.badge--light-green {
+    background-color: #D0DFC9;
+}

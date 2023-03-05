@@ -1,0 +1,184 @@
+.online {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--neutral);
+}
+    .online__wrap {
+        display: grid;
+        align-items: start;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 34px;
+    }
+
+    @media (min-width: 1600px) {
+        .online__wrap {
+            gap: 0 110px;
+        }
+    }
+        .online__summary {
+
+        }
+            .online__pre-heading {
+
+            }
+
+            .online__heading {
+                margin-top: 8px;
+                margin-bottom: 0;
+                font-weight: var(--extra-bold);
+                font-size: 42px;
+                line-height: 46px;
+            }
+
+            .online__tag {
+                margin-top: 32px;
+            }
+
+            .online__description {
+                margin-top: 16px;
+            }
+
+        .online__panel {
+            margin-top: 24px;
+            padding: 60px 54px;
+            background-color: #FFFFFF;
+            box-shadow: 4px 4px 20px rgba(89, 23, 0, 0.06);
+            border-radius: 16px;
+            text-align: center;
+        }
+            .online__sub-heading {
+                max-width: 450px;
+                margin: 0 auto;
+                font-size: 32px;
+                line-height: 38px;
+            }
+
+            .online__price {
+                margin-top: 32px;
+                font-weight: var(--extra-bold);
+                font-size: 42px;
+                line-height: 46px;
+                color: var(--red);
+            }
+
+            .online__price-note {
+                margin-top: 1px;
+                font-weight: var(--extra-bold);
+                font-size: 17px;
+                line-height: 24px;
+                color: var(--red);
+            }
+                .online__discount {
+
+                }
+
+                .online__old-price {
+                    color: var(--medium-emphasis-black);
+                }
+
+            .online__join {
+                margin-top: 25px;
+            }
+
+            .online__footer {
+                margin-top: 25px;
+            }
+                .online__alt-action {
+
+                }
+
+
+@media (max-width: 639px) {
+
+    .online {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        /*background-color: var(--neutral);*/
+    }
+        .online__wrap {
+            display: block;
+            /*align-items: start;*/
+            /*grid-template-columns: 1fr 1fr;*/
+            /*gap: 0 34px;*/
+        }
+            .online__summary {
+
+            }
+                .online__pre-heading {
+
+                }
+
+                .online__heading {
+                    /*margin-top: 8px;*/
+                    /*margin-bottom: 0;*/
+                    /*font-weight: var(--extra-bold);*/
+                    font-size: 32px;
+                    line-height: 38px;
+                }
+
+                .online__tag {
+                    /*margin-top: 32px;*/
+                }
+
+                .online__description {
+                    /*margin-top: 16px;*/
+                }
+
+            .online__panel {
+                margin-top: 32px;
+                margin-left: -16px;
+                margin-right: -16px;
+                /*margin-top: 24px;*/
+                padding: 48px 24px;
+                /*background-color: #FFFFFF;*/
+                /*box-shadow: 4px 4px 20px rgba(89, 23, 0, 0.06);*/
+                /*border-radius: 16px;*/
+                /*text-align: center;*/
+            }
+                .online__sub-heading {
+                    /*max-width: 450px;*/
+                    /*margin: 0 auto;*/
+                    font-size: 26px;
+                    line-height: 34px;
+                }
+
+                .online__price {
+                    /*margin-top: 32px;*/
+                    /*font-weight: var(--extra-bold);*/
+                    /*font-size: 42px;*/
+                    /*line-height: 46px;*/
+                    /*color: var(--red);*/
+                }
+
+                .online__price-note {
+                    /*margin-top: 1px;*/
+                    /*font-weight: var(--extra-bold);*/
+                    /*font-size: 17px;*/
+                    /*line-height: 24px;*/
+                    /*color: var(--red);*/
+                }
+                    .online__discount {
+
+                    }
+
+                    .online__old-price {
+                        /*color: var(--medium-emphasis-black);*/
+                    }
+
+                .online__join {
+                    /*margin-top: 25px;*/
+                }
+                    .online__join.button,
+                    .online__join .button {
+                        width: 100%;
+                        max-width: 310px;
+                    }
+
+                .online__footer {
+                    /*margin-top: 25px;*/
+                }
+                    .online__alt-action {
+
+                    }
+}
+
