@@ -141,7 +141,7 @@
 
 
     @supports (-webkit-appearance: none) or (-moz-appearance: none) or (appearance: none) {
-        .input--disabled.input--error .input__widget {
+        .input--error.input--select .input__widget {
             background-image: url("../vectors/input-select-error.svg");
         }
     }
