@@ -105,6 +105,33 @@
                 margin-top: 24px;
             }
 
+            /* Вариант с курсом: */
+
+            .contacts-preview__subject {
+                font-size: 15px;
+                line-height: 23px;
+            }
+
+            .contacts-preview__course {
+                margin-top: 6px;
+                margin-bottom: 0;
+                font-weight: var(--extra-bold);
+                font-size: 26px;
+                line-height: 34px;
+            }
+
+            .contacts-preview__tag {
+                margin-top: 24px;
+            }
+
+            .contacts-preview__info {
+                margin-top: 14px;
+            }
+
+            .contacts-preview__cost {
+                margin-top: 32px;
+            }
+
 
 .window .contacts-preview {
     width: 1240px;
