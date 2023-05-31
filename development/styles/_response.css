@@ -1,5 +1,6 @@
 .response {
     padding: 80px 104px;
+    width: 700px;
 }
     .response__heading {
         margin-top: 0;
@@ -52,6 +53,7 @@
 @media (max-width: 639px) {
 
     .response {
+        width: 100%;
         padding: 60px 24px 24px;
     }
         .response__heading {

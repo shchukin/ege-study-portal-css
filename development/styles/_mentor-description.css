@@ -20,3 +20,30 @@
         .mentor-description__action {
 
         }
+
+
+@media (max-width: 639px) {
+
+    .mentor-description {
+
+    }
+        .mentor-description__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            font-size: 32px;
+            line-height: 34px;
+        }
+
+        .mentor-description__content {
+            /*margin-top: 24px;*/
+            /*font-size: var(--body-17-font);*/
+            /*line-height: var(--body-17-line);*/
+        }
+
+        .mentor-description__operations {
+            /*margin-top: 24px;*/
+        }
+            .mentor-description__action {
+
+            }
+}

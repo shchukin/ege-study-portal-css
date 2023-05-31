@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.mfp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body>
+
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.mfp</h1>
+
+            <a class="mfp-handler" href="#apply-for-work">
+                .response
+            </a>
+
+            <!-- Modal -->
+            <div class="window mfp-hide" id="apply-for-work">
+                <button class="window__close mfp-close" type="button">
+                    Закрыть
+                </button>
+                <form class="window__body response">
+                    <h2 class="response__heading">
+                        Отклик на вакансию
+                    </h2>
+                    <div class="response__description">
+                        Ведущий онлайн-курсов по обществознанию, химии, биологии
+                    </div>
+                    <div class="response__fieldset">
+                        <div class="response__field input">
+                            <input class="input__widget" type="text" placeholder="Ваше имя и фамилия *">
+                        </div>
+                        <div class="response__field input">
+                            <input class="input__widget" type="tel" placeholder="Телефон">
+                        </div>
+                        <div class="response__field input">
+                            <input class="input__widget" type="email" placeholder="Электронная почта *">
+                        </div>
+                        <div class="response__field input input--area">
+                            <textarea class="input__widget" rows="4" placeholder="Расскажите о себе и почему вы хотите работать у нас *"></textarea>
+                            <div class="input__hint">Осталось 2 000 знаков</div>
+                        </div>
+                    </div>
+                    <div class="response__file attach">
+                        <button class="attach__handler button button--border" type="button">
+                            Прикрепить файл
+                        </button>
+                        или:
+                        <div class="attach__item">
+                            <div class="attach__name">
+                                234823442593475283475872345823457234857234.PNG
+                            </div>
+                            <button class="attach__delete" type="button">
+                                <img class="attach__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
+                            </button>
+                        </div>
+                        <div class="attach__item">
+                            <div class="attach__name">
+                                resume_rus.pdf
+                            </div>
+                            <button class="attach__delete" type="button">
+                                <img class="attach__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <label class="response__agreement choice choice--checkbox">
+                        <input class="choice__widget" type="checkbox">
+                        <i class="choice__icon" role="presentation"></i>
+                        <span class="choice__label">
+                        Даю согласие на <a class="link link--inherit" href="#">обработку персональных данных</a>
+                        </span>
+                    </label>
+                    <div class="response__footer">
+                        <button class="response__submit button" type="submit">
+                            Отравить
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <br>
+
+            <a class="mfp-handler" href="#callback">
+                .contacts-preview
+            </a>
+
+            <!-- Modal -->
+            <div class="window mfp-hide" id="callback">
+                <button class="window__close mfp-close" type="button">
+                    Закрыть
+                </button>
+                <section class="window__body contacts-preview">
+                    <div class="contacts-preview__wrap container">
+                        <div class="contacts-preview__callback">
+                            <h2 class="contacts-preview__heading">
+                                Оставьте заявку —
+                                мы вам перезвоним!
+                            </h2>
+                            <form class="contacts-preview__form">
+                                <div class="contacts-preview__field input">
+                                    <input class="input__widget" type="text" placeholder="Фамилия и имя *">
+                                </div>
+                                <div class="contacts-preview__field input">
+                                    <input class="input__widget" type="text" placeholder="Телефон">
+                                </div>
+                                <div class="contacts-preview__interest">
+                                    <div class="contacts-preview__interest-label">
+                                        Меня интересуют:
+                                    </div>
+                                    <div class="contacts-preview__interest-courses">
+                                        <label class="choice choice--checkbox">
+                                            <input class="choice__widget" type="checkbox">
+                                            <i class="choice__icon" role="presentation"></i>
+                                            <span class="choice__label">Очные курсы</span>
+                                        </label>
+                                        <label class="choice choice--checkbox">
+                                            <input class="choice__widget" type="checkbox">
+                                            <i class="choice__icon" role="presentation"></i>
+                                            <span class="choice__label">Онлайн-курсы</span>
+                                        </label>
+                                        <label class="choice choice--checkbox">
+                                            <input class="choice__widget" type="checkbox">
+                                            <i class="choice__icon" role="presentation"></i>
+                                            <span class="choice__label">Другое</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <label class="contacts-preview__agreement choice choice--checkbox">
+                                    <input class="choice__widget" type="checkbox">
+                                    <i class="choice__icon" role="presentation"></i>
+                                    <span class="choice__label">Даю согласие на обработку персональных данных</span>
+                                </label>
+                                <button class="contacts-preview__submit button" type="submit">
+                                    Отправить заявку
+                                </button>
+                            </form>
+                        </div>
+                        <div class="contacts-preview__to-call">
+                            <div class="contacts-preview__channel">
+                                <div class="contacts-preview__label">
+                                    Звоните! Бесплатно по РФ
+                                </div>
+                                <div class="contacts-preview__number">
+                                    <a class="link link--fake" href="tel:+78007750682">8 (800) 775-06-82</a>
+                                </div>
+                            </div>
+                            <div class="contacts-preview__channel">
+                                <div class="contacts-preview__label">
+                                    Телефон в Москве
+                                </div>
+                                <div class="contacts-preview__number">
+                                    <a class="link link--fake" href="tel:+74959840927P1">8 (495) 984 09 27 (доб. 1)</a>
+                                </div>
+                            </div>
+                            <div class="contacts-preview__body wysiwyg">
+                                <ul class="list">
+                                    <li class="list__item">Средний балл на ЕГЭ 2020: математика — 83 балла, русский язык — 88 баллов, обществознание — 86 баллов.</li>
+                                    <li class="list__item">Записывайтесь заранее! Количество мест в группах ограничено.</li>
+                                    <li class="list__item">Проконсультируем по вопросам поступления в вузы, проведем бесплатную профессиональную ориентацию и проконсультируем по экзаменам ЕГЭ.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../scripts/_footer.js"></script>
+        <script src="../scripts/_input.js"></script>
+        <script src="../scripts/_slideshow.js"></script>
+        <script src="../scripts/_courses.js"></script>
+        <script src="../scripts/_program.js"></script>
+        <script src="../scripts/_single-course.js"></script>
+        <script src="../scripts/_jobs.js"></script>
+        <script src="../scripts/_mfp.js"></script>
+        <script src="../scripts/_collapse.js"></script>
+        <script src="../scripts/_header.js"></script>
+        <script src="../scripts/_nav.js"></script>
+        <script src="../scripts/_faq.js"></script>
+        <script src="../scripts/_accordion.js"></script>
+
+    </body>
+</html>

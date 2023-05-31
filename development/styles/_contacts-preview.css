@@ -106,6 +106,25 @@
             }
 
 
+.window .contacts-preview {
+    width: 1240px;
+    border-radius: 24px;
+    padding-top: 64px;
+    padding-bottom: 44px;
+}
+    .window .contacts-preview__wrap.container,
+    .window .contacts-preview__wrap .container {
+        width: auto;
+        max-width: none;
+    }
+        .contacts-preview__callback {
+            width: 55.3114%;
+        }
+
+        .contacts-preview__to-call {
+            width: 40.3003%;
+        }
+
 
 @media (max-width: 639px) {
 
@@ -114,6 +133,14 @@
         padding-bottom: 60px;
         /*background-color: var(--neutral);*/
     }
+
+    .window .contacts-preview {
+        width: auto;
+        /*border-radius: 24px;*/
+        /*padding-top: 71px;*/
+        /*padding-bottom: 44px;*/
+    }
+
         .contacts-preview__wrap {
             display: block;
             /*align-items: center;*/
