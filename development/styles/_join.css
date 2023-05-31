@@ -3,14 +3,14 @@
     background-color: var(--neutral);
     border-radius: 8px;
 }
-    .join__price {
+    .price__value {
         font-weight: var(--extra-bold);
         font-size: 32px;
         line-height: 38px;
         color: var(--red);
     }
 
-    .join__discount {
+    .price__discount {
         font-weight: var(--extra-bold);
         color: var(--red);
     }
@@ -20,15 +20,15 @@
             color: var(--high-emphasis-black);
         }
 
-    .join__submit {
+    .price__submit {
         margin-top: 16px;
     }
-        .join__submit.button,
-        .join__submit .button {
+        .price__submit.button,
+        .price__submit .button {
             width: 100%;
         }
 
-    .join__timing {
+    .price__timing {
         margin-top: 8px;
         font-weight: var(--extra-bold);
         color: var(--red);
@@ -36,6 +36,10 @@
 
     .join__tag {
         margin-top: 32px;
+    }
+
+    .join__cost {
+
     }
 
     .join__info {
@@ -57,14 +61,14 @@
         /*background-color: var(--neutral);*/
         border-radius: 0;
     }
-        .join__price {
+        .price__value {
             /*font-weight: var(--extra-bold);*/
             font-size: 17px;
             line-height: 24px;
             /*color: var(--red);*/
         }
 
-        .join__discount {
+        .price__discount {
             /*font-weight: var(--extra-bold);*/
             /*color: var(--red);*/
         }
@@ -74,15 +78,15 @@
                 /*color: var(--high-emphasis);*/
             }
 
-        .join__submit {
+        .price__submit {
             margin-top: 14px;
         }
-            .join__submit.button,
-            .join__submit .button {
+            .price__submit.button,
+            .price__submit .button {
                 /*width: 100%;*/
             }
 
-        .join__timing {
+        .price__timing {
             /*margin-top: 8px;*/
             /*font-weight: var(--extra-bold);*/
             /*color: var(--red);*/
@@ -91,6 +95,10 @@
         .join__tag {
             display: none;
             /*margin-top: 32px;*/
+        }
+
+        .join__cost {
+
         }
 
         .join__info {
