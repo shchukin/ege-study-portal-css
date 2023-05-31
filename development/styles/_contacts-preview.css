@@ -139,6 +139,10 @@
     padding-top: 64px;
     padding-bottom: 44px;
 }
+    .window .contacts-preview__wrap {
+        align-items: flex-start;
+    }
+
     .window .contacts-preview__wrap.container,
     .window .contacts-preview__wrap .container {
         width: auto;
