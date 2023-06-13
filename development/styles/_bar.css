@@ -1,6 +1,6 @@
 .bar {
     position: relative;
-    height: var(--bar-mobile);
+    height: var(--bar-tablet-and-desktop);
 }
     .bar__detachable {
         position: fixed;
@@ -11,8 +11,7 @@
         min-height: var(--bar-mobile);
         padding-top: 20px;
         padding-bottom: 16px;
-        background: #FFFFFF;
-        box-shadow: 0 -2px 20px 0 rgba(42, 33, 26, 0.1);
+        background-color: #F6EDE4;
         min-width: 320px;
         visibility: hidden;
         opacity: 0;
@@ -115,6 +114,9 @@
         right: 0;
         bottom: 0;
     }
+        .bar_static .bar__close {
+            display: none;
+        }
 
 .bar_grounded {
 
@@ -124,17 +126,8 @@
     }
 
 
-
-/* same for 768+ */
-
-@media (min-width: 768px) {
-    .bar {
-        height: var(--bar-tablet-and-desktop);
-    }
-        .bar__detachable {
-            padding-bottom: 21px;
-        }
-
+/* Только на десктопах */
+@media (min-width: 640px) {
     .bar__show,
     .bar__hide {
         display: none !important;
@@ -144,3 +137,12 @@
         display: block !important;
     }
 }
+
+
+/* Адаптив */
+@media (max-width: 639px) {
+    .bar {
+        height: var(--bar-mobile);
+    }
+}
+
