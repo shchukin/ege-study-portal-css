@@ -822,17 +822,25 @@
                             <!-- same form but this:  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ and also remove .input_size_smaller and .button_size_smaller -->
                             <form class="subscription subscription_full">
                                 <div class="subscription__body">
-                                    <div class="subscription__field input">
-                                        <input class="input__widget" type="email" placeholder="Адрес электронной почты">
+                                    <div class="subscription__fieldset">
+                                        <div class="subscription__field input input--smaller">
+                                            <input class="input__widget" type="email" placeholder="Адрес электронной почты">
+                                        </div>
+                                        <button class="subscription__submit button button--smaller" type="button">
+                                            <span class="button__label">
+                                                Подписаться
+                                            </span>
+                                        </button>
                                     </div>
-                                    <button class="subscription__submit button" type="button">
-                                        <span class="button__label">
-                                            Подписаться
-                                        </span>
-                                    </button>
-                                    Я преподаватель
+                                    <label class="choice choice--checkbox">
+                                        <input class="choice__widget" type="checkbox">
+                                        <i class="choice__icon" role="presentation"></i>
+                                        <span class="choice__label">Я&nbsp;преподаватель</span>
+                                    </label>
                                 </div>
-                                <div class="subscription__terms">Нажимая на кнопку, вы даете согласие на <a class="link mfp-handler" href="#">обработку своих персональных данных</a> согласно 152-ФЗ</div>
+                                <div class="subscription__terms">
+                                    Нажимая на&nbsp;кнопку, вы&nbsp;даете согласие на&nbsp;<a class="link mfp-handler" href="#">обработку своих персональных данных</a> согласно 152-ФЗ
+                                </div>
                             </form>
                         </div>
                     </div>

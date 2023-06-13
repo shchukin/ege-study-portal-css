@@ -47,6 +47,17 @@
     }
 
 
+.input--smaller {
+
+}
+    .input--smaller .input__widget {
+        height: 50px;
+        min-height: 50px; /* when textarea is being resized */
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+
+
 .input--area {
 
 }
