@@ -806,6 +806,35 @@
                     <a class="link" href="#">Показать больше</a>
                 </div>
             </section>
+            <div class="bar">
+                <div class="bar__detachable">
+                    <input class="bar__visibility visuallyhidden" id="bar-visibility" type="checkbox" style="display: none;">
+                    <label class="bar__show" for="bar-visibility">Развернуть</label>
+                    <label class="bar__hide" for="bar-visibility">Свернуть</label>
+                    <button class="bar__close" type="button">Закрыть</button>
+                    <div class="bar__wrap container">
+                        <div class="bar__heading">
+                            Сдай ЕГЭ! Получай бесплатные материалы
+                        </div>
+                        <div class="bar__body">
+                            <!-- same form but this:  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ and also remove .input_size_smaller and .button_size_smaller -->
+                            <form class="subscription subscription_full">
+                                <div class="subscription__body">
+                                    <div class="subscription__field input">
+                                        <input class="input__widget" type="email" placeholder="Оставь e-mail *">
+                                    </div>
+                                    <button class="subscription__submit button" type="button">
+                                    <span class="button__label">
+                                        Подписаться и сдать ЕГЭ
+                                    </span>
+                                    </button>
+                                </div>
+                                <div class="subscription__terms">Нажимая подписаться, вы соглашаетесь с <a class="link mfp-handler" href="#agreement">политикой конфиденциальности</a>.</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <footer class="footer">
                 <div class="footer__wrap container container--wild">
                     <div class="footer__column footer__column--summary">
@@ -964,6 +993,17 @@
             </footer>
         </div>
 
+        <!-- Alert -->
+        <div class="alert" style="display: none;">
+            <div class="alert__label">
+                Спасибо! Вы подписаны на рассылку.<br class="hide hide_mobile">
+                На вашу почту скоро придут материалы и шпаргалки по ЕГЭ.
+            </div>
+            <button class="alert__dismiss" type="button">
+                Закрыть
+            </button>
+        </div>
+
         <!-- Scripts -->
         <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
         <script src="../vendors/outline/outline.js"></script>
@@ -981,6 +1021,9 @@
         <script src="../scripts/_header.js"></script>
         <script src="../scripts/_nav.js"></script>
         <script src="../scripts/_faq.js"></script>
+        <script src="../scripts/_bar.js"></script>
+        <script src="../scripts/_subscription.js"></script>
+        <script src="../scripts/_alert.js"></script>
 
     </body>
 </html>
