@@ -813,30 +813,26 @@
                     <label class="bar__hide" for="bar-visibility">Свернуть</label>
                     <button class="bar__close" type="button">Закрыть</button>
                     <div class="bar__wrap container">
-                        <div class="bar__texts">
-                            <div class="bar__heading">
-                                Сдай ЕГЭ! Бесплатные материалы для подготовки каждую неделю!
-                            </div>
+                        <div class="bar__heading">
+                            Сдай ЕГЭ! Бесплатные материалы для подготовки каждую неделю!
                         </div>
                         <div class="bar__body">
-                            <!-- same form but this:  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ and also remove .input_size_smaller and .button_size_smaller -->
-                            <form class="subscription subscription_full">
+                            <!-- Здесь, внимание:     ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
+                            <form class="subscription subscription--full">
                                 <div class="subscription__body">
-                                    <div class="subscription__fieldset">
-                                        <div class="subscription__field input input--smaller">
-                                            <input class="input__widget" type="email" placeholder="Адрес электронной почты">
-                                        </div>
-                                        <button class="subscription__submit button button--smaller" type="button">
-                                            <span class="button__label">
-                                                Подписаться
-                                            </span>
-                                        </button>
+                                    <div class="subscription__field input input--smaller">
+                                        <input class="input__widget" type="email" placeholder="Адрес электронной почты">
                                     </div>
-                                    <label class="choice choice--checkbox">
+                                    <label class="subscription__option choice choice--checkbox">
                                         <input class="choice__widget" type="checkbox">
                                         <i class="choice__icon" role="presentation"></i>
                                         <span class="choice__label">Я&nbsp;преподаватель</span>
                                     </label>
+                                    <button class="subscription__submit button button--smaller" type="button">
+                                        <span class="button__label">
+                                            Подписаться
+                                        </span>
+                                    </button>
                                 </div>
                                 <div class="subscription__terms">
                                     Нажимая на&nbsp;кнопку, вы&nbsp;даете согласие на&nbsp;<a class="link mfp-handler" href="#">обработку своих персональных данных</a> согласно 152-ФЗ

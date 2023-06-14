@@ -9,8 +9,8 @@
         right: 0;
         bottom: 0;
         min-height: var(--bar-mobile);
-        padding-top: 20px;
-        padding-bottom: 16px;
+        padding-top: 16px;
+        padding-bottom: 6px;
         background-color: #F6EDE4;
         min-width: 320px;
         visibility: hidden;
@@ -68,17 +68,15 @@
 
         .bar__wrap {
             position: relative;
+            max-width: 1440px;
         }
             .bar__heading {
-                font-family: var(--font_family_heading);
-                font-weight: var(--font_weight_demi);
-                font-size: 24px;
-                line-height: 28px;
-                text-align: center;
+                font-weight: var(--extra-bold);
+                font-size: var(--body-20-font);
+                line-height: var(--body-20-line);
             }
 
             .bar__body {
-                margin-top: 16px;
                 display: none;
             }
 
@@ -146,3 +144,39 @@
     }
 }
 
+
+@media (min-width: 1600px) {
+    .bar {
+
+    }
+        .bar__detachable {
+
+        }
+            .bar__visibility {
+
+            }
+
+            .bar__show,
+            .bar__hide {
+
+            }
+
+            .bar__close {
+
+            }
+
+            .bar__wrap {
+                position: relative; /* сюда прилетит .subscription__terms */
+                display: flex;
+                align-items: flex-start;
+            }
+                .bar__heading {
+                    flex-grow: 1;
+                    margin-top: 16px;
+                }
+
+                .bar__body {
+                    width: 494px;
+                    flex-shrink: 0;
+                }
+}
