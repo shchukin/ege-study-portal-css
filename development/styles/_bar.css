@@ -1,6 +1,6 @@
 .bar {
     position: relative;
-    height: var(--bar-tablet-and-desktop);
+    height: var(--bar-laptop);
 }
     .bar__detachable {
         position: fixed;
@@ -22,8 +22,8 @@
             display: block !important;
         }
 
-        .bar__show,
-        .bar__hide {
+        .bar__expand,
+        .bar__collapse {
             position: absolute;
             z-index: 10;
             left: 0;
@@ -35,7 +35,7 @@
             cursor: pointer;
         }
 
-        .bar__hide {
+        .bar__collapse {
             display: none;
         }
 
@@ -75,6 +75,9 @@
                 font-size: var(--body-20-font);
                 line-height: var(--body-20-line);
                 text-align: center;
+                white-space: nowrap; /* Для залипания важно чтобы не менялась высота */
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
             .bar__body {
@@ -83,11 +86,11 @@
             }
 
 
-.bar__visibility:checked ~ .bar__show {
+.bar__visibility:checked ~ .bar__expand {
     display: none;
 }
 
-.bar__visibility:checked ~ .bar__hide {
+.bar__visibility:checked ~ .bar__collapse {
     display: block;
 }
 
@@ -126,65 +129,25 @@
     }
 
 
-/* Только на десктопах */
+/* Схлопывание-расхлопывание для десктопов, чтобы на смартфонах не пришлось перекрывать */
 @media (min-width: 640px) {
-    .bar__show,
-    .bar__hide {
-        display: none !important;
+
+    /* Кнопки "Развернуть/свернуть" на планшетах и десктопах не нужны */
+    .bar__expand,
+    .bar__collapse {
+        display: none !important; /* !important-ы нужны, чтобы если вдруг по какой-то причине на мобилках случилось схлопывание */
     }
 
+    /* Тело всегда показывается */
     .bar__body {
-        display: block !important;
+        display: block !important; /* !important-ы нужны, чтобы если вдруг по какой-то причине на мобилках случилось схлопывание */
     }
 }
-
-
-/* Адаптив */
-@media (max-width: 639px) {
-    .bar {
-        height: var(--bar-mobile);
-    }
-}
-
-
-@media (min-width: 1300px) {
-
-    .bar {
-
-    }
-        .bar__detachable {
-
-        }
-            .bar__visibility {
-
-            }
-
-            .bar__show,
-            .bar__hide {
-
-            }
-
-            .bar__close {
-
-            }
-
-            .bar__wrap {
-
-            }
-                .bar__heading {
-
-                }
-
-                .bar__body {
-
-                }
-}
-
 
 @media (min-width: 1600px) {
 
     .bar {
-
+        height: var(--bar-monitor);
     }
         .bar__detachable {
             padding-bottom: 6px;
@@ -193,8 +156,8 @@
 
             }
 
-            .bar__show,
-            .bar__hide {
+            .bar__expand,
+            .bar__collapse {
 
             }
 
@@ -218,4 +181,11 @@
                     margin-top: 0;
                     flex-shrink: 0;
                 }
+}
+
+
+@media (max-width: 639px) {
+    .bar {
+        height: var(--bar-mobile);
+    }
 }
