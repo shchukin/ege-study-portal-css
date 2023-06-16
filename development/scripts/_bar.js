@@ -12,18 +12,18 @@
     function stickBar() {
 
         if ( $(window).scrollTop() < stickPosition ) {
-            $bar.removeClass('bar_sticky');
+            $bar.removeClass('bar--sticky');
             $bar.removeClass('bar--static');
         }
 
         if ( $(window).scrollTop() >= stickPosition && $(window).scrollTop() < unStickPosition ) {
-            $bar.addClass('bar_sticky');
+            $bar.addClass('bar--sticky');
             $bar.removeClass('bar--static');
         }
 
         if ( $(window).scrollTop() >= unStickPosition ) {
             $bar.addClass('bar--static');
-            $bar.removeClass('bar_sticky');
+            $bar.removeClass('bar--sticky');
         }
     }
 
@@ -32,7 +32,7 @@
         $(window).off('resize', countUnStickPosition);
         $(window).off('scroll', stickBar);
         $(window).off('resize', stickBar);
-        $bar.removeClass('bar_sticky');
+        $bar.removeClass('bar--sticky');
         $bar.addClass('bar--static');
         $bar.addClass('bar--grounded');
     }
