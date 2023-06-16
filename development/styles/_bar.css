@@ -31,23 +31,34 @@
             vertical-align: top;
             width: 44px;
             height: 44px;
-            padding: 0;
+            padding: 12px;
             border: none;
             background-color: transparent;
-            background-image: url("../vectors/bar-close.svg");
-            background-size: 14px 14px;
-            background-repeat: no-repeat;
-            background-position: center center;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
             cursor: pointer;
             transition: opacity 0.1s ease;
         }
+            .bar__close::before {
+                content: "";
+                position: absolute;
+                left: 6px;
+                top: 6px;
+                right: 6px;
+                bottom: 6px;
+                display: block;
+                border-radius: 4px;
+            }
 
-        .bar__close:hover {
-            opacity: 0.7;
-        }
+            .bar__close:hover::before {
+                background-color: var(--high-emphasis-white)
+            }
+
+            .bar__cross {
+                position: relative;
+                vertical-align: top;
+                width: 20px;
+                height: 20px;
+                fill: var(--high-emphasis-black);
+            }
 
         .bar__wrap {
             position: relative;
@@ -97,7 +108,6 @@
     }
 
 
-
 @media (min-width: 1600px) {
 
     .bar {
@@ -144,17 +154,26 @@
         }
             .bar__expand,
             .bar__collapse {
-                display: inline-block;
-                vertical-align: top;
+                display: block;
                 position: absolute;
                 z-index: 10;
                 left: 0;
                 top: 0;
-                padding: 11px 10px 15px;
+                border: none;
+                background-color: transparent;
+                padding: 6px 10px 15px;
                 font-size: 11px;
                 line-height: 14px;
-                color: var(--brand_orange);
+                color: var(--red);
                 cursor: pointer;
+            }
+
+            .bar__expand {
+
+            }
+
+            .bar__collapse {
+                display: none;
             }
 
             .bar__close {
@@ -165,6 +184,8 @@
 
             }
                 .bar__heading {
+                    margin-left: 10px;
+                    margin-right: 10px;
                     height: 48px; /* конкретная высота важна для залипания */
                     font-size: 17px;
                     line-height: 24px;
@@ -180,9 +201,30 @@
                     display: none;
                 }
 
+    .bar--expanded {
+
+    }
+        .bar--expanded .bar__expand {
+            display: none;
+        }
+
+        .bar--expanded .bar__collapse {
+            display: block;
+        }
+
+        .bar--expanded .bar__body {
+            display: block;
+        }
+
     .bar--static {
         height: var(--bar-mobile-expanded);
     }
+
+        .bar--static .bar__expand,
+        .bar--static .bar__collapse {
+            display: none !important;
+        }
+
         .bar--static .bar__body {
             display: block;
         }

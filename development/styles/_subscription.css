@@ -58,6 +58,7 @@
             }
 
         .subscription--full .subscription__terms {
+            margin-top: 0;
             text-align: center;
             white-space: nowrap; /* важно чтобы высота блока всегда была одинаковой для залипания */
         }
@@ -80,6 +81,14 @@
 }
 
 @media (min-width: 1600px) {
+
+    .subscription--full .subscription__body {
+        width: 494px;
+    }
+
+    .subscription--full .subscription__field {
+        width: 306px;
+    }
 
     .subscription--full .subscription__terms {
         position: absolute;

@@ -1,6 +1,8 @@
 (function($) {
+
+    /* Залипание */
     var $bar = $('.bar');
-    var stickPosition = 200; /* Random number but same to up.js */
+    var stickPosition = 200; /* Случайное число, выбираем сами */
     var unStickPosition = 0;
 
     function countUnStickPosition() {
@@ -46,6 +48,14 @@
         $(window).on('resize', stickBar);
         $(document).ready(stickBar);
     }
+
+
+    /* Схлопывание, расхлопывание */
+
+    $('.bar__expand, .bar__collapse').on('click', function () {
+        $('.bar').toggleClass('bar--expanded');
+        countUnStickPosition();
+    })
 
 })(jQuery);
 
