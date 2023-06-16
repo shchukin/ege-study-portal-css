@@ -1,13 +1,15 @@
 .alert {
     position: fixed;
     z-index: 2000;
-    top: 15px;
-    left: 15px;
-    right: 15px;
+    top: 20px;
+    right: auto;
+    left: 50%;
+    margin-left: -350px;
+    width: 700px;
+    padding: 19px 50px 21px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 14px 15px 16px;
     background-color: var(--green);
     border-radius: 4px;
     font-size: var(--body-17-font);
@@ -23,77 +25,70 @@
 .alert--danger {
     background-color: var(--red);
 }
-
-    .alert__label {
-
-    }
-
     .alert__dismiss {
-        display: none;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        margin-top: -22px;
+        display: inline-block;
+        vertical-align: top;
+        width: 44px;
+        height: 44px;
+        padding: 2px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
     }
 
+    .alert__dismiss:hover {
 
-@media (min-width: 640px) {
-
-    .alert {
-        top: 20px;
-        right: auto;
-        left: 50%;
-        margin-left: -350px;
-        width: 700px;
-        padding: 19px 50px 21px;
     }
-        .alert__label {
-
-        }
-
-        .alert__dismiss {
+        .alert__dismiss::before {
+            content: "";
             position: absolute;
-            right: 20px;
-            top: 50%;
-            margin-top: -22px;
-            display: inline-block;
+            left: 4px;
+            top: 4px;
+            right: 4px;
+            bottom: 4px;
+            border-radius: 4px;
+        }
+
+        .alert__dismiss:hover::before {
+            background-color: var(--low-emphasis-white);
+        }
+
+        .alert__cross {
+            position: relative;
             vertical-align: top;
-            width: 44px;
-            height: 44px;
-            padding: 2px;
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
+            fill: currentColor;
         }
 
-        .alert__dismiss:hover {
-
+        .alert__dismiss:hover .alert__cross {
+            fill: #FFFFFF;
         }
-            .alert__dismiss::before {
-                content: "";
-                position: absolute;
-                left: 4px;
-                top: 4px;
-                right: 4px;
-                bottom: 4px;
-                border-radius: 4px;
-            }
-
-            .alert__dismiss:hover::before {
-                background-color: var(--low-emphasis-white);
-            }
-
-            .alert__cross {
-                position: relative;
-                vertical-align: top;
-                fill: currentColor;
-            }
-
-            .alert__dismiss:hover .alert__cross {
-                fill: #FFFFFF;
-            }
-}
 
 
-@media (max-width: 639px) {
+@media (max-width: 739px) {
+
     .alert {
+        margin-left: -300px;
+        width: 600px;
+        padding: 14px 15px 16px;
         font-size: 15px;
         line-height: 24px;
     }
+}
+
+@media (max-width: 639px) {
+
+    .alert {
+        top: calc(var(--container-mobile-padding) / 2);
+        left: calc(var(--container-mobile-padding) / 2);
+        right: calc(var(--container-mobile-padding) / 2);
+        width: auto;
+        margin: 0;
+    }
+        .alert__dismiss {
+            display: none;
+        }
 }
