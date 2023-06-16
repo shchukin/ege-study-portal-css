@@ -60,11 +60,11 @@
         .alert__cross {
             position: relative;
             vertical-align: top;
-            fill: currentColor;
+            fill: var(--high-emphasis-white);
         }
 
         .alert__dismiss:hover .alert__cross {
-            fill: var(--high-emphasis-white);
+            fill: #FFFFFF;
         }
 
 
