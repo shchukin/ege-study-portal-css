@@ -8,7 +8,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        min-height: var(--bar-mobile);
+        min-height: var(--bar-mobile-collapsed);
         padding-top: 16px;
         padding-bottom: 16px;
         background-color: #F6EDE4;
@@ -17,24 +17,7 @@
         opacity: 0;
         transition: visibility 0.2s, opacity 0.2s;
     }
-
-        .bar__visibility {
-            display: block !important;
-        }
-
         .bar__expand,
-        .bar__collapse {
-            position: absolute;
-            z-index: 10;
-            left: 0;
-            top: 0;
-            padding: 11px 10px 15px;
-            font-size: 11px;
-            line-height: 14px;
-            color: var(--brand_orange);
-            cursor: pointer;
-        }
-
         .bar__collapse {
             display: none;
         }
@@ -82,22 +65,7 @@
 
             .bar__body {
                 margin-top: 10px;
-                display: none;
             }
-
-
-.bar__visibility:checked ~ .bar__expand {
-    display: none;
-}
-
-.bar__visibility:checked ~ .bar__collapse {
-    display: block;
-}
-
-.bar__visibility:checked ~ .bar__wrap .bar__body {
-    display: block;
-}
-
 
 
 
@@ -106,43 +74,29 @@
     visibility: visible;
 }
 
-.bar_static .bar__detachable {
+.bar--static .bar__detachable {
     opacity: 1;
     visibility: visible;
 }
-    .bar_static .bar__detachable {
+    .bar--static .bar__detachable {
         position: absolute;
         top: auto;
         left: 0;
         right: 0;
         bottom: 0;
     }
-        .bar_static .bar__close {
+        .bar--static .bar__close {
             display: none;
         }
 
-.bar_grounded {
+.bar--grounded {
 
 }
-    .bar_grounded .bar__close {
+    .bar--grounded .bar__close {
         display: none;
     }
 
 
-/* Схлопывание-расхлопывание для десктопов, чтобы на смартфонах не пришлось перекрывать */
-@media (min-width: 640px) {
-
-    /* Кнопки "Развернуть/свернуть" на планшетах и десктопах не нужны */
-    .bar__expand,
-    .bar__collapse {
-        display: none !important; /* !important-ы нужны, чтобы если вдруг по какой-то причине на мобилках случилось схлопывание */
-    }
-
-    /* Тело всегда показывается */
-    .bar__body {
-        display: block !important; /* !important-ы нужны, чтобы если вдруг по какой-то причине на мобилках случилось схлопывание */
-    }
-}
 
 @media (min-width: 1600px) {
 
@@ -152,10 +106,6 @@
         .bar__detachable {
             padding-bottom: 6px;
         }
-            .bar__visibility {
-
-            }
-
             .bar__expand,
             .bar__collapse {
 
@@ -185,7 +135,55 @@
 
 
 @media (max-width: 639px) {
+
     .bar {
-        height: var(--bar-mobile);
+        height: var(--bar-mobile-collapsed);
     }
+        .bar__detachable {
+
+        }
+            .bar__expand,
+            .bar__collapse {
+                display: inline-block;
+                vertical-align: top;
+                position: absolute;
+                z-index: 10;
+                left: 0;
+                top: 0;
+                padding: 11px 10px 15px;
+                font-size: 11px;
+                line-height: 14px;
+                color: var(--brand_orange);
+                cursor: pointer;
+            }
+
+            .bar__close {
+
+            }
+
+            .bar__wrap {
+
+            }
+                .bar__heading {
+                    height: 48px; /* конкретная высота важна для залипания */
+                    font-size: 17px;
+                    line-height: 24px;
+                    white-space: normal;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+
+                .bar__body {
+                    display: none;
+                }
+
+    .bar--static {
+        height: var(--bar-mobile-expanded);
+    }
+        .bar--static .bar__body {
+            display: block;
+        }
 }

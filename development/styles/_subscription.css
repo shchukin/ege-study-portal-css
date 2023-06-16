@@ -14,103 +14,124 @@
         }
 
         .subscription__submit {
-            margin-top: 11px;
+            margin-top: 12px;
             width: 100%;
         }
 
     .subscription__terms {
-        font-size: 11px;
-        line-height: 14px;
+        margin-top: 6px;
+        font-size: 12px;
+        line-height: 18px;
         color: var(--medium-emphasis-black);
     }
 
 
-.subscription--full {
-
-}
-    .subscription--full .subscription__body {
-        width: 524px;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        align-items: flex-start;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-        .subscription--full .subscription__field {
-            order: 1;
-            width: 336px;
-        }
-
-        .subscription--full .subscription__option {
-            order: 3;
-        }
-
-        .subscription--full .subscription__submit {
-            order: 2;
-            width: 180px;
-            margin-left: 8px;
-            margin-top: 0;
-            flex-shrink: 0;
-        }
-
-    .subscription--full .subscription__terms {
-        text-align: center;
-    }
-
-@media (min-width: 1300px) {
+@media (min-width: 640px) {
 
     .subscription--full {
 
     }
         .subscription--full .subscription__body {
-
+            width: 572px; /* примерно по ширине текста внизу */
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
             .subscription--full .subscription__field {
-                width: 306px;
+                order: 1;
+                width: 384px; /* примерно по ширине текста внизу */
             }
 
             .subscription--full .subscription__option {
-
+                order: 3;
             }
 
             .subscription--full .subscription__submit {
-
+                order: 2;
+                width: 180px;
+                margin-left: 8px;
+                margin-top: 0;
+                flex-shrink: 0;
             }
 
         .subscription--full .subscription__terms {
+            text-align: center;
+            white-space: nowrap; /* важно чтобы высота блока всегда была одинаковой для залипания */
+        }
 
+        /* чуть-чуть нехватает места, уменьшаем шрифт на 600px - 700px */
+        @media (max-width: 699px) {
+            .subscription--full .subscription__body {
+                width: 524px;
+            }
+
+            .subscription--full .subscription__field {
+                width: 336px;
+            }
+
+            .subscription--full .subscription__terms {
+                font-size: 11px;
+                line-height: 14px;
+            }
         }
 }
 
 @media (min-width: 1600px) {
 
+    .subscription--full .subscription__terms {
+        position: absolute;
+        left: 0; /* вытаскиваем за границы блока .subscription, на уровень выше */
+        top: 48px;
+    }
+}
+
+
+@media (max-width: 639px) {
+
     .subscription--full {
 
     }
         .subscription--full .subscription__body {
-
+            /*width: 524px;*/
+            /*margin-left: auto;*/
+            /*margin-right: auto;*/
+            /*flex-direction: row;*/
+            /*flex-wrap: wrap;*/
         }
             .subscription--full .subscription__field {
-
+                /*order: 1;*/
+                /*width: 336px;*/
             }
 
             .subscription--full .subscription__option {
-
+                /*order: 3;*/
             }
 
             .subscription--full .subscription__submit {
-
+                /*order: 2;*/
+                /*width: 180px;*/
+                /*margin-left: 8px;*/
+                /*margin-top: 0;*/
+                /*flex-shrink: 0;*/
             }
 
         .subscription--full .subscription__terms {
-            position: absolute;
-            left: 0;
-            top: 48px;
+            height: 36px;
             font-size: 12px;
             line-height: 18px;
+            text-align: center;
+            white-space: normal;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
         }
 }
+
 
 
 
@@ -159,3 +180,4 @@
 
 /*            }*/
 /*}*/
+
