@@ -26,11 +26,15 @@
         letter-spacing: 0.5px;
         opacity: 1;
         color: var(--red);
-        outline: auto;
+        outline: none;
     }
 
     .window__close:hover {
         border-bottom-color: currentColor;
+    }
+
+    .window__close:focus {
+        outline: auto;
     }
 
     .window__close:active {
