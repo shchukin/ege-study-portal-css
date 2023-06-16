@@ -8,11 +8,11 @@
     justify-content: center;
     align-items: center;
     padding: 14px 15px 16px;
-    background-color: #B3BE49;
+    background-color: var(--green);
     border-radius: 4px;
-    font-size: 15px;
-    line-height: 20px;
-    color: #FFFFFF;
+    font-size: var(--body-17-font);
+    line-height: var(--body-17-line);
+    color: var(--high-emphasis-white);
     text-align: center;
 }
 
@@ -33,13 +33,14 @@
     }
 
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
+
     .alert {
         top: 20px;
         right: auto;
         left: 50%;
-        margin-left: -300px;
-        width: 600px;
+        margin-left: -350px;
+        width: 700px;
         padding: 19px 50px 21px;
     }
         .alert__label {
@@ -50,26 +51,49 @@
             position: absolute;
             right: 20px;
             top: 50%;
-            margin-top: -12px;
+            margin-top: -22px;
             display: inline-block;
             vertical-align: top;
-            width: 24px;
-            height: 24px;
-            background-color: transparent;
-            padding: 0;
+            width: 44px;
+            height: 44px;
+            padding: 2px;
             border: none;
-            background-image: url("../vectors/alert-dismiss.svg");
-            background-size: 24px 24px;
-            background-repeat: no-repeat;
-            background-position: center center;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
+            background-color: transparent;
             cursor: pointer;
-            transition: opacity 0.1s ease;
         }
 
         .alert__dismiss:hover {
-            opacity: 0.8;
+
         }
+            .alert__dismiss::before {
+                content: "";
+                position: absolute;
+                left: 4px;
+                top: 4px;
+                right: 4px;
+                bottom: 4px;
+                border-radius: 4px;
+            }
+
+            .alert__dismiss:hover::before {
+                background-color: var(--low-emphasis-white);
+            }
+
+            .alert__cross {
+                position: relative;
+                vertical-align: top;
+                fill: currentColor;
+            }
+
+            .alert__dismiss:hover .alert__cross {
+                fill: #FFFFFF;
+            }
+}
+
+
+@media (max-width: 639px) {
+    .alert {
+        font-size: 15px;
+        line-height: 24px;
+    }
 }
