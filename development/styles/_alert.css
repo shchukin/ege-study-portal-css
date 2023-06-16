@@ -64,7 +64,7 @@
         }
 
         .alert__dismiss:hover .alert__cross {
-            fill: #FFFFFF;
+            fill: var(--high-emphasis-white);
         }
 
 
