@@ -1,0 +1,32 @@
+.mailing {
+    padding: 48px 54px;
+    background-color: var(--neutral);
+    border-radius: 16px;
+}
+    .mailing__pre-heading {
+        font-size: var(--footnote-font);
+        line-height: var(--footnote-line);
+        letter-spacing: var(--footnote-spacing);
+        text-transform: uppercase;
+    }
+        .mailing__pre-heading::before {
+            content: "";
+            float: left;
+            margin-top: 7px;
+            margin-right: 24px;
+            width: 31px;
+            height: 3px;
+            background-color: var(--red);
+            border-radius: 1px;
+        }
+
+    .mailing__heading {
+        margin-top: 24px;
+        display: block;
+        font-size: var(--body-20-font);
+        line-height: var(--body-20-line);
+    }
+
+    .mailing__form {
+        margin-top: 16px;
+    }

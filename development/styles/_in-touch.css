@@ -1,0 +1,36 @@
+.in-touch {
+    padding-bottom: 80px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+    .in-touch__bookmarks {
+        width: 40.3003%;
+    }
+
+    .in-touch__mailing-list {
+        width: 55.3114%;
+        background-color: var(--neutral);
+        border-radius: 16px;
+    }
+
+
+@media (max-width: 639px) {
+
+    .in-touch {
+        /*padding-bottom: 80px;*/
+        display: block;
+        /*align-items: stretch;*/
+        /*justify-content: space-between;*/
+    }
+        .in-touch__bookmarks {
+            width: auto;
+        }
+
+        .in-touch__mailing {
+            margin-top: 24px;
+            width: auto;
+            /*background-color: var(--neutral);*/
+            /*border-radius: 16px;*/
+        }
+}

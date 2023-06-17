@@ -1,0 +1,41 @@
+.bookmarking {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px;
+    background-color: var(--neutral);
+    border-radius: 16px;
+    text-align: center;
+}
+    .bookmarking__inner {
+
+    }
+        .bookmarking__heading {
+            display: block;
+            max-width: 240px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: var(--extra-bold);
+            font-size: var(--body-17-font);
+            line-height: var(--body-17-line);
+            text-align: center;
+        }
+            .bookmarking__left-star {
+                margin-left: -24px;
+            }
+
+            .bookmarking__right-star {
+                margin-right: -24px;
+            }
+
+        .bookmarking__login {
+            margin-top: 24px;
+            max-width: 280px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+            .bookmarking__login.button,
+            .bookmarking__login .button {
+                width: 100%;
+            }
