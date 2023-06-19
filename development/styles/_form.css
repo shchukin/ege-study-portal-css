@@ -1,8 +1,8 @@
-.response {
+.form {
     padding: 80px 104px;
     width: 700px;
 }
-    .response__heading {
+    .form__heading {
         margin-top: 0;
         margin-bottom: 0;
         font-weight: var(--extra-bold);
@@ -11,40 +11,40 @@
         text-align: center;
     }
 
-    .response__description {
+    .form__description {
         margin-top: 8px;
         margin-left: -20px;
         margin-right: -20px;
         text-align: center;
     }
 
-    .response__fieldset {
+    .form__fieldset {
         margin-top: 32px;
     }
-        .response__field {
+        .form__field {
             margin-top: 12px;
         }
 
-        .response__field:first-child {
+        .form__field:first-child {
             margin-top: 0;
         }
 
-    .response__file {
+    .form__file {
         margin-top: 30px;
     }
 
-    .response__agreement {
+    .form__agreement {
         margin-top: 8px;
     }
 
-    .response__footer {
+    .form__footer {
         margin-top: 16px;
     }
-        .response__submit {
+        .form__submit {
 
         }
-            .response__submit.button,
-            .response__submit .button {
+            .form__submit.button,
+            .form__submit .button {
                 width: 100%;
             }
 
@@ -52,11 +52,11 @@
 
 @media (max-width: 639px) {
 
-    .response {
+    .form {
         width: 100%;
         padding: 60px 24px 24px;
     }
-        .response__heading {
+        .form__heading {
             /*margin-top: 0;*/
             /*margin-bottom: 0;*/
             /*font-weight: var(--extra-bold);*/
@@ -65,36 +65,36 @@
             /*text-align: center;*/
         }
 
-        .response__description {
+        .form__description {
             /*margin-top: 4px;*/
             margin-left: 0;
             margin-right: 0;
             /*text-align: center;*/
         }
 
-        .response__fieldset {
+        .form__fieldset {
             /*margin-top: 32px;*/
         }
-            .response__field {
+            .form__field {
                 /*margin-top: 12px;*/
             }
 
-            .response__field:first-child {
+            .form__field:first-child {
                 /*margin-top: 0;*/
             }
 
-        .response__file {
+        .form__file {
             /*margin-top: 30px;*/
         }
 
-        .response__agreement {
+        .form__agreement {
             /*margin-top: 8px;*/
         }
 
-        .response__footer {
+        .form__footer {
             /*margin-top: 16px;*/
         }
-            .response__submit {
+            .form__submit {
 
             }
 }
