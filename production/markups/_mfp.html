@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/style.css?1687155027">
+        <link rel="stylesheet" href="../styles/style.css?1687156285">
     </head>
 
     <body>
@@ -19,231 +19,51 @@
             <br>
             <br>
             <h1>.mfp</h1>
-
-            <a class="mfp-handler" href="#apply-for-work">
-                .form -- Отклик на вакансию
-            </a>
+            <p>
+                Это компонент для создания модальных окон.<br>
+                Используем библиотеку <b>Magnific Popup</b>:
+                <a href="https://dimsemenov.com/plugins/magnific-popup/">https://dimsemenov.com/plugins/magnific-popup/</a>
+            </p>
+            <p>
+                В чистом виде, без какой либо разметки внутри будет что-то вроде:<br>
+                <a class="mfp-handler" href="#modal-skeleton">Скелетон модалки</a>
+            </p>
 
             <!-- Modal -->
-            <div class="window mfp-hide" id="apply-for-work">
+            <div class="mfp-hide" id="modal-skeleton">
+                Lorem Ipsum<br>
+                Dolor sit amen
+            </div>
+            <p>
+                Внутри часто используется компонент .window -- он задаёт белое окошко, углы, добавляет кнопку закрытия:<br>
+                <a class="mfp-handler" href="#popup-with-window">Модалка с .window</a>
+            </p>
+            <p>
+                Ширина задаётся изнутри. Модалка будет обвалакивать любой блок.
+            </p>
+
+            <!-- Modal -->
+            <div class="window mfp-hide" id="popup-with-window">
                 <button class="window__close mfp-close" type="button">
                     Закрыть
                 </button>
                 <div class="window__body">
-                    <div class="dialog">
-                        <form class="form">
-                            <h2 class="form__heading">
-                                Отклик на вакансию
-                            </h2>
-                            <div class="form__description">
-                                Ведущий онлайн-курсов по обществознанию, химии, биологии
-                            </div>
-                            <div class="form__fieldset">
-                                <div class="form__field input">
-                                    <input class="input__widget" type="text" placeholder="Ваше имя и фамилия *">
-                                </div>
-                                <div class="form__field input">
-                                    <input class="input__widget" type="tel" placeholder="Телефон">
-                                </div>
-                                <div class="form__field input">
-                                    <input class="input__widget" type="email" placeholder="Электронная почта *">
-                                </div>
-                                <div class="form__field input input--area">
-                                    <textarea class="input__widget" rows="4" placeholder="Расскажите о себе и почему вы хотите работать у нас *"></textarea>
-                                    <div class="input__hint">Осталось 2 000 знаков</div>
-                                </div>
-                            </div>
-                            <div class="form__file attach">
-                                <button class="attach__handler button button--border" type="button">
-                                    Прикрепить файл
-                                </button>
-                                или:
-                                <div class="attach__item">
-                                    <div class="attach__name">
-                                        234823442593475283475872345823457234857234.PNG
-                                    </div>
-                                    <button class="attach__delete" type="button">
-                                        <svg class="attach__cross" width="20" height="20">
-                                            <use xlink:href="../symbols/symbols.svg?1687155027#cross"></use>
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="attach__item">
-                                    <div class="attach__name">
-                                        resume_rus.pdf
-                                    </div>
-                                    <button class="attach__delete" type="button">
-                                        <svg class="attach__cross" width="20" height="20">
-                                            <use xlink:href="../symbols/symbols.svg?1687155027#cross"></use>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                            <label class="form__agreement choice choice--checkbox">
-                                <input class="choice__widget" type="checkbox">
-                                <i class="choice__icon" role="presentation"></i>
-                                <span class="choice__label">
-                                Даю согласие на <a class="link link--classic" href="#">обработку персональных данных</a>
-                                </span>
-                            </label>
-                            <div class="form__footer">
-                                <button class="form__submit button" type="submit">
-                                    Отравить
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                    Consequatur consequuntur deleniti, ducimus est, eveniet<br>
+                    excepturi exercitationem hic illum natus odit possimus<br>
+                    provident quo rem repellat, soluta suscipit tenetur<br>
+                    voluptates. Amet assumenda at dolorum eveniet magnam<br>
+                    officiis quae rem repellendus rerum voluptate. Ad animi<br>
+                    at, consequatur dolore eum facere fuga libero officia<br>
+                    quo tempora totam, voluptate! Debitis eligendi hic unde.
                 </div>
             </div>
 
 
-
             <br>
-            <a class="mfp-handler" href="#materials-access">
-                .form -- Получить доступ к материалам
-            </a>
-
-            <!-- Modal -->
-            <div class="window mfp-hide" id="materials-access">
-                <button class="window__close mfp-close" type="button">
-                    Закрыть
-                </button>
-                <div class="window__body">
-                    <div class="dialog">
-                        <form class="form">
-                            <h2 class="form__heading">
-                                Получить доступ
-                            </h2>
-                            <div class="form__description">
-                                Получи доступ к&nbsp;“Справочник для подготовки к&nbsp;ЕГЭ Анны&nbsp;Малковой”
-                            </div>
-                            <div class="form__fieldset">
-                                <div class="form__field input">
-                                    <input class="input__widget" type="email" placeholder="Электронная почта *">
-                                </div>
-                            </div>
-                            <label class="form__agreement choice choice--checkbox">
-                                <input class="choice__widget" type="checkbox">
-                                <i class="choice__icon" role="presentation"></i>
-                                <span class="choice__label">
-                                Нажимая на&nbsp;кнопку, вы&nbsp;даете согласие на <a class="link link--classic" href="#">обработку своих персональных данных согласно 152-ФЗ</a>
-                                </span>
-                            </label>
-                            <div class="form__footer">
-                                <button class="form__submit button" type="submit">
-                                    Получить доступ
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
             <br>
-            <a class="mfp-handler" href="#leave-feedback">
-                .form -- Оставить отзыв
-            </a>
+            <h2>Примеры с .contacts-preview</h2>
 
-            <!-- Modal -->
-            <div class="window mfp-hide" id="leave-feedback">
-                <button class="window__close mfp-close" type="button">
-                    Закрыть
-                </button>
-                <div class="window__body">
-                    <div class="dialog">
-                        <form class="form">
-                            <h2 class="form__heading">
-                                Оставить отзыв
-                            </h2>
-                            <div class="form__fieldset">
-                                <div class="form__field input">
-                                    <input class="input__widget" type="text" placeholder="Ваше имя и фамилия">
-                                </div>
-                                <div class="form__field input input--select input--placeholder-is-chosen">
-                                    <select class="input__widget">
-                                        <option value="placeholder">Выберите преподавателя (необязательно)</option>
-                                        <option>Lorem</option>
-                                        <option>Ipsum</option>
-                                        <option>Dolor</option>
-                                        <option>Sit</option>
-                                        <option>Amen</option>
-                                    </select>
-                                </div>
-                                <div class="form__field">
-                                    <div class="choose">
-                                        <div class="choose__heading">
-                                            Предмет
-                                        </div>
-                                        <div class="choose__list">
-                                            <label class="choice choice--checkbox">
-                                                <input class="choice__widget" type="checkbox">
-                                                <i class="choice__icon" role="presentation"></i>
-                                                <span class="choice__label">Английский язык</span>
-                                            </label>
-                                            <label class="choice choice--checkbox">
-                                                <input class="choice__widget" type="checkbox">
-                                                <i class="choice__icon" role="presentation"></i>
-                                                <span class="choice__label">Биология</span>
-                                            </label>
-                                            <label class="choice choice--checkbox">
-                                                <input class="choice__widget" type="checkbox">
-                                                <i class="choice__icon" role="presentation"></i>
-                                                <span class="choice__label">Информатика</span>
-                                            </label>
-                                            <label class="choice choice--checkbox">
-                                                <input class="choice__widget" type="checkbox">
-                                                <i class="choice__icon" role="presentation"></i>
-                                                <span class="choice__label">История</span>
-                                            </label>
-                                            <label class="choice choice--checkbox">
-                                                <input class="choice__widget" type="checkbox">
-                                                <i class="choice__icon" role="presentation"></i>
-                                                <span class="choice__label">Математика</span>
-                                            </label>
-                                            <label class="choice choice--checkbox">
-                                                <input class="choice__widget" type="checkbox">
-                                                <i class="choice__icon" role="presentation"></i>
-                                                <span class="choice__label">Обществознание</span>
-                                            </label>
-                                            <label class="choice choice--checkbox">
-                                                <input class="choice__widget" type="checkbox">
-                                                <i class="choice__icon" role="presentation"></i>
-                                                <span class="choice__label">Психология</span>
-                                            </label>
-                                            <label class="choice choice--checkbox">
-                                                <input class="choice__widget" type="checkbox">
-                                                <i class="choice__icon" role="presentation"></i>
-                                                <span class="choice__label">Русский язык</span>
-                                            </label>
-                                            <label class="choice choice--checkbox">
-                                                <input class="choice__widget" type="checkbox">
-                                                <i class="choice__icon" role="presentation"></i>
-                                                <span class="choice__label">Физика</span>
-                                            </label>
-                                            <label class="choice choice--checkbox">
-                                                <input class="choice__widget" type="checkbox">
-                                                <i class="choice__icon" role="presentation"></i>
-                                                <span class="choice__label">Химия</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form__field input input--area">
-                                    <textarea class="input__widget" rows="6" placeholder="Ваш отзыв *"></textarea>
-                                    <div class="input__hint">Осталось 2&nbsp;000 знаков</div>
-                                </div>
-                            </div>
-                            <div class="form__footer">
-                                <button class="form__submit button" type="submit">
-                                    Оставить отзыв
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <br>
 
             <a class="mfp-handler" href="#callback">
                 .contacts-preview -- С телефонами и текстом
@@ -382,25 +202,25 @@
                                 <div class="contacts-preview__info starred">
                                     <div class="starred__item">
                                         <svg class="starred__icon" width="24" height="25">
-                                            <use xlink:href="../symbols/symbols.svg?1687155027#star"></use>
+                                            <use xlink:href="../symbols/symbols.svg?1687156285#star"></use>
                                         </svg>
                                         9,10,11 классы
                                     </div>
                                     <div class="starred__item">
                                         <svg class="starred__icon" width="24" height="25">
-                                            <use xlink:href="../symbols/symbols.svg?1687155027#star"></use>
+                                            <use xlink:href="../symbols/symbols.svg?1687156285#star"></use>
                                         </svg>
                                         19&nbsp;августа&nbsp;— 20&nbsp;сентября
                                     </div>
                                     <div class="starred__item">
                                         <svg class="starred__icon" width="24" height="25">
-                                            <use xlink:href="../symbols/symbols.svg?1687155027#star"></use>
+                                            <use xlink:href="../symbols/symbols.svg?1687156285#star"></use>
                                         </svg>
                                         4&nbsp;занятия
                                     </div>
                                     <div class="starred__item">
                                         <svg class="starred__icon" width="24" height="25">
-                                            <use xlink:href="../symbols/symbols.svg?1687155027#star"></use>
+                                            <use xlink:href="../symbols/symbols.svg?1687156285#star"></use>
                                         </svg>
                                         Суббота с&nbsp;16:00 до&nbsp;20:00
                                     </div>
@@ -426,6 +246,245 @@
             <br>
             <br>
             <br>
+            <h2>Примеры с формами</h2>
+            <p>
+                Смотри компонент <a href="_form.html">.form</a>
+            </p>
+            <p>
+                Формы ещё дополнительно обарачиваются в <b>.dialog</b> -- здесь задаётся
+                ширины и отступы характерные для форм в модалках.
+            </p>
+
+            <a class="mfp-handler" href="#apply-for-work">
+                Отклик на вакансию
+            </a>
+
+            <!-- Modal -->
+            <div class="window mfp-hide" id="apply-for-work">
+                <button class="window__close mfp-close" type="button">
+                    Закрыть
+                </button>
+                <div class="window__body">
+                    <div class="dialog">
+                        <form class="form">
+                            <h2 class="form__heading">
+                                Отклик на вакансию
+                            </h2>
+                            <div class="form__description">
+                                Ведущий онлайн-курсов по обществознанию, химии, биологии
+                            </div>
+                            <div class="form__fieldset">
+                                <div class="form__field input">
+                                    <input class="input__widget" type="text" placeholder="Ваше имя и фамилия *">
+                                </div>
+                                <div class="form__field input">
+                                    <input class="input__widget" type="tel" placeholder="Телефон">
+                                </div>
+                                <div class="form__field input">
+                                    <input class="input__widget" type="email" placeholder="Электронная почта *">
+                                </div>
+                                <div class="form__field input input--area">
+                                    <textarea class="input__widget" rows="4" placeholder="Расскажите о себе и почему вы хотите работать у нас *"></textarea>
+                                    <div class="input__hint">Осталось 2 000 знаков</div>
+                                </div>
+                            </div>
+                            <div class="form__file attach">
+                                <button class="attach__handler button button--border" type="button">
+                                    Прикрепить файл
+                                </button>
+                                или:
+                                <div class="attach__item">
+                                    <div class="attach__name">
+                                        234823442593475283475872345823457234857234.PNG
+                                    </div>
+                                    <button class="attach__delete" type="button">
+                                        <svg class="attach__cross" width="20" height="20">
+                                            <use xlink:href="../symbols/symbols.svg?1687156285#cross"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="attach__item">
+                                    <div class="attach__name">
+                                        resume_rus.pdf
+                                    </div>
+                                    <button class="attach__delete" type="button">
+                                        <svg class="attach__cross" width="20" height="20">
+                                            <use xlink:href="../symbols/symbols.svg?1687156285#cross"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <label class="form__agreement choice choice--checkbox">
+                                <input class="choice__widget" type="checkbox">
+                                <i class="choice__icon" role="presentation"></i>
+                                <span class="choice__label">
+                                Даю согласие на <a class="link link--classic" href="#">обработку персональных данных</a>
+                                </span>
+                            </label>
+                            <div class="form__footer">
+                                <button class="form__submit button" type="submit">
+                                    Отравить
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <a class="mfp-handler" href="#materials-access">
+                Получить доступ к материалам
+            </a>
+
+            <!-- Modal -->
+            <div class="window mfp-hide" id="materials-access">
+                <button class="window__close mfp-close" type="button">
+                    Закрыть
+                </button>
+                <div class="window__body">
+                    <div class="dialog">
+                        <form class="form">
+                            <h2 class="form__heading">
+                                Получить доступ
+                            </h2>
+                            <div class="form__description">
+                                Получи доступ к&nbsp;“Справочник для подготовки к&nbsp;ЕГЭ Анны&nbsp;Малковой”
+                            </div>
+                            <div class="form__fieldset">
+                                <div class="form__field input">
+                                    <input class="input__widget" type="email" placeholder="Электронная почта *">
+                                </div>
+                            </div>
+                            <label class="form__agreement choice choice--checkbox">
+                                <input class="choice__widget" type="checkbox">
+                                <i class="choice__icon" role="presentation"></i>
+                                <span class="choice__label">
+                                Нажимая на&nbsp;кнопку, вы&nbsp;даете согласие на <a class="link link--classic" href="#">обработку своих персональных данных согласно 152-ФЗ</a>
+                                </span>
+                            </label>
+                            <div class="form__footer">
+                                <button class="form__submit button" type="submit">
+                                    Получить доступ
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <a class="mfp-handler" href="#leave-feedback">
+                Оставить отзыв
+            </a>
+
+            <!-- Modal -->
+            <div class="window mfp-hide" id="leave-feedback">
+                <button class="window__close mfp-close" type="button">
+                    Закрыть
+                </button>
+                <div class="window__body">
+                    <div class="dialog">
+                        <form class="form">
+                            <h2 class="form__heading">
+                                Оставить отзыв
+                            </h2>
+                            <div class="form__fieldset">
+                                <div class="form__field input">
+                                    <input class="input__widget" type="text" placeholder="Ваше имя и фамилия">
+                                </div>
+                                <div class="form__field input input--select input--placeholder-is-chosen">
+                                    <select class="input__widget">
+                                        <option value="placeholder">Выберите преподавателя (необязательно)</option>
+                                        <option>Lorem</option>
+                                        <option>Ipsum</option>
+                                        <option>Dolor</option>
+                                        <option>Sit</option>
+                                        <option>Amen</option>
+                                    </select>
+                                </div>
+                                <div class="form__field">
+                                    <div class="choose">
+                                        <div class="choose__heading">
+                                            Предмет
+                                        </div>
+                                        <div class="choose__list">
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Английский язык</span>
+                                            </label>
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Биология</span>
+                                            </label>
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Информатика</span>
+                                            </label>
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">История</span>
+                                            </label>
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Математика</span>
+                                            </label>
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Обществознание</span>
+                                            </label>
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Психология</span>
+                                            </label>
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Русский язык</span>
+                                            </label>
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Физика</span>
+                                            </label>
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Химия</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__field input input--area">
+                                    <textarea class="input__widget" rows="6" placeholder="Ваш отзыв *"></textarea>
+                                    <div class="input__hint">Осталось 2&nbsp;000 знаков</div>
+                                </div>
+                            </div>
+                            <div class="form__footer">
+                                <button class="form__submit button" type="submit">
+                                    Оставить отзыв
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+
+
+            <br>
+            <br>
+            <br>
             <br>
             <br>
             <br>
@@ -441,22 +500,22 @@
         <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
         <script src="../vendors/outline/outline.js"></script>
         <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-        <script src="../scripts/_footer.js?1687155027"></script>
-        <script src="../scripts/_input.js?1687155027"></script>
-        <script src="../scripts/_slideshow.js?1687155027"></script>
-        <script src="../scripts/_courses.js?1687155027"></script>
-        <script src="../scripts/_program.js?1687155027"></script>
-        <script src="../scripts/_single-course.js?1687155027"></script>
-        <script src="../scripts/_jobs.js?1687155027"></script>
-        <script src="../scripts/_mfp.js?1687155027"></script>
-        <script src="../scripts/_collapse.js?1687155027"></script>
-        <script src="../scripts/_header.js?1687155027"></script>
-        <script src="../scripts/_nav.js?1687155027"></script>
-        <script src="../scripts/_faq.js?1687155027"></script>
-        <script src="../scripts/_bar.js?1687155027"></script>
-        <script src="../scripts/_subscription.js?1687155027"></script>
-        <script src="../scripts/_alert.js?1687155027"></script>
-        <script src="../scripts/_accordion.js?1687155027"></script>
+        <script src="../scripts/_footer.js?1687156285"></script>
+        <script src="../scripts/_input.js?1687156285"></script>
+        <script src="../scripts/_slideshow.js?1687156285"></script>
+        <script src="../scripts/_courses.js?1687156285"></script>
+        <script src="../scripts/_program.js?1687156285"></script>
+        <script src="../scripts/_single-course.js?1687156285"></script>
+        <script src="../scripts/_jobs.js?1687156285"></script>
+        <script src="../scripts/_mfp.js?1687156285"></script>
+        <script src="../scripts/_collapse.js?1687156285"></script>
+        <script src="../scripts/_header.js?1687156285"></script>
+        <script src="../scripts/_nav.js?1687156285"></script>
+        <script src="../scripts/_faq.js?1687156285"></script>
+        <script src="../scripts/_bar.js?1687156285"></script>
+        <script src="../scripts/_subscription.js?1687156285"></script>
+        <script src="../scripts/_alert.js?1687156285"></script>
+        <script src="../scripts/_accordion.js?1687156285"></script>
 
     </body>
 </html>
