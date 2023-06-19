@@ -3,13 +3,13 @@
     height: auto;
     right: 0;
     bottom: 0;
-    overflow-x: auto !important; /* take back horizontal scrollbar */
+    overflow-x: auto !important; /* Возвращаем горизонтальный скроллбар */
 }
 
 .mfp-container {
     display: block;
-    padding-left: 8px;      /* horizontal */
-    padding-right: 8px;     /* space around */
+    padding-left: 8px;      /* горизонтальные */
+    padding-right: 8px;     /* отступы */
     vertical-align: top;
     width: auto;
     min-width: 100%;
@@ -17,8 +17,8 @@
 }
 
 .mfp-content {
-    margin-top: 8px;        /* vertical */
-    margin-bottom: 8px;     /* space around */
+    margin-top: 8px;        /* вертикальные */
+    margin-bottom: 8px;     /* отступы */
     text-align: center;
 }
 
