@@ -1,0 +1,19 @@
+.choose {
+    padding-top: 12px;
+    padding-bottom: 9px;
+}
+    .choose__heading {
+        font-weight: var(--extra-bold);
+        font-size: var(--body-17-font);
+        line-height: var(--body-17-line);
+    }
+
+    .choose__list {
+        margin-top: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+        .choose__list .choice {
+            border-top-width: 1px;
+            border-bottom-width: 1px;
+        }

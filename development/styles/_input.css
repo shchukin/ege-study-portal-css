@@ -37,10 +37,9 @@
     /* stylelint-enable */
 
     .input__hint {
-        position: absolute;
-        right: 0;
-        top: 100%;
         margin-top: 8px;
+        display: table;
+        margin-left: auto;
         font-size: 15px;
         line-height: 23px;
         color: #87878A;
@@ -70,7 +69,7 @@
 
 /* для .input--select */
 .input--placeholder-is-chosen .input__widget {
-    color: var(--medium-emphasis-white);
+    color: #87878A;
 }
     .input--placeholder-is-chosen option {
         color: #000000 !important; /* FF тупит и наследует серый цвет */

@@ -1,0 +1,12 @@
+.dialog {
+    padding: 80px 104px;
+    width: 700px;
+}
+
+@media (max-width: 639px) {
+
+    .dialog {
+        width: 100%;
+        padding: 60px 24px 24px;
+    }
+}

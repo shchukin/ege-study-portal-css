@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body>
+
+
+
+        <div style="width: 500px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.form</h1>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <form class="form">
+                <h2 class="form__heading">
+                    Отклик на вакансию
+                </h2>
+                <div class="form__description">
+                    Ведущий онлайн-курсов по обществознанию, химии, биологии
+                </div>
+                <div class="form__fieldset">
+                    <div class="form__field input">
+                        <input class="input__widget" type="text" placeholder="Ваше имя и фамилия *">
+                    </div>
+                    <div class="form__field input">
+                        <input class="input__widget" type="tel" placeholder="Телефон">
+                    </div>
+                    <div class="form__field input">
+                        <input class="input__widget" type="email" placeholder="Электронная почта *">
+                    </div>
+                    <div class="form__field input input--area">
+                        <textarea class="input__widget" rows="4" placeholder="Расскажите о себе и почему вы хотите работать у нас *"></textarea>
+                        <div class="input__hint">Осталось 2 000 знаков</div>
+                    </div>
+                </div>
+                <div class="form__file attach">
+                    <button class="attach__handler button button--border" type="button">
+                        Прикрепить файл
+                    </button>
+                    или:
+                    <div class="attach__item">
+                        <div class="attach__name">
+                            234823442593475283475872345823457234857234.PNG
+                        </div>
+                        <button class="attach__delete" type="button">
+                            <img class="attach__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
+                        </button>
+                    </div>
+                    <div class="attach__item">
+                        <div class="attach__name">
+                            resume_rus.pdf
+                        </div>
+                        <button class="attach__delete" type="button">
+                            <img class="attach__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
+                        </button>
+                    </div>
+                </div>
+                <label class="form__agreement choice choice--checkbox">
+                    <input class="choice__widget" type="checkbox">
+                    <i class="choice__icon" role="presentation"></i>
+                    <span class="choice__label">
+                    Даю согласие на <a class="link link--classic" href="#">обработку персональных данных</a>
+                    </span>
+                </label>
+                <div class="form__footer">
+                    <button class="form__submit button" type="submit">
+                        Отравить
+                    </button>
+                </div>
+            </form>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <form class="form">
+                <h2 class="form__heading">
+                    Получить доступ
+                </h2>
+                <div class="form__description">
+                    Получи доступ к&nbsp;“Справочник для подготовки к&nbsp;ЕГЭ Анны&nbsp;Малковой”
+                </div>
+                <div class="form__fieldset">
+                    <div class="form__field input">
+                        <input class="input__widget" type="email" placeholder="Электронная почта *">
+                    </div>
+                </div>
+                <label class="form__agreement choice choice--checkbox">
+                    <input class="choice__widget" type="checkbox">
+                    <i class="choice__icon" role="presentation"></i>
+                    <span class="choice__label">
+                    Нажимая на&nbsp;кнопку, вы&nbsp;даете согласие на <a class="link link--classic" href="#">обработку своих персональных данных согласно 152-ФЗ</a>
+                    </span>
+                </label>
+                <div class="form__footer">
+                    <button class="form__submit button" type="submit">
+                        Получить доступ
+                    </button>
+                </div>
+            </form>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <form class="form">
+                <h2 class="form__heading">
+                    Оставить отзыв
+                </h2>
+                <div class="form__fieldset">
+                    <div class="form__field input">
+                        <input class="input__widget" type="text" placeholder="Ваше имя и фамилия">
+                    </div>
+                    <div class="form__field input input--select input--placeholder-is-chosen">
+                        <select class="input__widget">
+                            <option value="placeholder">Выберите преподавателя (необязательно)</option>
+                            <option>Lorem</option>
+                            <option>Ipsum</option>
+                            <option>Dolor</option>
+                            <option>Sit</option>
+                            <option>Amen</option>
+                        </select>
+                    </div>
+                    <div class="form__field">
+                        <div class="choose">
+                            <div class="choose__heading">
+                                Предмет
+                            </div>
+                            <div class="choose__list">
+                                <label class="choice choice--checkbox">
+                                    <input class="choice__widget" type="checkbox">
+                                    <i class="choice__icon" role="presentation"></i>
+                                    <span class="choice__label">Английский язык</span>
+                                </label>
+                                <label class="choice choice--checkbox">
+                                    <input class="choice__widget" type="checkbox">
+                                    <i class="choice__icon" role="presentation"></i>
+                                    <span class="choice__label">Биология</span>
+                                </label>
+                                <label class="choice choice--checkbox">
+                                    <input class="choice__widget" type="checkbox">
+                                    <i class="choice__icon" role="presentation"></i>
+                                    <span class="choice__label">Информатика</span>
+                                </label>
+                                <label class="choice choice--checkbox">
+                                    <input class="choice__widget" type="checkbox">
+                                    <i class="choice__icon" role="presentation"></i>
+                                    <span class="choice__label">История</span>
+                                </label>
+                                <label class="choice choice--checkbox">
+                                    <input class="choice__widget" type="checkbox">
+                                    <i class="choice__icon" role="presentation"></i>
+                                    <span class="choice__label">Математика</span>
+                                </label>
+                                <label class="choice choice--checkbox">
+                                    <input class="choice__widget" type="checkbox">
+                                    <i class="choice__icon" role="presentation"></i>
+                                    <span class="choice__label">Обществознание</span>
+                                </label>
+                                <label class="choice choice--checkbox">
+                                    <input class="choice__widget" type="checkbox">
+                                    <i class="choice__icon" role="presentation"></i>
+                                    <span class="choice__label">Психология</span>
+                                </label>
+                                <label class="choice choice--checkbox">
+                                    <input class="choice__widget" type="checkbox">
+                                    <i class="choice__icon" role="presentation"></i>
+                                    <span class="choice__label">Русский язык</span>
+                                </label>
+                                <label class="choice choice--checkbox">
+                                    <input class="choice__widget" type="checkbox">
+                                    <i class="choice__icon" role="presentation"></i>
+                                    <span class="choice__label">Физика</span>
+                                </label>
+                                <label class="choice choice--checkbox">
+                                    <input class="choice__widget" type="checkbox">
+                                    <i class="choice__icon" role="presentation"></i>
+                                    <span class="choice__label">Химия</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__field input input--area">
+                        <textarea class="input__widget" rows="6" placeholder="Ваш отзыв *"></textarea>
+                        <div class="input__hint">Осталось 2&nbsp;000 знаков</div>
+                    </div>
+                </div>
+                <div class="form__footer">
+                    <button class="form__submit button" type="submit">
+                        Оставить отзыв
+                    </button>
+                </div>
+            </form>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../scripts/_footer.js"></script>
+        <script src="../scripts/_input.js"></script>
+        <script src="../scripts/_slideshow.js"></script>
+        <script src="../scripts/_courses.js"></script>
+        <script src="../scripts/_program.js"></script>
+        <script src="../scripts/_single-course.js"></script>
+        <script src="../scripts/_jobs.js"></script>
+        <script src="../scripts/_mfp.js"></script>
+        <script src="../scripts/_collapse.js"></script>
+        <script src="../scripts/_header.js"></script>
+        <script src="../scripts/_nav.js"></script>
+        <script src="../scripts/_faq.js"></script>
+        <script src="../scripts/_bar.js"></script>
+        <script src="../scripts/_subscription.js"></script>
+        <script src="../scripts/_alert.js"></script>
+        <script src="../scripts/_accordion.js"></script>
+
+    </body>
+</html>

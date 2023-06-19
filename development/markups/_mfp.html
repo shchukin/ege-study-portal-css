@@ -21,7 +21,7 @@
             <h1>.mfp</h1>
 
             <a class="mfp-handler" href="#apply-for-work">
-                .response
+                .form -- отклик на вакансию
             </a>
 
             <!-- Modal -->
@@ -29,63 +29,214 @@
                 <button class="window__close mfp-close" type="button">
                     Закрыть
                 </button>
-                <form class="window__body form">
-                    <h2 class="form__heading">
-                        Отклик на вакансию
-                    </h2>
-                    <div class="form__description">
-                        Ведущий онлайн-курсов по обществознанию, химии, биологии
-                    </div>
-                    <div class="form__fieldset">
-                        <div class="form__field input">
-                            <input class="input__widget" type="text" placeholder="Ваше имя и фамилия *">
-                        </div>
-                        <div class="form__field input">
-                            <input class="input__widget" type="tel" placeholder="Телефон">
-                        </div>
-                        <div class="form__field input">
-                            <input class="input__widget" type="email" placeholder="Электронная почта *">
-                        </div>
-                        <div class="form__field input input--area">
-                            <textarea class="input__widget" rows="4" placeholder="Расскажите о себе и почему вы хотите работать у нас *"></textarea>
-                            <div class="input__hint">Осталось 2 000 знаков</div>
-                        </div>
-                    </div>
-                    <div class="form__file attach">
-                        <button class="attach__handler button button--border" type="button">
-                            Прикрепить файл
-                        </button>
-                        или:
-                        <div class="attach__item">
-                            <div class="attach__name">
-                                234823442593475283475872345823457234857234.PNG
+                <div class="window__body">
+                    <div class="dialog">
+                        <form class="form">
+                            <h2 class="form__heading">
+                                Отклик на вакансию
+                            </h2>
+                            <div class="form__description">
+                                Ведущий онлайн-курсов по обществознанию, химии, биологии
                             </div>
-                            <button class="attach__delete" type="button">
-                                <img class="attach__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
-                            </button>
-                        </div>
-                        <div class="attach__item">
-                            <div class="attach__name">
-                                resume_rus.pdf
+                            <div class="form__fieldset">
+                                <div class="form__field input">
+                                    <input class="input__widget" type="text" placeholder="Ваше имя и фамилия *">
+                                </div>
+                                <div class="form__field input">
+                                    <input class="input__widget" type="tel" placeholder="Телефон">
+                                </div>
+                                <div class="form__field input">
+                                    <input class="input__widget" type="email" placeholder="Электронная почта *">
+                                </div>
+                                <div class="form__field input input--area">
+                                    <textarea class="input__widget" rows="4" placeholder="Расскажите о себе и почему вы хотите работать у нас *"></textarea>
+                                    <div class="input__hint">Осталось 2 000 знаков</div>
+                                </div>
                             </div>
-                            <button class="attach__delete" type="button">
-                                <img class="attach__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
-                            </button>
-                        </div>
+                            <div class="form__file attach">
+                                <button class="attach__handler button button--border" type="button">
+                                    Прикрепить файл
+                                </button>
+                                или:
+                                <div class="attach__item">
+                                    <div class="attach__name">
+                                        234823442593475283475872345823457234857234.PNG
+                                    </div>
+                                    <button class="attach__delete" type="button">
+                                        <img class="attach__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
+                                    </button>
+                                </div>
+                                <div class="attach__item">
+                                    <div class="attach__name">
+                                        resume_rus.pdf
+                                    </div>
+                                    <button class="attach__delete" type="button">
+                                        <img class="attach__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <label class="form__agreement choice choice--checkbox">
+                                <input class="choice__widget" type="checkbox">
+                                <i class="choice__icon" role="presentation"></i>
+                                <span class="choice__label">
+                                Даю согласие на <a class="link link--classic" href="#">обработку персональных данных</a>
+                                </span>
+                            </label>
+                            <div class="form__footer">
+                                <button class="form__submit button" type="submit">
+                                    Отравить
+                                </button>
+                            </div>
+                        </form>
                     </div>
-                    <label class="form__agreement choice choice--checkbox">
-                        <input class="choice__widget" type="checkbox">
-                        <i class="choice__icon" role="presentation"></i>
-                        <span class="choice__label">
-                        Даю согласие на <a class="link link--inherit" href="#">обработку персональных данных</a>
-                        </span>
-                    </label>
-                    <div class="form__footer">
-                        <button class="form__submit button" type="submit">
-                            Отравить
-                        </button>
+                </div>
+            </div>
+
+
+
+            <br>
+            <a class="mfp-handler" href="#materials-access">
+                .form -- получить доступ к материалам
+            </a>
+
+            <!-- Modal -->
+            <div class="window mfp-hide" id="materials-access">
+                <button class="window__close mfp-close" type="button">
+                    Закрыть
+                </button>
+                <div class="window__body">
+                    <div class="dialog">
+                        <form class="form">
+                            <h2 class="form__heading">
+                                Получить доступ
+                            </h2>
+                            <div class="form__description">
+                                Получи доступ к&nbsp;“Справочник для подготовки к&nbsp;ЕГЭ Анны&nbsp;Малковой”
+                            </div>
+                            <div class="form__fieldset">
+                                <div class="form__field input">
+                                    <input class="input__widget" type="email" placeholder="Электронная почта *">
+                                </div>
+                            </div>
+                            <label class="form__agreement choice choice--checkbox">
+                                <input class="choice__widget" type="checkbox">
+                                <i class="choice__icon" role="presentation"></i>
+                                <span class="choice__label">
+                                Нажимая на&nbsp;кнопку, вы&nbsp;даете согласие на <a class="link link--classic" href="#">обработку своих персональных данных согласно 152-ФЗ</a>
+                                </span>
+                            </label>
+                            <div class="form__footer">
+                                <button class="form__submit button" type="submit">
+                                    Получить доступ
+                                </button>
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
+            </div>
+
+            <br>
+            <a class="mfp-handler" href="#leave-feedback">
+                .form -- Оставить отзыв
+            </a>
+
+            <!-- Modal -->
+            <div class="window mfp-hide" id="leave-feedback">
+                <button class="window__close mfp-close" type="button">
+                    Закрыть
+                </button>
+                <div class="window__body">
+                    <div class="dialog">
+                        <form class="form">
+                            <h2 class="form__heading">
+                                Оставить отзыв
+                            </h2>
+                            <div class="form__fieldset">
+                                <div class="form__field input">
+                                    <input class="input__widget" type="text" placeholder="Ваше имя и фамилия">
+                                </div>
+                                <div class="form__field input input--select input--placeholder-is-chosen">
+                                    <select class="input__widget">
+                                        <option value="placeholder">Выберите преподавателя (необязательно)</option>
+                                        <option>Lorem</option>
+                                        <option>Ipsum</option>
+                                        <option>Dolor</option>
+                                        <option>Sit</option>
+                                        <option>Amen</option>
+                                    </select>
+                                </div>
+                                <div class="form__field">
+                                    <div class="choose">
+                                        <div class="choose__heading">
+                                            Предмет
+                                        </div>
+                                        <div class="choose__list">
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Английский язык</span>
+                                            </label>
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Биология</span>
+                                            </label>
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Информатика</span>
+                                            </label>
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">История</span>
+                                            </label>
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Математика</span>
+                                            </label>
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Обществознание</span>
+                                            </label>
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Психология</span>
+                                            </label>
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Русский язык</span>
+                                            </label>
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Физика</span>
+                                            </label>
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Химия</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__field input input--area">
+                                    <textarea class="input__widget" rows="6" placeholder="Ваш отзыв *"></textarea>
+                                    <div class="input__hint">Осталось 2&nbsp;000 знаков</div>
+                                </div>
+                            </div>
+                            <div class="form__footer">
+                                <button class="form__submit button" type="submit">
+                                    Оставить отзыв
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
 
             <br>
@@ -99,79 +250,81 @@
                 <button class="window__close mfp-close" type="button">
                     Закрыть
                 </button>
-                <section class="window__body contacts-preview">
-                    <div class="contacts-preview__wrap container">
-                        <div class="contacts-preview__callback">
-                            <h2 class="contacts-preview__heading">
-                                Оставьте заявку —
-                                мы вам перезвоним!
-                            </h2>
-                            <form class="contacts-preview__form">
-                                <div class="contacts-preview__field input">
-                                    <input class="input__widget" type="text" placeholder="Фамилия и имя *">
-                                </div>
-                                <div class="contacts-preview__field input">
-                                    <input class="input__widget" type="text" placeholder="Телефон">
-                                </div>
-                                <div class="contacts-preview__interest">
-                                    <div class="contacts-preview__interest-label">
-                                        Меня интересуют:
+                <div class="window__body">
+                    <section class="contacts-preview">
+                        <div class="contacts-preview__wrap container">
+                            <div class="contacts-preview__callback">
+                                <h2 class="contacts-preview__heading">
+                                    Оставьте заявку —
+                                    мы вам перезвоним!
+                                </h2>
+                                <form class="contacts-preview__form">
+                                    <div class="contacts-preview__field input">
+                                        <input class="input__widget" type="text" placeholder="Фамилия и имя *">
                                     </div>
-                                    <div class="contacts-preview__interest-courses">
-                                        <label class="choice choice--checkbox">
-                                            <input class="choice__widget" type="checkbox">
-                                            <i class="choice__icon" role="presentation"></i>
-                                            <span class="choice__label">Очные курсы</span>
-                                        </label>
-                                        <label class="choice choice--checkbox">
-                                            <input class="choice__widget" type="checkbox">
-                                            <i class="choice__icon" role="presentation"></i>
-                                            <span class="choice__label">Онлайн-курсы</span>
-                                        </label>
-                                        <label class="choice choice--checkbox">
-                                            <input class="choice__widget" type="checkbox">
-                                            <i class="choice__icon" role="presentation"></i>
-                                            <span class="choice__label">Другое</span>
-                                        </label>
+                                    <div class="contacts-preview__field input">
+                                        <input class="input__widget" type="text" placeholder="Телефон">
+                                    </div>
+                                    <div class="contacts-preview__interest">
+                                        <div class="contacts-preview__interest-label">
+                                            Меня интересуют:
+                                        </div>
+                                        <div class="contacts-preview__interest-courses">
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Очные курсы</span>
+                                            </label>
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Онлайн-курсы</span>
+                                            </label>
+                                            <label class="choice choice--checkbox">
+                                                <input class="choice__widget" type="checkbox">
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Другое</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <label class="contacts-preview__agreement choice choice--checkbox">
+                                        <input class="choice__widget" type="checkbox">
+                                        <i class="choice__icon" role="presentation"></i>
+                                        <span class="choice__label">Даю согласие на обработку персональных данных</span>
+                                    </label>
+                                    <button class="contacts-preview__submit button" type="submit">
+                                        Отправить заявку
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="contacts-preview__to-call">
+                                <div class="contacts-preview__channel">
+                                    <div class="contacts-preview__label">
+                                        Звоните! Бесплатно по РФ
+                                    </div>
+                                    <div class="contacts-preview__number">
+                                        <a class="link link--fake" href="tel:+78007750682">8 (800) 775-06-82</a>
                                     </div>
                                 </div>
-                                <label class="contacts-preview__agreement choice choice--checkbox">
-                                    <input class="choice__widget" type="checkbox">
-                                    <i class="choice__icon" role="presentation"></i>
-                                    <span class="choice__label">Даю согласие на обработку персональных данных</span>
-                                </label>
-                                <button class="contacts-preview__submit button" type="submit">
-                                    Отправить заявку
-                                </button>
-                            </form>
-                        </div>
-                        <div class="contacts-preview__to-call">
-                            <div class="contacts-preview__channel">
-                                <div class="contacts-preview__label">
-                                    Звоните! Бесплатно по РФ
+                                <div class="contacts-preview__channel">
+                                    <div class="contacts-preview__label">
+                                        Телефон в Москве
+                                    </div>
+                                    <div class="contacts-preview__number">
+                                        <a class="link link--fake" href="tel:+74959840927P1">8 (495) 984 09 27 (доб. 1)</a>
+                                    </div>
                                 </div>
-                                <div class="contacts-preview__number">
-                                    <a class="link link--fake" href="tel:+78007750682">8 (800) 775-06-82</a>
+                                <div class="contacts-preview__body wysiwyg">
+                                    <ul class="list">
+                                        <li class="list__item">Средний балл на ЕГЭ 2020: математика — 83 балла, русский язык — 88 баллов, обществознание — 86 баллов.</li>
+                                        <li class="list__item">Записывайтесь заранее! Количество мест в группах ограничено.</li>
+                                        <li class="list__item">Проконсультируем по вопросам поступления в вузы, проведем бесплатную профессиональную ориентацию и проконсультируем по экзаменам ЕГЭ.</li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div class="contacts-preview__channel">
-                                <div class="contacts-preview__label">
-                                    Телефон в Москве
-                                </div>
-                                <div class="contacts-preview__number">
-                                    <a class="link link--fake" href="tel:+74959840927P1">8 (495) 984 09 27 (доб. 1)</a>
-                                </div>
-                            </div>
-                            <div class="contacts-preview__body wysiwyg">
-                                <ul class="list">
-                                    <li class="list__item">Средний балл на ЕГЭ 2020: математика — 83 балла, русский язык — 88 баллов, обществознание — 86 баллов.</li>
-                                    <li class="list__item">Записывайтесь заранее! Количество мест в группах ограничено.</li>
-                                    <li class="list__item">Проконсультируем по вопросам поступления в вузы, проведем бесплатную профессиональную ориентацию и проконсультируем по экзаменам ЕГЭ.</li>
-                                </ul>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </div>
 
 
@@ -186,75 +339,76 @@
                 <button class="window__close mfp-close" type="button">
                     Закрыть
                 </button>
-                <section class="window__body contacts-preview">
-                    <div class="contacts-preview__wrap container">
-                        <div class="contacts-preview__callback">
-                            <h2 class="contacts-preview__heading">
-                                Оставьте заявку —
-                                мы вам перезвоним!
-                            </h2>
-                            <form class="contacts-preview__form">
-                                <div class="contacts-preview__field input">
-                                    <input class="input__widget" type="text" placeholder="Фамилия и имя *">
-                                </div>
-                                <div class="contacts-preview__field input">
-                                    <input class="input__widget" type="text" placeholder="Телефон">
-                                </div>
-                                <label class="contacts-preview__agreement choice choice--checkbox">
-                                    <input class="choice__widget" type="checkbox">
-                                    <i class="choice__icon" role="presentation"></i>
-                                    <span class="choice__label">Даю согласие на обработку персональных данных</span>
-                                </label>
-                                <button class="contacts-preview__submit button" type="submit">
-                                    Отправить заявку
-                                </button>
-                            </form>
-                        </div>
-                        <div class="contacts-preview__to-call">
+                <div class="window__body">
+                    <section class="contacts-preview">
+                        <div class="contacts-preview__wrap container">
+                            <div class="contacts-preview__callback">
+                                <h2 class="contacts-preview__heading">
+                                    Оставьте заявку —
+                                    мы вам перезвоним!
+                                </h2>
+                                <form class="contacts-preview__form">
+                                    <div class="contacts-preview__field input">
+                                        <input class="input__widget" type="text" placeholder="Фамилия и имя *">
+                                    </div>
+                                    <div class="contacts-preview__field input">
+                                        <input class="input__widget" type="text" placeholder="Телефон">
+                                    </div>
+                                    <label class="contacts-preview__agreement choice choice--checkbox">
+                                        <input class="choice__widget" type="checkbox">
+                                        <i class="choice__icon" role="presentation"></i>
+                                        <span class="choice__label">Даю согласие на обработку персональных данных</span>
+                                    </label>
+                                    <button class="contacts-preview__submit button" type="submit">
+                                        Отправить заявку
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="contacts-preview__to-call">
 
-                            <div class="contacts-preview__subject">
-                                Физика
-                            </div>
-                            <h1 class="contacts-preview__course">
-                                Курс подготовки к&nbsp;ЕГЭ по&nbsp;физике
-                            </h1>
-                            <div class="contacts-preview__tag badge badge--moscow">
-                                Очно
-                            </div>
-                            <div class="contacts-preview__info starred">
-                                <div class="starred__item">
-                                    <img class="starred__icon" src="../symbols/star.svg" width="24" height="25" alt="">
-                                    9,10,11 классы
+                                <div class="contacts-preview__subject">
+                                    Физика
                                 </div>
-                                <div class="starred__item">
-                                    <img class="starred__icon" src="../symbols/star.svg" width="24" height="25" alt="">
-                                    19&nbsp;августа&nbsp;— 20&nbsp;сентября
+                                <h1 class="contacts-preview__course">
+                                    Курс подготовки к&nbsp;ЕГЭ по&nbsp;физике
+                                </h1>
+                                <div class="contacts-preview__tag badge badge--moscow">
+                                    Очно
                                 </div>
-                                <div class="starred__item">
-                                    <img class="starred__icon" src="../symbols/star.svg" width="24" height="25" alt="">
-                                    4&nbsp;занятия
+                                <div class="contacts-preview__info starred">
+                                    <div class="starred__item">
+                                        <img class="starred__icon" src="../symbols/star.svg" width="24" height="25" alt="">
+                                        9,10,11 классы
+                                    </div>
+                                    <div class="starred__item">
+                                        <img class="starred__icon" src="../symbols/star.svg" width="24" height="25" alt="">
+                                        19&nbsp;августа&nbsp;— 20&nbsp;сентября
+                                    </div>
+                                    <div class="starred__item">
+                                        <img class="starred__icon" src="../symbols/star.svg" width="24" height="25" alt="">
+                                        4&nbsp;занятия
+                                    </div>
+                                    <div class="starred__item">
+                                        <img class="starred__icon" src="../symbols/star.svg" width="24" height="25" alt="">
+                                        Суббота с&nbsp;16:00 до&nbsp;20:00
+                                    </div>
                                 </div>
-                                <div class="starred__item">
-                                    <img class="starred__icon" src="../symbols/star.svg" width="24" height="25" alt="">
-                                    Суббота с&nbsp;16:00 до&nbsp;20:00
-                                </div>
-                            </div>
-                            <div class="contacts-preview__cost price">
-                                <div class="price__value">
-                                    9 120 руб.
-                                </div>
-                                <div class="price__discount">
-                                    Скидка 50% <s class="price__old-price">18 240 руб</s>.
-                                </div>
-                                <div class="price__timing">
-                                    Действует еще 2 дня 1ч 15м 04с
+                                <div class="contacts-preview__cost price">
+                                    <div class="price__value">
+                                        9 120 руб.
+                                    </div>
+                                    <div class="price__discount">
+                                        Скидка 50% <s class="price__old-price">18 240 руб</s>.
+                                    </div>
+                                    <div class="price__timing">
+                                        Действует еще 2 дня 1ч 15м 04с
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </div>
-
 
 
             <br>
