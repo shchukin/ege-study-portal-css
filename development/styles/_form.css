@@ -14,12 +14,25 @@
         margin-top: 8px;
         margin-left: -40px;
         margin-right: -40px;
+        font-size: var(--body-17-font);
+        line-height: var(--body-17-line);
         text-align: center;
+    }
+
+    .form__text-field {
+        padding-bottom: 12px;
+        font-size: var(--body-17-font);
+        line-height: var(--body-17-line);
     }
 
     .form__fieldset {
         margin-top: 32px;
     }
+
+    /*.form__intro .form__fieldset {*/
+    /*    margin-top: 24px;*/
+    /*}*/
+
         .form__field {
             margin-top: 12px;
         }
@@ -58,8 +71,8 @@
             /*margin-top: 0;*/
             /*margin-bottom: 0;*/
             /*font-weight: var(--extra-bold);*/
-            /*font-size: 32px;*/
-            /*line-height: 46px;*/
+            font-size: var(--h4-font);
+            line-height: var(--h4-line);
             /*text-align: center;*/
         }
 
