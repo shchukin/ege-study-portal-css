@@ -21,11 +21,16 @@
             <h1>.form</h1>
 
             <p>
-                Смотри так же <a href="_mfp.html">.mfp</a> -- там формы заворачиваются в див .dialog и используются внутри модалок.
+                Смотри так же <a href="_mfp.html">.mfp</a> -- там формы заворачиваются в <b>.dialog</b> и используются внутри модалок.
             </p>
             <p>
-                Компонент <b>.form</b> на этой странице -- это статичная разметка для форм по типу:
-                <br><i>(может использоваться где угодно, не только в модалках)</i>
+                Здесь же просто компонент <b>.form</b> -- статичная разметка, которую можно использоваться где угодно (не только в модалках).
+            </p>
+            <p>
+                Алсо нажатие на кнопку <b>Отправить</b> жонглирует классами <b>.button--loading</b> и <b>.button--success</b> и показывает <b>.alert</b>.
+            </p>
+            <p>
+                Смотрим пример в общем виде:
             </p>
             <br>
             <br>
@@ -44,6 +49,9 @@
                     </div>
                     <div class="form__field input">
                         <input class="input__widget" type="tel" placeholder="Dolor Sit amen">
+                    </div>
+                    <div class="form__field text-instead-input">
+                        26 февраля в 18:00 по московскому времени – бесплатное занятие по математике: «7 дурацких ошибок!».
                     </div>
                     <div class="form__field input input--select input--placeholder-is-chosen">
                         <select class="input__widget">
@@ -154,6 +162,52 @@
                     </button>
                 </div>
             </form>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>
+                По-мимо стандартного уведомления .alert есть ещё вариант с компонентом <b>.inner-alert</b>. Выводится вместо формы:
+            </p>
+            <br>
+
+            <form class="form">
+                <h2 class="form__heading">
+                    Lorem Ipsum
+                </h2>
+                <div class="form__fieldset">
+                    <div class="form__field input">
+                        <input class="input__widget" type="text" placeholder="Lorem ipsum">
+                    </div>
+                    <div class="form__field input">
+                        <input class="input__widget" type="tel" placeholder="Dolor Sit amen">
+                    </div>
+                    <div class="form__field input input--area">
+                        <textarea class="input__widget" rows="4" placeholder="Aspernatur consequuntur *"></textarea>
+                        <div class="input__hint">Осталось 2 000 знаков</div>
+                    </div>
+                </div>
+                <div class="form__footer">
+                    <button class="form__submit button" type="submit">
+                        Отравить
+                    </button>
+                </div>
+            </form>
+            <div class="inner-alert" style="display: none;">
+                <div class="inner-alert__preview">
+                    <img class="inner-alert__icon" src="../symbols/success.svg" width="71" height="70" alt="">
+                </div>
+                <div class="inner-alert__heading">
+                    Lorem ipsum
+                </div>
+                <div class="inner-alert__description wysiwyg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae enim est incidunt modi mollitia sed voluptatibus. Culpa inventore provident sit vitae.</p>
+                    <p> Alias earum non odio officiis omnis provident quae suscipit! Delectus, eos iste itaque maiores mollitia, odio placeat quod repellat reprehenderit, soluta temporibus ullam velit vitae voluptas voluptatem.</p>
+                </div>
+            </div>
 
 
 
@@ -367,12 +421,13 @@
             <br>
             <br>
 
+
             <form class="form">
                 <h2 class="form__heading">
                     Регистрируйся на&nbsp;бесплатный стрим «7&nbsp;дурацких ошибок!»
                 </h2>
                 <div class="form__fieldset">
-                    <div class="form__text-field">
+                    <div class="form__field text-instead-input">
                         26 февраля в 18:00 по московскому времени – бесплатное занятие по математике: «7 дурацких ошибок!».
                     </div>
                     <div class="form__field input">
@@ -385,19 +440,42 @@
                     </button>
                 </div>
             </form>
+            <div class="inner-alert" style="display: none;">
+                <div class="inner-alert__preview">
+                    <img class="inner-alert__icon" src="../symbols/success.svg" width="71" height="70" alt="">
+                </div>
+                <div class="inner-alert__heading">
+                    Вы зарегистрированы
+                    на бесплатный стрим!
+                </div>
+                <div class="inner-alert__description wysiwyg">
+                    <p>Вы зарегистрировались на стрим «Формулы приведения и тригонометрические уравнения». Стрим пройдет 26 января на <a class="link link--classic" href="https://www.youtube.com/user/MalkovaAnna">канале Анны Малковой на YouTube</a>. Начало в 18:00 по московскому времени. Задачи стрима: <a class="link link--classic" href="https://ege-study.ru/wp-content/uploads/2023/01/26.02.23.pdf">https://ege-study.ru/wp-content/uploads/2023/01/26.02.23.pdf</a></p>
+                    <p>Мы пришлем вам ссылку для просмотра 26 января перед началом стрима.</p>
+                </div>
+            </div>
 
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
 
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+        <div class="alert" style="display: none;">
+            <div class="alert__label">
+                Спасибо! Вы подписаны на рассылку.<br class="hide hide_mobile">
+                На вашу почту скоро придут материалы и шпаргалки по ЕГЭ.
+            </div>
+            <button class="alert__dismiss" type="button">
+                <span class="visuallyhidden">Закрыть</span>
+                <img class="alert__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
+            </button>
         </div>
 
 
@@ -421,6 +499,7 @@
         <script src="../scripts/_subscription.js"></script>
         <script src="../scripts/_alert.js"></script>
         <script src="../scripts/_accordion.js"></script>
+        <script src="../scripts/_form.js"></script>
 
     </body>
 </html>

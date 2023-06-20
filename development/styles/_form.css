@@ -1,5 +1,5 @@
 .form {
-
+    position: relative;
 }
     .form__heading {
         margin-top: 0;
@@ -17,12 +17,6 @@
         font-size: var(--body-17-font);
         line-height: var(--body-17-line);
         text-align: center;
-    }
-
-    .form__text-field {
-        padding-bottom: 12px;
-        font-size: var(--body-17-font);
-        line-height: var(--body-17-line);
     }
 
     .form__fieldset {
@@ -59,7 +53,6 @@
             .form__submit .button {
                 width: 100%;
             }
-
 
 
 @media (max-width: 639px) {
