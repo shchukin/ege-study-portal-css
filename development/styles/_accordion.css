@@ -45,52 +45,6 @@
             background-position: center center;
         }
 
-
-    /* if header-link */
-
-    .accordion__header-link {
-        display: block;
-        background-color: transparent;
-        padding: 7px 8px 9px;
-        margin-right: 42px;
-        border: none;
-        border-radius: 4px;
-        font-weight: inherit;
-        font-size: 17px;
-        line-height: 24px;
-        color: inherit;
-        text-decoration: none;
-        text-align: left;
-    }
-
-    .accordion__header-link:hover {
-        color: var(--red);
-    }
-
-    .accordion__header-link--current {
-        color: var(--red);
-    }
-
-    .accordion__header-link + .accordion__handler {
-        position: absolute;
-        right: 0;
-        top: 0;
-        display: block;
-        width: 40px;
-        height: 40px;
-        padding: 0;
-        text-indent: 200%;
-        white-space: nowrap;
-        overflow: hidden;
-    }
-
-    .accordion__header-link--disabled,
-    .accordion__header-link--disabled:hover {
-        color: #B9B9B9;
-    }
-
-
-
     .accordion__dropdown {
         position: relative;
         padding-top: 14px;
@@ -104,9 +58,9 @@
         .accordion__link {
             display: block;
             width: 100%;
-            padding: 3px 24px;
-            font-size: var(--body-17-font);
-            line-height: var(--body-17-line);
+            padding: 4px 24px;
+            font-size: 17px;
+            line-height: 24px;
             color: inherit;
             text-decoration: none;
         }
@@ -122,6 +76,7 @@
         .accordion__link--disabled,
         .accordion__link--disabled:hover {
             color: #B9B9B9;
+            cursor: default;
         }
 
 .accordion__item--expanded {
@@ -159,3 +114,34 @@
         margin-right: 16px;
     }
 }
+
+
+
+
+
+/* Альтернативный вариант расхлопывания */
+
+.accordion__item > .accordion__link { /* Если ссылка встретилась внутри айтема, то делаем её большой как .accordion__handler, а ... */
+    padding: 7px 8px 9px;
+    margin-right: 42px;
+}
+
+.accordion__item > .accordion__link + .accordion__handler { /* ... а сам .accordion__handler убираем вправо */
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.accordion__item > .accordion__link--disabled + .accordion__handler {
+    opacity: 0.2;
+    cursor: default;
+    background-color: transparent;
+}
+
