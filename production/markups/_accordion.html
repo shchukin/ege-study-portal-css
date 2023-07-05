@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.accordion</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/style.css?1688533128">
+    </head>
+
+    <body>
+
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.accordion</h1>
+            <p>
+                Расхлопываем айтемы модификиатором <b>.accordion__item--expanded</b>
+            </p>
+            <p>
+                Вложенность любая.
+            </p>
+            <p>
+                Если нужно добить разметку до рекурсивного алгоритма, то можно добавить
+                обёртку <b>&lt;div class="dropdown"&gt;...&lt;/div&gt;</b>
+            </p>
+            <p>
+                Смотрим:
+            </p>
+            <br>
+            <br>
+
+            <div class="accordion">
+                <div class="accordion__item">
+                    <button class="accordion__handler" type="button">
+                        Об учебнике
+                    </button>
+                    <div class="accordion__dropdown">
+                        <a class="accordion__link" href="#">Механическое движение</a>
+                        <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                        <a class="accordion__link" href="#">Равноускоренное движение</a>
+                        <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                        <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                        <a class="accordion__link" href="#">Масса и плотность</a>
+                        <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                        <a class="accordion__link" href="#">Сила упругости</a>
+                        <a class="accordion__link" href="#">Сила тяготения</a>
+                        <a class="accordion__link" href="#">Показать все темы</a>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <button class="accordion__handler" type="button">
+                        Механика
+                    </button>
+                    <div class="accordion__dropdown">
+                        <a class="accordion__link" href="#">Механическое движение</a>
+                        <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                        <a class="accordion__link" href="#">Равноускоренное движение</a>
+                        <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                        <div class="accordion__item">
+                            <button class="accordion__handler" type="button">
+                                Подраздел
+                            </button>
+                            <div class="accordion__dropdown">
+                                <a class="accordion__link accordion__link--current" href="#">Механическое движение</a>
+                                <a class="accordion__link accordion__link--disabled">Равномерное прямолинейное движение</a>
+                                <a class="accordion__link accordion__link--disabled">Равноускоренное движение</a>
+                                <a class="accordion__link accordion__link--disabled">Путь при неравномерном движении</a>
+                                <a class="accordion__link accordion__link--disabled">Первый закон Ньютона</a>
+                                <a class="accordion__link accordion__link--disabled">Масса и плотность</a>
+                                <a class="accordion__link accordion__link--disabled">Второй и третий законы Ньютона</a>
+                                <a class="accordion__link accordion__link--disabled">Сила упругости</a>
+                                <a class="accordion__link accordion__link--disabled">Сила тяготения</a>
+                                <a class="accordion__link accordion__link--disabled">Показать все темы</a>
+                            </div>
+                        </div>
+                        <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                        <a class="accordion__link" href="#">Масса и плотность</a>
+                        <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                        <a class="accordion__link" href="#">Сила упругости</a>
+                        <a class="accordion__link" href="#">Сила тяготения</a>
+                        <a class="accordion__link" href="#">Показать все темы</a>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <button class="accordion__handler" type="button">
+                        Молекулярная физика и термодинамика
+                    </button>
+                    <div class="accordion__dropdown">
+                        <a class="accordion__link" href="#">Механическое движение</a>
+                        <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                        <a class="accordion__link" href="#">Равноускоренное движение</a>
+                        <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                        <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                        <a class="accordion__link" href="#">Масса и плотность</a>
+                        <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                        <a class="accordion__link" href="#">Сила упругости</a>
+                        <a class="accordion__link" href="#">Сила тяготения</a>
+                        <a class="accordion__link" href="#">Показать все темы</a>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <button class="accordion__handler" type="button">
+                        Теория относительности
+                    </button>
+                    <div class="accordion__dropdown">
+                        <a class="accordion__link" href="#">Механическое движение</a>
+                        <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                        <a class="accordion__link" href="#">Равноускоренное движение</a>
+                        <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                        <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                        <a class="accordion__link" href="#">Масса и плотность</a>
+                        <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                        <a class="accordion__link" href="#">Сила упругости</a>
+                        <a class="accordion__link" href="#">Сила тяготения</a>
+                        <a class="accordion__link" href="#">Показать все темы</a>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <button class="accordion__handler" type="button">
+                        Электродинамика
+                    </button>
+                    <div class="accordion__dropdown">
+                        <a class="accordion__link" href="#">Механическое движение</a>
+                        <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                        <a class="accordion__link" href="#">Равноускоренное движение</a>
+                        <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                        <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                        <a class="accordion__link" href="#">Масса и плотность</a>
+                        <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                        <a class="accordion__link" href="#">Сила упругости</a>
+                        <a class="accordion__link" href="#">Сила тяготения</a>
+                        <a class="accordion__link" href="#">Показать все темы</a>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <button class="accordion__handler" type="button">
+                        Оптика
+                    </button>
+                    <div class="accordion__dropdown">
+                        <a class="accordion__link" href="#">Механическое движение</a>
+                        <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                        <a class="accordion__link" href="#">Равноускоренное движение</a>
+                        <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                        <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                        <a class="accordion__link" href="#">Масса и плотность</a>
+                        <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                        <a class="accordion__link" href="#">Сила упругости</a>
+                        <a class="accordion__link" href="#">Сила тяготения</a>
+                        <a class="accordion__link" href="#">Показать все темы</a>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <button class="accordion__handler" type="button">
+                        Квантовая физика
+                    </button>
+                    <div class="accordion__dropdown">
+                        <a class="accordion__link" href="#">Механическое движение</a>
+                        <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                        <a class="accordion__link" href="#">Равноускоренное движение</a>
+                        <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                        <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                        <a class="accordion__link" href="#">Масса и плотность</a>
+                        <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                        <a class="accordion__link" href="#">Сила упругости</a>
+                        <a class="accordion__link" href="#">Сила тяготения</a>
+                        <a class="accordion__link" href="#">Показать все темы</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>Альтернативный вариант расхлопывания</h2>
+            <p>
+                Если нужно сделать так, чтобы заголовок айтема кликался отдельно
+                от кнопки расхлопывания, то перед этой кнопкой нужно добавить ссылку <b>.accordion__link</b>
+                (такую же как и все остальные внутри). Т.е. просто одну дополнительную ссылку. И обязательно перед.
+            </p>
+            <p>
+                Старый <b>.accordion__handler</b>, при этом, превратится в небольшую кнопку 40x40
+                и улетит вправо. Вся логика расхлопывания сохраняется. Жаба-скрипт обновлять
+                не нужно.
+            </p>
+            <p>
+                Смотрим:
+            </p>
+            <br>
+            <br>
+
+            <div class="accordion">
+                <div class="accordion__item">
+                    <a class="accordion__link" href="#">
+                        Об учебнике
+                    </a>
+                    <button class="accordion__handler" type="button">
+                        Раскрыть об учебнике
+                    </button>
+                    <div class="accordion__dropdown">
+                        <a class="accordion__link" href="#">Механическое движение</a>
+                        <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                        <a class="accordion__link" href="#">Равноускоренное движение</a>
+                        <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                        <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                        <a class="accordion__link" href="#">Масса и плотность</a>
+                        <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                        <a class="accordion__link" href="#">Сила упругости</a>
+                        <a class="accordion__link" href="#">Сила тяготения</a>
+                        <a class="accordion__link" href="#">Показать все темы</a>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <a class="accordion__link" href="#">
+                        Механика
+                    </a>
+                    <button class="accordion__handler" type="button">
+                        Раскрыть «Механика»
+                    </button>
+                    <div class="accordion__dropdown">
+                        <a class="accordion__link" href="#">Механическое движение</a>
+                        <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                        <a class="accordion__link" href="#">Равноускоренное движение</a>
+                        <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                        <div class="accordion__item">
+                            <a class="accordion__link" href="#">
+                                Подраздел
+                            </a>
+                            <button class="accordion__handler" type="button">
+                                Раскрыть «Подраздел»
+                            </button>
+                            <div class="accordion__dropdown">
+                                <a class="accordion__link" href="#">Механическое движение</a>
+                                <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                                <a class="accordion__link" href="#">Равноускоренное движение</a>
+                                <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                                <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                                <a class="accordion__link" href="#">Масса и плотность</a>
+                                <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                                <a class="accordion__link" href="#">Сила упругости</a>
+                                <a class="accordion__link" href="#">Сила тяготения</a>
+                                <a class="accordion__link" href="#">Показать все темы</a>
+                            </div>
+                        </div>
+                        <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                        <a class="accordion__link" href="#">Масса и плотность</a>
+                        <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                        <a class="accordion__link" href="#">Сила упругости</a>
+                        <a class="accordion__link" href="#">Сила тяготения</a>
+                        <a class="accordion__link" href="#">Показать все темы</a>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <a class="accordion__link" href="#">
+                        Молекулярная физика и термодинамика
+                    </a>
+                    <button class="accordion__handler" type="button">
+                        Раскрыть «Молекулярная физика и термодинамика»
+                    </button>
+                    <div class="accordion__dropdown">
+                        <a class="accordion__link" href="#">Механическое движение</a>
+                        <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                        <a class="accordion__link" href="#">Равноускоренное движение</a>
+                        <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                        <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                        <a class="accordion__link" href="#">Масса и плотность</a>
+                        <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                        <a class="accordion__link" href="#">Сила упругости</a>
+                        <a class="accordion__link" href="#">Сила тяготения</a>
+                        <a class="accordion__link" href="#">Показать все темы</a>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <a class="accordion__link" href="#">
+                        Теория относительности
+                    </a>
+                    <button class="accordion__handler" type="button">
+                        Раскрыть «Теория относительности»
+                    </button>
+                    <div class="accordion__dropdown">
+                        <a class="accordion__link" href="#">Механическое движение</a>
+                        <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                        <a class="accordion__link" href="#">Равноускоренное движение</a>
+                        <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                        <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                        <a class="accordion__link" href="#">Масса и плотность</a>
+                        <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                        <a class="accordion__link" href="#">Сила упругости</a>
+                        <a class="accordion__link" href="#">Сила тяготения</a>
+                        <a class="accordion__link" href="#">Показать все темы</a>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <a class="accordion__link" href="#">
+                        Электродинамика
+                    </a>
+                    <button class="accordion__handler" type="button">
+                        Раскрыть «Электродинамика»
+                    </button>
+                    <div class="accordion__dropdown">
+                        <a class="accordion__link" href="#">Механическое движение</a>
+                        <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                        <a class="accordion__link" href="#">Равноускоренное движение</a>
+                        <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                        <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                        <a class="accordion__link" href="#">Масса и плотность</a>
+                        <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                        <a class="accordion__link" href="#">Сила упругости</a>
+                        <a class="accordion__link" href="#">Сила тяготения</a>
+                        <a class="accordion__link" href="#">Показать все темы</a>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <a class="accordion__link" href="#">
+                        Механика
+                    </a>
+                    <button class="accordion__handler" type="button">
+                        Раскрыть «Механика»
+                    </button>
+                    <div class="accordion__dropdown">
+                        <a class="accordion__link" href="#">Механическое движение</a>
+                        <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                        <a class="accordion__link" href="#">Равноускоренное движение</a>
+                        <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                        <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                        <a class="accordion__link" href="#">Масса и плотность</a>
+                        <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                        <a class="accordion__link" href="#">Сила упругости</a>
+                        <a class="accordion__link" href="#">Сила тяготения</a>
+                        <a class="accordion__link" href="#">Показать все темы</a>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <a class="accordion__link" href="#">
+                        Механика
+                    </a>
+                    <button class="accordion__handler" type="button">
+                        Раскрыть «Механика»
+                    </button>
+                    <div class="accordion__dropdown">
+                        <a class="accordion__link" href="#">Механическое движение</a>
+                        <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                        <a class="accordion__link" href="#">Равноускоренное движение</a>
+                        <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                        <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                        <a class="accordion__link" href="#">Масса и плотность</a>
+                        <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                        <a class="accordion__link" href="#">Сила упругости</a>
+                        <a class="accordion__link" href="#">Сила тяготения</a>
+                        <a class="accordion__link" href="#">Показать все темы</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <p>
+                <b>.accordion__link</b> в заголовке так же может быть:<br>
+                <b>.accordion__link--current</b><br>
+                <b>.accordion__link--disabled</b>
+            </p>
+            <p>
+                Здесь, возможно, нужно будет немного усложнить скрипт, чтобы у заблокированных
+                ссылок не расхлопывалась выпадайка.
+            </p>
+            <p>
+                Смотрим:
+            </p>
+            <br>
+            <br>
+
+            <div class="accordion">
+                <div class="accordion__item">
+                    <a class="accordion__link" href="#">
+                        Об учебнике
+                    </a>
+                    <button class="accordion__handler" type="button">
+                        Раскрыть об учебнике
+                    </button>
+                    <div class="accordion__dropdown">
+                        <a class="accordion__link" href="#">Механическое движение</a>
+                        <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                        <a class="accordion__link" href="#">Равноускоренное движение</a>
+                        <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                        <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                        <a class="accordion__link" href="#">Масса и плотность</a>
+                        <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                        <a class="accordion__link" href="#">Сила упругости</a>
+                        <a class="accordion__link" href="#">Сила тяготения</a>
+                        <a class="accordion__link" href="#">Показать все темы</a>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <a class="accordion__link" href="#">
+                        Механика
+                    </a>
+                    <button class="accordion__handler" type="button">
+                        Раскрыть «Механика»
+                    </button>
+                    <div class="accordion__dropdown">
+                        <a class="accordion__link" href="#">Механическое движение</a>
+                        <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                        <a class="accordion__link" href="#">Равноускоренное движение</a>
+                        <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                        <div class="accordion__item">
+                            <a class="accordion__link" href="#">
+                                Подраздел
+                            </a>
+                            <button class="accordion__handler" type="button">
+                                Раскрыть «Подраздел»
+                            </button>
+                            <div class="accordion__dropdown">
+                                <a class="accordion__link" href="#">Механическое движение</a>
+                                <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                                <a class="accordion__link" href="#">Равноускоренное движение</a>
+                                <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                                <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                                <a class="accordion__link" href="#">Масса и плотность</a>
+                                <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                                <a class="accordion__link" href="#">Сила упругости</a>
+                                <a class="accordion__link" href="#">Сила тяготения</a>
+                                <a class="accordion__link" href="#">Показать все темы</a>
+                            </div>
+                        </div>
+                        <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                        <a class="accordion__link" href="#">Масса и плотность</a>
+                        <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                        <a class="accordion__link" href="#">Сила упругости</a>
+                        <a class="accordion__link" href="#">Сила тяготения</a>
+                        <a class="accordion__link" href="#">Показать все темы</a>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <a class="accordion__link accordion__link--current" href="#">
+                        Молекулярная физика и термодинамика
+                    </a>
+                    <button class="accordion__handler" type="button">
+                        Раскрыть «Молекулярная физика и термодинамика»
+                    </button>
+                    <div class="accordion__dropdown">
+                        <a class="accordion__link" href="#">Механическое движение</a>
+                        <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                        <a class="accordion__link" href="#">Равноускоренное движение</a>
+                        <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                        <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                        <a class="accordion__link" href="#">Масса и плотность</a>
+                        <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                        <a class="accordion__link" href="#">Сила упругости</a>
+                        <a class="accordion__link" href="#">Сила тяготения</a>
+                        <a class="accordion__link" href="#">Показать все темы</a>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <a class="accordion__link accordion__link--disabled">
+                        Теория относительности
+                    </a>
+                    <button class="accordion__handler" type="button">
+                        Раскрыть «Теория относительности»
+                    </button>
+                    <div class="accordion__dropdown">
+                        <a class="accordion__link" href="#">Механическое движение</a>
+                        <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                        <a class="accordion__link" href="#">Равноускоренное движение</a>
+                        <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                        <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                        <a class="accordion__link" href="#">Масса и плотность</a>
+                        <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                        <a class="accordion__link" href="#">Сила упругости</a>
+                        <a class="accordion__link" href="#">Сила тяготения</a>
+                        <a class="accordion__link" href="#">Показать все темы</a>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <a class="accordion__link accordion__link--disabled">
+                        Электродинамика
+                    </a>
+                    <button class="accordion__handler" type="button">
+                        Раскрыть «Электродинамика»
+                    </button>
+                    <div class="accordion__dropdown">
+                        <a class="accordion__link" href="#">Механическое движение</a>
+                        <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                        <a class="accordion__link" href="#">Равноускоренное движение</a>
+                        <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                        <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                        <a class="accordion__link" href="#">Масса и плотность</a>
+                        <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                        <a class="accordion__link" href="#">Сила упругости</a>
+                        <a class="accordion__link" href="#">Сила тяготения</a>
+                        <a class="accordion__link" href="#">Показать все темы</a>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <a class="accordion__link accordion__link--disabled">
+                        Механика
+                    </a>
+                    <button class="accordion__handler" type="button">
+                        Раскрыть «Механика»
+                    </button>
+                    <div class="accordion__dropdown">
+                        <a class="accordion__link" href="#">Механическое движение</a>
+                        <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                        <a class="accordion__link" href="#">Равноускоренное движение</a>
+                        <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                        <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                        <a class="accordion__link" href="#">Масса и плотность</a>
+                        <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                        <a class="accordion__link" href="#">Сила упругости</a>
+                        <a class="accordion__link" href="#">Сила тяготения</a>
+                        <a class="accordion__link" href="#">Показать все темы</a>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <a class="accordion__link accordion__link--disabled">
+                        Механика
+                    </a>
+                    <button class="accordion__handler" type="button">
+                        Раскрыть «Механика»
+                    </button>
+                    <div class="accordion__dropdown">
+                        <a class="accordion__link" href="#">Механическое движение</a>
+                        <a class="accordion__link" href="#">Равномерное прямолинейное движение</a>
+                        <a class="accordion__link" href="#">Равноускоренное движение</a>
+                        <a class="accordion__link" href="#">Путь при неравномерном движении</a>
+                        <a class="accordion__link" href="#">Первый закон Ньютона</a>
+                        <a class="accordion__link" href="#">Масса и плотность</a>
+                        <a class="accordion__link" href="#">Второй и третий законы Ньютона</a>
+                        <a class="accordion__link" href="#">Сила упругости</a>
+                        <a class="accordion__link" href="#">Сила тяготения</a>
+                        <a class="accordion__link" href="#">Показать все темы</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../scripts/_footer.js?1688533128"></script>
+        <script src="../scripts/_input.js?1688533128"></script>
+        <script src="../scripts/_slideshow.js?1688533128"></script>
+        <script src="../scripts/_courses.js?1688533128"></script>
+        <script src="../scripts/_program.js?1688533128"></script>
+        <script src="../scripts/_single-course.js?1688533128"></script>
+        <script src="../scripts/_jobs.js?1688533128"></script>
+        <script src="../scripts/_mfp.js?1688533128"></script>
+        <script src="../scripts/_collapse.js?1688533128"></script>
+        <script src="../scripts/_header.js?1688533128"></script>
+        <script src="../scripts/_nav.js?1688533128"></script>
+        <script src="../scripts/_faq.js?1688533128"></script>
+        <script src="../scripts/_accordion.js?1688533128"></script>
+
+    </body>
+</html>
+
+
+
