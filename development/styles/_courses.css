@@ -85,12 +85,28 @@
                         border-bottom-width: 1px;
                     }
 
-
             .courses__more {
                 margin-top: -18px;
                 font-size: 17px;
                 line-height: 27px;
             }
+
+            .courses__desktop-filter-operations {
+                margin-top: 30px;
+                text-align: center;
+            }
+                .courses__desktop-apply {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                    .courses__desktop-apply.button,
+                    .courses__desktop-apply .button {
+                        width: 100%;
+                    }
+
+                .courses__desktop-reset {
+
+                }
 
             @media (min-width: 640px) {
                 .courses__submit {
