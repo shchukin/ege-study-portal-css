@@ -116,7 +116,7 @@
     .input--disabled .input__widget,
     .input--disabled .input__widget:hover,
     .input--disabled .input__widget:active {
-        background-color: var(--low-emphasis-black);
+        background-color: #EEEEEE;
         border-color: var(--medium-emphasis-white);
         -webkit-text-fill-color: var(--medium-emphasis-white); /* safari зачем-то засветляет текст */
         opacity: 1; /* ios safari зачем-то засветляет текст */
