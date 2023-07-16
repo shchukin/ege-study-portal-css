@@ -144,6 +144,16 @@
         color: var(--red);
     }
 
+    .input--error {
+
+    }
+
+    /* stylelint-disable block-opening-brace-space-before */
+    .input__widget::-webkit-input-placeholder { font-style: normal; color: var(--red); }
+    .input__widget::-moz-placeholder          { font-style: normal; color: var(--red); opacity: 1; }
+    .input__widget:-ms-input-placeholder      { font-style: normal; color: var(--red); }
+    /* stylelint-enable */
+
     .input--error .input__icon,
     .input--error .input__describe-action {
         fill: var(--red);
@@ -155,3 +165,21 @@
             background-image: url("../vectors/input-select-error.svg");
         }
     }
+
+
+.input__message {
+    margin-top: 8px;
+    font-size: 15px;
+    line-height: 23px;
+    color: var(--red);
+}
+
+.input__message + .input__message {
+    margin-top: 4px;
+}
+
+
+.input__hint ~ .input__message {
+    margin-top: -23px;
+    margin-right: 180px;
+}

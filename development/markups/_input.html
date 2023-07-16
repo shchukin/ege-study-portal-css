@@ -15,7 +15,7 @@
 
 
 
-        <div style="width: 600px; margin: 0 auto;">
+        <div style="max-width: 600px; margin: 0 auto;">
             <br>
             <br>
             <h1>.input</h1>
@@ -34,6 +34,14 @@
 
             <div class="input input--area">
                 <textarea class="input__widget" rows="4" placeholder="Введите сообшение"></textarea>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input input--area">
+                <textarea class="input__widget" rows="12" placeholder="Расскажите, кем хотите стать и какие цели ставите перед собой. Как обучение на онлайн-курсе поможет вам в достижении ваших целей?"></textarea>
+                <div class="input__hint">Осталось 2 000 знаков</div>
             </div>
 
 
@@ -88,7 +96,9 @@
             <h2>.input--error</h2>
 
             <div class="input input--error">
-                <input class="input__widget" type="email" value="$#%@!">
+                <input class="input__widget" type="text" value="$#%@!">
+                <div class="input__message">Пароль обязателен</div>
+                <div class="input__message">Пароль должен содержать заглавные и строчные буквы</div>
             </div>
 
             <br>
@@ -102,8 +112,16 @@
                     <option>Sit</option>
                     <option>Amen</option>
                 </select>
+                <div class="input__message">Необходимо выбрать значение</div>
             </div>
 
+            <br>
+
+            <div class="input input--area input--error">
+                <textarea class="input__widget" rows="6" placeholder="Ваш отзыв *"></textarea>
+                <div class="input__hint">Осталось 2 000 знаков</div>
+                <div class="input__message">Обязательно для заполнения</div>
+            </div>
 
             <br>
             <br>
