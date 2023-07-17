@@ -47,16 +47,6 @@
             background-color: var(--neutral);
             border-radius: 8px;
         }
-            .courses__operations {
-
-            }
-
-            @media (min-width: 640px) {
-                .courses__operations {
-                    display: none;
-                }
-            }
-
             .courses__option {
                 margin-bottom: 32px;
                 display: flex;
@@ -91,28 +81,28 @@
                 line-height: 27px;
             }
 
-            .courses__desktop-filter-operations {
+            .courses__operations {
                 margin-top: 30px;
                 text-align: center;
             }
-                .courses__desktop-apply {
-                    width: 100%;
+                .courses__submit {
                     margin-bottom: 10px;
                 }
-                    .courses__desktop-apply.button,
-                    .courses__desktop-apply .button {
-                        width: 100%;
-                    }
+                    .courses__apply-filter {
 
-                .courses__desktop-reset {
+                    }
+                        .courses__apply-filter.button,
+                        .courses__apply-filter .button {
+                            width: 100%;
+                        }
+
+                .courses__action {
 
                 }
 
-            @media (min-width: 640px) {
-                .courses__submit {
+                .courses__action--close {
                     display: none;
                 }
-            }
 
     .courses__page {
         margin-top: 32px;
@@ -178,28 +168,6 @@
                 /*background-color: var(--neutral);*/
                 /*border-radius: 8px;*/
             }
-                .courses__operations {
-                    position: fixed;
-                    z-index: 10;
-                    left: 0;
-                    top: 0;
-                    right: 0;
-                    background-color: var(--neutral);
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: space-between;
-                }
-                    .courses__action {
-                        border: none;
-                        background-color: transparent;
-                        padding: 12px 24px 15px;
-                        font-family: inherit;
-                        font-size: 17px;
-                        line-height: 24px;
-                        color: var(--red);
-                        cursor: pointer;
-                    }
-
                 .courses__option {
                     /*margin-top: 32px;*/
                     /*display: flex;*/
@@ -235,12 +203,39 @@
                     /*line-height: 27px;*/
                 }
 
+                .courses__operations {
+                    position: fixed;
+                    z-index: 10;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    background-color: var(--neutral);
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    margin-top: 0;
+                }
+                    .courses__action {
+                        border-bottom: none;
+                        padding: 12px 24px 15px;
+                        font-family: inherit;
+                        font-size: 17px;
+                        line-height: 24px;
+                        color: var(--red);
+                        cursor: pointer;
+                    }
+
+                    .courses__action--close {
+                        display: block;
+                    }
+
                 .courses__submit {
                     position: fixed;
                     left: 0;
                     bottom: 0;
                     right: 0;
                     padding: 16px 24px;
+                    margin-bottom: 0;
                     background-color: var(--neutral);
                 }
                     .courses__apply-filter.button,
@@ -306,7 +301,7 @@
             display: none;
         }
 
-        .courses-expanded .header__bar {
+        .courses-expanded .header {
             display: none;
         }
 
