@@ -22,7 +22,8 @@
     background-color: var(--green);
 }
 
-.alert--danger {
+.alert--danger,
+.alert--error {
     background-color: var(--red);
 }
     .alert__dismiss {

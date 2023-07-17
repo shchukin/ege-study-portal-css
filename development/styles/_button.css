@@ -147,6 +147,27 @@
     }
 
 
+.button--error {
+    color: transparent;
+    pointer-events: none;
+}
+    .button--error::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin-top: -12px;
+        margin-left: -12px;
+        background-image: url("../vectors/button-error.svg");
+        background-size: 24px 24px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+
 .button--disabled,
 .button--disabled:hover,
 .button--disabled:active,
