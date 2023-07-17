@@ -150,6 +150,9 @@
                 .teachers__filter {
 
                 }
+                    .teachers__filter .collapse__handler {
+                        padding-right: 16px;
+                    }
 
 
         .teachers__content {

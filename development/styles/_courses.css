@@ -85,22 +85,22 @@
                 margin-top: 30px;
                 text-align: center;
             }
-                .courses__submit {
+                .courses__apply {
                     margin-bottom: 10px;
                 }
-                    .courses__apply-filter {
+                    .courses__apply {
 
                     }
-                        .courses__apply-filter.button,
-                        .courses__apply-filter .button {
+                        .courses__apply.button,
+                        .courses__apply .button {
                             width: 100%;
                         }
 
-                .courses__action {
+                .courses__reset {
 
                 }
 
-                .courses__action--close {
+                .courses__close {
                     display: none;
                 }
 
@@ -215,32 +215,44 @@
                     justify-content: space-between;
                     margin-top: 0;
                 }
-                    .courses__action {
-                        border-bottom: none;
-                        padding: 12px 24px 15px;
-                        font-family: inherit;
-                        font-size: 17px;
-                        line-height: 24px;
-                        color: var(--red);
-                        cursor: pointer;
+                    .courses__operations::before {
+                        content: "";
+                        position: fixed;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        display: block;
+                        height: 108px;
+                        background-color: var(--neutral);
                     }
 
-                    .courses__action--close {
+                    .courses__reset {
+
+                    }
+                        .courses__reset.link,
+                        .courses__reset .link {
+                            padding: 12px 24px 15px;
+                            border: none;
+                        }
+
+                    .courses__close {
                         display: block;
                     }
+                        .courses__close.link,
+                        .courses__close .link {
+                            padding: 12px 24px 15px;
+                            border: none;
+                        }
 
-                .courses__submit {
+                .courses__apply {
                     position: fixed;
-                    left: 0;
-                    bottom: 0;
-                    right: 0;
-                    padding: 16px 24px;
+                    left: 24px;
+                    bottom: 16px;
                     margin-bottom: 0;
-                    background-color: var(--neutral);
                 }
-                    .courses__apply-filter.button,
-                    .courses__apply-filter .button {
-                        width: 100%;
+                    .courses__apply.button,
+                    .courses__apply .button {
+                        width: calc(100% - 48px);
                     }
 
         .courses__page {
