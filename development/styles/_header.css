@@ -33,7 +33,7 @@
             }
 
             .header__show-search:hover {
-                background-color: rgba(255, 255, 255, 0.1);
+                background-color: rgba(255, 255, 255, 0.9);
             }
                 .header__magnifier,
                 .header__search-cross {
@@ -93,7 +93,7 @@
             }
 
             .header__login:hover {
-                background-color: rgba(255, 255, 255, 0.1);
+                background-color: rgba(255, 255, 255, 0.9);
             }
                 .header__door {
                     vertical-align: top;
