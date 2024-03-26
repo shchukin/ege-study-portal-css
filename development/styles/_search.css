@@ -36,7 +36,11 @@
     }
         .search__magnifier {
             vertical-align: top;
-            fill: #FFFFFF;
+            fill: var(--high-emphasis-black);
+        }
+
+        .search__submit:hover .search__magnifier {
+            fill: var(--high-emphasis-white);
         }
 
 

@@ -46,7 +46,7 @@
                     width: 20px;
                     height: 20px;
                     vertical-align: top;
-                    fill: var(--high-emphasis-white);
+                    fill: var(--high-emphasis-black);
                 }
 
                 .header__search-cross {
