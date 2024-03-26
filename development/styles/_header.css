@@ -150,11 +150,11 @@
                     }
 
                     .header__link:hover {
-                        background-color: var(--blue-light);
+                        background-color: var(--yellow);
                     }
 
                     .header__item--expanded .header__link {
-                        background-color: var(--blue-light);
+                        background-color: var(--yellow);
                     }
 
 
@@ -254,7 +254,7 @@
                             }
 
                             .header__close:hover::before {
-                                background-color: var(--blue-light);
+                                background-color: var(--yellow);
                             }
 
                             .header__arrow {
