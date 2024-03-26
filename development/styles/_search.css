@@ -32,17 +32,11 @@
     }
 
     .search__submit:hover {
-        background-color: var(--high-emphasis-black);
+        background-color: var(--blue-light);
     }
         .search__magnifier {
             vertical-align: top;
             fill: var(--high-emphasis-black);
         }
-
-        .search__submit:hover .search__magnifier {
-            fill: var(--high-emphasis-white);
-        }
-
-
 
 
