@@ -31,6 +31,10 @@
         cursor: pointer;
     }
 
+    .black-header .search__submit {
+        background-color: var(--yellow);
+    }
+
     .search__submit:hover {
         background-color: var(--blue-light);
     }
@@ -38,5 +42,14 @@
             vertical-align: top;
             fill: var(--high-emphasis-black);
         }
+
+        .search__submit:hover .search__magnifier {
+
+        }
+
+        .black-header .search__submit:hover .search__magnifier {
+            fill: var(--high-emphasis-black);
+        }
+
 
 

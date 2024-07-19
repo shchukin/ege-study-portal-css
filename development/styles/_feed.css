@@ -59,6 +59,10 @@
                 color: var(--medium-emphasis-black);
             }
 
+        .feed__form {
+            margin-top: 48px;
+        }
+
 @media (max-width: 639px) {
 
     .feed {
@@ -118,4 +122,8 @@
                 .feed__date {
 
                 }
+
+            .feed__form {
+
+            }
 }

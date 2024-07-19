@@ -463,60 +463,119 @@
             <div class="contacts container">
                 <nav class="contacts__nav hide-scrollbar">
                     <div class="contacts__ribbon">
-                        <a class="contacts__link contacts__link--current" href="#">Москва</a>
-                        <a class="contacts__link" href="#">Орел</a>
-                        <a class="contacts__link" href="#">Чебоксары</a>
-                        <a class="contacts__link" href="#">Ивантеевка</a>
-                        <a class="contacts__link" href="#">Наб. Челны</a>
+                        <a class="contacts__link contacts__link--current" href="#tabs-1">Москва</a>
+                        <a class="contacts__link" href="#tabs-2">Орел</a>
+                        <a class="contacts__link" href="#tabs-3">Чебоксары</a>
+                        <a class="contacts__link" href="#tabs-4">Ивантеевка</a>
+                        <a class="contacts__link" href="#tabs-5">Наб. Челны</a>
                     </div>
                 </nav>
                 <div class="contacts__body">
-                    <div class="contacts__data">
-                        <div class="contacts__section">
-                            <h2 class="contacts__sub-heading">
-                                Адрес
-                            </h2>
-                            <div class="contacts__widget">
-                                107031, Москва, Петровский бульвар 15, стр. 1, 5 этаж
-                            </div>
-                        </div>
-                        <div class="contacts__section">
-                            <h2 class="contacts__sub-heading">
-                                Телефоны
-                            </h2>
-                            <div class="contacts__widget">
-                                <a class="link link--fake" href="tel:+78007750682">8 (800) 775-06-82</a> <br>
-                                <a class="link link--fake" href="tel:+74959840927">+7 (495) 984-09-27</a>
-                            </div>
-                        </div>
-                        <div class="contacts__section">
-                            <h2 class="contacts__sub-heading">
-                                Время работы офиса
-                            </h2>
-                            <div class="contacts__widget">
-                                с 10:00 до 18:00 по будням
-                            </div>
-                        </div>
-                        <div class="contacts__section">
-                            <h2 class="contacts__sub-heading">
-                                Почта
-                            </h2>
-                            <div class="contacts__widget">
-                                <div class="contacts__channel">
-                                    Общие вопросы и техническая поддержка<br>
-                                    <a class="link" href="mailto:help@ege-study.ru">help@ege-study.ru</a>
+                    <div class="contacts__tab contacts__tab--current" id="tabs-1">
+                        <div class="contacts__grid">
+                            <div class="contacts__data">
+                                <div class="contacts__section">
+                                    <h2 class="contacts__sub-heading">
+                                        Адрес
+                                    </h2>
+                                    <div class="contacts__widget">
+                                        107031, Москва, Петровский бульвар 15, стр. 1, 5 этаж
+                                    </div>
                                 </div>
-                                <div class="contacts__channel">
-                                    Вакансии<br>
-                                    <a class="link" href="mailto:admin@ege-study.ru">admin@ege-study.ru</a>
+                                <div class="contacts__section">
+                                    <h2 class="contacts__sub-heading">
+                                        Телефоны
+                                    </h2>
+                                    <div class="contacts__widget">
+                                        <a class="link link--fake" href="tel:+78007750682">8 (800) 775-06-82</a> <br>
+                                        <a class="link link--fake" href="tel:+74959840927">+7 (495) 984-09-27</a>
+                                    </div>
+                                </div>
+                                <div class="contacts__section">
+                                    <h2 class="contacts__sub-heading">
+                                        Время работы офиса
+                                    </h2>
+                                    <div class="contacts__widget">
+                                        с 10:00 до 18:00 по будням
+                                    </div>
+                                </div>
+                                <div class="contacts__section">
+                                    <h2 class="contacts__sub-heading">
+                                        Почта
+                                    </h2>
+                                    <div class="contacts__widget">
+                                        <div class="contacts__channel">
+                                            Общие вопросы и техническая поддержка<br>
+                                            <a class="link" href="mailto:help@ege-study.ru">help@ege-study.ru</a>
+                                        </div>
+                                        <div class="contacts__channel">
+                                            Вакансии<br>
+                                            <a class="link" href="mailto:admin@ege-study.ru">admin@ege-study.ru</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__map">
+                                <iframe
+                                    src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=37.615991%2C55.768269&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcyODU0NRJG0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCf0LXRgtGA0L7QstGB0LrQuNC5INCx0YPQu9GM0LLQsNGALCAxNdGBMSIKDcZ2FkIVtRJfQg%2C%2C&z=17.06"
+                                    width="100%"
+                                    height="100%"
+                                    frameborder="0"
+                                    allowfullscreen="true"
+                                >
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__tab" id="tabs-2">
+                        <div class="contacts__grid">
+                            <div class="contacts__data">
+                                <div class="contacts__section">
+                                    <h2 class="contacts__sub-heading">
+                                        Адрес
+                                    </h2>
+                                    <div class="contacts__widget">
+                                        Орел
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="contacts__map">
-                        <!-- temp -->
-                        <div style="height: 100%; background: purple; color: white; display: flex; align-items: center; justify-content: center;">Карта 100% х 100%</div>
-                        <!--/temp -->
+                    <div class="contacts__tab" id="tabs-3">
+                        <div class="contacts__grid">
+                            <div class="contacts__section">
+                                <h2 class="contacts__sub-heading">
+                                    Адрес
+                                </h2>
+                                <div class="contacts__widget">
+                                    Чебоксары
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__tab" id="tabs-4">
+                        <div class="contacts__grid">
+                            <div class="contacts__section">
+                                <h2 class="contacts__sub-heading">
+                                    Адрес
+                                </h2>
+                                <div class="contacts__widget">
+                                    Ивантеевка
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__tab" id="tabs-5">
+                        <div class="contacts__grid">
+                            <div class="contacts__section">
+                                <h2 class="contacts__sub-heading">
+                                    Адрес
+                                </h2>
+                                <div class="contacts__widget">
+                                    Набережные челны
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -747,6 +806,7 @@
         <script src="../scripts/_bar.js"></script>
         <script src="../scripts/_subscription.js"></script>
         <script src="../scripts/_alert.js"></script>
+        <script src="../scripts/_contacts.js"></script>
 
     </body>
 </html>

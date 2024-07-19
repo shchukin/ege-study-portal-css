@@ -7,6 +7,11 @@
     padding-bottom: 8px;
     background-color: var(--green-light);
 }
+
+.black-header .nav {
+    background-color: var(--primary-black);
+}
+
     .nav__item {
         position: relative;
     }
@@ -27,8 +32,16 @@
             text-decoration: none;
         }
 
+        .black-header .nav__link {
+            color: var(--high-emphasis-white);
+        }
+
         .nav__link:hover {
             background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .black-header .nav__link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
         }
 
         .nav__item--has-dropdown .nav__link::after {
@@ -43,6 +56,10 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center center;
+        }
+
+        .black-header .nav__item--has-dropdown .nav__link::after {
+            background-image: url("../vectors/menu-item-inverted.svg");
         }
 
         .nav__dropdown {

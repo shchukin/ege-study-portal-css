@@ -35,6 +35,11 @@
             .header__show-search:hover {
                 background-color: rgba(255, 255, 255, 0.9);
             }
+
+            .black-header .header__show-search:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+
                 .header__magnifier,
                 .header__search-cross {
                     position: absolute;
@@ -47,6 +52,11 @@
                     height: 20px;
                     vertical-align: top;
                     fill: var(--high-emphasis-black);
+                }
+
+                .black-header .header__magnifier,
+                .black-header .header__search-cross {
+                    fill: var(--high-emphasis-white);
                 }
 
                 .header__search-cross {
@@ -88,12 +98,21 @@
                 line-height: 24px;
                 letter-spacing: 0.3px;
                 color: var(--high-emphasis-black);
+                text-decoration: none;
                 white-space: nowrap;
                 cursor: pointer;
             }
 
+            .black-header .header__login {
+                color: var(--high-emphasis-white);
+            }
+
             .header__login:hover {
                 background-color: rgba(255, 255, 255, 0.9);
+            }
+
+            .black-header .header__login:hover {
+                background-color: rgba(255, 255, 255, 0.1);
             }
                 .header__door {
                     vertical-align: top;
@@ -153,8 +172,17 @@
                         background-color: var(--yellow);
                     }
 
+                    .black-header .header__link:hover {
+                        background-color: var(--blue-light);
+                    }
+
+
                     .header__item--expanded .header__link {
                         background-color: var(--yellow);
+                    }
+
+                    .black-header .header__item--expanded .header__link {
+                        background-color: var(--blue-light);
                     }
 
 
@@ -255,6 +283,10 @@
 
                             .header__close:hover::before {
                                 background-color: var(--yellow);
+                            }
+
+                            .black-header .header__close:hover::before {
+                                background-color: var(--blue-light);
                             }
 
                             .header__arrow {

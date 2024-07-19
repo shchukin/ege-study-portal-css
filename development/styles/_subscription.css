@@ -151,3 +151,48 @@
             -webkit-box-orient: vertical;
         }
 }
+
+
+.subscription--inline {
+
+}
+
+    @media (min-width: 640px) {
+
+        .subscription--inline .subscription__body {
+            display: grid;
+            grid-template-columns: 360px auto;
+            flex-direction: row;
+            gap: 0 18px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+            .subscription--inline .subscription__field {
+                flex-shrink: 0;
+            }
+
+            .subscription--inline .subscription__option {
+                order: 3;
+                /*grid-column: span 2;*/
+                width: fit-content;
+                margin-top: 0;
+                white-space: nowrap;
+            }
+
+            .subscription--inline .subscription__submit {
+                margin-top: 0;
+                width: auto;
+            }
+
+            .subscription--inline .subscription__submit.button,
+            .subscription--inline .subscription__submit .button {
+                padding-top: 16px;
+                padding-bottom: 16px;
+            }
+
+        .subscription--inline .subscription__terms {
+            margin-top: 24px;
+            text-align: center;
+        }
+    }

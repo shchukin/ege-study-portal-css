@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.material</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body>
+
+
+
+        <div style="max-width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.material</h1>
+
+            <div class="material material--books">
+                <div class="material__folder">
+                    <img class="material__cover" srcset="../temp/book@2x.jpg 2x" src="../temp/book.jpg" alt="">
+                </div>
+                <div class="material__body">
+                    <h1 class="material__sub-heading">
+                        Математика
+                    </h1>
+                    <div class="material__description">
+                        Автор материалов по&nbsp;математике&nbsp;— Анна Георгиевна Малкова, репетитор-профессионал, ведущая курсов подготовки к&nbsp;ЕГЭ на&nbsp;высшие баллы, руководитель компании «ЕГЭ-Студия» .
+                    </div>
+                    <a class="material__submit button button--border" href="#">
+                        Открыть учебник
+                    </a>
+                </div>
+            </div>
+
+            <br>
+            <p>
+                Кнопка может отсутствовать:
+            </p>
+
+            <div class="material material--books">
+                <div class="material__folder">
+                    <img class="material__cover" srcset="../temp/book@2x.jpg 2x" src="../temp/book.jpg" alt="">
+                </div>
+                <div class="material__body">
+                    <h1 class="material__sub-heading">
+                        Математика
+                    </h1>
+                    <div class="material__description">
+                        Автор материалов по&nbsp;математике&nbsp;— Анна Георгиевна Малкова, репетитор-профессионал, ведущая курсов подготовки к&nbsp;ЕГЭ на&nbsp;высшие баллы, руководитель компании «ЕГЭ-Студия» .
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <p>
+                Обложка <b>.material__cover</b> может отсутствовать:
+            </p>
+
+            <div class="material material--books">
+                <div class="material__folder">
+
+                </div>
+                <div class="material__body">
+                    <h1 class="material__sub-heading">
+                        Математика
+                    </h1>
+                    <div class="material__description">
+                        Автор материалов по&nbsp;математике&nbsp;— Анна Георгиевна Малкова, репетитор-профессионал, ведущая курсов подготовки к&nbsp;ЕГЭ на&nbsp;высшие баллы, руководитель компании «ЕГЭ-Студия» .
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <p>
+                Вся папка <b>.material__folder</b> может отсутствовать:
+            </p>
+
+            <div class="material material--books">
+                <div class="material__body">
+                    <h1 class="material__sub-heading">
+                        Физика
+                    </h1>
+                    <div class="material__description">
+                        Авторы материалов по&nbsp;физике&nbsp;— Игорь Вячеславович Яковлев, профессиональный репетитор по&nbsp;физике и&nbsp;математике.
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                но важно смотреть, чтобы такой кейс
+                не попадал в широкий контекст:
+            </p>
+
+            <div style="margin: 0 -100px;">
+
+                <div class="material material--books">
+                    <div class="material__body">
+                        <h1 class="material__sub-heading">
+                            Физика
+                        </h1>
+                        <div class="material__description">
+                            Авторы материалов по&nbsp;физике&nbsp;— Игорь Вячеславович Яковлев, профессиональный репетитор по&nbsp;физике и&nbsp;математике.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>Заворачиваем в ссылку</h2>
+
+            <p>Завернув в ссылку нужно добавить display: block, эффекты наведения и т.д.
+                Делаем это на уровне родителя. Например <b>.materials__preview</b> в этом примере:
+            </p>
+
+            <a class="materials__preview materials__preview--primary material material--red" href="#">
+                <div class="material__folder">
+
+                </div>
+                <div class="material__body">
+                    <h1 class="material__sub-heading">
+                        Математика. Полный курс. ЕГЭ, ОГЭ
+                    </h1>
+                    <div class="material__description">
+                        Вся необходимая теория, объяснения, примеры решения задач.
+                        Все темы ЕГЭ и ОГЭ
+                    </div>
+                </div>
+            </a>
+
+
+
+            <br>
+            <br>
+            <br>
+            <h2>
+                .material--larger
+            </h2>
+
+
+
+            <div class="material material--books material--larger">
+                <div class="material__folder">
+                    <img class="material__cover" srcset="../temp/book@2x.jpg 2x" src="../temp/book.jpg" alt="">
+                </div>
+                <div class="material__body">
+                    <h1 class="material__sub-heading">
+                        Математика
+                    </h1>
+                    <div class="material__description">
+                        Автор материалов по&nbsp;математике&nbsp;— Анна Георгиевна Малкова, репетитор-профессионал, ведущая курсов подготовки к&nbsp;ЕГЭ на&nbsp;высшие баллы, руководитель компании «ЕГЭ-Студия» .
+                    </div>
+                    <a class="material__submit button button--border" href="#">
+                        Открыть учебник
+                    </a>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>Цвета</h2>
+            <p>
+                Изначально было три категории -- три цвета:
+            </p>
+
+
+            <br>
+            <h3>.material--books</h3>
+
+            <div class="material material--books">
+                <div class="material__folder">
+
+                </div>
+                <div class="material__body">
+                    <h2 class="material__sub-heading">
+                        Учебники
+                    </h2>
+                    <div class="material__description">
+                        Занятия на очных курсах начнутся со 2 августа 2021 года. Звоните!
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <h3>.material--supplements</h3>
+
+            <div class=" material material--supplements">
+                <div class="material__folder">
+
+                </div>
+                <div class="material__body">
+                    <h2 class="material__sub-heading">
+                        Справочные материалы
+                    </h2>
+                    <div class="material__description">
+                        Коллекция таблиц, шпаргалок, пособий и справочников
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <h3>.material--samples</h3>
+
+            <div class="material material--samples">
+                <div class="material__folder">
+
+                </div>
+                <div class="material__body">
+                    <h2 class="material__sub-heading">
+                        Пробные ЕГЭ
+                    </h2>
+                    <div class="material__description">
+                        Коллекция пробных ЕГЭ за прошлые годы
+                        с решениями и видеоразборами
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <p>
+                Позже, в угоду гибкости цвета отвязал от категорий, и добавил красный:
+            </p>
+
+
+            <br>
+            <h3>.material--red</h3>
+
+            <div class="material material--red">
+                <div class="material__folder">
+
+                </div>
+                <div class="material__body">
+                    <h1 class="material__sub-heading">
+                        Математика. Полный курс. ЕГЭ, ОГЭ
+                    </h1>
+                    <div class="material__description">
+                        Вся необходимая теория, объяснения, примеры решения задач.
+                        Все темы ЕГЭ и ОГЭ
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <h3>.material--green</h3>
+
+            <div class="material material--green">
+                <div class="material__folder">
+
+                </div>
+                <div class="material__body">
+                    <h1 class="material__sub-heading">
+                        Математика. Полный курс. ЕГЭ, ОГЭ
+                    </h1>
+                    <div class="material__description">
+                        Вся необходимая теория, объяснения, примеры решения задач.
+                        Все темы ЕГЭ и ОГЭ
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <h3>.material--blue</h3>
+
+            <div class="material material--blue">
+                <div class="material__folder">
+
+                </div>
+                <div class="material__body">
+                    <h1 class="material__sub-heading">
+                        Математика. Полный курс. ЕГЭ, ОГЭ
+                    </h1>
+                    <div class="material__description">
+                        Вся необходимая теория, объяснения, примеры решения задач.
+                        Все темы ЕГЭ и ОГЭ
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <h3>.material--yellow</h3>
+
+            <div class="material material--yellow">
+                <div class="material__folder">
+
+                </div>
+                <div class="material__body">
+                    <h1 class="material__sub-heading">
+                        Математика. Полный курс. ЕГЭ, ОГЭ
+                    </h1>
+                    <div class="material__description">
+                        Вся необходимая теория, объяснения, примеры решения задач.
+                        Все темы ЕГЭ и ОГЭ
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../scripts/_footer.js"></script>
+        <script src="../scripts/_input.js"></script>
+        <script src="../scripts/_slideshow.js"></script>
+        <script src="../scripts/_courses.js"></script>
+        <script src="../scripts/_program.js"></script>
+        <script src="../scripts/_single-course.js"></script>
+        <script src="../scripts/_jobs.js"></script>
+        <script src="../scripts/_mfp.js"></script>
+        <script src="../scripts/_collapse.js"></script>
+        <script src="../scripts/_header.js"></script>
+        <script src="../scripts/_nav.js"></script>
+        <script src="../scripts/_faq.js"></script>
+        <script src="../scripts/_bar.js"></script>
+        <script src="../scripts/_subscription.js"></script>
+        <script src="../scripts/_alert.js"></script>
+        <script src="../scripts/_contacts.js"></script>
+        <script src="../scripts/_accordion.js"></script>
+        <script src="../scripts/_form.js"></script>
+
+    </body>
+</html>
