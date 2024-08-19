@@ -1,0 +1,92 @@
+.term {
+    position: relative;
+    display: block;
+    width: fit-content;
+}
+    .term__widget {
+        opacity: 0;
+        position: absolute;
+        left: 2px;
+        top: 12px;
+    }
+
+    .term__label {
+        position: relative;
+        display: block;
+        padding: 11px 0 11px 16px;
+        font-size: 12px;
+        line-height: 18px;
+        color: var(--beige);
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .term__icon {
+        position: absolute;
+        left: 0;
+        top: 14px;
+        display: block;
+        width: 11px;
+        height: 11px;
+        background-color: #FFFFFF;
+        border-radius: 2px;
+        pointer-events: none; /* Since this icon is positioned higher than label, let's make it possible to click through, so that the user interacts only with the label. For now, this icon won't generate its own cursor, for example. */
+        transition: background-color var(--transition-hover),
+                    border-color var(--transition-hover);
+    }
+        .term__check {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-image: url("../vectors/terms.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            opacity: 0;
+        }
+
+        .term__widget:not(:disabled):not(:checked) ~ .term__label:hover ~ .term__icon .term__check {
+            opacity: 20%;
+        }
+
+
+    /* Checked */
+
+    .term__widget:checked ~ .term__icon .term__check {
+        opacity: 100%;
+    }
+
+
+    /* Focused */
+
+    .term__widget:focus-visible ~ .term__icon {
+        outline: auto;
+    }
+
+
+    /* Disabled */
+    .term:not(.term--disabled) .term__widget:disabled ~ .term__label {
+        cursor: default;
+        opacity: 80%;
+    }
+
+    .term:not(.term--disabled) .term__widget:disabled ~ .term__icon {
+        background-color: var(--disabled-background);
+    }
+        .term:not(.term--disabled) .term__widget:disabled:checked ~ .term__icon .term__check {
+            opacity: 50%;
+        }
+
+
+    /* Loading */
+    .term--loading .term__label {
+        cursor: default;
+        opacity: 80%;
+    }
+
+    .term--loading .term__icon {
+        background-color: var(--disabled-background);
+    }
+        .term--loading .term__widget:checked ~ .term__icon .term__check {
+            opacity: 50%;
+        }

@@ -1,0 +1,245 @@
+.welcome {
+    margin-top: 93px;
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 684fr 696px;
+}
+    .welcome__intro {
+
+    }
+        .welcome__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 51px;
+        }
+
+        @media (width < 1420px) {
+            .welcome__heading {
+                font-size: 38px;
+                line-height: 48px;
+            }
+        }
+
+        .welcome__action {
+            margin-top: 37px;
+        }
+
+        .welcome__rating {
+            margin-top: 30px;
+        }
+            .welcome__rating-heading {
+
+            }
+
+            .welcome__rating-widget {
+                margin-top: 7px;
+                margin-left: -8px; /* внутренний паддинг виджета */
+            }
+
+    .welcome__features {
+        min-height: 402px;
+        padding-top: 38px;
+        padding-bottom: 37px;
+        padding-left: 50px;
+        background-image: url("../vectors/welcome.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+        .welcome__grid {
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            width: fit-content;
+            justify-content: center;
+            grid-template-columns: 1fr 1fr;
+            gap: 27px 47px;
+        }
+            .welcome__tile {
+                width: 243px;
+                background-color: var(--yellow);
+                border-radius: 30px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+            }
+                .welcome__tile-inner {
+                    min-height: 135px;
+                    display: flex;
+                    align-items: center;
+                    padding: 19px 24px 17px;
+                    background-color: #FFFFFF;
+                    box-shadow: 0 0 20px rgb(252 94 56 / 10%);
+                    border-radius: 20px;
+                }
+                    .welcome__tile-label {
+                        font-size: 24px;
+                        line-height: 33px;
+                        text-align: center;
+                    }
+
+            .welcome__tile--groups {
+
+            }
+
+            .welcome__tile--price {
+
+            }
+
+            .welcome__tile--newcomers {
+                grid-column: 1 / -1;
+                width: 456px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+                .welcome__tile--newcomers .welcome__tile-inner {
+                    padding-left: 60px;
+                    padding-right: 60px;
+                }
+
+
+
+
+@media (740px <= width < 1350px) {
+
+    .welcome {
+        grid-template-columns: 684fr 696fr;
+    }
+        .welcome__intro {
+
+        }
+            .welcome__heading {
+                font-size: 36px;
+                line-height: 45px;
+            }
+
+        .welcome__features {
+            padding-left: 40px;
+        }
+            .welcome__grid {
+                gap: 22px 40px;
+            }
+                .welcome__tile {
+                    width: 210px;
+                }
+                    .welcome__tile-inner {
+                        min-height: 114px;
+                        padding: 16px 24px 14px;
+                    }
+                        .welcome__tile-label {
+                            font-size: 21px;
+                            line-height: 28px;
+                        }
+
+                .welcome__tile--groups {
+
+                }
+
+                .welcome__tile--price {
+
+                }
+
+                .welcome__tile--newcomers {
+                    width: 400px;
+                }
+                    .welcome__tile--newcomers .welcome__tile-inner {
+                        padding-left: 50px;
+                        padding-right: 50px;
+                    }
+}
+
+
+
+@media (width < 740px) {
+
+    .welcome {
+        margin-top: 36px;
+        position: relative;
+        display: block;
+        padding-bottom: 90px;
+    }
+        .welcome__intro {
+
+        }
+            .welcome__heading {
+                font-size: 30px;
+                line-height: 39px;
+                text-align: center;
+            }
+
+            .welcome__action {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                max-width: var(--mobile-button);
+            }
+                .welcome__action .button__icon {
+                    display: none;
+                }
+
+            .welcome__rating {
+                display: none;
+            }
+                .welcome__rating-heading {
+
+                }
+
+                .welcome__rating-widget {
+
+                }
+
+        .welcome__features {
+            min-height: 0;
+            margin-top: 35px;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: 0;
+            background-image: none;
+        }
+            .welcome__grid {
+                display: block;
+                width: auto;
+            }
+                .welcome__tile {
+                    width: auto;
+                    margin-top: 10px;
+                }
+
+                .welcome__tile:first-child {
+                    margin-top: 0;
+                }
+                    .welcome__tile-inner {
+                        min-height: 0;
+                        display: block;
+                        padding: 13px 24px 15px;
+                    }
+                        .welcome__tile-label {
+                            font-size: 20px;
+                            line-height: 27px;
+                            text-align: center;
+                        }
+
+                .welcome__tile--groups {
+
+                }
+
+                .welcome__tile--price {
+
+                }
+
+                .welcome__tile--newcomers {
+
+                }
+                    .welcome__tile--newcomers .welcome__tile-inner {
+                        padding-left: 24px;
+                        padding-right: 24px;
+                    }
+}
+
+
+

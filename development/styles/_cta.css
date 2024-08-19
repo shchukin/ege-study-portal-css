@@ -1,0 +1,45 @@
+.cta {
+    margin-top: 79px;
+}
+    .cta__frame {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 130px;
+        background-image: url("../vectors/cta.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+        .cta__action {
+
+        }
+
+
+@media (width < 740px) {
+
+    .cta {
+        margin-top: 80px;
+    }
+        .cta__frame {
+            height: auto;
+            background-image: none;
+        }
+            .cta__action {
+                width: 100%;
+                max-width: var(--mobile-button);
+            }
+                .cta__action .button {
+
+                }
+
+                @media (width < 350px) {
+
+                    .cta__action .button {
+                        font-size: 16px;
+                    }
+                }
+                    .cta__action .button__icon {
+                        display: none;
+                    }
+}

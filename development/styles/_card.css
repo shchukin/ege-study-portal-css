@@ -1,0 +1,130 @@
+.card {
+    padding: 37px 40px 35px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 36px;
+}
+    .card__preview {
+        flex-shrink: 0;
+        display: block;
+        width: 180px;
+        border-radius: 50%;
+        overflow: hidden;
+        transition: filter var(--transition-hover);
+    }
+
+    .card__preview:hover {
+        filter: brightness(105%) contrast(105%);
+    }
+        .card__photo {
+            vertical-align: top;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+    .card__body {
+        margin-top: 10px;
+    }
+        .card__name {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .card__university {
+            margin-top: 23px;
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .card__data {
+            margin-top: 22px;
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+        }
+            .card__stat {
+
+            }
+                .card__stat-heading {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-weight: inherit;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+                .card__stat-value {
+                    margin-top: 3px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+
+                .card__stat-value--highlight {
+                    color: var(--orange);
+                }
+
+
+
+@media (width < 740px) {
+
+    .card {
+        padding: 30px var(--container-padding) 40px;
+        display: block;
+    }
+        .card__preview {
+            width: 106px;
+            height: 106px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .card__preview:hover {
+
+        }
+            .card__photo {
+
+            }
+
+
+        .card__body {
+            margin-top: 27px;
+        }
+            .card__name {
+                width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .card__university {
+                margin-top: 16px;
+                text-align: center;
+            }
+
+            .card__data {
+                margin-top: 27px;
+                max-width: 440px;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: space-around;
+            }
+                .card__stat {
+
+                }
+                    .card__stat-heading {
+                        text-align: center;
+                    }
+
+                    .card__stat-value {
+                        text-align: center;
+                    }
+
+                    .card__stat-value--highlight {
+
+                    }
+}

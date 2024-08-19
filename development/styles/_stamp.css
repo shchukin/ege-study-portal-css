@@ -1,0 +1,29 @@
+.stamp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 193px;
+    height: 193px;
+    background-image: url("../vectors/stamp.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+    .stamp__icon {
+        vertical-align: top;
+    }
+
+
+
+@media (width < 740px) {
+
+
+    .stamp {
+        width: 151px;
+        height: 151px;
+    }
+        .stamp__icon {
+            width: 50px;
+            height: 50px;
+        }
+}

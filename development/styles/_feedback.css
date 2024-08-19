@@ -1,0 +1,29 @@
+.feedback {
+    margin-top: 120px;
+}
+    .feedback__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .feedback__body {
+        position: relative;
+        margin-top: 70px;
+    }
+
+
+
+@media (width < 740px) {
+
+    .feedback {
+        margin-top: 90px;
+    }
+        .feedback__heading {
+
+        }
+
+        .feedback__body {
+            margin-top: 40px;
+        }
+}

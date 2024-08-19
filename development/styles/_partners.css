@@ -1,0 +1,36 @@
+.partners {
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    .partners__item {
+
+    }
+        .partners__logo {
+            vertical-align: top;
+        }
+
+
+
+@media (width < 740px) {
+
+    .partners {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+        gap: 24px;
+    }
+        .partners__item {
+
+        }
+
+        .partners__item:nth-child(n+5) {
+            display: none;
+        }
+
+            .partners__logo {
+                width: 100%;
+                height: auto;
+            }
+}

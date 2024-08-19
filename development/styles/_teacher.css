@@ -1,0 +1,39 @@
+.teacher {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+    .teacher__preview {
+        display: block;
+        transition: filter var(--transition-hover);
+    }
+
+    .teacher__preview:hover {
+        filter: brightness(110%) contrast(110%);
+    }
+        .teacher__photo {
+            border-radius: 50%;
+            vertical-align: top;
+            background-color: var(--image-fallback);
+        }
+
+    .teacher__content {
+        font-size: 16px;
+        line-height: 22px;
+    }
+        .teacher__name {
+            display: inline;
+            vertical-align: baseline;
+        }
+
+        .teacher__score {
+            display: inline;
+            vertical-align: baseline;
+        }
+            .teacher__name {
+                display: block;
+            }
+
+            .teacher__score {
+                display: block;
+            }
