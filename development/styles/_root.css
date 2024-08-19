@@ -44,5 +44,41 @@
     --panel-active: #EAEAEA;
     --image-fallback: #C4C4C4;
     --image-hover: brightness(1.1) contrast(1.1);
+
+    /* Переменные, которые появились в момент вёрстки alt-landing.html */
+    --body-font-size: 16px;
+    --body-line-height: 22px;
+    --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+    --transition-hover: 100ms ease;
+    --transition-show: 1200ms var(--ease-out-quint);
+    --container-padding: 30px;
+    --disabled-background: #EAEAEA;
+    --disabled-color: #999999;
+    --beige: #FAF6F2;
+    --orange: #FC5E38;
+    --orange-90pct: #FD7658;
+    --black: #0F1015;
+    --white-hover: #F3F9FF;
+    --light-orange: #FFDDD1;
+    --input-border: #B3B3B3;
+    --input-border-hover-and-focus: #7E7E7E;
+    --placeholder-color: #878787;
+    --mobile-button: 360px;
 }
 /* stylelint-enable declaration-colon-space-after */
+
+
+
+/* Переменные, которые появились в момент вёрстки alt-landing.html */
+
+@media (350px <= width < 600px) {
+    :root {
+        --container-padding: 20px;
+    }
+}
+
+@media (width < 350px) {
+    :root {
+        --container-padding: 12px;
+    }
+}

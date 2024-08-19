@@ -108,3 +108,89 @@
 @import url("_inner-alert.css");
 @import url("_text-instead-input.css");
 @import url("_commitment.css");
+
+
+
+/* Компоненты, которые появились в момент вёрстки alt-landing.html */
+/*alert*/
+/*button*/
+/*contacts*/
+/*container*/
+/*courses*/
+/*desktop-only*/
+/*faq*/
+/*hide-scrollbar*/
+/*hightlight*/
+/*html*/
+/*info*/
+/*input*/
+/*link*/
+/*nobr*/
+/*online*/
+/*rating*/
+/*subscription*/
+/*video*/
+/*wysiwyg*/
+
+
+@import url("../vendors/swiper/swiper-bundle.min.css");
+
+@import url("_alt-landing-html.css");
+@import url("_alt-landing-body.css");
+
+@import url("_fonts.css");
+@import url("_box-sizing.css");
+@import url("_visuallyhidden.css");
+@import url("_root.css");
+@import url("_html.css");
+@import url("_body.css");
+@import url("_browser.css");
+@import url("_container.css");
+
+@import url("_nobr.css");
+@import url("_hide-scrollbar.css");
+
+@import url("_link.css");
+@import url("_button.css");
+@import url("_wysiwyg.css");
+
+@import url("_footer.css");
+@import url("_title.css");
+@import url("_contacts.css");
+@import url("_cta.css");
+@import url("_info.css");
+@import url("_entry.css");
+@import url("_blog.css");
+@import url("_swiper.css");
+@import url("_cut-sliders.css");
+@import url("_faq.css");
+@import url("_online.css");
+@import url("_us.css");
+@import url("_schedule.css");
+@import url("_stamp.css");
+@import url("_features.css");
+@import url("_courses.css");
+@import url("_trial.css");
+@import url("_teacher.css");
+@import url("_highlight.css");
+@import url("_mentors.css");
+@import url("_video.css");
+@import url("_ready.css");
+@import url("_partners.css");
+@import url("_card.css");
+@import url("_results.css");
+@import url("_subscription.css");
+@import url("_input.css");
+@import url("_alert.css");
+@import url("_notifications-center.css");
+@import url("_desktop-only.css");
+@import url("_term.css");
+@import url("_summary.css");
+@import url("_feedback.css");
+@import url("_review.css");
+@import url("_rating.css");
+@import url("_video-review.css");
+@import url("_welcome.css");
+
+
+

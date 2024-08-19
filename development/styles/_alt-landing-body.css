@@ -1,0 +1,7 @@
+.alt-landing-body {
+    height: 100%;
+    background-color: var(--beige);
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+    color: var(--black);
+}
