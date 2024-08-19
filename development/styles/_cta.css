@@ -1,5 +1,6 @@
 .cta {
-    margin-top: 79px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
     .cta__frame {
         display: flex;
@@ -19,7 +20,8 @@
 @media (width < 740px) {
 
     .cta {
-        margin-top: 80px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
         .cta__frame {
             height: auto;
