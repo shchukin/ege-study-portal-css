@@ -37,3 +37,8 @@
             .teacher__score {
                 display: block;
             }
+
+            .teacher__highlight {
+                font-weight: bold;
+                color: var(--orange);
+            }
