@@ -1,7 +1,9 @@
 @import url("../vendors/normalize/normalize.css");
 @import url("../vendors/magnific-popup/dist/magnific-popup.css");
+@import url("_fonts.css");
 @import url("_html.css");
 @import url("_body.css");
+@import url("_browser.css");
 @import url("_root.css");
 @import url("_universal.css");
 @import url("_visuallyhidden.css");
@@ -115,7 +117,6 @@
 /*alert*/
 /*button*/
 /*contacts*/
-/*container*/
 /*courses*/
 /*desktop-only*/
 /*faq*/
@@ -137,15 +138,10 @@
 
 @import url("_alt-landing-html.css");
 @import url("_alt-landing-body.css");
+@import url("_alt-landing-container.css");
 
-@import url("_fonts.css");
 @import url("_box-sizing.css");
 @import url("_visuallyhidden.css");
-@import url("_root.css");
-@import url("_html.css");
-@import url("_body.css");
-@import url("_browser.css");
-@import url("_container.css");
 
 @import url("_nobr.css");
 @import url("_hide-scrollbar.css");
