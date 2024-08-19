@@ -1,0 +1,15 @@
+.simpler-rating {
+    width: 102px;
+    height: 18px;
+    background-image: url("../vectors/simpler-rating-background.svg");
+    background-size: 102px 18px;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+    .simpler-rating__value {
+        height: 100%;
+        background-image: url("../vectors/simpler-rating-value.svg");
+        background-size: 102px 18px;
+        background-repeat: no-repeat;
+        background-position: left top;
+    }

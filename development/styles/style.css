@@ -128,7 +128,6 @@
 /*input*/
 /*link*/
 /*online*/
-/*rating*/
 /*subscription*/
 /*video*/
 /*wysiwyg*/
@@ -139,6 +138,7 @@
 @import url("_alt-landing-html.css");
 @import url("_alt-landing-body.css");
 @import url("_alt-landing-container.css");
+@import url("_simpler-rating.css");
 @import url("_title.css");
 @import url("_cta.css");
 @import url("_entry.css");
