@@ -65,7 +65,7 @@
 
 
 
-@media (740px <= width < 1320px) {
+@media (640px <= width < 1320px) {
 
     .trial {
         background-color: var(--orange);
@@ -100,7 +100,7 @@
 
 
 
-@media (width < 740px) {
+@media (width < 640px) {
 
     .trial {
         margin-top: 90px;

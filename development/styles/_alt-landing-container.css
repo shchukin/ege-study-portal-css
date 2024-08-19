@@ -12,7 +12,7 @@
 }
 
 
-@media (width < 740px) {
+@media (width < 640px) {
 
     .alt-landing-container {
         width: auto;

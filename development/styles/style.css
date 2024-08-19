@@ -116,22 +116,19 @@
 
 
 /* Компоненты, которые появились в момент вёрстки alt-landing.html */
-/*wysiwyg*/
-
-
 
 /*faq*/
 
 /*input*/
 /*link*/
 /*button*/
+/*wysiwyg*/
 
 /*alert*/
 /*subscription*/
 
 @import url("../vendors/swiper/swiper-bundle.min.css");
 
-@import url("_alt-landing-html.css");
 @import url("_alt-landing-body.css");
 @import url("_alt-landing-container.css");
 @import url("_simpler-rating.css");

@@ -6,7 +6,7 @@
 }
 
 
-@media (width < 740px) {
+@media (width < 640px) {
 
     .title {
         font-size: 26px;

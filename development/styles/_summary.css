@@ -76,7 +76,7 @@
         }
 }
 
-@media (740px <= width < 1320px) {
+@media (640px <= width < 1320px) {
 
     .summary {
         --summary-gap: 20px;
@@ -89,7 +89,7 @@
 
 
 
-@media (width < 740px) {
+@media (width < 640px) {
 
     .summary {
 

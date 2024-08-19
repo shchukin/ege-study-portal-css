@@ -53,7 +53,7 @@
                 background-color: var(--orange);
             }
 
-    @media (width < 740px) {
+    @media (width < 640px) {
 
         .swiper-pagination-bullet {
             padding: 10px;
@@ -141,7 +141,7 @@
 
     /* На мобилках стрелки не встречаются: */
 
-    @media (width < 740px) {
+    @media (width < 640px) {
 
         .swiper-button {
             display: none !important;
@@ -159,7 +159,7 @@
 
 }
 
-@media (width < 740px) {
+@media (width < 640px) {
 
     .swiper--blog {
         overflow: visible;
@@ -171,7 +171,7 @@
 .swiper--results {
 
 }
-    @media (740px <= width) {
+    @media (640px <= width) {
 
         .swiper--results {
             overflow: visible;
@@ -188,7 +188,7 @@
 
 }
 
-@media (740px <= width) {
+@media (640px <= width) {
 
     /* Слайды */
 
