@@ -117,7 +117,6 @@
 
 /* Компоненты, которые появились в момент вёрстки alt-landing.html */
 /*contacts*/
-/*courses*/
 /*faq*/
 /*info*/
 /*online*/
@@ -162,6 +161,7 @@
 @import url("_review.css");
 @import url("_video-review.css");
 @import url("_welcome.css");
+@import url("_all-courses.css");
 
 
 
