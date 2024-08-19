@@ -1,0 +1,103 @@
+.location {
+    margin-top: 120px;
+}
+    .location__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .location__body {
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: 630px 446px;
+        gap: 70px;
+        align-items: center;
+    }
+        .location__preview {
+            height: 378px;
+            background-color: #FFFFFF;
+            padding: 4px;
+        }
+
+        .location__data {
+
+        }
+            .location__channel {
+                margin-top: 72px;
+            }
+
+            .location__channel:first-child {
+                margin-top: 0;
+            }
+                .location__sub-heading {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+
+                .location__address {
+                    margin-top: 22px;
+                    font-size: 20px;
+                    line-height: 27px;
+                }
+
+                .location__metro {
+                    margin-top: 19px;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+
+                .location__hours {
+                    margin-top: 2px;
+                    font-size: 20px;
+                    line-height: 27px;
+                }
+
+
+
+@media (width < 740px) {
+
+    .location {
+        margin-top: 90px;
+    }
+        .location__heading {
+
+        }
+
+        .location__body {
+            margin-top: 40px;
+            display: block;
+        }
+            .location__preview {
+                height: 211px;
+            }
+
+            .location__data {
+                margin-top: 30px;
+            }
+                .location__channel {
+                    margin-top: 32px;
+                }
+
+                .location__channel:first-child {
+
+                }
+                    .location__sub-heading {
+
+                    }
+
+                    .location__address {
+                        margin-top: 17px;
+                    }
+
+                    .location__metro {
+                        margin-top: 16px;
+                    }
+
+                    .location__hours {
+
+                    }
+}

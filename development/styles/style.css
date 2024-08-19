@@ -116,7 +116,6 @@
 
 
 /* Компоненты, которые появились в момент вёрстки alt-landing.html */
-/*contacts*/
 /*wysiwyg*/
 
 
@@ -163,6 +162,7 @@
 @import url("_all-courses.css");
 @import url("_remote.css");
 @import url("_outro.css");
+@import url("_location.css");
 
 
 
