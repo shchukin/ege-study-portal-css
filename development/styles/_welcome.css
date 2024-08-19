@@ -21,6 +21,10 @@
                 line-height: 48px;
             }
         }
+            .welcome__highlight {
+                font-weight: inherit;
+                color: var(--orange);
+            }
 
         .welcome__action {
             margin-top: 37px;

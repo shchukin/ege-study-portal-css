@@ -116,22 +116,22 @@
 
 
 /* Компоненты, которые появились в момент вёрстки alt-landing.html */
-/*alert*/
-/*button*/
 /*contacts*/
 /*courses*/
-/*desktop-only*/
 /*faq*/
-/*hide-scrollbar*/
 /*highlight*/
 /*info*/
-/*input*/
-/*link*/
 /*online*/
-/*subscription*/
 /*video*/
 /*wysiwyg*/
 
+
+/*input*/
+/*link*/
+/*button*/
+
+/*alert*/
+/*subscription*/
 
 @import url("../vendors/swiper/swiper-bundle.min.css");
 
