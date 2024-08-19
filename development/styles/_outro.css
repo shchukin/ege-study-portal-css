@@ -1,0 +1,35 @@
+.outro {
+    margin-top: 80px;
+}
+    .outro__inner {
+        max-width: 914px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        .outro__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .outro__body {
+            margin-top: 30px;
+        }
+
+
+
+@media (width < 740px) {
+
+    .outro {
+        margin-top: 65px;
+    }
+        .outro__inner {
+
+        }
+            .outro__heading {
+                text-align: center;
+            }
+
+            .outro__body {
+                margin-top: 40px;
+            }
+}

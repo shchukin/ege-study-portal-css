@@ -1,0 +1,134 @@
+.remote {
+    margin-top: 120px;
+}
+    .remote__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .remote__body {
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+        .remote__item {
+            display: flex;
+            flex-direction: column;
+            padding: 46px 50px 49px;
+            background-color: #FFFFFF;
+            border-radius: 20px;
+        }
+            .remote__head {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                padding: 16px 20px 17px;
+                background-color: var(--light-orange);
+                border-radius: 20px;
+            }
+                .remote__sub-heading {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+
+                .remote__price {
+                    margin-left: auto;
+                    font-size: 20px;
+                    line-height: 26px;
+                    white-space: nowrap;
+                }
+
+            .remote__alt-heading {
+                margin-bottom: 0;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 33px;
+            }
+
+            .remote__content {
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+                .remote__alt-heading {
+                    margin-bottom: 31px;
+                }
+
+                .remote__description {
+
+                }
+
+            .remote__submit {
+                margin-top: auto;
+            }
+                .remote__submit.button,
+                .remote__submit .button {
+                    width: 100%;
+                }
+
+
+
+@media (width < 740px) {
+
+    .remote {
+        margin-top: 90px;
+    }
+        .remote__heading {
+
+        }
+
+        .remote__body {
+            margin-top: 40px;
+            display: block;
+        }
+            .remote__item {
+                margin-top: 26px;
+                padding: 24px 20px;
+            }
+
+            .remote__item:first-child {
+                margin-top: 0;
+            }
+                .remote__head {
+                    display: block;
+                    padding: 19px 20px 14px;
+                }
+                    .remote__sub-heading {
+                        font-size: 20px;
+                        line-height: 27px;
+                        text-align: center;
+                    }
+
+                    .remote__price {
+                        margin-top: 7px;
+                        font-size: 18px;
+                        line-height: 25px;
+                        text-align: center;
+                    }
+
+                .remote__alt-heading {
+                    font-size: 20px;
+                    line-height: 27px;
+                    margin-bottom: 20px;
+                }
+
+                .remote__content {
+                    margin-top: 26px;
+                    margin-bottom: 26px;
+                }
+
+                .remote__submit {
+                    width: 100%;
+                    max-width: var(--mobile-button);
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                    .remote__submit.button,
+                    .remote__submit .button {
+
+                    }
+}
