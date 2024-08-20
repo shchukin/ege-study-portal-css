@@ -5,7 +5,6 @@
     .input__widget {
         width: 100%;
         height: 56px;
-        min-height: 56px; /* when textarea is being resized */
         padding: 14px 15px;
         background-color: #FFFFFF;
         border: 1px solid var(--low-emphasis-black);
@@ -20,21 +19,27 @@
         color: #000000;
     }
 
+    .input__widget::placeholder {
+        opacity: 1; /* reset opacity drop Firefox */
+        color: #87878A;
+    }
+
     .input__widget:hover {
 
     }
 
-    .input__widget:focus,
+    .input__widget:focus-visible,
     .input--focus .input__widget,
     .input--expanded .input__widget { /* даже если фокус где-то в выпадайке календаря, например */
         border-color: var(--high-emphasis-black);
     }
 
-    /* stylelint-disable block-opening-brace-space-before */
-    .input__widget::-webkit-input-placeholder { font-style: normal; color: #87878A; }
-    .input__widget::-moz-placeholder          { font-style: normal; color: #87878A; opacity: 1; }
-    .input__widget:-ms-input-placeholder      { font-style: normal; color: #87878A; }
-    /* stylelint-enable */
+    .input__widget[type="password"]:not(:placeholder-shown) {
+        font-family: "Tahoma", sans-serif;
+        letter-spacing: 2px;
+    }
+
+
 
     .input__hint {
         margin-top: 8px;
@@ -45,6 +50,22 @@
         color: #87878A;
     }
 
+
+.input--simpler {
+
+}
+    .input--simpler .input__widget {
+        height: 52px;
+        padding: 12px 14px;
+        border-color: transparent;
+        background-clip: border-box;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .input--simpler .input__widget::placeholder {
+        color: #878787;
+    }
 
 .input--smaller {
 
@@ -63,6 +84,7 @@
     .input--area .input__widget {
         vertical-align: top;
         height: auto; /* user rows="" attribute */
+        min-height: 56px; /* when textarea is being resized */
         resize: vertical;
     }
 
@@ -110,12 +132,23 @@
 
 
 
-.input--disabled {
+
+
+/* Disabled
+  Здесь добавляется .input:not(.input--loading) потому что
+  иначе :disabled может поломать кейс с loading.
+  Там тоже используется :disabled.
+*/
+.input--disabled,
+.input__widget:disabled {
 
 }
-    .input--disabled .input__widget,
-    .input--disabled .input__widget:hover,
-    .input--disabled .input__widget:active {
+    .input--disabled:not(.input--loading) .input__widget,
+    .input--disabled:not(.input--loading) .input__widget:hover,
+    .input--disabled:not(.input--loading) .input__widget:active,
+    .input:not(.input--loading) .input__widget:disabled,
+    .input:not(.input--loading) .input__widget:disabled:hover,
+    .input:not(.input--loading) .input__widget:disabled:active {
         background-color: #EEEEEE;
         border-color: var(--medium-emphasis-white);
         -webkit-text-fill-color: var(--medium-emphasis-white); /* safari зачем-то засветляет текст */
@@ -125,11 +158,35 @@
         cursor: default;
     }
 
+    .input--disabled:not(.input--loading) .input__widget::placeholder,
+    .input:not(.input--loading) .input__widget:disabled::placeholder {
+        color: var(--medium-emphasis-white);
+    }
+
+
     @supports (-webkit-appearance: none) or (-moz-appearance: none) or (appearance: none) {
-        .input--disabled.input--select .input__widget {
+        .input--disabled.input--select .input__widget,
+        .input--select .input__widget:disabled {
             background-image: url("../vectors/input-select-disabled.svg");
         }
     }
+
+
+
+/* loading */
+.input--loading {
+
+}
+    .input--loading .input__widget {
+        border-color: var(--input-border);
+        background-color: var(--disabled-background);
+        color: var(--disabled-color);
+    }
+
+    .input--loading .input__widget::placeholder {
+        color: var(--disabled-color);
+    }
+
 
 
 .input--error {
