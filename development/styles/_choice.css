@@ -76,10 +76,6 @@
     }
 
 
-
-
-
-
 .choice__widget[type="radio"]:checked ~ .choice__icon,
 .choice__widget[type="radio"]:checked ~ .choice__icon ~ .choice__label {
     cursor: default;
@@ -118,28 +114,128 @@
 
 
 
-
-.choice--disabled {
+.choice--disabled:not(.choice--loading) {
     cursor: default;
 }
 
-    .choice--disabled .choice__icon,
-    .choice--disabled:hover .choice__icon {
+    .choice--disabled:not(.choice--loading) .choice__icon,
+    .choice--disabled:not(.choice--loading):hover .choice__icon {
         background-color: var(--low-emphasis-black);
         border-color: transparent;
         cursor: default;
     }
 
-    .choice--disabled .choice__widget:checked ~ .choice__icon,
-    .choice--disabled:hover .choice__widget:checked ~ .choice__icon {
+    .choice--disabled:not(.choice--loading) .choice__widget:checked ~ .choice__icon,
+    .choice--disabled:not(.choice--loading):hover .choice__widget:checked ~ .choice__icon {
         background-color: var(--low-emphasis-black);
         border-color: transparent;
         cursor: default;
     }
 
-    .choice--disabled .choice__label {
+    .choice--disabled:not(.choice--loading) .choice__label {
         cursor: default;
         color: #8B8B8B;
+    }
+
+
+.choice--loading {
+    cursor: default;
+}
+
+    .choice--loading .choice__icon,
+    .choice--loading:hover .choice__icon {
+        background-color: var(--low-emphasis-black);
+        border-color: transparent;
+        cursor: default;
+    }
+
+    .choice--loading .choice__widget:checked ~ .choice__icon,
+    .choice--loading:hover .choice__widget:checked ~ .choice__icon {
+        background-color: var(--low-emphasis-black);
+        border-color: transparent;
+        cursor: default;
+    }
+
+    .choice--loading .choice__label {
+        cursor: default;
+        color: #8B8B8B;
+    }
+
+
+
+
+
+.choice--simpler {
+    border-top-width: 11px;
+    border-bottom-width: 11px;
+}
+    .choice--simpler .choice__icon {
+        position: absolute;
+        left: 0;
+        top: 4px;
+        display: block;
+        width: 11px;
+        height: 11px;
+        background-color: #FFFFFF !important; /* Перебиваем все предыдущие ховеры */
+        border: none;
+        background-image: none;
+        border-radius: 2px;
+        pointer-events: none; /* Since this icon is positioned higher than label, let's make it possible to click through, so that the user interacts only with the label. For now, this icon won't generate its own cursor, for example. */
+        transition: background-color var(--transition-hover),
+        border-color var(--transition-hover);
+    }
+        .choice--simpler .choice__icon::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-image: url("../vectors/choice-simpler-checkbox.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            opacity: 0;
+        }
+
+        .choice:hover .choice__widget:not(:disabled):not(:checked) ~ .choice__icon::after {
+            opacity: 20%;
+        }
+
+
+        /* Checked */
+
+        .choice--simpler .choice__widget:checked ~ .choice__icon::after {
+            opacity: 100%;
+        }
+
+    .choice--simpler .choice__label {
+        padding: 0 0 0 16px;
+        font-size: 12px;
+        line-height: 18px;
+        color: var(--beige);
+    }
+
+
+.choice--simpler.choice--disabled {
+    opacity: 70%;
+}
+    .choice--simpler.choice--disabled .choice__widget:checked ~ .choice__icon::after {
+        opacity: 60%;
+    }
+
+    .choice--simpler.choice--disabled .choice__label {
+        color: var(--beige);
+    }
+
+
+.choice--simpler.choice--loading {
+    opacity: 70%;
+}
+    .choice--simpler.choice--loading .choice__widget:checked ~ .choice__icon::after {
+        opacity: 60%;
+    }
+
+    .choice--simpler.choice--loading .choice__label {
+        color: var(--beige);
     }
 
 

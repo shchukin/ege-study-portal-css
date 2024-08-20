@@ -1094,20 +1094,18 @@
                             </h2>
                             <div class="trial__frame">
                                 <div class="trial__form">
-                                    <form class="subscription" id="subscriptionForm">
+                                    <form class="subscription subscription--alternate" id="subscriptionForm">
                                         <div class="subscription__body">
                                             <div class="subscription__field input input--simpler">
                                                 <input class="input__widget" type="text" placeholder="Ваше имя">
                                             </div>
                                             <div class="subscription__field input input--simpler">
-                                                <input class="input__widget" type="tel" placeholder="Телефон" required>
+                                                <input class="input__widget" type="tel" placeholder="Телефон *" required>
                                             </div>
-                                            <label class="subscription__terms term">
-                                                <input class="term__widget" type="checkbox" required>
-                                                <span class="term__label">Согласен(а) на обработку персональных данных</span>
-                                                <i class="term__icon" role="presentation">
-                                                    <i class="term__check"></i>
-                                                </i>
+                                            <label class="subscription__terms choice choice--checkbox choice--simpler">
+                                                <input class="choice__widget" type="checkbox" required>
+                                                <i class="choice__icon" role="presentation"></i>
+                                                <span class="choice__label">Согласен(а) на обработку персональных данных</span>
                                             </label>
                                         </div>
                                         <button class="subscription__submit button button--smaller button--secondary" type="submit" id="subscriptionSubmit">
@@ -1828,9 +1826,8 @@
         </div>
 
 
-        <!-- Alert -->
         <div class="notifications-center">
-            <div class="alert alert--success" style="display: none;" id="subscriptionSuccessAlert">
+            <div class="notifications-center__callback-success alert alert--success" style="display: none;" id="subscriptionSuccessAlert">
                 <div class="alert__label">
                     Спасибо! Вы&nbsp;записаны на бесплатный пробный урок.<br class="desktop-only">
                     На&nbsp;вашу почту скоро придёт подтверждение.
@@ -1839,7 +1836,7 @@
                     Закрыть
                 </button>
             </div>
-            <div class="alert alert--danger" style="display: none;" id="subscriptionFailureAlert">
+            <div class="notifications-center__callback-failure alert alert--danger" style="display: none;" id="subscriptionFailureAlert">
                 <div class="alert__label">
                     Во время отправки данных произошла ошибка.<br class="desktop-only">
                     Проверьте ваше соединение и&nbsp;попробуйте позже.

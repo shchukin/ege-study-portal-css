@@ -102,6 +102,7 @@
 @import url("_price.css");
 @import url("_bar.css");
 @import url("_subscription.css");
+@import url("_notifications-center.css");
 @import url("_alert.css");
 @import url("_in-touch.css");
 @import url("_bookmarking.css");
@@ -145,7 +146,6 @@
 @import url("_partners.css");
 @import url("_card.css");
 @import url("_results.css");
-@import url("_notifications-center.css");
 @import url("_term.css");
 @import url("_summary.css");
 @import url("_feedback.css");

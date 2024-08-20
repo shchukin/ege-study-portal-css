@@ -196,3 +196,84 @@
             text-align: center;
         }
     }
+
+
+
+
+
+.subscription--alternate {
+
+}
+    .subscription--alternate .subscription__body {
+
+    }
+        .subscription--alternate .subscription__field {
+            margin-top: 9px;
+        }
+
+        .subscription--alternate .subscription__field:first-child {
+            margin-top: 0;
+        }
+
+        .subscription--alternate .subscription__option {
+            margin-top: 12px;
+        }
+
+        .subscription--alternate .subscription__submit {
+            margin-top: 15px;
+        }
+
+    .subscription--alternate .subscription__terms {
+        margin-top: 12px;
+    }
+
+
+
+
+@media (width < 640px) {
+
+    .subscription--alternate {
+
+    }
+        .subscription--alternate .subscription__body {
+
+        }
+            .subscription--alternate .subscription__field {
+
+            }
+
+            .subscription--alternate .subscription__option {
+
+            }
+
+            .subscription--alternate .subscription__submit {
+
+            }
+
+            .subscription--alternate .subscription__submit.button,
+            .subscription--alternate .subscription__submit .button {
+                padding-left: 11px;
+                padding-right: 11px;
+            }
+                .subscription--alternate .subscription__submit .button__icon {
+                    display: none;
+                }
+
+
+            @media (width < 350px) {
+
+                .subscription--alternate .subscription__submit.button,
+                .subscription--alternate .subscription__submit .button {
+                    font-size: 16px;
+                }
+            }
+
+        .subscription--alternate .subscription__terms {
+
+        }
+}
+
+
+
+
+

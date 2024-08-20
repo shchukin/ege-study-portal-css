@@ -992,15 +992,25 @@
             </footer>
         </div>
 
-        <div class="alert" style="display: none;">
-            <div class="alert__label">
-                Спасибо! Вы подписаны на рассылку.<br class="hide hide_mobile">
-                На вашу почту скоро придут материалы и шпаргалки по ЕГЭ.
+        <div class="notifications-center">
+            <div class="notifications-center__callback-success alert alert--success" style="display: none;" id="subscriptionSuccessAlert">
+                <div class="alert__label">
+                    Спасибо! Вы&nbsp;записаны на бесплатный пробный урок.<br class="desktop-only">
+                    На&nbsp;вашу почту скоро придёт подтверждение.
+                </div>
+                <button class="alert__dismiss" type="button">
+                    Закрыть
+                </button>
             </div>
-            <button class="alert__dismiss" type="button">
-                <span class="visuallyhidden">Закрыть</span>
-                <img class="alert__cross" src="../symbols/cross.svg" width="20" height="20" alt="">
-            </button>
+            <div class="notifications-center__callback-failure alert alert--danger" style="display: none;" id="subscriptionFailureAlert">
+                <div class="alert__label">
+                    Во время отправки данных произошла ошибка.<br class="desktop-only">
+                    Проверьте ваше соединение и&nbsp;попробуйте позже.
+                </div>
+                <button class="alert__dismiss" type="button">
+                    Закрыть
+                </button>
+            </div>
         </div>
 
         <!-- Scripts -->
