@@ -132,7 +132,8 @@
     }
 
 .button--secondary:hover {
-    background-color: var(--white-hover);
+    background-color: var(--primary-black);
+    color: #EEEEEE;
 }
 
 
@@ -180,11 +181,20 @@
         margin-top: -12px;
         margin-left: -12px;
         background-image: url("../vectors/button-loading.svg");
-        background-size: 24px 24px;
+        background-size: 32px 32px;
         background-repeat: no-repeat;
         background-position: center center;
         animation: button-loading-spin 1s steps(12) infinite;
     }
+
+    .button--secondary.button--loading::after {
+        background-image: url("../vectors/button-loading-orange.svg");
+    }
+
+    .button--loading .button__icon {
+        display: none;
+    }
+
 
 
 .button--success {
@@ -207,12 +217,21 @@
         background-position: center center;
     }
 
+    .button--secondary.button--success::after {
+        background-image: url("../vectors/button-success-orange.svg");
+    }
 
-.button--error {
+    .button--success .button__icon {
+        display: none;
+    }
+
+
+
+.button--warning {
     color: transparent;
     pointer-events: none;
 }
-    .button--error::after {
+    .button--warning::after {
         content: "";
         position: absolute;
         left: 50%;
@@ -222,9 +241,16 @@
         height: 24px;
         margin-top: -12px;
         margin-left: -12px;
-        background-image: url("../vectors/button-error.svg");
+        background-image: url("../vectors/button-warning.svg");
         background-size: 24px 24px;
         background-repeat: no-repeat;
         background-position: center center;
     }
 
+    .button--secondary.button--warning::after {
+        background-image: url("../vectors/button-warning-orange.svg");
+    }
+
+    .button--warning .button__icon {
+        display: none;
+    }
