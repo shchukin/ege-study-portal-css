@@ -5,7 +5,6 @@
 }
     .teacher__preview {
         display: block;
-        transition: filter var(--transition-hover);
     }
 
     .teacher__preview:hover {

@@ -250,7 +250,6 @@
                     border-radius: 8px;
                     /*border: none;*/
                     /*cursor: pointer;*/
-                    transition: background-color var(--transition-hover);
                 }
 
                 .faq--exotic .faq__handler:hover {
