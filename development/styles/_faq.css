@@ -275,7 +275,7 @@
                 .faq--exotic .faq__dropdown {
                     margin-top: 10px;
                     margin-bottom: 15px;
-                    padding: 0 var(--right-padding) 0 0px;
+                    padding: 0 var(--right-padding) 0 0;
                     /*display: none;*/
                     /*padding: 0 40px 40px;*/
                     /*font-size: var(--body-20-font);*/
