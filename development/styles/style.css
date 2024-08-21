@@ -126,6 +126,7 @@
 
 @import url("../vendors/swiper/swiper-bundle.min.css");
 
+@import url("_alt-landing-html.css");
 @import url("_alt-landing-body.css");
 @import url("_alt-landing-container.css");
 @import url("_simpler-rating.css");

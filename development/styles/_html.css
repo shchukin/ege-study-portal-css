@@ -1,3 +1,10 @@
 html {
+    min-width: 1200px;
     overflow-y: scroll;
+}
+
+@media (max-width: 639px) {
+    html {
+        min-width: 320px;
+    }
 }

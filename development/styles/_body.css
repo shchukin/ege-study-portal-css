@@ -1,5 +1,4 @@
 body {
-    min-width: 1200px;
     margin: 0;
     background-position: center top;
     -moz-osx-font-smoothing: grayscale;
@@ -9,10 +8,4 @@ body {
     font-size: var(--body-17-font);
     line-height: var(--body-17-line);
     color: var(--high-emphasis-black);
-}
-
-@media (max-width: 639px) {
-    body {
-        min-width: 0;
-    }
 }
