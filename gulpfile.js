@@ -143,6 +143,30 @@ gulp.task('clean', function () {
 });
 
 
+// Manifest: copy
+
+gulp.task('manifest', function () {
+    return gulp.src([
+        'development/browserconfig.xml',
+        'development/manifest.json',
+        'development/humans.txt',
+        'development/favicon.ico'], {encoding: false})
+        .pipe(plumber())
+        .pipe(gulp.dest('production/'))
+        ;
+});
+
+
+// Favicon: copy
+
+gulp.task('favicon', function () {
+    return gulp.src('development/favicon/**/*', {encoding: false})
+        .pipe(plumber())
+        .pipe(gulp.dest('production/favicon/'))
+        ;
+});
+
+
 // Temp: copy
 
 gulp.task('temp', function () {
@@ -292,7 +316,7 @@ gulp.task('lint', function () {
 
 
 gulp.task('default', function (fn) {
-    run('clean', 'temp', 'content', 'images', 'markups', 'layouts', 'index', 'vendors', 'scripts', 'symbols', 'styles', 'lint', fn);
+    run('clean', 'manifest', 'favicon', 'temp', 'content', 'images', 'markups', 'layouts', 'index', 'vendors', 'scripts', 'symbols', 'styles', 'lint', fn);
 });
 
 
