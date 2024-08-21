@@ -115,9 +115,8 @@
 }
 
 .button--yellow:hover {
-    background-color: var(--yellow);
-    color: var(--high-emphasis-black);
-    filter: brightness(1.025) contrast(1.025);
+    background-color: var(--primary-black);
+    color: #EEEEEE;
 }
 
 

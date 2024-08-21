@@ -224,21 +224,16 @@
                     }
 
                     .header__item--catalog .header__link:hover {
-                        background-color: var(--yellow);
-                        color: var(--high-emphasis-black);
-                        filter: brightness(1.025) contrast(1.025);
+                        background-color: var(--primary-black);
+                        color: #EEEEEE;
                     }
-                        .header__item--catalog .header__link::before {
-                            content: "";
-                            display: block;
+                        .header__menu-icon {
+                            vertical-align: top;
                             width: 24px;
                             height: 24px;
                             margin-left: -4px;
                             margin-right: 4px;
-                            background-image: url("../vectors/courses.svg");
-                            background-size: contain;
-                            background-repeat: no-repeat;
-                            background-position: center center;
+                            fill: currentColor;
                         }
 
                         .header__item--catalog .header__link::after {
