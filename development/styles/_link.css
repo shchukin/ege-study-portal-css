@@ -1,27 +1,24 @@
 .link,
 .wysiwyg a {
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
     display: inline;
     vertical-align: baseline;
-    padding: 4px 0 0; /* 4px solves two problems:
-                         a) expands clickable area
-                         b) solves multi-link case problem when hovering between lines changes from pointer to arrow */
+    padding: 6px 0; /* Extend the clickable area and ensure the link remains clickable even if the cursor is between lines */
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid transparent;
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
     color: var(--red);
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.25em;
+    text-decoration-color: transparent;
     cursor: pointer;
 }
 
 .link:hover,
 .wysiwyg a:hover {
-    border-bottom-color: currentColor;
+    text-decoration-color: currentColor;
 }
 
 .link:active,
@@ -32,12 +29,12 @@
 
 .link--classic,
 .wysiwyg .link--classic {
-    border-bottom-color: currentColor;
+    text-decoration-color: currentColor;
 }
 
 .link--classic:hover,
 .wysiwyg .link--classic:hover {
-    border-bottom-color: transparent;
+    text-decoration-color: transparent;
 }
 
 
@@ -46,7 +43,7 @@
 .link--fake:hover,
 .wysiwyg .link--fake,
 .wysiwyg .link--fake:hover {
-    border-bottom-color: transparent;
+    text-decoration-color: transparent;
     color: inherit;
     cursor: pointer;
 }
@@ -66,7 +63,7 @@
 .link--classic-text,
 .wysiwyg .link--classic-text {
     color: inherit;
-    border-bottom-color: currentColor;
+    text-decoration-color: currentColor;
 }
 
 .link--classic-text:hover,
