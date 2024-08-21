@@ -2,8 +2,8 @@
   "name": "ege-study",
   "devDependencies": {
     "del": "2.2.0",
-    "gulp": "4.0.2",
-    "gulp4-run-sequence": "1.0.1",
+    "gulp": "5.0.0",
+    "gulp4-run-sequence": "1.0.2",
     "gulp-base64": "0.1.3",
     "gulp-change": "1.0.2",
     "gulp-clean-css": "4.3.0",

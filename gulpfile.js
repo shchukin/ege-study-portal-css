@@ -146,7 +146,7 @@ gulp.task('clean', function () {
 // Temp: copy
 
 gulp.task('temp', function () {
-    return gulp.src('development/temp/**/*')
+    return gulp.src('development/temp/**/*', {encoding: false})
         .pipe(plumber())
         .pipe(gulp.dest('production/temp/'))
         ;
@@ -156,7 +156,7 @@ gulp.task('temp', function () {
 // Content: copy
 
 gulp.task('content', function () {
-    return gulp.src('development/content/**/*')
+    return gulp.src('development/content/**/*', {encoding: false})
         .pipe(plumber())
         .pipe(gulp.dest('production/content/'))
         ;
@@ -166,7 +166,7 @@ gulp.task('content', function () {
 // Images: copy
 
 gulp.task('images', function () {
-    return gulp.src('development/images/**/*')
+    return gulp.src('development/images/**/*', {encoding: false})
         .pipe(plumber())
         .pipe(gulp.dest('production/images/'))
         ;
@@ -176,7 +176,7 @@ gulp.task('images', function () {
 // Markups: copy and change symbols <img> to sprite <svg>
 
 gulp.task('markups', function () {
-    return gulp.src('development/markups/**/*')
+    return gulp.src('development/markups/**/*', {encoding: false})
         .pipe(plumber())
         .pipe(change(symbolsImgToSpriteSvg))
         .pipe(change(uncommentGoogleFonts))
@@ -189,7 +189,7 @@ gulp.task('markups', function () {
 // Layouts: copy and change symbols <img> to sprite <svg>
 
 gulp.task('layouts', function () {
-    return gulp.src('development/layouts/**/*')
+    return gulp.src('development/layouts/**/*', {encoding: false})
         .pipe(plumber())
         .pipe(change(symbolsImgToSpriteSvg))
         .pipe(change(uncommentGoogleFonts))
@@ -202,7 +202,7 @@ gulp.task('layouts', function () {
 // Index: copy
 
 gulp.task('index', function () {
-    return gulp.src('development/index.html')
+    return gulp.src('development/index.html', {encoding: false})
         .pipe(plumber())
         .pipe(gulp.dest('production/'))
         ;
@@ -216,7 +216,7 @@ gulp.task('vendors', function () {
         'development/vendors/**/*',
         '!development/vendors/normalize',
         '!development/vendors/normalize/**/*',
-    ])
+    ], {encoding: false})
         .pipe(plumber())
         .pipe(gulp.dest('production/vendors/'))
         ;
@@ -226,7 +226,7 @@ gulp.task('vendors', function () {
 // Scripts: copy
 
 gulp.task('scripts', function () {
-    return gulp.src('development/scripts/**/*')
+    return gulp.src('development/scripts/**/*', {encoding: false})
         .pipe(plumber())
         .pipe(gulp.dest('production/scripts/'))
         ;
@@ -236,7 +236,7 @@ gulp.task('scripts', function () {
 // Symbols
 
 gulp.task('symbols', function () {
-    return gulp.src('development/symbols/*.svg')
+    return gulp.src('development/symbols/*.svg', {encoding: false})
         .pipe(plumber())
         .pipe(svgmin())
         .pipe(svgstore())
@@ -255,7 +255,7 @@ gulp.task('styles', function () {
 
     return gulp.src([
         'development/styles/style.css'
-    ])
+    ], {encoding: false})
         .pipe(plumber())
         .pipe(cleanCSS({
             advanced: false,
@@ -280,7 +280,7 @@ gulp.task('lint', function () {
     return gulp.src([
         '!development/styles/style.css',
         'development/styles/**/*.css'
-    ])
+    ], {encoding: false})
         .pipe(plumber())
         .pipe(stylelint({
             reporters: [
