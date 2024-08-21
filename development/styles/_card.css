@@ -73,7 +73,7 @@
 @media (width < 640px) {
 
     .card {
-        padding: 30px var(--container-padding) 40px;
+        padding: 30px var(--alt-landing-container-padding) 40px;
         display: block;
     }
         .card__preview {

@@ -31,8 +31,6 @@
         background-color: #FFFFFF;
         border-radius: 2px;
         pointer-events: none; /* Since this icon is positioned higher than label, let's make it possible to click through, so that the user interacts only with the label. For now, this icon won't generate its own cursor, for example. */
-        transition: background-color var(--transition-hover),
-                    border-color var(--transition-hover);
     }
         .term__check {
             display: block;

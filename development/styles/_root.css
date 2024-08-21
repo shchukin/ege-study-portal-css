@@ -2,6 +2,8 @@
 :root {
     --container-desktop-padding: 60px;
     --container-mobile-padding: 24px;
+    --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+    --transition-show: 1200ms var(--ease-out-quint);
     --bar-mobile-collapsed: 80px;
     --bar-mobile-expanded: 284px;
     --bar-laptop: 188px;
@@ -46,12 +48,9 @@
     --image-hover: brightness(1.1) contrast(1.1);
 
     /* Переменные, которые появились в момент вёрстки alt-landing.html */
-    --body-font-size: 16px;
-    --body-line-height: 22px;
-    --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
-    --transition-hover: 100ms ease;
-    --transition-show: 1200ms var(--ease-out-quint);
-    --container-padding: 30px;
+    --alt-landing-container-padding: 30px;
+    --alt-landing-body-font-size: 16px;
+    --alt-landing-body-line-height: 22px;
     --disabled-background: #EAEAEA;
     --disabled-color: #999999;
     --beige: #FAF6F2;
@@ -73,12 +72,12 @@
 
 @media (350px <= width < 600px) {
     :root {
-        --container-padding: 20px;
+        --alt-landing-container-padding: 20px;
     }
 }
 
 @media (width < 350px) {
     :root {
-        --container-padding: 12px;
+        --alt-landing-container-padding: 12px;
     }
 }

@@ -11,7 +11,6 @@
         border-radius: 8px;
         text-decoration: none;
         color: inherit;
-        transition: background-color var(--transition-hover);
     }
 
     .entry__link:hover {
@@ -36,7 +35,6 @@
             width: fit-content;
             text-decoration: 1px underline currentColor;
             text-underline-offset: 4px;
-            transition: text-decoration-color var(--transition-hover);
         }
 
         .entry__more:hover {

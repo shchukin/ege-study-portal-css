@@ -29,7 +29,6 @@
             width: auto;
             height: auto;
             opacity: 100%;
-            transition: background-color var(--transition-hover);
         }
             .swiper-pagination-bullet::after {
                 content: "";
@@ -81,7 +80,6 @@
         border: none;
         background-color: transparent;
         cursor: pointer;
-        transition: background-color var(--transition-hover);
     }
 
     /*.swiper-button:not(.swiper-button-disabled):hover {*/
