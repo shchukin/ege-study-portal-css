@@ -197,6 +197,17 @@ gulp.task('images', function () {
 });
 
 
+
+// Fonts: copy
+
+gulp.task('fonts', function () {
+    return gulp.src('development/fonts/**/*', {encoding: false})
+        .pipe(plumber())
+        .pipe(gulp.dest('production/fonts/'))
+        ;
+});
+
+
 // Markups: copy and change symbols <img> to sprite <svg>
 
 gulp.task('markups', function () {
@@ -289,7 +300,7 @@ gulp.task('styles', function () {
         .pipe(postcss(processors))
         .pipe(base64({
             // Allow files from /vectors/ only
-            exclude: ['/sprite/', '/images/', '/symbols/']
+            exclude: ['/sprite/', '/images/', '/symbols/', '/fonts/']
         }))
         .pipe(gulp.dest('production/styles/'))
         .pipe(size())
@@ -316,7 +327,7 @@ gulp.task('lint', function () {
 
 
 gulp.task('default', function (fn) {
-    run('clean', 'manifest', 'favicon', 'temp', 'content', 'images', 'markups', 'layouts', 'index', 'vendors', 'scripts', 'symbols', 'styles', 'lint', fn);
+    run('clean', 'manifest', 'favicon', 'temp', 'content', 'images', 'fonts', 'markups', 'layouts', 'index', 'vendors', 'scripts', 'symbols', 'styles', 'lint', fn);
 });
 
 
