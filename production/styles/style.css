@@ -6347,11 +6347,6 @@ a.materials__alt-preview:hover {
     margin-top: -1px
   }
 }
-@media (max-width:639px) {
-  .info {
-    display: none
-  }
-}
 .nav {
   display: flex;
   align-items: flex-start;
