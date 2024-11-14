@@ -9,9 +9,3 @@
         margin-top: -1px;
     }
 }
-
-@media (max-width: 639px) {
-    .info {
-        display: none;
-    }
-}
