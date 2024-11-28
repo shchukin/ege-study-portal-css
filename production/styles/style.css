@@ -561,6 +561,7 @@ screen and (max-height:300px) {
   --low-emphasis-black: rgba(15, 16, 21, 0.16);
   --low-emphasis-white: rgba(255, 250, 245, 0.32);
   --transition-slide: 0.5s ease;
+  --transition-hover: 0.1s ease;
   --body-17-font: 17px;
   --body-17-line: 27px;
   --body-20-font: 20px;
@@ -6337,9 +6338,7 @@ a.materials__alt-preview:hover {
   text-align: center
 }
 .info {
-  height: 80px;
-  background-color: #FFDDD1;
-  background-color: var(--red-light)
+  height: 80px
 }
 @media (min-width:640px) {
   .header + .info {
@@ -8658,7 +8657,7 @@ button.swiper-pagination-bullet {
 .swiper-fade .swiper-slide-active .swiper-slide-active {
   pointer-events: auto
 }
-.swiper-cube {
+.swiper.swiper-cube {
   overflow: visible
 }
 .swiper-cube .swiper-slide {
@@ -8716,7 +8715,7 @@ button.swiper-pagination-bullet {
   z-index: 0;
   backface-visibility: hidden
 }
-.swiper-flip {
+.swiper.swiper-flip {
   overflow: visible
 }
 .swiper-flip .swiper-slide {
@@ -8743,7 +8742,7 @@ button.swiper-pagination-bullet {
   overflow: hidden;
   transition-property: transform,opacity,height
 }
-.swiper-cards {
+.swiper.swiper-cards {
   overflow: visible
 }
 .swiper-cards .swiper-slide {
@@ -9112,6 +9111,76 @@ html {
   }
   .swiper--feedback .swiper-pagination {
     display: none
+  }
+}
+.swiper--info {
+  position: relative
+}
+.swiper--info .swiper-control {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  margin-top: -25px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer
+}
+.swiper--info .swiper-control--prev {
+  left: 10px
+}
+.swiper--info .swiper-control--next {
+  right: 10px
+}
+.swiper--info .swiper-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #ffd047;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.1s ease;
+  transition: background-color var(--transition-hover)
+}
+@media (hover: hover) {
+.swiper--info .swiper-control:hover .swiper-icon {
+  background-color: #1d1d1f
+}
+}
+.swiper--info .swiper-chevron {
+  vertical-align: top;
+  fill: #141416;
+  transition: fill 0.1s ease;
+  transition: fill var(--transition-hover)
+}
+@media (hover: hover) {
+.swiper--info .swiper-control:hover .swiper-chevron {
+  fill: #fff
+}
+}
+@media (max-width:639px) {
+  .swiper--info .swiper-control {
+    top: 0;
+    margin-top: 0;
+    width: 48px;
+    height: 100%
+  }
+  .swiper--info .swiper-control--prev {
+    left: 0
+  }
+  .swiper--info .swiper-control--next {
+    right: 0
+  }
+  .swiper--info .swiper-icon {
+    width: 36px;
+    height: 36px
   }
 }
 .cut-sliders {
@@ -10477,4 +10546,26 @@ html {
   .alt-teaser__more {
     margin-top: 8px
   }
+}
+.billboard {
+  display: block;
+  overflow: hidden;
+  transition: filter 0.1s ease;
+  transition: filter var(--transition-hover)
+}
+@media (hover: hover) {
+.billboard:hover {
+  filter: brightness(1.1) contrast(1.1);
+  filter: var(--image-hover)
+}
+}
+.billboard__strut {
+  margin-left: -1000px;
+  margin-right: -1000px;
+  text-align: center
+}
+.billboard__image {
+  vertical-align: top;
+  width: auto;
+  height: 100px
 }
