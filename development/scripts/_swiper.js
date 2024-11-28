@@ -84,4 +84,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+    /* Слайдер "info" */
+
+    new Swiper('.swiper--info', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        autoHeight: true,
+        spaceBetween: 0,
+        effect: "fade",
+        loop: true,
+        autoplay: {
+            delay: 1000,
+        },
+        navigation: {
+            prevEl: '.swiper-control--prev',
+            nextEl: '.swiper-control--next',
+        },
+    });
+
+
+
 });

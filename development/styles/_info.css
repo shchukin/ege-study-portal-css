@@ -1,6 +1,5 @@
 .info {
     height: 80px;
-    background-color: var(--red-light);
 }
 
 @media (min-width: 640px) {

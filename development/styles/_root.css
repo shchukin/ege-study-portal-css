@@ -30,6 +30,7 @@
     --low-emphasis-black: rgba(15, 16, 21, 0.16);
     --low-emphasis-white: rgba(255, 250, 245, 0.32);
     --transition-slide: 0.5s ease;
+    --transition-hover: 0.1s ease;
     --body-17-font: 17px;
     --body-17-line: 27px;
     --body-20-font: 20px;
