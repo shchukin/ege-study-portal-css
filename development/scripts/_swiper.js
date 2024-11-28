@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
         effect: "fade",
         loop: true,
         autoplay: {
-            delay: 1000,
+            delay: 8000,
         },
         navigation: {
             prevEl: '.swiper-control--prev',

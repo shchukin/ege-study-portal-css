@@ -214,3 +214,60 @@
 
 
 
+.swiper--info {
+    position: relative;
+}
+    .swiper--info .swiper-control {
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        margin-top: -25px;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border-radius: 50%;
+        border: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .swiper--info .swiper-control--prev {
+        left: 10px;
+    }
+
+    .swiper--info .swiper-control--next {
+        right: 10px;
+    }
+        .swiper--info .swiper-icon {
+            width: 36px;
+            height: 36px;
+            background-color: #FFD047;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color var(--transition-hover);
+        }
+
+        .swiper--info .swiper-control:hover .swiper-icon {
+            background-color: #1D1D1F;
+        }
+
+            .swiper--info .swiper-chevron {
+                vertical-align: top;
+                fill: #141416;
+                transition: fill var(--transition-hover);
+            }
+
+            .swiper--info .swiper-control:hover .swiper-chevron {
+                fill: #FFFFFF;
+            }
+
+
+
+
+
+
