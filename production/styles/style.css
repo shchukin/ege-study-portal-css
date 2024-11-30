@@ -10569,3 +10569,113 @@ html {
   width: auto;
   height: 100px
 }
+.poster {
+  padding: 60px 20px 30px;
+  width: 540px
+}
+.poster__image {
+  width: 100%;
+  height: auto;
+  vertical-align: top
+}
+.poster__body {
+  padding: 28px 10px 20px
+}
+.poster__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 800;
+  font-weight: var(--extra-bold);
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center
+}
+.poster__sub-heading {
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center
+}
+.poster__note {
+  margin-top: 6px;
+  font-size: 20px;
+  font-size: var(--body-20-font);
+  line-height: 32px;
+  line-height: var(--body-20-line);
+  color: #87878a;
+  text-align: center
+}
+.poster__list {
+  margin-top: 16px;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap
+}
+.poster__feature {
+  position: relative;
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  font-size: var(--body-20-font);
+  line-height: 32px;
+  line-height: var(--body-20-line)
+}
+.poster__feature:only-child {
+  padding-left: 0
+}
+.poster__feature::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 13px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #FC5E38;
+  background-color: var(--red);
+  border-radius: 50%
+}
+.poster__feature:only-child::before {
+  display: none
+}
+.poster__action {
+  margin-top: 28px;
+  text-align: center
+}
+.poster__action .button {
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 20px
+}
+@media (max-width:639px) {
+  .poster {
+    padding: 55px 8px 30px;
+    width: 100%
+  }
+  .poster__heading {
+    font-size: 26px;
+    line-height: 34px
+  }
+  .poster__sub-heading {
+    font-size: 18px;
+    line-height: 22px
+  }
+  .poster__note {
+    font-size: 16px;
+    line-height: 20px
+  }
+  .poster__feature {
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 20px
+  }
+  .poster__feature::before {
+    top: 8px;
+    width: 6px;
+    height: 6px
+  }
+}
