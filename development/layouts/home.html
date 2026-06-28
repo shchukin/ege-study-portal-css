@@ -449,7 +449,7 @@
             <div class="swiper swiper--info">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <a class="billboard" href="#" style="background-color: #5FB6FD;">
+                        <a class="billboard" href="#">
                             <div class="billboard__strut">
                                 <picture>
                                     <source srcset="../temp/billboard-a-1488x100@1x.jpg 1x, ../temp/billboard-a-1488x100@2x.jpg 2x" media="(min-width: 1500px)" />
@@ -466,7 +466,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a class="billboard" href="#" style="background-color: #010101;">
+                        <a class="billboard" href="#">
                             <div class="billboard__strut">
                                 <picture>
                                     <source srcset="../temp/billboard-b-1488x100@1x.jpg 1x, ../temp/billboard-b-1488x100@2x.jpg 2x" media="(min-width: 1500px)" />
@@ -483,7 +483,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a class="billboard" href="#" style="background-color: #03012D;">
+                        <a class="billboard" href="#">
                             <div class="billboard__strut">
                                 <picture>
                                     <source srcset="../temp/billboard-c-1488x100@1x.jpg 1x, ../temp/billboard-c-1488x100@2x.jpg 2x" media="(min-width: 1500px)" />
@@ -500,7 +500,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a class="billboard" href="#" style="background-color: #FF7791;">
+                        <a class="billboard" href="#">
                             <div class="billboard__strut">
                                 <picture>
                                     <source srcset="../temp/billboard-d-1488x100@1x.jpg 1x, ../temp/billboard-d-1488x100@2x.jpg 2x" media="(min-width: 1500px)" />
@@ -549,9 +549,7 @@
                     </div>
                 </div>
                 <div class="jumbotron__preview">
-                    <!-- Temp -->
-                    <div style="height: 508px; border: 1px solid #E4E9C9; border-radius: 6px"></div>
-                    <!--/Temp -->
+                    <img class="jumbotron__image" src="../temp/anna-malkova-full.webp" alt="">
                 </div>
             </div>
             <section class="types container">
@@ -675,131 +673,292 @@
                 <div class="teachers-preview__intro">
                     Более 50% наших преподавателей — кандидаты наук. Опыт работы с абитуриентами — от 10 до 30 лет. 17 наших преподавателей — авторы книг и учебных пособий для подготовки к ЕГЭ и олимпиадам, изданных крупнейшими издательствами России.
                 </div>
-                <div class="teachers-preview__list hide-scrollbar">
-                    <div class="teachers-preview__ribbon">
-                        <div class="teachers-preview__item">
-                            <a class="teachers-preview__preview circle" href="#">
-                                <img class="circle__photo"
-                                     width="138"
-                                     height="138"
-                                     srcset="../temp/circle-photo@2x.jpg"
-                                     src="../temp/circle-photo.jpg"
-                                     alt=""
-                                >
-                            </a>
-                            <h3 class="teachers-preview__name">
-                                <a class="link link--inherit" href="#">Анна Георгиевна Малкова</a>
-                            </h3>
-                            <div class="teachers-preview__bio">
-                                Преподаватель математики со стажем более 25 лет. Учредитель и директор компании ЕГЭ-Студия. Автор видеокурса по математике для подготовки к ЕГЭ. Автор книг "ЕГЭ по математике.
-                            </div>
-                            <div class="teachers-preview__menu">
-                                <div class="teachers-preview__action">
-                                    <a class="dash" href="#">
-                                        <span class="dash__label">Отзывы</span>
-                                        <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
+                <div class="teachers-preview__list">
+                    <div class="swiper swiper--teachers">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="teacher-col">
+                                    <a class="teacher-col__preview circle" href="#">
+                                        <img class="circle__photo"
+                                             width="138"
+                                             height="138"
+                                             srcset="../temp/circle-photo@2x.jpg"
+                                             src="../temp/circle-photo.jpg"
+                                             alt=""
+                                        >
                                     </a>
+                                    <h3 class="teacher-col__name">
+                                        <a class="link link--inherit" href="#">Анна Георгиевна Малкова</a>
+                                    </h3>
+                                    <div class="teacher-col__bio">
+                                        Преподаватель математики со стажем более 25 лет. Учредитель и директор компании ЕГЭ-Студия. Автор видеокурса по математике для подготовки к ЕГЭ. Автор книг "ЕГЭ по математике.
+                                    </div>
+                                    <div class="teacher-col__menu">
+                                        <div class="teacher-col__action">
+                                            <a class="dash" href="#">
+                                                <span class="dash__label">Отзывы</span>
+                                                <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="teacher-col__action">
+                                            <a class="dash" href="#">
+                                                <span class="dash__label">Курсы преподавателя</span>
+                                                <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="teachers-preview__action">
-                                    <a class="dash" href="#">
-                                        <span class="dash__label">Курсы преподавателя</span>
-                                        <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="teacher-col">
+                                    <a class="teacher-col__preview circle" href="#">
+                                        <img class="circle__photo"
+                                             width="138"
+                                             height="138"
+                                             srcset="../temp/circle-photo@2x.jpg"
+                                             src="../temp/circle-photo.jpg"
+                                             alt=""
+                                        >
                                     </a>
+                                    <h3 class="teacher-col__name">
+                                        <a class="link link--inherit" href="#">Анна Георгиевна Малкова</a>
+                                    </h3>
+                                    <div class="teacher-col__bio">
+                                        Преподаватель математики со стажем более 25 лет. Учредитель и директор компании ЕГЭ-Студия. Автор видеокурса по математике для подготовки к ЕГЭ. Автор книг "ЕГЭ по математике.
+                                    </div>
+                                    <div class="teacher-col__menu">
+                                        <div class="teacher-col__action">
+                                            <a class="dash" href="#">
+                                                <span class="dash__label">Отзывы</span>
+                                                <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="teacher-col__action">
+                                            <a class="dash" href="#">
+                                                <span class="dash__label">Курсы преподавателя</span>
+                                                <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="teacher-col">
+                                    <a class="teacher-col__preview circle" href="#">
+                                        <img class="circle__photo"
+                                             width="138"
+                                             height="138"
+                                             srcset="../temp/circle-photo@2x.jpg"
+                                             src="../temp/circle-photo.jpg"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <h3 class="teacher-col__name">
+                                        <a class="link link--inherit" href="#">Анна Георгиевна Малкова</a>
+                                    </h3>
+                                    <div class="teacher-col__bio">
+                                        Преподаватель математики со стажем более 25 лет. Учредитель и директор компании ЕГЭ-Студия. Автор видеокурса по математике для подготовки к ЕГЭ. Автор книг "ЕГЭ по математике.
+                                    </div>
+                                    <div class="teacher-col__menu">
+                                        <div class="teacher-col__action">
+                                            <a class="dash" href="#">
+                                                <span class="dash__label">Отзывы</span>
+                                                <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="teacher-col__action">
+                                            <a class="dash" href="#">
+                                                <span class="dash__label">Курсы преподавателя</span>
+                                                <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="teacher-col">
+                                    <a class="teacher-col__preview circle" href="#">
+                                        <img class="circle__photo"
+                                             width="138"
+                                             height="138"
+                                             srcset="../temp/circle-photo@2x.jpg"
+                                             src="../temp/circle-photo.jpg"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <h3 class="teacher-col__name">
+                                        <a class="link link--inherit" href="#">Анна Георгиевна Малкова</a>
+                                    </h3>
+                                    <div class="teacher-col__bio">
+                                        Преподаватель математики со стажем более 25 лет. Учредитель и директор компании ЕГЭ-Студия. Автор видеокурса по математике для подготовки к ЕГЭ. Автор книг "ЕГЭ по математике.
+                                    </div>
+                                    <div class="teacher-col__menu">
+                                        <div class="teacher-col__action">
+                                            <a class="dash" href="#">
+                                                <span class="dash__label">Отзывы</span>
+                                                <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="teacher-col__action">
+                                            <a class="dash" href="#">
+                                                <span class="dash__label">Курсы преподавателя</span>
+                                                <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="teacher-col">
+                                    <a class="teacher-col__preview circle" href="#">
+                                        <img class="circle__photo"
+                                             width="138"
+                                             height="138"
+                                             srcset="../temp/circle-photo@2x.jpg"
+                                             src="../temp/circle-photo.jpg"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <h3 class="teacher-col__name">
+                                        <a class="link link--inherit" href="#">Анна Георгиевна Малкова</a>
+                                    </h3>
+                                    <div class="teacher-col__bio">
+                                        Преподаватель математики со стажем более 25 лет. Учредитель и директор компании ЕГЭ-Студия. Автор видеокурса по математике для подготовки к ЕГЭ. Автор книг "ЕГЭ по математике.
+                                    </div>
+                                    <div class="teacher-col__menu">
+                                        <div class="teacher-col__action">
+                                            <a class="dash" href="#">
+                                                <span class="dash__label">Отзывы</span>
+                                                <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="teacher-col__action">
+                                            <a class="dash" href="#">
+                                                <span class="dash__label">Курсы преподавателя</span>
+                                                <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="teacher-col">
+                                    <a class="teacher-col__preview circle" href="#">
+                                        <img class="circle__photo"
+                                             width="138"
+                                             height="138"
+                                             srcset="../temp/circle-photo@2x.jpg"
+                                             src="../temp/circle-photo.jpg"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <h3 class="teacher-col__name">
+                                        <a class="link link--inherit" href="#">Анна Георгиевна Малкова</a>
+                                    </h3>
+                                    <div class="teacher-col__bio">
+                                        Преподаватель математики со стажем более 25 лет. Учредитель и директор компании ЕГЭ-Студия. Автор видеокурса по математике для подготовки к ЕГЭ. Автор книг "ЕГЭ по математике.
+                                    </div>
+                                    <div class="teacher-col__menu">
+                                        <div class="teacher-col__action">
+                                            <a class="dash" href="#">
+                                                <span class="dash__label">Отзывы</span>
+                                                <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="teacher-col__action">
+                                            <a class="dash" href="#">
+                                                <span class="dash__label">Курсы преподавателя</span>
+                                                <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="teacher-col">
+                                    <a class="teacher-col__preview circle" href="#">
+                                        <img class="circle__photo"
+                                             width="138"
+                                             height="138"
+                                             srcset="../temp/circle-photo@2x.jpg"
+                                             src="../temp/circle-photo.jpg"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <h3 class="teacher-col__name">
+                                        <a class="link link--inherit" href="#">Анна Георгиевна Малкова</a>
+                                    </h3>
+                                    <div class="teacher-col__bio">
+                                        Преподаватель математики со стажем более 25 лет. Учредитель и директор компании ЕГЭ-Студия. Автор видеокурса по математике для подготовки к ЕГЭ. Автор книг "ЕГЭ по математике.
+                                    </div>
+                                    <div class="teacher-col__menu">
+                                        <div class="teacher-col__action">
+                                            <a class="dash" href="#">
+                                                <span class="dash__label">Отзывы</span>
+                                                <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="teacher-col__action">
+                                            <a class="dash" href="#">
+                                                <span class="dash__label">Курсы преподавателя</span>
+                                                <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="teacher-col">
+                                    <a class="teacher-col__preview circle" href="#">
+                                        <img class="circle__photo"
+                                             width="138"
+                                             height="138"
+                                             srcset="../temp/circle-photo@2x.jpg"
+                                             src="../temp/circle-photo.jpg"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <h3 class="teacher-col__name">
+                                        <a class="link link--inherit" href="#">Анна Георгиевна Малкова</a>
+                                    </h3>
+                                    <div class="teacher-col__bio">
+                                        Преподаватель математики со стажем более 25 лет. Учредитель и директор компании ЕГЭ-Студия. Автор видеокурса по математике для подготовки к ЕГЭ. Автор книг "ЕГЭ по математике.
+                                    </div>
+                                    <div class="teacher-col__menu">
+                                        <div class="teacher-col__action">
+                                            <a class="dash" href="#">
+                                                <span class="dash__label">Отзывы</span>
+                                                <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="teacher-col__action">
+                                            <a class="dash" href="#">
+                                                <span class="dash__label">Курсы преподавателя</span>
+                                                <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="teachers-preview__item">
-                            <a class="teachers-preview__preview circle" href="#">
-                                <img class="circle__photo"
-                                     width="138"
-                                     height="138"
-                                     srcset="../temp/circle-photo@2x.jpg"
-                                     src="../temp/circle-photo.jpg"
-                                     alt=""
-                                >
-                            </a>
-                            <h3 class="teachers-preview__name">
-                                <a class="link link--inherit" href="#">Анна Георгиевна Малкова</a>
-                            </h3>
-                            <div class="teachers-preview__bio">
-                                Преподаватель математики со стажем более 25 лет. Учредитель и директор компании ЕГЭ-Студия. Автор видеокурса по математике для подготовки к ЕГЭ. Автор книг "ЕГЭ по математике.
+                        <div class="swiper-control-panel">
+                            <button class="swiper-control swiper-control--prev" type="button">
+                                <span class="swiper-icon">
+                                    <svg class="swiper-chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M6.83 12.796a1.125 1.125 0 0 1 0-1.591l6.75-6.75a1.125 1.125 0 0 1 1.59 1.59L9.216 12l5.955 5.954a1.125 1.125 0 0 1-1.591 1.591l-6.75-6.75Z"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="swiper-counter">
+
                             </div>
-                            <div class="teachers-preview__menu">
-                                <div class="teachers-preview__action">
-                                    <a class="dash" href="#">
-                                        <span class="dash__label">Отзывы</span>
-                                        <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
-                                    </a>
-                                </div>
-                                <div class="teachers-preview__action">
-                                    <a class="dash" href="#">
-                                        <span class="dash__label">Курсы преподавателя</span>
-                                        <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="teachers-preview__item">
-                            <a class="teachers-preview__preview circle" href="#">
-                                <img class="circle__photo"
-                                     width="138"
-                                     height="138"
-                                     srcset="../temp/circle-photo@2x.jpg"
-                                     src="../temp/circle-photo.jpg"
-                                     alt=""
-                                >
-                            </a>
-                            <h3 class="teachers-preview__name">
-                                <a class="link link--inherit" href="#">Ирина Михайловна Храпова</a>
-                            </h3>
-                            <div class="teachers-preview__bio">
-                                Преподаватель русского языка. Окончила МГУП с красным дипломом. Более двадцати лет преподаёт в высшей школе.
-                            </div>
-                            <div class="teachers-preview__menu">
-                                <div class="teachers-preview__action">
-                                    <a class="dash" href="#">
-                                        <span class="dash__label">Отзывы</span>
-                                        <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
-                                    </a>
-                                </div>
-                                <div class="teachers-preview__action">
-                                    <a class="dash" href="#">
-                                        <span class="dash__label">Курсы преподавателя</span>
-                                        <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="teachers-preview__item">
-                            <a class="teachers-preview__preview circle" href="#">
-                                <img class="circle__photo"
-                                     width="138"
-                                     height="138"
-                                     srcset="../temp/circle-photo@2x.jpg"
-                                     src="../temp/circle-photo.jpg"
-                                     alt=""
-                                >
-                            </a>
-                            <h3 class="teachers-preview__name">
-                                <a class="link link--inherit" href="#">Анна Георгиевна Малкова</a>
-                            </h3>
-                            <div class="teachers-preview__bio">
-                                Преподаватель математики со стажем более 25 лет. Учредитель и директор компании ЕГЭ-Студия. Автор видеокурса по математике для подготовки к ЕГЭ. Автор книг «ЕГЭ по математике.
-                            </div>
-                            <div class="teachers-preview__menu">
-                                <div class="teachers-preview__action">
-                                    <a class="dash" href="#">
-                                        <span class="dash__label">Отзывы</span>
-                                        <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
-                                    </a>
-                                </div>
-                                <div class="teachers-preview__action">
-                                    <a class="dash" href="#">
-                                        <span class="dash__label">Курсы преподавателя</span>
-                                        <img class="dash__icon dash__icon--right" src="../symbols/arrow-right.svg" width="20" height="20" alt="">
-                                    </a>
-                                </div>
-                            </div>
+                            <button class="swiper-control swiper-control--next" type="button">
+                                <span class="swiper-icon">
+                                    <svg class="swiper-chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M17.17 11.204c.44.44.44 1.152 0 1.591l-6.75 6.75a1.125 1.125 0 0 1-1.59-1.59L14.784 12 8.829 6.045a1.125 1.125 0 1 1 1.591-1.59l6.75 6.75Z"/>
+                                    </svg>
+                                </span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -814,10 +973,7 @@
                 <div class="feature__wrap container">
                     <div class="feature__preview">
                         <div class="feature__pic">
-                            <!-- temp -->
-                            <div style="height: 335px; border: 1px solid #E4E9C9; border-radius: 6px; display: flex; align-items: center; justify-content: center;">Картинка с классом .feature__image</div>
-                            <!--/temp -->
-<!--                        <img class="feature__image" src="../temp/feature-a.jpg" width="543" height="335" alt="">-->
+                            <img class="feature__image" src="../content/uploaded-on-backend/class-full.webp" width="543" height="335" alt="">
                         </div>
                     </div>
                     <div class="feature__content">
@@ -850,9 +1006,7 @@
                 <div class="feature__wrap container">
                     <div class="feature__preview">
                         <div class="feature__pic">
-                            <!-- temp -->
-                            <div style="height: 335px; border: 1px solid #E4E9C9; border-radius: 6px; display: flex; align-items: center; justify-content: center;">Картинка с классом .feature__image</div>
-                            <!--/temp -->
+                            <img class="feature__image" src="../content/uploaded-on-backend/ege-study-full.webp" width="543" height="335" alt="">
                         </div>
                     </div>
                     <div class="feature__content">
@@ -1175,43 +1329,6 @@
                 <button class="alert__dismiss" type="button">
                     Закрыть
                 </button>
-            </div>
-        </div>
-
-        <div class="window mfp-hide" id="poster">
-            <button class="window__close mfp-close" type="button">
-                Закрыть
-            </button>
-            <div class="window__body">
-                <div class="poster">
-                    <a class="poster__preview" href="#">
-                        <img class="poster__image"
-                             srcset="../temp/poster@2x.jpg 1.5x, ../temp/poster@3x.jpg 2.5x"
-                             src="../temp/poster.jpg"
-                             width="500"
-                             height="281"
-                             alt=""
-                        >
-                    </a>
-                    <div class="poster__body">
-                        <h2 class="poster__heading">
-                            Планиметрия с нуля!
-                        </h2>
-                        <div class="poster__sub-heading">
-                            Задания 17 ЕГЭ
-                        </div>
-                        <div class="poster__note">
-                            <a class="link link--fake" name="fake-link-to-prevent-calendar-parsing">28 ноября</a>
-                        </div>
-                        <ul class="poster__list">
-                            <li class="poster__feature">Бесплатно</li>
-                            <li class="poster__feature">Онлайн</li>
-                        </ul>
-                        <div class="poster__action">
-                            <a class="button" href="#">Подробнее</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 

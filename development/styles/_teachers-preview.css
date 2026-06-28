@@ -23,43 +23,12 @@
         .teachers-preview__list {
             margin-top: 60px;
             padding-top: 60px;
+            overflow: hidden; /* обрезаем стрелочки слайдера */
+            margin-left: calc(-1 * var(--container-desktop-padding));
+            margin-right: calc(-1 * var(--container-desktop-padding));
+            padding-left: var(--container-desktop-padding);
+            padding-right: var(--container-desktop-padding);
         }
-            .teachers-preview__ribbon {
-                display: inline-grid;
-                grid-template-columns: repeat(4, 1fr);
-                gap: 0 72px;
-            }
-                .teachers-preview__item {
-
-                }
-                    .teachers-preview__preview {
-
-                    }
-
-                    .teachers-preview__name {
-                        margin-top: 20px;
-                        margin-bottom: 0;
-                        font-size: 26px;
-                        line-height: 34px;
-                    }
-
-                    .teachers-preview__bio {
-                        margin-top: 16px;
-                        font-size: 15px;
-                        line-height: 23px;
-                    }
-
-                    .teachers-preview__menu {
-                        margin-top: 18px;
-                    }
-                        .teachers-preview__action {
-
-                        }
-                            .teachers-preview__action.dash,
-                            .teachers-preview__action .dash {
-                                padding-top: 3px;
-                                padding-bottom: 3px;
-                            }
 
         .teachers-preview__footer {
             margin-top: 52px;
@@ -99,46 +68,13 @@
                 position: relative;
                 border-top: none;
                 padding-top: 40px;
-                overflow-x: auto;
                 margin-left: calc(-1 * var(--container-mobile-padding));
                 margin-right: calc(-1 * var(--container-mobile-padding));
+                padding-left: var(--container-mobile-padding);
+                padding-right: var(--container-mobile-padding);
+                /*margin-left: calc(-1 * var(--container-mobile-padding));*/
+                /*margin-right: calc(-1 * var(--container-mobile-padding));*/
             }
-                .teachers-preview__ribbon {
-                    padding-left: var(--container-mobile-padding);
-                    padding-right: var(--container-mobile-padding);
-                    gap: 0 24px;
-                }
-                    .teachers-preview__item {
-
-                    }
-                        .teachers-preview__preview {
-
-                        }
-
-                        .teachers-preview__name {
-                            /*margin-top: 20px;*/
-                            /*margin-bottom: 0;*/
-                            /*font-size: 26px;*/
-                            /*line-height: 34px;*/
-                        }
-
-                        .teachers-preview__bio {
-                            /*margin-top: 16px;*/
-                            /*font-size: 15px;*/
-                            /*line-height: 23px;*/
-                        }
-
-                        .teachers-preview__menu {
-                            margin-top: 14px;
-                        }
-                            .teachers-preview__action {
-
-                            }
-                                .teachers-preview__action.dash,
-                                .teachers-preview__action .dash {
-                                    /*padding-top: 3px;*/
-                                    /*padding-bottom: 3px;*/
-                                }
 
             .teachers-preview__footer {
                 margin-top: 30px;

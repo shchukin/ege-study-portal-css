@@ -1,5 +1,5 @@
 .swiper {
-
+    position: relative;
 }
     .swiper-wrapper {
         align-items: stretch;
@@ -210,28 +210,97 @@
 
 
 
+.swiper-control {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+    .swiper-icon {
+        width: 36px;
+        height: 36px;
+        background-color: #FFD047;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color var(--transition-hover);
+    }
+
+    .swiper-control:hover .swiper-icon {
+        background-color: #1D1D1F;
+    }
+        .swiper-chevron {
+            vertical-align: top;
+            fill: #141416;
+            transition: fill var(--transition-hover);
+        }
+
+        .swiper-control:hover .swiper-chevron {
+            fill: #FFFFFF;
+        }
+
+
+.swiper-control--disabled {
+    cursor: default;
+}
+    .swiper-control--disabled .swiper-icon,
+    .swiper-control--disabled:hover .swiper-icon {
+        background-color: #FFE7A9;
+    }
+    .swiper-control--disabled .swiper-chevron,
+    .swiper-control--disabled:hover .swiper-chevron {
+        fill: #1D1D1F;
+    }
+
+
+
+@media (max-width: 639px) {
+
+    .swiper-control {
+
+    }
+
+    .swiper-control--prev {
+
+    }
+
+    .swiper-control--next {
+
+    }
+        .swiper-icon {
+
+        }
+
+        .swiper-control:hover .swiper-icon {
+
+        }
+            .swiper-chevron {
+
+            }
+
+            .swiper-control:hover .swiper-chevron {
+
+            }
+}
 
 
 
 
 .swiper--info {
-    position: relative;
+
 }
     .swiper--info .swiper-control {
         position: absolute;
         z-index: 10;
         top: 50%;
         margin-top: -25px;
-        width: 50px;
-        height: 50px;
-        background-color: transparent;
-        border-radius: 50%;
-        border: none;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
     }
 
     .swiper--info .swiper-control--prev {
@@ -241,53 +310,18 @@
     .swiper--info .swiper-control--next {
         right: 10px;
     }
-        .swiper--info .swiper-icon {
-            width: 36px;
-            height: 36px;
-            background-color: #FFD047;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background-color var(--transition-hover);
-        }
-
-        .swiper--info .swiper-control:hover .swiper-icon {
-            background-color: #1D1D1F;
-        }
-
-            .swiper--info .swiper-chevron {
-                vertical-align: top;
-                fill: #141416;
-                transition: fill var(--transition-hover);
-            }
-
-            .swiper--info .swiper-control:hover .swiper-chevron {
-                fill: #FFFFFF;
-            }
-
 
 
 @media (max-width: 639px) {
 
     .swiper--info {
-        /*position: relative;*/
+
     }
         .swiper--info .swiper-control {
-            /*position: absolute;*/
-            /*z-index: 10;*/
             top: 0;
             margin-top: 0;
             width: 48px;
             height: 100%;
-            /*background-color: transparent;*/
-            /*border-radius: 50%;*/
-            /*border: none;*/
-            /*padding: 0;*/
-            /*display: flex;*/
-            /*align-items: center;*/
-            /*justify-content: center;*/
-            /*cursor: pointer;*/
         }
 
         .swiper--info .swiper-control--prev {
@@ -298,33 +332,99 @@
             right: 0;
         }
             .swiper--info .swiper-icon {
-                width: 36px;
-                height: 36px;
-                /*background-color: #FFD047;*/
-                /*border-radius: 50%;*/
-                /*display: flex;*/
-                /*align-items: center;*/
-                /*justify-content: center;*/
-                /*transition: background-color var(--transition-hover);*/
+
             }
-
-            .swiper--info .swiper-control:hover .swiper-icon {
-                /*background-color: #1D1D1F;*/
-            }
-
-                .swiper--info .swiper-chevron {
-                    /*vertical-align: top;*/
-                    /*fill: #141416;*/
-                    /*transition: fill var(--transition-hover);*/
-                }
-
-                .swiper--info .swiper-control:hover .swiper-chevron {
-                    /*fill: #FFFFFF;*/
-                }
 }
 
 
 
+.swiper--teachers {
+    position: relative;
+    overflow: visible; /* чтобы не обрезались стрелочки. Обрежем их на уровне teachers-preview__list */
+}
+    .swiper--teachers .swiper-control {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        bottom: 0;
+        height: auto;
+        width: var(--container-desktop-padding);
+        background-color: #FFFFFF; /* Перекрываем высвободившееся пространство в teachers-preview__list */
+        border-radius: 0;
+    }
+
+    .swiper--teachers .swiper-control--prev {
+        left: calc(-1 * var(--container-desktop-padding));
+    }
+
+    .swiper--teachers .swiper-control--next {
+        right: calc(-1 * var(--container-desktop-padding));
+    }
+
+    @media (min-width: 1700px) {
+
+        .swiper--teachers .swiper-control--prev {
+            justify-content: flex-start;
+        }
+
+        .swiper--teachers .swiper-control--next {
+            justify-content: flex-end;
+        }
+    }
 
 
+@media (min-width: 640px) {
+    .swiper--teachers .swiper-counter {
+        display: none;
+    }
 
+    /* Если нет 5-го айтема, значит их 4 или менее. Тогда нам не нужны стрелочки */
+    .swiper--teachers:not(:has(.swiper-slide:nth-child(5))) .swiper-control {
+        display: none;
+    }
+}
+
+
+@media (max-width: 639px) {
+
+    .swiper--teachers {
+
+    }
+        .swiper--teachers .swiper-control-panel {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            .swiper--teachers .swiper-control-panel .swiper-counter {
+                flex-shrink: 0;
+                width: 40px;
+                font-size: 17px;
+                line-height: 20px;
+                text-align: center;
+            }
+
+            .swiper--teachers .swiper-control {
+                position: static;
+                width: 48px;
+                height: 48px;
+                background-color: transparent;
+            }
+
+            .swiper--teachers .swiper-control--prev {
+                left: 0;
+            }
+
+            .swiper--teachers .swiper-control--next {
+                right: 0;
+            }
+                .swiper--teachers .swiper-icon {
+
+                }
+
+    /* Если нет 2-го айтем, то стрелочки не нужны */
+    .swiper--teachers:not(:has(.swiper-slide:nth-child(2))) .swiper-control {
+        display: none;
+    }
+
+}

@@ -11,7 +11,7 @@
     color: var(--red);
     text-decoration: underline;
     text-decoration-thickness: 1px;
-    text-underline-offset: 0.25em;
+    text-underline-offset: 0.2em;
     text-decoration-color: transparent;
     cursor: pointer;
 }
@@ -61,13 +61,15 @@
 
 
 .link--classic-text,
-.wysiwyg .link--classic-text {
+.wysiwyg .link--classic-text,
+.wysiwyg--text-alike-links a {
     color: inherit;
     text-decoration-color: currentColor;
 }
 
 .link--classic-text:hover,
-.wysiwyg .link--classic-text:hover {
+.wysiwyg .link--classic-text:hover,
+.wysiwyg--text-alike-links a:hover {
     color: var(--red);
 }
 

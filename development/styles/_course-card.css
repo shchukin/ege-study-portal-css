@@ -48,9 +48,7 @@
 
     }
         .course-card__price {
-            font-weight: var(--extra-bold);
-            font-size: 26px;
-            line-height: 34px;
+
         }
 
         .course-card__note {
@@ -127,10 +125,7 @@
             margin-top: 32px;
         }
             .course-card__price {
-                /*font-weight: var(--extra-bold);*/
-                font-size: 20px;
-                line-height: 32px;
-                letter-spacing: 1px;
+
             }
 
             .course-card__note {

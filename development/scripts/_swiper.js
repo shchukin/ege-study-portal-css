@@ -104,4 +104,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+    /* Слайдер "teachers" */
+
+    new Swiper('.swiper--teachers', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        autoHeight: true,
+        spaceBetween: 24,
+        navigation: {
+            prevEl: '.swiper-control--prev',
+            nextEl: '.swiper-control--next',
+            disabledClass: 'swiper-control--disabled',
+        },
+        pagination: {
+            el: '.swiper-counter',
+            type: 'fraction'
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 4,
+                slidesPerGroup: 4,
+                spaceBetween: 72,
+            }
+        }
+    });
+
+
+
 });

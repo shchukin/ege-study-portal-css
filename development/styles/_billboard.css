@@ -1,6 +1,7 @@
 .billboard {
     display: block;
     overflow: hidden;
+    background-color: #999999;
     transition: filter var(--transition-hover);
 }
 
